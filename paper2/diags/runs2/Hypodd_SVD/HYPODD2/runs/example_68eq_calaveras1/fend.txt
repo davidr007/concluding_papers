@@ -1,0 +1,2 @@
+ % This stores fret (the f-value) and iter (number of iterations to converge)
+  -285.108335898661        73.0000000000000     

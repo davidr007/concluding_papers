@@ -1,0 +1,155 @@
+% The purpose of this script is to plot the Calaveras earthquake locations
+
+%% Figure setup
+
+colorswitch = 'bw';  %'c'=>color OR 'bw'=>black/white
+switch colorswitch
+    case 'bw'
+        c1 = [0.5, 0.5, 0.5];
+        c2 = 'k';
+    case 'c'
+        c1 = 'b';
+        c2 = 'r';
+end
+
+
+
+plot_struct.xlimits = [-500 500];
+plot_struct.ylimits = [-500 500];
+plot_struct.zlimits = [-2000 2000];
+plot_struct.axes_posy = [5,3,6,6];
+plot_struct.xtickspots = [-250 0 250];
+plot_struct.ytickspots = [-250 0 250];
+plot_struct.ztickspots = [-1000 0 1000];
+plot_struct.zticklabels =[-1000, 0, 1000];
+plot_struct.fsize = 10;
+plot_struct.msize = 2;
+
+awidth = 3; % width of axis in centimeters
+aheight = 3; % height of axis in centimeters
+hgap = 0.3; % horizontal gap in centimeters
+vgap = 0.7; % vertical gap in centimeters
+ax_start = 1.7;
+ay_start = 0.7;
+
+
+%% Load inputdata
+events_oi = load('../../../thesis_version2/diags/eq_location_optimisation/events_oi.txt');
+
+CatLoc = load('../../../thesis_version2/diags/eq_location_optimisation/Calaveras_cat_locations.txt'); 
+[n m] = size(CatLoc); 
+CatLoc_68 = [];
+CatLoc_not68 = [];
+for i = 1:n
+    ind = find(CatLoc(i,1)==events_oi)
+    if ~isempty(ind) 
+        CatLoc_68 = [CatLoc_68; CatLoc(ind,:)];
+    else
+        CatLoc_not68 = [CatLoc_not68; CatLoc(i,:)];
+    end
+end
+
+%% Figure 1
+% 3x3 figures showing:
+%       col1 => Catalogue Locations
+%       col2 => CWI locations
+%       col3 => HypoDD locations
+
+figure
+set(gcf,'units','centimeter')
+
+% catalogue x vs y
+subplot(3,3,1)
+plot(CatLoc_not68(:,5), CatLoc_not68(:,6),'o','markeredgecolor',c1,'markerfacecolor',c1,'markersize',plot_struct.msize)
+hold on
+plot(CatLoc_68(:,5), CatLoc_68(:,6),'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
+%xlabel('x (m)','fontsize',plot_struct.fsize)
+%ylabel('y (m)','fontsize',plot_struct.fsize)
+ylabel('x vs y (m)','fontsize',plot_struct.fsize)
+set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.ylimits,'units','centimeters')
+%set(gca,'position',axes_posy)
+set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ytickspots)
+set(gca,'fontsize',plot_struct.fsize)
+title('Catalogue','fontsize',plot_struct.fsize)
+set(gca,'position',[ax_start, ay_start+2*aheight+2*vgap, awidth, aheight])
+
+% CWI x vs y
+subplot(3,3,2)
+plot(CatLoc_not68(:,5), CatLoc_not68(:,6),'o','markeredgecolor',c1,'markerfacecolor',c1,'markersize',plot_struct.msize)
+hold on
+plot(CatLoc_68(:,5), CatLoc_68(:,6),'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
+set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.ylimits,'units','centimeters')
+set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ytickspots)
+set(gca,'fontsize',plot_struct.fsize)
+title('Catalogue','fontsize',plot_struct.fsize)
+set(gca,'position',[ax_start+awidth+hgap, ay_start+2*aheight+2*vgap, awidth, aheight])
+
+% hypoDD x vs y
+subplot(3,3,3)
+plot(CatLoc_not68(:,5), CatLoc_not68(:,6),'o','markeredgecolor',c1,'markerfacecolor',c1,'markersize',plot_struct.msize)
+hold on
+plot(CatLoc_68(:,5), CatLoc_68(:,6),'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
+set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.ylimits,'units','centimeters')
+set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ytickspots)
+set(gca,'fontsize',plot_struct.fsize)
+title('Catalogue','fontsize',plot_struct.fsize)
+set(gca,'position',[ax_start+2*awidth+2*hgap, ay_start+2*aheight+2*vgap, awidth, aheight])
+
+% catalogue x vs z
+subplot(3,3,4)
+plot(CatLoc_not68(:,5), CatLoc_not68(:,7),'o','markeredgecolor',c1,'markerfacecolor',c1,'markersize',plot_struct.msize)
+hold on
+plot(CatLoc_68(:,5), CatLoc_68(:,7),'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
+%xlabel('x (m)','fontsize',plot_struct.fsize)
+%ylabel('z (m)','fontsize',plot_struct.fsize)
+ylabel('x vs z (m)','fontsize',plot_struct.fsize)
+set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
+%set(gca,'position',axes_posy)
+set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ztickspots,'yticklabels',plot_struct.zticklabels)
+set(gca,'fontsize',plot_struct.fsize)
+set(gca,'units','centimeters')
+set(gca,'position',[ax_start, ay_start+aheight+vgap, awidth, aheight])
+
+% CWI x vs z
+subplot(3,3,5)
+plot(CatLoc_not68(:,5), CatLoc_not68(:,7),'o','markeredgecolor',c1,'markerfacecolor',c1,'markersize',plot_struct.msize)
+hold on
+plot(CatLoc_68(:,5), CatLoc_68(:,7),'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
+set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
+set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ztickspots,'yticklabels',plot_struct.zticklabels)
+set(gca,'fontsize',plot_struct.fsize)
+set(gca,'units','centimeters')
+set(gca,'position',[ax_start+awidth+hgap, ay_start+aheight+vgap, awidth, aheight])
+
+% hypoDD x vs z
+subplot(3,3,5)
+plot(CatLoc_not68(:,5), CatLoc_not68(:,7),'o','markeredgecolor',c1,'markerfacecolor',c1,'markersize',plot_struct.msize)
+hold on
+plot(CatLoc_68(:,5), CatLoc_68(:,7),'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
+%xlabel('x (m)','fontsize',plot_struct.fsize)
+%ylabel('z (m)','fontsize',plot_struct.fsize)
+ylabel('x vs z (m)','fontsize',plot_struct.fsize)
+set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
+%set(gca,'position',axes_posy)
+set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ztickspots,'yticklabels',plot_struct.zticklabels)
+set(gca,'fontsize',plot_struct.fsize)
+set(gca,'units','centimeters')
+set(gca,'position',[ax_start+awidth+hgap, ay_start+aheight+vgap, awidth, aheight])
+
+
+
+
+% catalogue y vs z
+subplot(3,3,7)
+plot(CatLoc_not68(:,6), CatLoc_not68(:,7),'o','markeredgecolor',c1,'markerfacecolor',c1,'markersize',plot_struct.msize)
+hold on
+plot(CatLoc_68(:,6), CatLoc_68(:,7),'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
+%xlabel('y (m)','fontsize',plot_struct.fsize)
+%ylabel('z (m)','fontsize',plot_struct.fsize)
+ylabel('y vs z (m)','fontsize',plot_struct.fsize)
+set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
+%set(gca,'position',axes_posy)
+set(gca,'xtick', plot_struct.ytickspots, 'ytick',plot_struct.ztickspots, 'yticklabels',plot_struct.zticklabels)
+set(gca,'fontsize',plot_struct.fsize)
+set(gca,'units','centimeters')
+set(gca,'position',[ax_start, ay_start, awidth, aheight])

@@ -1,0 +1,10 @@
+* This directory is used to do a new simulations for Paper2
+
+* In this simulations we use 10 stations for 22 events and CCO only for 33 events
+
+* Note 55 events in total used so that it coincide with the HYPODD2 stuff for one station
+
+* Step1 -> Run subsample_hypoDDdata_to_stations.m
+
+* Step 2 -> Run ph2dt
+	

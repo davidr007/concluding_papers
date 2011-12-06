@@ -1,0 +1,8 @@
+#	cpt file created by: grd2cpt ttopo.grd -Cgray -S-10/1000/100000
+#COLOR_MODEL = RGB
+#
+-3965	64	64	64	-10	64	64	64
+-10	191	191	191	2954.65	191	191	191
+B	0	0	0
+F	255	255	255
+N	128	128	128
