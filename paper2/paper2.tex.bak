@@ -623,6 +623,19 @@ of the 308 event Calaveras cluster (black star) and 805 seismic stations (red tr
 \label{fig:-eqopti-California-Calaveras}
 \end{figure}
 
+
+%%=======================================================================================
+% This is the original figure using HypoDD with LSQR
+%\begin{figure*}
+%\includegraphics{diags/CalaverasLoc1.eps}
+%\caption{Comparison of earthquake hypocenters using three different methods: catalogue location (column 1), hypoDD with all
+%308 events (column 2) and CWI example 1 (column 3).
+%Note that in the case of the CWI locations we consider only the 68 earthquakes in red, the
+%blue events are shown for the purpose of orientation only.}
+%\label{fig-69Calaverasevents_eg1}
+%\end{figure*}
+
+% Now we have the SVD version 
 \begin{figure*}
 \includegraphics{diags/CalaverasLoc1.eps}
 \caption{Comparison of earthquake hypocenters using three different methods: catalogue location (column 1), hypoDD with all
@@ -631,6 +644,8 @@ Note that in the case of the CWI locations we consider only the 68 earthquakes i
 blue events are shown for the purpose of orientation only.}
 \label{fig-69Calaverasevents_eg1}
 \end{figure*}
+%%=======================================================================================
+
 
 
 \subsection{Dependance on the number of stations}
@@ -685,11 +700,24 @@ Stations  & \\
 \label{fig-CWIreducesstats}
 \end{figure*}
 
+
+%%=========================================================================
+% this is the original version using hypoDD with LSQ
+%\begin{figure*}
+%\includegraphics[angle=90,height = 50pc]{diags/CalaverasLoc3.eps}
+%\caption{....}
+%\label{fig-HYPODDreducesstats}
+%\end{figure*}
+
+% This is the version using hypoDD with SVD
 \begin{figure*}
-\includegraphics[angle=90,height = 50pc]{diags/CalaverasLoc3.eps}
-\caption{....}
+\includegraphics[height = 25pc]{diags/CalaverasLoc3_hypoDD_SVD.eps}
+\caption{HypoDD (SVD) with reduced stations.}
 \label{fig-HYPODDreducesstats}
 \end{figure*}
+%%=========================================================================
+
+
 
 \begin{figure}
 \noindent\includegraphics[width = 20pc]{diags/CalaverasLoc4.eps}
@@ -1028,20 +1056,7 @@ in 2 and 3 dimensions.
 
 \clearpage
 
-\begin{figure*}
-\includegraphics{diags/CalaverasLoc1.eps}
-\caption{Comparison of earthquake hypocenters using three different methods: catalogue location (column 1), hypoDD with all
-308 events (column 2) and CWI example 1 (column 3).
-Note that in the case of the CWI locations we consider only the 68 earthquakes in red, the
-blue events are shown for the purpose of orientation only.}
-\label{fig-69Calaverasevents_eg1}
-\end{figure*}
 
-\begin{figure*}
-\includegraphics[height = 25pc]{diags/CalaverasLoc3_hypoDD_SVD.eps}
-\caption{....}
-\label{fig-HYPODDreducesstats}
-\end{figure*}
 
 \begin{figure}
 \noindent\includegraphics[width = 20pc]{diags/CalaverasLoc4_hypoDD_SVD.eps}
@@ -1053,8 +1068,8 @@ events in the CWI and hypoDD inversions as a function of the stations considered
 \end{figure}
 
 \begin{figure*}
-\includegraphics{diags/CalaverasLoc1.eps}
-\caption{Combined HypoDD and CWI: all stations and 5 stations.}
+\includegraphics{diags/CalaverasLoc5_hypoDD_SVD.eps}
+\caption{Combined HypoDD (SVD) and CWI: all stations and 5 stations.}
 \label{fig-69Calaverasevents_eg1}
 \end{figure*}
 

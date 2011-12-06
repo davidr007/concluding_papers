@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=latex 2009.9.7)  28 OCT 2010 23:11
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=latex 2009.9.7)  6 DEC 2011 16:47
 entering extended mode
-**C:/datafiles/workstuff/sandpit/davidr/concluding_papers/paper2/paper2.tex
-(C:/datafiles/workstuff/sandpit/davidr/concluding_papers/paper2/paper2.tex
+**C:/datafiles/workstuff/Git_sandpit/concluding_papers/paper2/paper2.tex
+(C:/datafiles/workstuff/Git_sandpit/concluding_papers/paper2/paper2.tex
 LaTeX2e <2005/12/01>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
-(C:\datafiles\workstuff\sandpit\davidr\concluding_papers\paper2\gji.cls
+(C:\datafiles\workstuff\Git_sandpit\concluding_papers\paper2\gji.cls
 Document Class: gji 1995/11/30 v2.0 LaTeX2e document class
 Document Class `GJI' V2.0, released 1998 Nov
 \fntxvi=\skip41
@@ -25,7 +25,7 @@ Document Class `GJI' V2.0, released 1998 Nov
 \c@table=\count86
 \c@figure=\count87
 \mathindent=\dimen103
-(C:\datafiles\workstuff\sandpit\davidr\concluding_papers\paper2\gji_extra.sty
+(C:\datafiles\workstuff\Git_sandpit\concluding_papers\paper2\gji_extra.sty
 \@temptokenb=\toks14
 \pt@box=\box26
 \pt@width=\dimen104
@@ -37,7 +37,8 @@ Document Class `GJI' V2.0, released 1998 Nov
 LaTeX Info: Redefining \cite on input line 388.
 \c@NAT@ctr=\count91
 \oldvsize=\dimen105
-)) (C:\datafiles\workstuff\sandpit\davidr\concluding_papers\paper2\timet.sty
+))
+(C:\datafiles\workstuff\Git_sandpit\concluding_papers\paper2\timet.sty
 Package: timet 1997/01/23 6.0 Times PSNFSS2e package
 )
 ("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
@@ -66,16 +67,7 @@ File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 )
 \c@theorem=\count92
 
-(C:\datafiles\workstuff\sandpit\davidr\concluding_papers\paper2\paper2.aux
-
-LaTeX Warning: Label `fig-statremoval_summarystats' multiply defined.
-
-
-LaTeX Warning: Label `fig-69Calaverasevents_eg1' multiply defined.
-
-
-LaTeX Warning: Label `fig-HYPODDreducesstats' multiply defined.
-
+(C:\datafiles\workstuff\Git_sandpit\concluding_papers\paper2\paper2.aux
 
 LaTeX Warning: Label `fig-69Calaverasevents_eg1' multiply defined.
 
@@ -112,14 +104,255 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+
+
+Package natbib Warning: Citation `dr_Sykes67a' on page 1 undefined on input lin
+e 60.
+
+
+Package natbib Warning: Citation `dr_Isacks68a' on page 1 undefined on input li
+ne 60.
+
+
+Package natbib Warning: Citation `dr_Stein02a' on page 1 undefined on input lin
+e 60.
+
+
+Package natbib Warning: Citation `dr_Gutenberg44a' on page 1 undefined on input
+ line 61.
+
+
+Package natbib Warning: Citation `dr_Giardini03a' on page 1 undefined on input 
+line 61.
+
+
+Package natbib Warning: Citation `dr_Richter35a' on page 1 undefined on input l
+ine 63.
+
+
+Package natbib Warning: Citation `dr_Gutenberg45a' on page 1 undefined on input
+ line 63.
+
+
+Package natbib Warning: Citation `dr_Sipkin02a' on page 1 undefined on input li
+ne 64.
+
+
+Package natbib Warning: Citation `dr_Spencer80a' on page 1 undefined on input l
+ine 67.
+
+
+Package natbib Warning: Citation `dr_Kennett95a' on page 1 undefined on input l
+ine 67.
+
+
+Package natbib Warning: Citation `dr_Curtis02a' on page 1 undefined on input li
+ne 67.
+
+
+Package natbib Warning: Citation `dr_Kennett04a' on page 1 undefined on input l
+ine 67.
+
+
+Package natbib Warning: Citation `dr_Toro97a' on page 1 undefined on input line
+ 69.
+
+
+Package natbib Warning: Citation `dr_Campbell03a' on page 1 undefined on input 
+line 69.
+
+
+Package natbib Warning: Citation `dr_Frankel00a' on page 1 undefined on input l
+ine 71.
+
+
+Package natbib Warning: Citation `dr_Stirling02a' on page 1 undefined on input 
+line 71.
+
+
+Package natbib Warning: Citation `dr_Robinson06b' on page 1 undefined on input 
+line 71.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 74.
+
+Package natbib Warning: Citation `dr_Shearer99a' on page 1 undefined on input l
+ine 87.
+
+
+Package natbib Warning: Citation `dr_Bondar04a' on page 1 undefined on input li
+ne 92.
+
+
+Package natbib Warning: Citation `dr_Douglas67a' on page 1 undefined on input l
+ine 100.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 141.
- [1
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
+
+Package natbib Warning: Citation `dr_Douglas67a' on page 1 undefined on input l
+ine 103.
+
+
+Package natbib Warning: Citation `dr_Pavlis92a' on page 1 undefined on input li
+ne 105.
+
+
+Package natbib Warning: Citation `dr_Richards06a' on page 1 undefined on input 
+line 108.
+
+
+Package natbib Warning: Citation `dr_Ito85a' on page 1 undefined on input line 
+114.
+
+
+Package natbib Warning: Citation `dr_Got94a' on page 1 undefined on input line 
+114.
+
+
+Package natbib Warning: Citation `dr_Nadeau97a' on page 1 undefined on input li
+ne 114.
+
+
+Package natbib Warning: Citation `dr_Waldhauser99a' on page 1 undefined on inpu
+t line 114.
+
+
+Package natbib Warning: Citation `dr_Shearer99a' on page 1 undefined on input l
+ine 118.
+
+
+Package natbib Warning: Citation `dr_Ito85a' on page 1 undefined on input line 
+123.
+
+
+Package natbib Warning: Citation `dr_Got94a' on page 1 undefined on input line 
+123.
+
+
+Package natbib Warning: Citation `dr_Waldhauser99a' on page 1 undefined on inpu
+t line 123.
+
+
+Package natbib Warning: Citation `dr_Waldhauser08a' on page 1 undefined on inpu
+t line 123.
+
+
+Package natbib Warning: Citation `dr_Deichmann92a' on page 1 undefined on input
+ line 129.
+
+
+Package natbib Warning: Citation `dr_Got94a' on page 1 undefined on input line 
+129.
+
+
+Package natbib Warning: Citation `dr_Waldhauser99a' on page 1 undefined on inpu
+t line 129.
+
+
+Package natbib Warning: Citation `dr_Waldhauser02a' on page 1 undefined on inpu
+t line 129.
+
+
+Package natbib Warning: Citation `dr_Shearer05a' on page 1 undefined on input l
+ine 129.
+
+
+Package natbib Warning: Citation `dr_Rubin99a' on page 1 undefined on input lin
+e 130.
+
+
+Package natbib Warning: Citation `dr_Rubin02a' on page 1 undefined on input lin
+e 130.
+
+
+Package natbib Warning: Citation `dr_Fremont87a' on page 1 undefined on input l
+ine 131.
+
+
+Package natbib Warning: Citation `dr_Lees98a' on page 1 undefined on input line
+ 133.
+
+
+Package natbib Warning: Citation `dr_Ake05a' on page 1 undefined on input line 
+133.
+
+
+Package natbib Warning: Citation `dr_Poupinet84a' on page 1 undefined on input 
+line 133.
+
+
+Package natbib Warning: Citation `dr_Bokelmann00a' on page 1 undefined on input
+ line 134.
+
+
+Package natbib Warning: Citation `dr_Rubin02b' on page 1 undefined on input lin
+e 134.
+
+
+Package natbib Warning: Citation `dr_Poupinet84a' on page 1 undefined on input 
+line 136.
+
+
+Package natbib Warning: Citation `dr_Bokelmann00a' on page 1 undefined on input
+ line 137.
+
+
+Package natbib Warning: Citation `dr_Rubin02b' on page 1 undefined on input lin
+e 139.
+
+
+LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 154.
+
+[1
 
 
 ]
+
+Package natbib Warning: Citation `dr_Aki69a' on page 2 undefined on input line 
+156.
+
+
+Package natbib Warning: Citation `dr_Snieder99a' on page 2 undefined on input l
+ine 156.
+
+
+Package natbib Warning: Citation `dr_Snieder06a' on page 2 undefined on input l
+ine 156.
+
+
+Package natbib Warning: Citation `dr_Snieder05a' on page 2 undefined on input l
+ine 161.
+
+
+Package natbib Warning: Citation `dr_Robinson07b' on page 2 undefined on input 
+line 168.
+
+
+Package natbib Warning: Citation `dr_Snieder05a' on page 2 undefined on input l
+ine 178.
+
+
+Package natbib Warning: Citation `dr_Snieder05a' on page 2 undefined on input l
+ine 201.
+
+
+Package natbib Warning: Citation `dr_Robinson10b' on page 2 undefined on input 
+line 205.
+
+
+Package natbib Warning: Citation `dr_Snieder05a' on page 2 undefined on input l
+ine 207.
+
+
+Package natbib Warning: Citation `dr_Robinson10b' on page 2 undefined on input 
+line 210.
+
+
+Package natbib Warning: Citation `dr_Robinson10b' on page 2 undefined on input 
+line 236.
+
+
 Underfull \hbox (badness 1721) in paragraph at lines 255--270
 \OT1/ptm/m/n/9 the pos-te-rior, like-li-hood and prior func-tions, re-spec-tive
 ly. In
@@ -169,139 +402,148 @@ Underfull \hbox (badness 4291) in paragraph at lines 271--286
 e like-li-hoods we have
  []
 
+[2]
 
-Underfull \vbox (badness 1418) has occurred while \output is active []
+Package natbib Warning: Citation `dr_Press87a' on page 3 undefined on input lin
+e 393.
 
- [2]
+
+Package natbib Warning: Citation `dr_Robinson10b' on page 3 undefined on input 
+line 418.
+
 File: diags/locs_2D_50eq_1.eps Graphic file (type eps)
-
-<diags/locs_2D_50eq_1.eps> [3]
+<diags/locs_2D_50eq_1.eps>
 File: diags/locs_2D_50eq_3.eps Graphic file (type eps)
  <diags/locs_2D_50eq_3.eps>
-File: ../../thesis_version2/diags/eq_location_optimisation/synth2Dmulti/ressumm
-ary_2Dsynth50eq.eps Graphic file (type eps)
 
-<../../thesis_version2/diags/eq_location_optimisation/synth2Dmulti/ressummary_2
-Dsynth50eq.eps> [4]
-File: ../../thesis_version2/diags/eq_location_optimisation/synth3Dmulti/ressumm
-ary_3Dsynth50eq.eps Graphic file (type eps)
+Package natbib Warning: Citation `dr_Robinson10b' on page 3 undefined on input 
+line 441.
 
-<../../thesis_version2/diags/eq_location_optimisation/synth3Dmulti/ressummary_3
-Dsynth50eq.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
+Package natbib Warning: Citation `dr_Robinson10b' on page 3 undefined on input 
+line 447.
+
+[3]
+
+Package natbib Warning: Citation `dr_Aster05a' on page 4 undefined on input lin
+e 478.
+
+File: diags/ressummary_2Dsynth50eq.eps Graphic file (type eps)
+<diags/ressummary_2Dsynth50eq.eps>
+
+Package natbib Warning: Citation `dr_VanDecar94a' on page 4 undefined on input 
+line 542.
+
+[4]
+File: diags/ressummary_3Dsynth50eq.eps Graphic file (type eps)
+ <diags/ressummary_3Dsynth50eq.eps> [5]
 File: diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps Graphic fil
 e (type eps)
 
 <diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps>
-File: diags/CalaverasLoc1.eps Graphic file (type eps)
+File: diags/CalaverasLoc1_hypoDD_SVD.eps Graphic file (type eps)
 
-<diags/CalaverasLoc1.eps>
+<diags/CalaverasLoc1_hypoDD_SVD.eps>
 
 LaTeX Warning: Reference `fig-68Calaveras_CWIxyloc-statremove' on page 6 undefi
-ned on input line 645.
+ned on input line 662.
 
 
 LaTeX Warning: Reference `fig-68Calaveras_hypoDDyzloc-statremove' on page 6 und
-efined on input line 646.
+efined on input line 663.
 
 File: diags/CalaverasMap/matlab/Calaveras_substationmap.eps Graphic file (type 
 eps)
 <diags/CalaverasMap/matlab/Calaveras_substationmap.eps>
 
 LaTeX Warning: Reference `fig-68Calaveras_CWIxyloc-statremove' on page 6 undefi
-ned on input line 656.
+ned on input line 673.
 
 
 LaTeX Warning: Reference `fig-68Calaveras_hypoDDyzloc-statremove' on page 6 und
-efined on input line 656.
+efined on input line 673.
 
 
 LaTeX Warning: Reference `fig-68Calaveras_CWIxyloc-statremove' on page 6 undefi
-ned on input line 656.
+ned on input line 673.
 
 
 LaTeX Warning: Reference `fig-68Calaveras_hypoDDyzloc-statremove' on page 6 und
-efined on input line 656.
+efined on input line 673.
 
 
-Overfull \hbox (17.69417pt too wide) in paragraph at lines 663--680
+Overfull \hbox (17.69417pt too wide) in paragraph at lines 680--697
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 663--680
+Underfull \hbox (badness 10000) in paragraph at lines 680--697
 
  []
 
 File: diags/CalaverasLoc2.eps Graphic file (type eps)
 <diags/CalaverasLoc2.eps>
-File: diags/CalaverasLoc3.eps Graphic file (type eps)
- <diags/CalaverasLoc3.eps>
-File: diags/CalaverasLoc4.eps Graphic file (type eps)
- <diags/CalaverasLoc4.eps>
-File: diags/CalaverasLoc5.eps Graphic file (type eps)
+File: diags/CalaverasLoc3_hypoDD_SVD.eps Graphic file (type eps)
+ <diags/CalaverasLoc3_hypoDD_SVD.eps>
+File: diags/CalaverasLoc4_hypoDD_SVD.eps Graphic file (type eps)
 
-<diags/CalaverasLoc5.eps>
+<diags/CalaverasLoc4_hypoDD_SVD.eps> [6]
+
+LaTeX Warning: Reference `fig-68Calaverasevents_ttandcoda1' on page 7 undefined
+ on input line 753.
+
+
+Package natbib Warning: Citation `dr_Utsu95a' on page 7 undefined on input line
+ 775.
+
+
+LaTeX Warning: Reference `fig-68Calaverasevents_ttsubsetandcoda1' on page 7 und
+efined on input line 776.
+
 File: diags/OmoriFigure.eps Graphic file (type eps)
- <diags/OmoriFigure.eps>
-File: diags/CalaverasLoc6.eps Graphic file (type eps)
- <diags/CalaverasLoc6.eps>
-[6] (C:\datafiles\workstuff\sandpit\davidr\concluding_papers\paper2\paper2.bbl
-[7] [8] [9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<diags/OmoriFigure.eps>
 
- [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-Underfull \hbox (badness 1478) in paragraph at lines 276--280
-\OT1/ptm/m/n/8 chan-ics of the Hay-ward Fault, Cal-i-for-nia, from double--diff
-erence
- []
+Package natbib Warning: Citation `dr_Utsu95a' on page 7 undefined on input line
+ 785.
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 276--280
-\OT1/ptm/m/n/8 earth-quake lo-ca-tions, \OT1/ptm/m/it/8 Jour-nal of Geo-phys-i-
-cal Re-search\OT1/ptm/m/n/8 , \OT1/ptm/b/n/8 107\OT1/ptm/m/n/8 (B3),
- []
+Package natbib Warning: Citation `dr_Utsu95a' on page 7 undefined on input line
+ 785.
 
+File: diags/CalaverasLoc5_hypoDD_SVD.eps Graphic file (type eps)
+<diags/CalaverasLoc5_hypoDD_SVD.eps>
+(C:\datafiles\workstuff\Git_sandpit\concluding_papers\paper2\paper2.bbl
 
-Underfull \hbox (badness 1248) in paragraph at lines 282--287
-\OT1/ptm/m/n/8 double-difference meth-ods, \OT1/ptm/m/it/8 Jour-nal of Geo-phys
--i-cal Re-search\OT1/ptm/m/n/8 , \OT1/ptm/b/n/8 133\OT1/ptm/m/n/8 ,
- []
+Package natbib Warning: Empty `thebibliography' environment on input line 4.
 
 )
-Underfull \hbox (badness 1210) in paragraph at lines 876--879
+Underfull \vbox (badness 2521) has occurred while \output is active []
+
+ [7]
+[8] [9]
+
+Package natbib Warning: Citation `dr_Robinson10b' on page 10 undefined on input
+ line 869.
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 933--936
 []\OT1/ptm/m/n/9 are re-quired by the Polak-Ribiere al-go-rithm. These are used
 
  []
 
 
-Underfull \hbox (badness 3000) in paragraph at lines 876--879
+Underfull \hbox (badness 3000) in paragraph at lines 933--936
 \OT1/ptm/m/n/9 to guide the op-ti-mi-sa-tion pro-ce-dure to-wards the val-ues o
 f
  []
 
-[12] [13
+[10] [11
 
 ]
-File: diags/CalaverasLoc1.eps Graphic file (type eps)
- <diags/CalaverasLoc1.eps>
-File: diags/CalaverasLoc3_hypoDD_SVD.eps Graphic file (type eps)
- <diags/CalaverasLoc3_hypoDD_SVD.eps>
-File: diags/CalaverasLoc4_hypoDD_SVD.eps Graphic file (type eps)
 
-<diags/CalaverasLoc4_hypoDD_SVD.eps>
-File: diags/CalaverasLoc5_hypoDD_SVD.eps Graphic file (type eps)
- <diags/CalaverasLoc5_hypoDD_SVD.eps>
-[14
+Package natbib Warning: There were undefined citations.
 
-
-] [15] [16]
-(C:\datafiles\workstuff\sandpit\davidr\concluding_papers\paper2\paper2.aux)
+(C:\datafiles\workstuff\Git_sandpit\concluding_papers\paper2\paper2.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -310,12 +552,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1100 strings out of 495286
- 14413 string characters out of 3180418
- 91066 words of memory out of 3000000
- 4312 multiletter control sequences out of 15000+200000
+ 1087 strings out of 495286
+ 13947 string characters out of 3180418
+ 86061 words of memory out of 3000000
+ 4305 multiletter control sequences out of 15000+200000
  17628 words of font info for 50 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 25i,11n,24p,1013b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,11n,24p,1010b,277s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper2.dvi (16 pages, 105756 bytes).
+Output written on paper2.dvi (11 pages, 83328 bytes).
