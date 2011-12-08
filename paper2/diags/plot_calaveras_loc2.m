@@ -700,16 +700,16 @@ print -depsc CalaverasLoc5_hypoDD_SVD.eps
 
 % Lets get the results we need for this figure
 if strcmp(filesep,'/')
-    parentdir = '/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/CalaverasCartesian2/example_68eq_calaveras7';
+    parentdir = './runs2\HYpodd_SVD\HyPODD2\runs\example_68eq_calaveras4';
 else
-    parentdir = 'c:/datafiles/workstuff/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/CalaverasCartesian2/example_68eq_calaveras7';
+    parentdir = './runs2\HYpodd_SVD\HyPODD2\runs\example_68eq_calaveras4';
 end
 [CWIstats_tmp,CombLocs_CWI_2deploy,fh] = plot_outcomes_cwi_cartesian(parentdir,plot_struct)
 for i = 1:length(fh)
     close(fh(i))
 end
 
-parentdir='./extra_hypoDD2/';
+parentdir='./extra_hypoDD3/';
 [HYPODDstats_tmp,CombLocs_HYPODD_2deploy,fh] = plot_outcomes_hypoDD(parentdir,plot_struct)
 for i = 1:length(fh)
     close(fh(i))
@@ -783,6 +783,7 @@ plot(CombLocs_CWI_2deploy.relocy, CombLocs_CWI_2deploy.relocz,'o','markeredgecol
 %xlabel('y (m)','fontsize',plot_struct.fsize)
 %ylabel('z (m)','fontsize',plot_struct.fsize)
 ylabel('y vs z (m)','fontsize',plot_struct.fsize)
+xlabel(['nE = ', num2str(length(CombLocs_CWI_2deploy.relocy))])
 set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
 %set(gca,'position',axes_posy)
 set(gca,'xtick', plot_struct.ytickspots, 'ytick',plot_struct.ztickspots, 'yticklabel',plot_struct.zticklabels)
@@ -795,11 +796,12 @@ subplot(2,3,6)
 plot(Locs_hypoDDbest.not68y, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_HYPODD_2deploy.relocy, CombLocs_HYPODD_2deploy.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
+xlabel(['nE = ', num2str(length(CombLocs_HYPODD_2deploy.relocy))])
 set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
 set(gca,'xtick', plot_struct.ytickspots, 'ytick',plot_struct.ztickspots, 'yticklabel',plot_struct.zticklabels)
 set(gca,'fontsize',plot_struct.fsize)
 set(gca,'units','centimeters')
-set(gca,'position',[ax_start+awidth+hgap, ay_start, awidth, aheight])
+set(gca,'position',[ax_start+awidth+hgap, 2*hgap+ay_start, awidth, aheight])
 set(gca,'yticklabel',[])
 
 print -depsc CalaverasLoc6_hypoDD_SVD.eps

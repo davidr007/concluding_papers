@@ -518,19 +518,31 @@ print -depsc CalaverasLoc4_hypoDD_SVD.eps
 figure
 for i = 1:7
     statstr = ['stat', num2str(10-i+1)];
-    subplot(7,3,(i-1)*3+1)
     
     subplot(7,3,(i-1)*3+1)
+    hist(hypoDD_DetailedLocs.(statstr).sigmax)
+    if i ==7
+       xlabel('\sigma_x (m)')
+    end
     
-    subplot(7,3,(i-1)*3+1)
+    subplot(7,3,(i-1)*3+2)
+    hist(hypoDD_DetailedLocs.(statstr).sigmay)
+    title(statstr)
+    if i ==7
+       xlabel('\sigma_y (m)')
+    end
+    
+    subplot(7,3,(i-1)*3+3)
+    hist(hypoDD_DetailedLocs.(statstr).sigmaz)
+    if i ==7
+       xlabel('\sigma_x (m)')
+    end
     
 end
-    
-    
-    
+print -depsc CalaverasLoc4b_hypoDD_SVD_sigmahists.eps
 
 
-break
+
 %% Figure 5 - Combined CWI & Travel Time - Low/Med/High Uncert on tt
 % 3x3 figures showing:
 %       col1 => Low uncert
@@ -538,11 +550,9 @@ break
 %       col3 => High Uncert
 
 % Lets get the results we need for this figure
-if strcmp(filesep,'/')
-    parentdir = '/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/CalaverasCartesian2/';
-else
-    parentdir = '..\..\..\thesis_version2/diags/eq_location_optimisation/CalaverasCartesian2/';
-end
+
+parentdir = 'runs2\Hypodd_SVD\HYPODD2\runs\';
+
 
 [CWIstats_tmp,CombLocs_Low,fh] = plot_outcomes_cwi_cartesian([parentdir,'example_68eq_calaveras1/'],plot_struct)
 for i = 1:length(fh)
@@ -552,7 +562,7 @@ end
 for i = 1:length(fh)
     close(fh(i))
 end
-[CWIstats_tmp,CombLocs_High,fh] = plot_outcomes_cwi_cartesian([parentdir,'example_68eq_calaveras3/'],plot_struct)
+[CWIstats_tmp,CombLocs_High,fh] = plot_outcomes_cwi_cartesian([parentdir,'example_68eq_calaveras2/'],plot_struct)
 for i = 1:length(fh)
     close(fh(i))
 end
@@ -561,7 +571,7 @@ figure
 set(gcf,'units','centimeter')
 
 % catalogue x vs y
-subplot(3,3,1)
+subplot(3,2,1)
 plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68y,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_Low.relocx, CombLocs_Low.relocy,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
@@ -572,36 +582,36 @@ set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.ylimits,'units','centimet
 %set(gca,'position',axes_posy)
 set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ytickspots)
 set(gca,'fontsize',plot_struct.fsize)
-title('Small','fontsize',plot_struct.fsize)
+title('All','fontsize',plot_struct.fsize)
 set(gca,'position',[ax_start, ay_start+2*aheight+2*vgap, awidth, aheight])
 set(gca,'xticklabel',[])
 
 % CWI x vs y
-subplot(3,3,2)
+subplot(3,2,2)
 plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68y,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_Med.relocx, CombLocs_Med.relocy,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
 set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.ylimits,'units','centimeters')
 set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ytickspots)
 set(gca,'fontsize',plot_struct.fsize)
-title('Medium','fontsize',plot_struct.fsize)
+title('5 Stations','fontsize',plot_struct.fsize)
 set(gca,'position',[ax_start+awidth+hgap, ay_start+2*aheight+2*vgap, awidth, aheight])
 set(gca,'xticklabel',[],'yticklabel',[])
 
 % hypoDD x vs y
-subplot(3,3,3)
-plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68y,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
-hold on
-plot(CombLocs_High.relocx, CombLocs_High.relocy,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
-set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.ylimits,'units','centimeters')
-set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ytickspots)
-set(gca,'fontsize',plot_struct.fsize)
-title('Large','fontsize',plot_struct.fsize)
-set(gca,'position',[ax_start+2*awidth+2*hgap, ay_start+2*aheight+2*vgap, awidth, aheight])
-set(gca,'xticklabel',[],'yticklabel',[])
+% subplot(3,3,3)
+% plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68y,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+% hold on
+% plot(CombLocs_High.relocx, CombLocs_High.relocy,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
+% set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.ylimits,'units','centimeters')
+% set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ytickspots)
+% set(gca,'fontsize',plot_struct.fsize)
+% title('7 Stations','fontsize',plot_struct.fsize)
+% set(gca,'position',[ax_start+2*awidth+2*hgap, ay_start+2*aheight+2*vgap, awidth, aheight])
+% set(gca,'xticklabel',[],'yticklabel',[])
 
 % catalogue x vs z
-subplot(3,3,4)
+subplot(3,2,3)
 plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_Low.relocx, CombLocs_Low.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
@@ -617,7 +627,7 @@ set(gca,'position',[ax_start, ay_start+aheight+vgap, awidth, aheight])
 set(gca,'xticklabel',[])
 
 % CWI x vs z
-subplot(3,3,5)
+subplot(3,2,4)
 plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_Med.relocx, CombLocs_Med.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
@@ -629,19 +639,19 @@ set(gca,'position',[ax_start+awidth+hgap, ay_start+aheight+vgap, awidth, aheight
 set(gca,'xticklabel',[],'yticklabel',[])
 
 % hypoDD x vs z
-subplot(3,3,6)
-plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
-hold on
-plot(CombLocs_High.relocx, CombLocs_High.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
-set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
-set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ztickspots,'yticklabel',plot_struct.zticklabels)
-set(gca,'fontsize',plot_struct.fsize)
-set(gca,'units','centimeters')
-set(gca,'position',[ax_start+2*awidth+2*hgap, ay_start+aheight+vgap, awidth, aheight])
-set(gca,'xticklabel',[],'yticklabel',[])
+% subplot(3,3,6)
+% plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+% hold on
+% plot(CombLocs_High.relocx, CombLocs_High.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
+% set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
+% set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ztickspots,'yticklabel',plot_struct.zticklabels)
+% set(gca,'fontsize',plot_struct.fsize)
+% set(gca,'units','centimeters')
+% set(gca,'position',[ax_start+2*awidth+2*hgap, ay_start+aheight+vgap, awidth, aheight])
+% set(gca,'xticklabel',[],'yticklabel',[])
 
 % catalogue y vs z
-subplot(3,3,7)
+subplot(3,2,5)
 plot(Locs_hypoDDbest.not68y, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_Low.relocy, CombLocs_Low.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
@@ -656,7 +666,7 @@ set(gca,'units','centimeters')
 set(gca,'position',[ax_start, ay_start, awidth, aheight])
 
 % CWI y vs z
-subplot(3,3,8)
+subplot(3,2,6)
 plot(Locs_hypoDDbest.not68y, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_Med.relocy, CombLocs_Med.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
@@ -668,16 +678,16 @@ set(gca,'position',[ax_start+awidth+hgap, ay_start, awidth, aheight])
 set(gca,'yticklabel',[])
 
 % hypoDD y vs z
-subplot(3,3,9)
-plot(Locs_hypoDDbest.not68y, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
-hold on
-plot(CombLocs_High.relocy, CombLocs_High.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
-set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
-set(gca,'xtick', plot_struct.ytickspots, 'ytick',plot_struct.ztickspots, 'yticklabel',plot_struct.zticklabels)
-set(gca,'fontsize',plot_struct.fsize)
-set(gca,'units','centimeters')
-set(gca,'position',[ax_start+2*awidth+2*hgap, ay_start, awidth, aheight])
-set(gca,'yticklabel',[])
+% subplot(3,3,9)
+% plot(Locs_hypoDDbest.not68y, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+% hold on
+% plot(CombLocs_High.relocy, CombLocs_High.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
+% set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
+% set(gca,'xtick', plot_struct.ytickspots, 'ytick',plot_struct.ztickspots, 'yticklabel',plot_struct.zticklabels)
+% set(gca,'fontsize',plot_struct.fsize)
+% set(gca,'units','centimeters')
+% set(gca,'position',[ax_start+2*awidth+2*hgap, ay_start, awidth, aheight])
+% set(gca,'yticklabel',[])
 
 print -depsc CalaverasLoc5_hypoDD_SVD.eps
 
@@ -690,16 +700,16 @@ print -depsc CalaverasLoc5_hypoDD_SVD.eps
 
 % Lets get the results we need for this figure
 if strcmp(filesep,'/')
-    parentdir = '/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/CalaverasCartesian2/example_68eq_calaveras7';
+    parentdir = './runs2\HYpodd_SVD\HyPODD2\runs\example_68eq_calaveras4';
 else
-    parentdir = 'c:/datafiles/workstuff/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/CalaverasCartesian2/example_68eq_calaveras7';
+    parentdir = './runs2\HYpodd_SVD\HyPODD2\runs\example_68eq_calaveras4';
 end
 [CWIstats_tmp,CombLocs_CWI_2deploy,fh] = plot_outcomes_cwi_cartesian(parentdir,plot_struct)
 for i = 1:length(fh)
     close(fh(i))
 end
 
-parentdir='./extra_hypoDD/';
+parentdir='./extra_hypoDD3/';
 [HYPODDstats_tmp,CombLocs_HYPODD_2deploy,fh] = plot_outcomes_hypoDD(parentdir,plot_struct)
 for i = 1:length(fh)
     close(fh(i))
@@ -722,7 +732,7 @@ set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.ylimits,'units','centimet
 set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ytickspots)
 set(gca,'fontsize',plot_struct.fsize)
 title('CWI + TT','fontsize',plot_struct.fsize)
-set(gca,'position',[ax_start, ay_start+2*aheight+2*vgap, awidth, aheight])
+set(gca,'position',[ax_start, 2*hgap+ay_start+2*aheight+2*vgap, awidth, aheight])
 set(gca,'xticklabel',[])
 
 % CWI x vs y
@@ -734,7 +744,7 @@ set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.ylimits,'units','centimet
 set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ytickspots)
 set(gca,'fontsize',plot_struct.fsize)
 title('TT only','fontsize',plot_struct.fsize)
-set(gca,'position',[ax_start+awidth+hgap, ay_start+2*aheight+2*vgap, awidth, aheight])
+set(gca,'position',[ax_start+awidth+hgap, 2*hgap+ay_start+2*aheight+2*vgap, awidth, aheight])
 set(gca,'xticklabel',[],'yticklabel',[])
 
 % catalogue x vs z
@@ -750,7 +760,7 @@ set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimet
 set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ztickspots,'yticklabel',plot_struct.zticklabels)
 set(gca,'fontsize',plot_struct.fsize)
 set(gca,'units','centimeters')
-set(gca,'position',[ax_start, ay_start+aheight+vgap, awidth, aheight])
+set(gca,'position',[ax_start, 2*hgap+ay_start+aheight+vgap, awidth, aheight])
 set(gca,'xticklabel',[])
 
 % CWI x vs z
@@ -762,7 +772,7 @@ set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimet
 set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ztickspots,'yticklabel',plot_struct.zticklabels)
 set(gca,'fontsize',plot_struct.fsize)
 set(gca,'units','centimeters')
-set(gca,'position',[ax_start+awidth+hgap, ay_start+aheight+vgap, awidth, aheight])
+set(gca,'position',[ax_start+awidth+hgap, 2*hgap+ay_start+aheight+vgap, awidth, aheight])
 set(gca,'xticklabel',[],'yticklabel',[])
 
 % catalogue y vs z
@@ -773,23 +783,25 @@ plot(CombLocs_CWI_2deploy.relocy, CombLocs_CWI_2deploy.relocz,'o','markeredgecol
 %xlabel('y (m)','fontsize',plot_struct.fsize)
 %ylabel('z (m)','fontsize',plot_struct.fsize)
 ylabel('y vs z (m)','fontsize',plot_struct.fsize)
+xlabel(['nE = ', num2str(length(CombLocs_CWI_2deploy.relocy))])
 set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
 %set(gca,'position',axes_posy)
 set(gca,'xtick', plot_struct.ytickspots, 'ytick',plot_struct.ztickspots, 'yticklabel',plot_struct.zticklabels)
 set(gca,'fontsize',plot_struct.fsize)
 set(gca,'units','centimeters')
-set(gca,'position',[ax_start, ay_start, awidth, aheight])
+set(gca,'position',[ax_start, 2*hgap+ay_start, awidth, aheight])
 
 % CWI y vs z
 subplot(2,3,6)
 plot(Locs_hypoDDbest.not68y, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_HYPODD_2deploy.relocy, CombLocs_HYPODD_2deploy.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
+xlabel(['nE = ', num2str(length(CombLocs_HYPODD_2deploy.relocy))])
 set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
 set(gca,'xtick', plot_struct.ytickspots, 'ytick',plot_struct.ztickspots, 'yticklabel',plot_struct.zticklabels)
 set(gca,'fontsize',plot_struct.fsize)
 set(gca,'units','centimeters')
-set(gca,'position',[ax_start+awidth+hgap, ay_start, awidth, aheight])
+set(gca,'position',[ax_start+awidth+hgap, 2*hgap+ay_start, awidth, aheight])
 set(gca,'yticklabel',[])
 
 print -depsc CalaverasLoc6_hypoDD_SVD.eps
