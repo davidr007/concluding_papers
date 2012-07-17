@@ -84,40 +84,42 @@ for i = 1:length(dirlist)
     print('-depsc',['soln_space_2Dsynth50eq_bestsoln',dirlist{i},'.eps'])
 end
 
+
 fsize = 12
 % Now let's do the plotting
 fh.maxvals = figure;
-subplot(4,1,1)
-h1 = plot(maxvals_all,'b','linewidth',2);
+sh(1) = subplot(3,1,1)
+h2 = plot(maxvals_best,'color','k','linewidth',2) %  best
 hold on
-h2 = plot(maxvals_best,'r','linewidth',1)
-legend([h1,h2], {'all', 'best'})
+h1 = plot(maxvals_all,'color',[0.7,0.7,0.7],'linewidth',1); % all
+%legend([h1,h2], {'all', 'best'})
 set(gca,'xtick',1:10,'ytick',[0 50 100 150])
-set(gca,'xticklabel',ticklabelstr)
+set(gca,'xticklabel',{}) %ticklabelstr)
 set(gca,'fontsize',fsize)
-set(gca,'ylim',[0 150],'xlim',[1 10])
+set(gca,'ylim',[0 150],'xlim',[1 10],'units','centimeters')
 ylabel('$\Delta_{max}$\,(m)','fontsize',fsize,'Interpreter','LaTex')
 %xlabel('Number of constraints','fontsize',fsize)
 
-subplot(4,1,2)
-h1 = plot(meanvals_all,'b','linewidth',2);
+sh(2) = subplot(3,1,2)
+h2 = plot(meanvals_best,'color','k','linewidth',2) % best
 hold on
-h2 = plot(meanvals_best,'r','linewidth',1)
+h1 = plot(meanvals_all,'color',[0.7,0.7,0.7],'linewidth',1); % all
+hold on
 set(gca,'xtick',1:10,'ytick',[0 20 40])
-set(gca,'xticklabel',ticklabelstr)
+set(gca,'xticklabel',{})%ticklabelstr)
 set(gca,'fontsize',fsize)
-set(gca,'ylim',[0 40],'xlim',[1 10])
+set(gca,'ylim',[0 40],'xlim',[1 10],'units','centimeters')
 ylabel('$\Delta_\mu$\,(m)','fontsize',fsize,'Interpreter','LaTex')
 
-subplot(4,1,3)
-h1 = plot(stdvals_all,'b','linewidth',2);
-hold on
-h2 = plot(stdvals_best,'r','linewidth',1)
-set(gca,'xtick',1:10,'ytick',[0 20 40])
-set(gca,'xticklabel',ticklabelstr)
-set(gca,'fontsize',fsize)
-set(gca,'ylim',[0 40],'xlim',[1 10])
-ylabel('$\Delta_\sigma$\,(m)','fontsize',fsize,'Interpreter','LaTex')
+% subplot(4,1,3)
+% h1 = plot(stdvals_all,'b','linewidth',2);
+% hold on
+% h2 = plot(stdvals_best,'r','linewidth',1)
+% set(gca,'xtick',1:10,'ytick',[0 20 40])
+% set(gca,'xticklabel',ticklabelstr)
+% set(gca,'fontsize',fsize)
+% set(gca,'ylim',[0 40],'xlim',[1 10])
+% ylabel('$\Delta_\sigma$\,(m)','fontsize',fsize,'Interpreter','LaTex')
 
 
 % now let us draw the constraints 
@@ -216,18 +218,29 @@ end
 
 fsize = 12
 figure(fh.maxvals)
-subplot(4,1,4)
-h1 = plot(average_pathlength_vec,'b','linewidth',2);
+sh(3) = subplot(3,1,3)
+h1 = plot(average_pathlength_vec,'k','linewidth',2);
 set(gca,'xtick',1:10)
 %set(gca,'ytick',[0 50 100 150])
+ticklabelstr = {' ','20%',' ','40%',' ','60%',' ','80%',' ','100%'};
 set(gca,'xticklabel',ticklabelstr)
 set(gca,'fontsize',fsize)
 %set(gca,'ylim',[0 150],
-set(gca,'xlim',[1 10])
+set(gca,'xlim',[1 10],'units', 'centimeters')
 ylabel('$\mu_{links}$','fontsize',fsize,'Interpreter','LaTex')
 hold on
 plot(get(gca,'xlim'),[2 2], 'k--')
 xlabel('Number of constraints','fontsize',fsize)
+
+statwidth = 7.5;
+statheight = 1.5;
+statxstart = 4.6;
+statystart = 1.95;
+statygap = 0.7;
+
+set(sh(3), 'position',[statxstart, statystart, statwidth, statheight])
+set(sh(2), 'position',[statxstart, statystart+statheight+statygap, statwidth, statheight])
+set(sh(1), 'position',[statxstart, statystart+2*statheight+2*statygap, statwidth, statheight])
 
 %xlabel('Number of constraints','fontsize',fsize)
 print -depsc ressummary_2Dsynth50eq.eps
