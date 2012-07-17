@@ -948,10 +948,14 @@ travel time differences. Rather, we exploit the information created
 by hypoDD with SVD to define a probability density (or posterior)
 function
 \begin{equation}
-\label{eq-multi-var-Gauss-tt} P(\mathbf{e}_p|\Delta_{TT}) =
-\frac{1}{(2\pi)^{\frac{3}{2}}\sqrt{|\Sigma|}} \exp
+\label{eq-multi-var-Gauss-tt} 
+\begin{array}{l}
+P(\mathbf{e}_p|\Delta_{TT}) 
+\frac{1}{(2\pi)^{\frac{3}{2}}\sqrt{|\Sigma|}} \\
+\hspace{5em} \times \exp
 \left({-\frac{1}{2}\left([\mathbf{e}_p-\mu_{\mathbf{e}_p}]^T
 \Sigma^{-1} [\mathbf{e}_p-\mu_{\mathbf{e}_p}]\right)} \right),
+\end{array}
 \end{equation}
 where
 \begin{equation}
@@ -977,11 +981,15 @@ $\sigma_{y_p}$ and $\sigma_{z_p}$ (\textbf{ADD REF}).
 
 We pose the location problem using the negative log likelihood
 \begin{equation}
-\label{eq-Lstar-tt-cwi} L(\mathbf{e}_1, \mathbf{e}_2, ...,
+\label{eq-Lstar-tt-cwi}
+\begin{array}{l}
+ L(\mathbf{e}_1, \mathbf{e}_2, ...,
 \mathbf{e}_1, \mathbf{e}_n) = - \sum_{i=1}^n
-ln\left[P(\mathbf{e}_i|\Delta_{TT})\right] - \sum_{i=1}^{n-1}
+ln\left[P(\mathbf{e}_i|\Delta_{TT})\right] \\
+\hspace{6em}  - \sum_{i=1}^{n-1}
 \sum_{j=i+1}^n
 ln\left[P(\delta_{CWIN}|\mathbf{e}_i,\mathbf{e}_j)\right],
+\end{array}
 \end{equation}
 where $(\mathbf{e}_1, \mathbf{e}_2, ..., \mathbf{e}_n)$ is the joint
 location,
@@ -1001,38 +1009,58 @@ gradient technique of \citet{dr_Press87a}. The derivative of
 $L(\mathbf{e}_1, \mathbf{e}_2, ..., \mathbf{e}_n)$ with respect to
 $x_p$ is given by
 \begin{equation}
-\frac{\partial L}{\partial x_p} =  - \frac{\partial ln\left[P(\mathbf{e}_p|t_{DD})\right]}{\partial x_p} \\
+\begin{array}{l}
+\frac{\partial L}{\partial x_p} =  - \frac{\partial ln\left[P(\mathbf{e}_p|t_{DD})\right]}{\partial x_p}
 - \sum_{i=p+1}^{N} \frac{ \partial \ln
 \left[P(\delta_{CWIN}|\mathbf{e}_p,\mathbf{e}_i)\right]}{\partial
-x_p} - \sum_{j=1}^{p-1} \frac{ \partial \ln
+x_p} \\
+\hspace{5em} - \sum_{j=1}^{p-1} \frac{ \partial \ln
 \left[P(\delta_{CWIN}|\mathbf{e}_j,\mathbf{e}_p)\right]}{\partial
 x_p}
+\end{array}
 \end{equation}
-where $\sum_{i=p+1}^{N} \frac{ \partial \ln
-\left[P(\delta_{CWIN}|\mathbf{e}_p,\mathbf{e}_i)\right]}{\partial
-x_p}$ and $\sum_{j=1}^{p-1} \frac{ \partial \ln
-\left[P(\delta_{CWIN}|\mathbf{e}_j,\mathbf{e}_p)\right]}{\partial
-x_p}$ are defined in Appendix \ref{sec-Appendix-derivatives_ofL} and
+where 
 \begin{equation}
+\sum_{i=p+1}^{N} \frac{ \partial \ln
+\left[P(\delta_{CWIN}|\mathbf{e}_p,\mathbf{e}_i)\right]}{\partial
+x_p} 
+\end{equation}
+and 
+\begin{equation}
+\sum_{j=1}^{p-1} \frac{ \partial \ln
+\left[P(\delta_{CWIN}|\mathbf{e}_j,\mathbf{e}_p)\right]}{\partial
+x_p} 
+\end{equation}
+are defined in Appendix \ref{sec-Appendix-derivatives_ofL} and
+\begin{equation}
+\begin{array}{l}
 \frac{\partial ln\left[P(\mathbf{e}_p|t_{DD})\right]}{\partial x_p}
-= -\frac{1}{2}\left([1,0,0]^T \Sigma^{-1}
-[\mathbf{e}_p-\mu_{\mathbf{e}_p}] +
-[\mathbf{e}_p-\mu_{\mathbf{e}_p}]^T \Sigma^{-1} [1,0,0] \right).
+= -\frac{1}{2}[1,0,0]^T \Sigma^{-1}
+[\mathbf{e}_p-\mu_{\mathbf{e}_p}] \\
+\hspace{9em} -\frac{1}{2}
+[\mathbf{e}_p-\mu_{\mathbf{e}_p}]^T \Sigma^{-1} [1,0,0].
+\end{array}
 \end{equation}
 Similarly, for the derivatives with respect to $y_p$ and $z_p$ we
 have
 \begin{equation}
+\begin{array}{l}
 \frac{\partial ln\left[P(\mathbf{e}_p|t_{DD})\right]}{\partial y_p}
-= -\frac{1}{2} \left( [0,1,0]^T \Sigma^{-1}
-[\mathbf{e}_p-\mu_{\mathbf{e}_p}] +
-[\mathbf{e}_p-\mu_{\mathbf{e}_p}]^T \Sigma^{-1} [0,1,0] \right)
+= -\frac{1}{2} [0,1,0]^T \Sigma^{-1}
+[\mathbf{e}_p-\mu_{\mathbf{e}_p}] \\
+\hspace{9em} -\frac{1}{2}
+[\mathbf{e}_p-\mu_{\mathbf{e}_p}]^T \Sigma^{-1} [0,1,0] 
+\end{array}
 \end{equation}
 and
 \begin{equation}
+\begin{array}{l}
 \frac{\partial ln\left[P(\mathbf{e}_p|t_{DD})\right]}{\partial z_p}
-= -\frac{1}{2} \left( [0,0,1]^T \Sigma^{-1}
-[\mathbf{e}_p-\mu_{\mathbf{e}_p}] +
-[\mathbf{e}_p-\mu_{\mathbf{e}_p}]^T \Sigma^{-1} [0,0,1] \right).
+= -\frac{1}{2} [0,0,1]^T \Sigma^{-1}
+[\mathbf{e}_p-\mu_{\mathbf{e}_p}] \\
+\hspace{9em} -\frac{1}{2}
+[\mathbf{e}_p-\mu_{\mathbf{e}_p}]^T \Sigma^{-1} [0,0,1].
+\end{array}
 \end{equation}
 
 Aggregating the travel time and coda wave data offers two
@@ -1079,11 +1107,11 @@ enhanced influence of the coda.
 %\end{figure*}
 
 % This is the version using hypoDD with SVD
-\begin{figure*}
+\begin{figure}
 \includegraphics{diags/CalaverasLoc5_hypoDD_SVD.eps}
 \caption{Combined HypoDD (SVD) and CWI: all stations and 5
 stations.} \label{fig-68Calaverasevents_ttandcoda1}
-\end{figure*}
+\end{figure}
 
 
 %%=========================================================================
@@ -1105,7 +1133,7 @@ deployment is absent.
 
 The Omori formula
 \begin{equation}
-label{eq:original_omori}
+\label{eq:original_omori}
  n(t) = K(t+C)^{-p}
 \end{equation}
 can be used to estimate the aftershock frequency per unit time
@@ -1181,7 +1209,7 @@ earthquakes in regions with limited station coverage.
 %\end{figure}
 
 % This is the version using hypoDD with SVD
-\begin{figure*}
+\begin{figure}
 \includegraphics{diags/CalaverasLoc6_hypoDD_SVD.eps}
 \caption{Mimicking the deployment of a temporary network by ignoring
 data from all but station CCO for 50\% (or 34) of the events using
@@ -1189,7 +1217,7 @@ by combining CWI and TT (left) and using TT only (right). Only by
 combining the data is it possible to locate all 68 events.
 Furthermore, combining the data leads to a solution more consistent
 with figure ..... } \label{fig-68Calaverasevents_ttsubsetandcoda1}
-\end{figure*}
+\end{figure}
 %%=========================================================================
 
 
