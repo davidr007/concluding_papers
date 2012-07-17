@@ -2,8 +2,8 @@ function [] = build_OmoriFigure()
 
 % The purpose of this function is to build the Omori figure...
 
-tstart = 7;
-tdays = 65;
+tstart = 4;
+tdays = 150;
 tend = tstart+tdays; 
 ttotal = 1000;
 
@@ -22,7 +22,7 @@ N2 = Cumm_Omori(t2);
 hold on
 plot(t2,N2,'k','linewidth',4)
 
-t3 = [tend:100];
+t3 = [tend:200];
 N3 = Cumm_Omori(t3);
 plot(t3,N3,'k--','linewidth',4)
 
