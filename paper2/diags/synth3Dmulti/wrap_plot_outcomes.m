@@ -72,46 +72,61 @@ ind_best = find(maxvals_best>150);
 maxvals_best(ind_best) = NaN;
 
 fh.maxvals = figure;
-subplot(3,1,1)
-h1 = plot(maxvals_all,'b','linewidth',2);
+
+sh(1) = subplot(3,1,1)
+h2 = plot(maxvals_best,'color','k','linewidth',2) %  best
 hold on
-h2 = plot(maxvals_best,'r','linewidth',1)
-legend([h1,h2], {'all', 'best'})
+h1 = plot(maxvals_all,'color',[0.7,0.7,0.7],'linewidth',1); % all
+%legend([h1,h2], {'all', 'best'})
 set(gca,'xlim',[1 10])
 set(gca,'xtick',1:10,'ytick',[0 50 100 150])
-set(gca,'xticklabel',ticklabelstr)
+set(gca,'xticklabel',{})%ticklabelstr)
 set(gca,'fontsize',fsize)
-set(gca,'ylim',[0 150],'xlim',[1 10])
+set(gca,'ylim',[0 150],'xlim',[1 10],'units','centimeters')
 ylabel('$\Delta_{max}$\,(m)','fontsize',fsize,'Interpreter','LaTex')
 %xlabel('Number of constraints','fontsize',fsize)
 
-subplot(3,1,2)
 meanvals_all(ind_all) = NaN;
 meanvals_best(ind_best) = NaN;
-h1 = plot(meanvals_all,'b','linewidth',2);
+sh(2) = subplot(3,1,2)
+h2 = plot(meanvals_best,'color','k','linewidth',2) % best
 hold on
-h2 = plot(meanvals_best,'r','linewidth',1)
+h1 = plot(meanvals_all,'color',[0.7,0.7,0.7],'linewidth',1); % all
 set(gca,'xlim',[1 10])
 set(gca,'xtick',1:10,'ytick',[0 20 40])
+ticklabelstr = {' ','20%',' ','40%',' ','60%',' ','80%',' ','100%'};
 set(gca,'xticklabel',ticklabelstr)
 set(gca,'fontsize',fsize)
-set(gca,'ylim',[0 40],'xlim',[1 10])
+set(gca,'ylim',[0 40],'xlim',[1 10],'units','centimeters')
 ylabel('$\Delta_\mu$\,(m)','fontsize',fsize,'Interpreter','LaTex')
 
-subplot(3,1,3)
-stdvals_all(ind_all) = NaN;
-stdvals_best(ind_best) = NaN;
+% sh(3) = subplot(3,1,3)
+% stdvals_all(ind_all) = NaN;
+% stdvals_best(ind_best) = NaN;
+% 
+% h1 = plot(stdvals_all,'b','linewidth',2);
+% hold on
+% h2 = plot(stdvals_best,'r','linewidth',1)
+% set(gca,'xlim',[1 10])
+% set(gca,'xtick',1:10,'ytick',[0 20 40])
+% set(gca,'xticklabel',ticklabelstr)
+% set(gca,'fontsize',fsize)
+% set(gca,'ylim',[0 40],'xlim',[1 10],'units','centimeters')
+% ylabel('$\Delta_\sigma$\,(m)','fontsize',fsize,'Interpreter','LaTex')
+% xlabel('Number of constraints','fontsize',fsize)
 
-h1 = plot(stdvals_all,'b','linewidth',2);
-hold on
-h2 = plot(stdvals_best,'r','linewidth',1)
-set(gca,'xlim',[1 10])
-set(gca,'xtick',1:10,'ytick',[0 20 40])
-set(gca,'xticklabel',ticklabelstr)
-set(gca,'fontsize',fsize)
-set(gca,'ylim',[0 40],'xlim',[1 10])
-ylabel('$\Delta_\sigma$\,(m)','fontsize',fsize,'Interpreter','LaTex')
-xlabel('Number of constraints','fontsize',fsize)
+statwidth = 7.5;
+statheight = 1.5;
+statxstart = 4.6;
+statystart = 1.95;
+statygap = 0.7;
+
+%set(sh(3), 'position',[statxstart, statystart, statwidth, statheight])
+set(sh(2), 'position',[statxstart, statystart+statheight+statygap, statwidth, statheight])
+set(sh(1), 'position',[statxstart, statystart+2*statheight+2*statygap, statwidth, statheight])
+
+
+
 print -depsc ressummary_3Dsynth50eq.eps
 
 
