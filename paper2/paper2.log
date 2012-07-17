@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_0) (format=latex 2012.7.11)  17 JUL 2012 21:14
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_0) (format=latex 2012.7.11)  17 JUL 2012 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -156,23 +156,19 @@ File: diags/locs_2D_50eq_1.eps Graphic file (type eps)
  <diags/locs_2D_50eq_1.eps>
 File: diags/locs_2D_50eq_3.eps Graphic file (type eps)
  <diags/locs_2D_50eq_3.eps> [3]
-File: diags/ressummary_2Dsynth50eq.eps Graphic file (type eps)
+File: diags/synth2Dmulti/ressummary_2Dsynth50eq.eps Graphic file (type eps)
 
-<diags/ressummary_2Dsynth50eq.eps> [4]
-File: diags/ressummary_3Dsynth50eq.eps Graphic file (type eps)
- <diags/ressummary_3Dsynth50eq.eps>
-Underfull \vbox (badness 2119) has occurred while \output is active []
+<diags/synth2Dmulti/ressummary_2Dsynth50eq.eps> [4]
+File: diags/synth3Dmulti/ressummary_3Dsynth50eq.eps Graphic file (type eps)
 
- [5]
+<diags/synth3Dmulti/ressummary_3Dsynth50eq.eps> [5]
 File: diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps Graphic fil
 e (type eps)
 
 <diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps>
-Underfull \vbox (badness 1546) has occurred while \output is active []
-
 File: diags/CalaverasLoc1_hypoDD_SVD.eps Graphic file (type eps)
 
-<diags/CalaverasLoc1_hypoDD_SVD.eps> [6]
+<diags/CalaverasLoc1_hypoDD_SVD.eps>
 File: diags/CalaverasMap/matlab/Calaveras_substationmap.eps Graphic file (type 
 eps)
 
@@ -186,27 +182,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 809--826
 
  []
 
+[6]
 File: diags/CalaverasLoc2.eps Graphic file (type eps)
-<diags/CalaverasLoc2.eps>
+ <diags/CalaverasLoc2.eps>
 File: diags/CalaverasLoc3_hypoDD_SVD.eps Graphic file (type eps)
  <diags/CalaverasLoc3_hypoDD_SVD.eps> [7] [8]
 File: diags/CalaverasLoc4_hypoDD_SVD.eps Graphic file (type eps)
 
-<diags/CalaverasLoc4_hypoDD_SVD.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9]
+<diags/CalaverasLoc4_hypoDD_SVD.eps> [9]
 File: diags/CalaverasLoc5_hypoDD_SVD.eps Graphic file (type eps)
-
-<diags/CalaverasLoc5_hypoDD_SVD.eps> [10]
+ <diags/CalaverasLoc5_hypoDD_SVD.eps>
+[10]
 File: diags/OmoriFigure.eps Graphic file (type eps)
  <diags/OmoriFigure.eps>
 File: diags/CalaverasLoc6_hypoDD_SVD.eps Graphic file (type eps)
-
-<diags/CalaverasLoc6_hypoDD_SVD.eps> [11] (./paper2.bbl
+ <diags/CalaverasLoc6_hypoDD_SVD.eps> [11]
+(./paper2.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
@@ -228,9 +219,6 @@ Underfull \hbox (badness 1400) in paragraph at lines 197--201
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \hbox (badness 1478) in paragraph at lines 298--302
 \OT1/ptm/m/n/8 chan-ics of the Hay-ward Fault, Cal-i-for-nia, from double--diff
 erence
@@ -248,7 +236,10 @@ Underfull \hbox (badness 1248) in paragraph at lines 304--309
 -i-cal Re-search\OT1/ptm/m/n/8 , \OT1/ptm/b/n/8 133\OT1/ptm/m/n/8 ,
  []
 
-) [13]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
 Underfull \hbox (badness 1210) in paragraph at lines 1374--1377
 \OT1/ptm/m/n/9 are re-quired by the Polak-Ribiere al-go-rithm. These are used
  []
@@ -259,21 +250,18 @@ Underfull \hbox (badness 3000) in paragraph at lines 1374--1377
 f
  []
 
-[14] (./paper2.aux)
+[13] [14] (./paper2.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 1101 strings out of 494764
- 13489 string characters out of 3171465
- 88972 words of memory out of 3000000
+ 1103 strings out of 494764
+ 13553 string characters out of 3171465
+ 86972 words of memory out of 3000000
  4347 multiletter control sequences out of 15000+200000
  17628 words of font info for 50 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
- 25i,12n,24p,950b,311s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,12n,24p,950b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper2.dvi (14 pages, 108720 bytes).
+Output written on paper2.dvi (14 pages, 108756 bytes).
