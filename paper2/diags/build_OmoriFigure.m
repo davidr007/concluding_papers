@@ -22,7 +22,8 @@ N2 = Cumm_Omori(t2);
 hold on
 plot(t2,N2,'k','linewidth',4)
 
-t3 = [tend:200];
+tend2 = 1000;
+t3 = [tend:tend2];
 N3 = Cumm_Omori(t3);
 plot(t3,N3,'k--','linewidth',4)
 
@@ -30,6 +31,8 @@ fsize = 16;
 set(gca,'fontsize',fsize)
 xlabel('time (days)','fontsize',fsize)
 ylabel('Cummulative number of aftershocks','fontsize',fsize)
+
+set(gca,'xlim',[-25, tend2],'xtick',[0:100:tend2])
 
 print -depsc OmoriFigure.eps
 
