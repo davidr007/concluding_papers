@@ -1,0 +1,431 @@
+===== Doing directory 1 of 10: const_010perc
+make: `optimise_lstar_3D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ frprmn maximum iterations exceeded
+ doing start point            2  of           30
+ frprmn maximum iterations exceeded
+ doing start point            3  of           30
+ frprmn maximum iterations exceeded
+ doing start point            4  of           30
+ frprmn maximum iterations exceeded
+ doing start point            5  of           30
+ frprmn maximum iterations exceeded
+ doing start point            6  of           30
+ frprmn maximum iterations exceeded
+ doing start point            7  of           30
+ frprmn maximum iterations exceeded
+ doing start point            8  of           30
+ frprmn maximum iterations exceeded
+ doing start point            9  of           30
+ frprmn maximum iterations exceeded
+ doing start point           10  of           30
+ frprmn maximum iterations exceeded
+ doing start point           11  of           30
+ frprmn maximum iterations exceeded
+ doing start point           12  of           30
+ frprmn maximum iterations exceeded
+ doing start point           13  of           30
+ frprmn maximum iterations exceeded
+ doing start point           14  of           30
+ frprmn maximum iterations exceeded
+ doing start point           15  of           30
+ frprmn maximum iterations exceeded
+ doing start point           16  of           30
+ frprmn maximum iterations exceeded
+ doing start point           17  of           30
+ frprmn maximum iterations exceeded
+ doing start point           18  of           30
+ frprmn maximum iterations exceeded
+ doing start point           19  of           30
+ frprmn maximum iterations exceeded
+ doing start point           20  of           30
+ frprmn maximum iterations exceeded
+ doing start point           21  of           30
+ frprmn maximum iterations exceeded
+ doing start point           22  of           30
+ frprmn maximum iterations exceeded
+ doing start point           23  of           30
+ frprmn maximum iterations exceeded
+ doing start point           24  of           30
+ frprmn maximum iterations exceeded
+ doing start point           25  of           30
+ frprmn maximum iterations exceeded
+ doing start point           26  of           30
+ frprmn maximum iterations exceeded
+ doing start point           27  of           30
+ frprmn maximum iterations exceeded
+ doing start point           28  of           30
+ frprmn maximum iterations exceeded
+ doing start point           29  of           30
+ frprmn maximum iterations exceeded
+ doing start point           30  of           30
+ frprmn maximum iterations exceeded
+Elapsed time is 17703.567537 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 2 of 10: const_020perc
+make: `optimise_lstar_3D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ frprmn maximum iterations exceeded
+ doing start point            2  of           30
+ frprmn maximum iterations exceeded
+ doing start point            3  of           30
+ frprmn maximum iterations exceeded
+ doing start point            4  of           30
+ frprmn maximum iterations exceeded
+ doing start point            5  of           30
+ frprmn maximum iterations exceeded
+ doing start point            6  of           30
+ frprmn maximum iterations exceeded
+ doing start point            7  of           30
+ frprmn maximum iterations exceeded
+ doing start point            8  of           30
+ frprmn maximum iterations exceeded
+ doing start point            9  of           30
+ frprmn maximum iterations exceeded
+ doing start point           10  of           30
+ frprmn maximum iterations exceeded
+ doing start point           11  of           30
+ frprmn maximum iterations exceeded
+ doing start point           12  of           30
+ frprmn maximum iterations exceeded
+ doing start point           13  of           30
+ frprmn maximum iterations exceeded
+ doing start point           14  of           30
+ frprmn maximum iterations exceeded
+ doing start point           15  of           30
+ frprmn maximum iterations exceeded
+ doing start point           16  of           30
+ frprmn maximum iterations exceeded
+ doing start point           17  of           30
+ frprmn maximum iterations exceeded
+ doing start point           18  of           30
+ frprmn maximum iterations exceeded
+ doing start point           19  of           30
+ frprmn maximum iterations exceeded
+ doing start point           20  of           30
+ frprmn maximum iterations exceeded
+ doing start point           21  of           30
+ frprmn maximum iterations exceeded
+ doing start point           22  of           30
+ frprmn maximum iterations exceeded
+ doing start point           23  of           30
+ frprmn maximum iterations exceeded
+ doing start point           24  of           30
+ frprmn maximum iterations exceeded
+ doing start point           25  of           30
+ frprmn maximum iterations exceeded
+ doing start point           26  of           30
+ frprmn maximum iterations exceeded
+ doing start point           27  of           30
+ frprmn maximum iterations exceeded
+ doing start point           28  of           30
+ frprmn maximum iterations exceeded
+ doing start point           29  of           30
+ frprmn maximum iterations exceeded
+ doing start point           30  of           30
+ frprmn maximum iterations exceeded
+Elapsed time is 43452.291120 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 3 of 10: const_030perc
+make: `optimise_lstar_3D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ doing start point            2  of           30
+ doing start point            3  of           30
+ doing start point            4  of           30
+ frprmn maximum iterations exceeded
+ doing start point            5  of           30
+ doing start point            6  of           30
+ doing start point            7  of           30
+ doing start point            8  of           30
+ doing start point            9  of           30
+ doing start point           10  of           30
+ doing start point           11  of           30
+ doing start point           12  of           30
+ doing start point           13  of           30
+ doing start point           14  of           30
+ doing start point           15  of           30
+ frprmn maximum iterations exceeded
+ doing start point           16  of           30
+ doing start point           17  of           30
+ doing start point           18  of           30
+ doing start point           19  of           30
+ doing start point           20  of           30
+ doing start point           21  of           30
+ frprmn maximum iterations exceeded
+ doing start point           22  of           30
+ doing start point           23  of           30
+ doing start point           24  of           30
+ doing start point           25  of           30
+ doing start point           26  of           30
+ doing start point           27  of           30
+ doing start point           28  of           30
+ doing start point           29  of           30
+ doing start point           30  of           30
+Elapsed time is 58500.642687 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 4 of 10: const_040perc
+make: `optimise_lstar_3D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ frprmn maximum iterations exceeded
+ doing start point            2  of           30
+ doing start point            3  of           30
+ doing start point            4  of           30
+ doing start point            5  of           30
+ doing start point            6  of           30
+ doing start point            7  of           30
+ doing start point            8  of           30
+ doing start point            9  of           30
+ doing start point           10  of           30
+ doing start point           11  of           30
+ doing start point           12  of           30
+ frprmn maximum iterations exceeded
+ doing start point           13  of           30
+ doing start point           14  of           30
+ frprmn maximum iterations exceeded
+ doing start point           15  of           30
+ doing start point           16  of           30
+ frprmn maximum iterations exceeded
+ doing start point           17  of           30
+ doing start point           18  of           30
+ frprmn maximum iterations exceeded
+ doing start point           19  of           30
+ doing start point           20  of           30
+ doing start point           21  of           30
+ doing start point           22  of           30
+ doing start point           23  of           30
+ doing start point           24  of           30
+ doing start point           25  of           30
+ doing start point           26  of           30
+ doing start point           27  of           30
+ frprmn maximum iterations exceeded
+ doing start point           28  of           30
+ doing start point           29  of           30
+ doing start point           30  of           30
+ frprmn maximum iterations exceeded
+Elapsed time is 79126.786666 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 5 of 10: const_050perc
+make: `optimise_lstar_3D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ doing start point            2  of           30
+ doing start point            3  of           30
+ doing start point            4  of           30
+ doing start point            5  of           30
+ doing start point            6  of           30
+ doing start point            7  of           30
+ doing start point            8  of           30
+ doing start point            9  of           30
+ doing start point           10  of           30
+ doing start point           11  of           30
+ doing start point           12  of           30
+ doing start point           13  of           30
+ doing start point           14  of           30
+ doing start point           15  of           30
+ doing start point           16  of           30
+ doing start point           17  of           30
+ frprmn maximum iterations exceeded
+ doing start point           18  of           30
+ doing start point           19  of           30
+ doing start point           20  of           30
+ doing start point           21  of           30
+ doing start point           22  of           30
+ doing start point           23  of           30
+ doing start point           24  of           30
+ doing start point           25  of           30
+ doing start point           26  of           30
+ doing start point           27  of           30
+ doing start point           28  of           30
+ doing start point           29  of           30
+ doing start point           30  of           30
+Elapsed time is 89128.486721 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 6 of 10: const_060perc
+make: `optimise_lstar_3D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ doing start point            2  of           30
+ doing start point            3  of           30
+ doing start point            4  of           30
+ doing start point            5  of           30
+ doing start point            6  of           30
+ doing start point            7  of           30
+ doing start point            8  of           30
+ doing start point            9  of           30
+ doing start point           10  of           30
+ doing start point           11  of           30
+ doing start point           12  of           30
+ doing start point           13  of           30
+ doing start point           14  of           30
+ doing start point           15  of           30
+ doing start point           16  of           30
+ doing start point           17  of           30
+ doing start point           18  of           30
+ doing start point           19  of           30
+ doing start point           20  of           30
+ doing start point           21  of           30
+ doing start point           22  of           30
+ doing start point           23  of           30
+ doing start point           24  of           30
+ doing start point           25  of           30
+ doing start point           26  of           30
+ doing start point           27  of           30
+ doing start point           28  of           30
+ doing start point           29  of           30
+ doing start point           30  of           30
+Elapsed time is 100728.604115 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 7 of 10: const_070perc
+make: `optimise_lstar_3D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ doing start point            2  of           30
+ doing start point            3  of           30
+ doing start point            4  of           30
+ doing start point            5  of           30
+ doing start point            6  of           30
+ doing start point            7  of           30
+ doing start point            8  of           30
+ doing start point            9  of           30
+ doing start point           10  of           30
+ doing start point           11  of           30
+ doing start point           12  of           30
+ doing start point           13  of           30
+ doing start point           14  of           30
+ doing start point           15  of           30
+ doing start point           16  of           30
+ doing start point           17  of           30
+ doing start point           18  of           30
+ doing start point           19  of           30
+ doing start point           20  of           30
+ doing start point           21  of           30
+ doing start point           22  of           30
+ doing start point           23  of           30
+ doing start point           24  of           30
+ doing start point           25  of           30
+ doing start point           26  of           30
+ doing start point           27  of           30
+ doing start point           28  of           30
+ doing start point           29  of           30
+ doing start point           30  of           30
+Elapsed time is 111906.541062 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 8 of 10: const_080perc
+make: `optimise_lstar_3D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ doing start point            2  of           30
+ doing start point            3  of           30
+ doing start point            4  of           30
+ doing start point            5  of           30
+ doing start point            6  of           30
+ doing start point            7  of           30
+ doing start point            8  of           30
+ doing start point            9  of           30
+ doing start point           10  of           30
+ doing start point           11  of           30
+ doing start point           12  of           30
+ doing start point           13  of           30
+ doing start point           14  of           30
+ doing start point           15  of           30
+ doing start point           16  of           30
+ doing start point           17  of           30
+ doing start point           18  of           30
+ doing start point           19  of           30
+ doing start point           20  of           30
+ doing start point           21  of           30
+ doing start point           22  of           30
+ doing start point           23  of           30
+ doing start point           24  of           30
+ doing start point           25  of           30
+ doing start point           26  of           30
+ doing start point           27  of           30
+ doing start point           28  of           30
+ doing start point           29  of           30
+ doing start point           30  of           30
+Elapsed time is 123938.945568 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 9 of 10: const_090perc
+make: `optimise_lstar_3D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ doing start point            2  of           30
+ doing start point            3  of           30
+ doing start point            4  of           30
+ doing start point            5  of           30
+ doing start point            6  of           30
+ doing start point            7  of           30
+ doing start point            8  of           30
+ doing start point            9  of           30
+ doing start point           10  of           30
+ doing start point           11  of           30
+ doing start point           12  of           30
+ doing start point           13  of           30
+ doing start point           14  of           30
+ doing start point           15  of           30
+ doing start point           16  of           30
+ doing start point           17  of           30
+ doing start point           18  of           30
+ doing start point           19  of           30
+ doing start point           20  of           30
+ doing start point           21  of           30
+ doing start point           22  of           30
+ doing start point           23  of           30
+ doing start point           24  of           30
+ doing start point           25  of           30
+ doing start point           26  of           30
+ doing start point           27  of           30
+ doing start point           28  of           30
+ doing start point           29  of           30
+ doing start point           30  of           30
+Elapsed time is 135813.304718 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 10 of 10: const_100perc
+make: `optimise_lstar_3D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ doing start point            2  of           30
+ doing start point            3  of           30
+ doing start point            4  of           30
+ doing start point            5  of           30
+ doing start point            6  of           30
+ doing start point            7  of           30
+ doing start point            8  of           30
+ doing start point            9  of           30
+ doing start point           10  of           30
+ doing start point           11  of           30
+ doing start point           12  of           30
+ doing start point           13  of           30
+ doing start point           14  of           30
+ doing start point           15  of           30
+ doing start point           16  of           30
+ doing start point           17  of           30
+ doing start point           18  of           30
+ doing start point           19  of           30
+ doing start point           20  of           30
+ doing start point           21  of           30
+ doing start point           22  of           30
+ doing start point           23  of           30
+ doing start point           24  of           30
+ doing start point           25  of           30
+ doing start point           26  of           30
+ doing start point           27  of           30
+ doing start point           28  of           30
+ doing start point           29  of           30
+ doing start point           30  of           30
+Elapsed time is 149289.965317 seconds.
+runtime for original - i.e. not staggered
