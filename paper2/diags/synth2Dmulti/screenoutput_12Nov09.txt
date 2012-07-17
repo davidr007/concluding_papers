@@ -1,0 +1,152 @@
+ifort -axP -O2  -o optimise_lstar_2D optimise_lstar_2D.f90 mod_const.o mod_test_tools.o mod_gen_tools.o mod_cwi_tools.o mod_optimise_Lstar_2D.o
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           10
+ ****did not converge****
+           fret  -663.269132537950     
+ doing start point            2  of           10
+ ****did not converge****
+           fret  -662.544062355632     
+ doing start point            3  of           10
+ ****did not converge****
+           fret  -663.832165405302     
+ doing start point            4  of           10
+ ****did not converge****
+           fret  -663.508832412098     
+ doing start point            5  of           10
+ ****did not converge****
+           fret  -663.369244173808     
+ doing start point            6  of           10
+ ****did not converge****
+           fret  -662.861973394052     
+ doing start point            7  of           10
+ ****did not converge****
+           fret  -663.717944925978     
+ doing start point            8  of           10
+ ****did not converge****
+           fret  -662.398792536584     
+ doing start point            9  of           10
+ ****did not converge****
+           fret  -662.839863475598     
+ doing start point           10  of           10
+ ****did not converge****
+           fret  -663.210110576565     
+Elapsed time is 5803.244636 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 2 of 5: const_040perc
+make: `optimise_lstar_2D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           10
+ ****did not converge****
+           fret  -1302.64217066258     
+ doing start point            2  of           10
+ ****did not converge****
+           fret  -1300.74504267608     
+ doing start point            3  of           10
+           fret  -1304.91299836740     
+ doing start point            4  of           10
+           fret  -1304.91299835919     
+ doing start point            5  of           10
+ ****did not converge****
+           fret  -1302.64199156416     
+ doing start point            6  of           10
+           fret  -1304.91299836726     
+ doing start point            7  of           10
+           fret  -1304.91299836616     
+ doing start point            8  of           10
+           fret  -1304.91299836813     
+ doing start point            9  of           10
+           fret  -1304.91299836785     
+ doing start point           10  of           10
+           fret  -1304.91299836335     
+Elapsed time is 13019.356130 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 3 of 5: const_060perc
+make: `optimise_lstar_2D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           10
+ ****did not converge****
+           fret  -1971.23625770740     
+ doing start point            2  of           10
+ ****did not converge****
+           fret  -1971.23523039067     
+ doing start point            3  of           10
+ ****did not converge****
+           fret  -1971.23591438033     
+ doing start point            4  of           10
+ ****did not converge****
+           fret  -1971.23526054480     
+ doing start point            5  of           10
+ ****did not converge****
+           fret  -1971.23496194403     
+ doing start point            6  of           10
+ ****did not converge****
+           fret  -1971.23163264269     
+ doing start point            7  of           10
+ ****did not converge****
+           fret  -1971.23614827402     
+ doing start point            8  of           10
+ ****did not converge****
+           fret  -1971.23487484847     
+ doing start point            9  of           10
+ ****did not converge****
+           fret  -1971.23511639320     
+ doing start point           10  of           10
+ ****did not converge****
+           fret  -1971.23588946459     
+Elapsed time is 24137.752122 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 4 of 5: const_080perc
+make: `optimise_lstar_2D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           10
+           fret  -2626.13385459019     
+ doing start point            2  of           10
+           fret  -2626.13385458825     
+ doing start point            3  of           10
+           fret  -2626.13385458863     
+ doing start point            4  of           10
+           fret  -2626.13385458940     
+ doing start point            5  of           10
+           fret  -2626.13385458951     
+ doing start point            6  of           10
+           fret  -2626.13385458970     
+ doing start point            7  of           10
+           fret  -2626.13385458945     
+ doing start point            8  of           10
+           fret  -2626.13385458787     
+ doing start point            9  of           10
+           fret  -2626.13385458814     
+ doing start point           10  of           10
+           fret  -2626.13385458613     
+Elapsed time is 27975.956148 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 5 of 5: const_100perc
+make: `optimise_lstar_2D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           10
+           fret  -3274.57287150920     
+ doing start point            2  of           10
+           fret  -3274.57287151711     
+ doing start point            3  of           10
+           fret  -3274.57287151403     
+ doing start point            4  of           10
+           fret  -3274.57287151173     
+ doing start point            5  of           10
+           fret  -3274.57287151422     
+ doing start point            6  of           10
+           fret  -3274.57287150789     
+ doing start point            7  of           10
+           fret  -3274.57287151687     
+ doing start point            8  of           10
+           fret  -3274.57287151928     
+ doing start point            9  of           10
+           fret  -3274.57287151764     
+ doing start point           10  of           10
+           fret  -3274.57287151412     
+Elapsed time is 36747.356332 seconds.
+runtime for original - i.e. not staggered

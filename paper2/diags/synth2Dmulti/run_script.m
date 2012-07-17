@@ -1,0 +1,83 @@
+% This script sets up the runs and loops through all of the directrories
+
+%========================================
+% Setup parameters:
+opttype = 'fortran'; %use 'fortran' for speed or 'matlab' for small dimensional problems if needed
+fdom = 2.5;  % dominant frequency for synthetic data
+vs = 3300;  % shear wave velocity
+nrand = 30;  % number of random start locations
+nE = 50;   % nE number of events 
+npar = nE*2-2-1; % npar the number of parameters
+dirlist = { 'const_010perc'; 'const_020perc'; 'const_030perc'; ...
+            'const_040perc'; 'const_050perc'; ...
+            'const_060perc'; 'const_070perc'; 'const_080perc'; ...
+            'const_090perc'; 'const_100perc'};
+        
+%========================================
+% Generate the events 
+tic
+rand('state',0)
+E =  50 + (-50- 50).*rand(nE,2);
+E(1,:) = [0 0];  % fix first event at the centre
+E(2,1) = abs(E(2,1)); E(2,2) = 0; % fix the second event to be on the positive x-axis
+
+%========================================
+% Generate the constraints
+[nE, mE] = size(E);
+count = 1;
+for i = 1:nE-1
+    for j = i+1:nE
+        delta_tnorm(count) = sqrt( (E(i,1)- E(j,1))^2 +  (E(i,2)- E(j,2))^2)*fdom/vs;
+        [ynew_mu(count), ynew_sigma(count)] = make_synthetic_muN(delta_tnorm(count));
+        CWI_stat_master(count,:) = [i j 0.1 0.02 0.1 ynew_mu(count) 2*ynew_sigma(count) fdom vs];
+        count = count+1;
+        % col3 = mean
+        % col4 = std
+        % col5 = median
+        % col6 = mu_N for non-zero Gaussian by fitting
+        % col7 = sigma_N for non-zero Gaussian by fitting
+        % col8 = fdom
+    end
+end
+events_oi = 1:nE;
+save CWI_stat_master.mat CWI_stat_master events_oi  %save the master copy to avoid regeneration
+
+nconst = length(CWI_stat_master(:,1));
+clear CWI_stat
+%========================================
+% Now loop over the directories and run simulations
+currentdir = pwd;
+ndir = length(dirlist);
+for i = 1:ndir
+    disp(['===== Doing directory ', num2str(i),' of ', num2str(ndir),': ', dirlist{i}])
+    cd([currentdir,filesep,dirlist{i}])  % move to the run directory
+    load ../CWI_stat_master.mat  % load in the master CWI file
+    %============================================================
+    % sub-sample the constraints if needed
+    sample_perc = str2num(dirlist{i}(7:9));
+    if sample_perc ==100 % take all samples
+        remove_ind = [];
+    else % do some sub-sampling
+        num_removes = round((100-sample_perc)/100 * nconst);
+        remove_ind =round(linspace(1,nconst,num_removes)); 
+    end
+        CWI_stat = CWI_stat_master;
+        CWI_stat(remove_ind,3:9) = -99999*ones(length(remove_ind),7);
+    %============================================================
+    % save the constraint data in the correct format ready for the
+    % optimisation
+    switch opttype 
+    case 'matlab'
+        save CWI_stat.mat CWI_stat events_oi
+    case 'fortran'
+        save CWI_stat.txt CWI_stat -ascii
+    end
+    %============================================================
+    % run the optimisation
+    run2Dsynth_CWIopt_test(nE,opttype,npar,nrand,E)
+
+end
+cd(currentdir)
+    
+
+

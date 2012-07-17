@@ -1,0 +1,104 @@
+% This script wraps the plotting function plot_outcomes.m 
+% assembles all of the data in a convenient format and then 
+% draws some plots analysing the simulations
+
+dirlist = { 'const_010perc'; 'const_020perc'; 'const_030perc'; ...
+            'const_040perc'; 'const_050perc'; ...
+            'const_060perc'; 'const_070perc'; 'const_080perc'; ...
+            'const_090perc'; 'const_100perc'};
+
+maxvals_all = zeros(1,length(dirlist));        
+meanvals_all = zeros(1,length(dirlist));
+stdvals_all = zeros(1,length(dirlist));
+minvals_all = zeros(1,length(dirlist));
+maxvals_best = zeros(1,length(dirlist));        
+meanvals_best = zeros(1,length(dirlist));
+stdvals_best = zeros(1,length(dirlist));
+minvals_best = zeros(1,length(dirlist));
+for i = 1:length(dirlist)
+    res.(dirlist{i}) = plot_outcomes(dirlist{i});
+    maxvals_all(i) = res.(dirlist{i}).allsol.maxval;
+    meanvals_all(i) = res.(dirlist{i}).allsol.meanval;
+    stdvals_all(i) = res.(dirlist{i}).allsol.stdval;
+    minvals_all(i) = res.(dirlist{i}).allsol.minval;
+    maxvals_best(i) = res.(dirlist{i}).bestsol.maxval;
+    meanvals_best(i) = res.(dirlist{i}).bestsol.meanval;
+    stdvals_best(i) = res.(dirlist{i}).bestsol.stdval;
+    minvals_best(i) = res.(dirlist{i}).bestsol.minval;
+    ticklabelstr{i} = [num2str(str2num(dirlist{i}(7:9))),'%'];
+    set(gca,'xlim',[-150,150],'ylim',[-150,150])
+    set(gca,'xtick',[-100,0 100],'ytick',[-100,0 100])
+    set(gca,'xminortick','on','yminortick','on')
+    plot([ 0 0], get(gca,'ylim'),'k')
+    plot(get(gca,'xlim'),[0 0],'k')
+    fsize = 18;
+    set(gca,'fontsize',fsize)
+    title(ticklabelstr{i},'fontsize',fsize)
+    print('-depsc',['soln_space_2Dsynth50eq_',dirlist{i},'.eps'])
+end
+
+fsize = 16
+% Now let's do the plotting
+fh.maxvals = figure;
+subplot(2,1,1)
+plot(maxvals_all)
+set(gca,'xtick',1:10)
+set(gca,'xticklabel',ticklabelstr)
+set(gca,'fontsize',fsize)
+ylabel('max - all simulations')
+subplot(2,1,2)
+plot(maxvals_best)
+set(gca,'xtick',1:10)
+set(gca,'xticklabel',ticklabelstr)
+set(gca,'fontsize',fsize)
+ylabel('max - best result')
+xlabel('Number of constraints')
+print -depsc maxdiff_2Dsynth50eq.eps
+
+fh.minvals = figure;
+subplot(2,1,1)
+plot(minvals_all)
+set(gca,'xtick',1:10)
+set(gca,'xticklabel',ticklabelstr)
+set(gca,'fontsize',fsize)
+ylabel('min - all simulations')
+subplot(2,1,2)
+plot(minvals_best)
+set(gca,'xtick',1:10)
+set(gca,'xticklabel',ticklabelstr)
+set(gca,'fontsize',fsize)
+ylabel('min - best result')
+xlabel('Number of constraints')
+print -depsc mindiff_2Dsynth50eq.eps
+
+fh.meanvals = figure;
+subplot(2,1,1)
+plot(meanvals_all)
+set(gca,'xtick',1:10)
+set(gca,'xticklabel',ticklabelstr)
+set(gca,'fontsize',fsize)
+ylabel('mean - all simulations')
+subplot(2,1,2)
+plot(meanvals_best)
+set(gca,'xtick',1:10)
+set(gca,'xticklabel',ticklabelstr)
+ylabel('mean - best result')
+xlabel('Number of constraints')
+print -depsc meandiff_2Dsynth50eq.eps
+
+fh.stdvals = figure;
+subplot(2,1,1)
+plot(stdvals_all)
+set(gca,'xtick',1:10)
+set(gca,'xticklabel',ticklabelstr)
+set(gca,'fontsize',fsize)
+ylabel('std - all simulations')
+subplot(2,1,2)
+plot(stdvals_best)
+set(gca,'xtick',1:10)
+set(gca,'xticklabel',ticklabelstr)
+ylabel('std - best result')
+xlabel('Number of constraints')
+print -depsc stddiff_2Dsynth50eq.eps
+
+

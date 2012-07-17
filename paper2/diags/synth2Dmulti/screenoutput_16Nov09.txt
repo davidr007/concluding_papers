@@ -1,0 +1,852 @@
+===== Doing directory 1 of 10: const_010perc
+make: `optimise_lstar_2D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ ****did not converge****
+           fret  -320.671829119693     
+ doing start point            2  of           30
+ ****did not converge****
+           fret  -320.473264831694     
+ doing start point            3  of           30
+ ****did not converge****
+           fret  -320.585667275762     
+ doing start point            4  of           30
+ ****did not converge****
+           fret  -320.539019973438     
+ doing start point            5  of           30
+ ****did not converge****
+           fret  -320.756684807552     
+ doing start point            6  of           30
+ ****did not converge****
+           fret  -320.469842694488     
+ doing start point            7  of           30
+ ****did not converge****
+           fret  -320.639782276187     
+ doing start point            8  of           30
+ ****did not converge****
+           fret  -320.723394924658     
+ doing start point            9  of           30
+ ****did not converge****
+           fret  -320.721283598889     
+ doing start point           10  of           30
+ ****did not converge****
+           fret  -320.247634877764     
+ doing start point           11  of           30
+ ****did not converge****
+           fret  -320.662171253119     
+ doing start point           12  of           30
+ ****did not converge****
+           fret  -320.592193884014     
+ doing start point           13  of           30
+ ****did not converge****
+           fret  -320.727918068654     
+ doing start point           14  of           30
+ ****did not converge****
+           fret  -320.767329646494     
+ doing start point           15  of           30
+ ****did not converge****
+           fret  -320.475727788478     
+ doing start point           16  of           30
+ ****did not converge****
+           fret  -320.385448630678     
+ doing start point           17  of           30
+ ****did not converge****
+           fret  -320.584655448819     
+ doing start point           18  of           30
+ ****did not converge****
+           fret  -320.753623841441     
+ doing start point           19  of           30
+ ****did not converge****
+           fret  -320.482306760501     
+ doing start point           20  of           30
+ ****did not converge****
+           fret  -320.673899774562     
+ doing start point           21  of           30
+ ****did not converge****
+           fret  -320.735184090682     
+ doing start point           22  of           30
+ ****did not converge****
+           fret  -320.621596404399     
+ doing start point           23  of           30
+ ****did not converge****
+           fret  -320.643553419687     
+ doing start point           24  of           30
+ ****did not converge****
+           fret  -320.713865198351     
+ doing start point           25  of           30
+ ****did not converge****
+           fret  -320.712838584854     
+ doing start point           26  of           30
+ ****did not converge****
+           fret  -320.389254537229     
+ doing start point           27  of           30
+ ****did not converge****
+           fret  -320.611518895725     
+ doing start point           28  of           30
+ ****did not converge****
+           fret  -320.573182824388     
+ doing start point           29  of           30
+ ****did not converge****
+           fret  -320.697877832410     
+ doing start point           30  of           30
+ ****did not converge****
+           fret  -320.615473777614     
+Elapsed time is 19467.060395 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 2 of 10: const_020perc
+make: `optimise_lstar_2D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ ****did not converge****
+           fret  -662.772633316701     
+ doing start point            2  of           30
+ ****did not converge****
+           fret  -663.827679094998     
+ doing start point            3  of           30
+ ****did not converge****
+           fret  -663.814524050593     
+ doing start point            4  of           30
+ ****did not converge****
+           fret  -663.631609663021     
+ doing start point            5  of           30
+ ****did not converge****
+           fret  -663.719947461867     
+ doing start point            6  of           30
+ ****did not converge****
+           fret  -662.723020039316     
+ doing start point            7  of           30
+ ****did not converge****
+           fret  -663.760513797413     
+ doing start point            8  of           30
+ ****did not converge****
+           fret  -663.380734509283     
+ doing start point            9  of           30
+ ****did not converge****
+           fret  -662.742578024785     
+ doing start point           10  of           30
+ ****did not converge****
+           fret  -662.888094063438     
+ doing start point           11  of           30
+ ****did not converge****
+           fret  -663.509075966422     
+ doing start point           12  of           30
+ ****did not converge****
+           fret  -663.297011246930     
+ doing start point           13  of           30
+ ****did not converge****
+           fret  -662.781302827141     
+ doing start point           14  of           30
+ ****did not converge****
+           fret  -663.164683606583     
+ doing start point           15  of           30
+ ****did not converge****
+           fret  -662.445674899587     
+ doing start point           16  of           30
+ ****did not converge****
+           fret  -663.565082564975     
+ doing start point           17  of           30
+ ****did not converge****
+           fret  -662.387799455526     
+ doing start point           18  of           30
+ ****did not converge****
+           fret  -663.434173257035     
+ doing start point           19  of           30
+ ****did not converge****
+           fret  -663.863243076324     
+ doing start point           20  of           30
+ ****did not converge****
+           fret  -663.860735003225     
+ doing start point           21  of           30
+ ****did not converge****
+           fret  -663.482250362226     
+ doing start point           22  of           30
+ ****did not converge****
+           fret  -662.453895434965     
+ doing start point           23  of           30
+ ****did not converge****
+           fret  -663.440846953406     
+ doing start point           24  of           30
+ ****did not converge****
+           fret  -663.514052588926     
+ doing start point           25  of           30
+ ****did not converge****
+           fret  -663.729270095612     
+ doing start point           26  of           30
+ ****did not converge****
+           fret  -662.460755272144     
+ doing start point           27  of           30
+ ****did not converge****
+           fret  -663.632350405585     
+ doing start point           28  of           30
+ ****did not converge****
+           fret  -662.486980329773     
+ doing start point           29  of           30
+ ****did not converge****
+           fret  -663.552749126418     
+ doing start point           30  of           30
+ ****did not converge****
+           fret  -662.851771105400     
+Elapsed time is 36543.952793 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 3 of 10: const_030perc
+make: `optimise_lstar_2D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ ****did not converge****
+           fret  -979.404035447518     
+ doing start point            2  of           30
+ ****did not converge****
+           fret  -979.161678964509     
+ doing start point            3  of           30
+ ****did not converge****
+           fret  -979.130641996842     
+ doing start point            4  of           30
+ ****did not converge****
+           fret  -979.055155576183     
+ doing start point            5  of           30
+ ****did not converge****
+           fret  -980.398440883515     
+ doing start point            6  of           30
+ ****did not converge****
+           fret  -980.535066609392     
+ doing start point            7  of           30
+ ****did not converge****
+           fret  -980.888058508552     
+ doing start point            8  of           30
+ ****did not converge****
+           fret  -979.470806932365     
+ doing start point            9  of           30
+ ****did not converge****
+           fret  -980.889868174056     
+ doing start point           10  of           30
+ ****did not converge****
+           fret  -980.541820986092     
+ doing start point           11  of           30
+ ****did not converge****
+           fret  -980.871055922632     
+ doing start point           12  of           30
+ ****did not converge****
+           fret  -980.713300375175     
+ doing start point           13  of           30
+ ****did not converge****
+           fret  -979.054894227395     
+ doing start point           14  of           30
+ ****did not converge****
+           fret  -979.283999932880     
+ doing start point           15  of           30
+ ****did not converge****
+           fret  -980.680675621731     
+ doing start point           16  of           30
+ ****did not converge****
+           fret  -979.082718236155     
+ doing start point           17  of           30
+ ****did not converge****
+           fret  -980.464111486335     
+ doing start point           18  of           30
+ ****did not converge****
+           fret  -980.884816371740     
+ doing start point           19  of           30
+ ****did not converge****
+           fret  -980.542745858982     
+ doing start point           20  of           30
+ ****did not converge****
+           fret  -979.273314153133     
+ doing start point           21  of           30
+ ****did not converge****
+           fret  -978.361355378030     
+ doing start point           22  of           30
+ ****did not converge****
+           fret  -980.470755047937     
+ doing start point           23  of           30
+ ****did not converge****
+           fret  -980.457450703199     
+ doing start point           24  of           30
+ ****did not converge****
+           fret  -979.083702356082     
+ doing start point           25  of           30
+ ****did not converge****
+           fret  -979.287154309028     
+ doing start point           26  of           30
+ ****did not converge****
+           fret  -979.458985788806     
+ doing start point           27  of           30
+ ****did not converge****
+           fret  -980.890059797492     
+ doing start point           28  of           30
+ ****did not converge****
+           fret  -980.875590050361     
+ doing start point           29  of           30
+ ****did not converge****
+           fret  -978.907698301617     
+ doing start point           30  of           30
+ ****did not converge****
+           fret  -979.141959316771     
+Elapsed time is 56118.727395 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 4 of 10: const_040perc
+make: `optimise_lstar_2D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ ****did not converge****
+           fret  -1300.74496481492     
+ doing start point            2  of           30
+           fret  -1304.91299836460     
+ doing start point            3  of           30
+           fret  -1304.91299836699     
+ doing start point            4  of           30
+ ****did not converge****
+           fret  -1302.64223040645     
+ doing start point            5  of           30
+ ****did not converge****
+           fret  -1302.64221420727     
+ doing start point            6  of           30
+ ****did not converge****
+           fret  -1302.64221278112     
+ doing start point            7  of           30
+ ****did not converge****
+           fret  -1304.91299836730     
+ doing start point            8  of           30
+           fret  -1304.91299836906     
+ doing start point            9  of           30
+           fret  -1304.91299836875     
+ doing start point           10  of           30
+           fret  -1304.91299836903     
+ doing start point           11  of           30
+           fret  -1304.91299836648     
+ doing start point           12  of           30
+           fret  -1304.91299836597     
+ doing start point           13  of           30
+ ****did not converge****
+           fret  -1302.64214156675     
+ doing start point           14  of           30
+           fret  -1304.91299836817     
+ doing start point           15  of           30
+ ****did not converge****
+           fret  -1302.64223067099     
+ doing start point           16  of           30
+           fret  -1304.91299836874     
+ doing start point           17  of           30
+           fret  -1304.91299836773     
+ doing start point           18  of           30
+           fret  -1304.91299836821     
+ doing start point           19  of           30
+           fret  -1304.91299836701     
+ doing start point           20  of           30
+           fret  -1304.91299836865     
+ doing start point           21  of           30
+ ****did not converge****
+           fret  -1302.64222629918     
+ doing start point           22  of           30
+           fret  -1304.91299836764     
+ doing start point           23  of           30
+           fret  -1304.91299836524     
+ doing start point           24  of           30
+           fret  -1300.74640713055     
+ doing start point           25  of           30
+           fret  -1304.91299836857     
+ doing start point           26  of           30
+           fret  -1304.91299836473     
+ doing start point           27  of           30
+           fret  -1304.91299836786     
+ doing start point           28  of           30
+ ****did not converge****
+           fret  -1302.64220635633     
+ doing start point           29  of           30
+           fret  -1304.91299836494     
+ doing start point           30  of           30
+ ****did not converge****
+           fret  -1302.64220844231     
+Elapsed time is 76177.313870 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 5 of 10: const_050perc
+make: `optimise_lstar_2D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ ****did not converge****
+           fret  -1636.32368476597     
+ doing start point            2  of           30
+ ****did not converge****
+           fret  -1641.45919818837     
+ doing start point            3  of           30
+ ****did not converge****
+           fret  -1641.45157448813     
+ doing start point            4  of           30
+ ****did not converge****
+           fret  -1641.45959784044     
+ doing start point            5  of           30
+ ****did not converge****
+           fret  -1641.46595517992     
+ doing start point            6  of           30
+ ****did not converge****
+           fret  -1641.46180891096     
+ doing start point            7  of           30
+ ****did not converge****
+           fret  -1641.46353143119     
+ doing start point            8  of           30
+ ****did not converge****
+           fret  -1641.45925703914     
+ doing start point            9  of           30
+ ****did not converge****
+           fret  -1641.45968877921     
+ doing start point           10  of           30
+ ****did not converge****
+           fret  -1641.46193938382     
+ doing start point           11  of           30
+ ****did not converge****
+           fret  -1641.46489416319     
+ doing start point           12  of           30
+ ****did not converge****
+           fret  -1641.46626417256     
+ doing start point           13  of           30
+ ****did not converge****
+           fret  -1636.32528738358     
+ doing start point           14  of           30
+ ****did not converge****
+           fret  -1641.46247679792     
+ doing start point           15  of           30
+ ****did not converge****
+           fret  -1641.45344251799     
+ doing start point           16  of           30
+ ****did not converge****
+           fret  -1641.46560215605     
+ doing start point           17  of           30
+ ****did not converge****
+           fret  -1641.46340508425     
+ doing start point           18  of           30
+ ****did not converge****
+           fret  -1641.45377893776     
+ doing start point           19  of           30
+ ****did not converge****
+           fret  -1641.44930790330     
+ doing start point           20  of           30
+ ****did not converge****
+           fret  -1641.46442999546     
+ doing start point           21  of           30
+ ****did not converge****
+           fret  -1641.46626662782     
+ doing start point           22  of           30
+ ****did not converge****
+           fret  -1641.46462763647     
+ doing start point           23  of           30
+ ****did not converge****
+           fret  -1641.45852147943     
+ doing start point           24  of           30
+ ****did not converge****
+           fret  -1641.45260253273     
+ doing start point           25  of           30
+ ****did not converge****
+           fret  -1641.46428730648     
+ doing start point           26  of           30
+ ****did not converge****
+           fret  -1641.45840627504     
+ doing start point           27  of           30
+ ****did not converge****
+           fret  -1641.46337733292     
+ doing start point           28  of           30
+ ****did not converge****
+           fret  -1641.46352660844     
+ doing start point           29  of           30
+ ****did not converge****
+           fret  -1641.45039162438     
+ doing start point           30  of           30
+ ****did not converge****
+           fret  -1641.46332221104     
+Elapsed time is 102552.408368 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 6 of 10: const_060perc
+make: `optimise_lstar_2D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ ****did not converge****
+           fret  -1971.23463003800     
+ doing start point            2  of           30
+ ****did not converge****
+           fret  -1971.23125342013     
+ doing start point            3  of           30
+ ****did not converge****
+           fret  -1971.23411500464     
+ doing start point            4  of           30
+ ****did not converge****
+           fret  -1971.23436921658     
+ doing start point            5  of           30
+ ****did not converge****
+           fret  -1971.23629280153     
+ doing start point            6  of           30
+ ****did not converge****
+           fret  -1971.23083657505     
+ doing start point            7  of           30
+ ****did not converge****
+           fret  -1971.23315199540     
+ doing start point            8  of           30
+ ****did not converge****
+           fret  -1971.23212187967     
+ doing start point            9  of           30
+ ****did not converge****
+           fret  -1971.23312430704     
+ doing start point           10  of           30
+ ****did not converge****
+           fret  -1971.23625068600     
+ doing start point           11  of           30
+ ****did not converge****
+           fret  -1971.23078314591     
+ doing start point           12  of           30
+ ****did not converge****
+           fret  -1971.23442606443     
+ doing start point           13  of           30
+ ****did not converge****
+           fret  -1971.23314501526     
+ doing start point           14  of           30
+ ****did not converge****
+           fret  -1971.23138190368     
+ doing start point           15  of           30
+ ****did not converge****
+           fret  -1971.23506924580     
+ doing start point           16  of           30
+ ****did not converge****
+           fret  -1971.23620845430     
+ doing start point           17  of           30
+ ****did not converge****
+           fret  -1971.23421410971     
+ doing start point           18  of           30
+ ****did not converge****
+           fret  -1971.23451563569     
+ doing start point           19  of           30
+ ****did not converge****
+           fret  -1971.23616688679     
+ doing start point           20  of           30
+ ****did not converge****
+           fret  -1971.23533222962     
+ doing start point           21  of           30
+ ****did not converge****
+           fret  -1971.23562859584     
+ doing start point           22  of           30
+ ****did not converge****
+           fret  -1971.23425943133     
+ doing start point           23  of           30
+ ****did not converge****
+           fret  -1971.23628687646     
+ doing start point           24  of           30
+ ****did not converge****
+           fret  -1971.23499958933     
+ doing start point           25  of           30
+ ****did not converge****
+           fret  -1963.69014937141     
+ doing start point           26  of           30
+ ****did not converge****
+           fret  -1971.23386732609     
+ doing start point           27  of           30
+ ****did not converge****
+           fret  -1971.23440626054     
+ doing start point           28  of           30
+ ****did not converge****
+           fret  -1971.23588652803     
+ doing start point           29  of           30
+ ****did not converge****
+           fret  -1971.18932875207     
+ doing start point           30  of           30
+ ****did not converge****
+           fret  -1971.23367195389     
+Elapsed time is 133449.308204 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 7 of 10: const_070perc
+make: `optimise_lstar_2D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+           fret  -2284.52362566557     
+ doing start point            2  of           30
+           fret  -2284.52362565992     
+ doing start point            3  of           30
+           fret  -2284.52362566248     
+ doing start point            4  of           30
+           fret  -2284.52362566508     
+ doing start point            5  of           30
+           fret  -2284.52362565753     
+ doing start point            6  of           30
+           fret  -2284.52362566469     
+ doing start point            7  of           30
+           fret  -2284.52362565844     
+ doing start point            8  of           30
+           fret  -2284.52362566595     
+ doing start point            9  of           30
+           fret  -2284.52362566516     
+ doing start point           10  of           30
+           fret  -2284.52362565720     
+ doing start point           11  of           30
+           fret  -2284.52362566584     
+ doing start point           12  of           30
+           fret  -2284.52362566356     
+ doing start point           13  of           30
+           fret  -2284.52362565919     
+ doing start point           14  of           30
+           fret  -2284.52362566466     
+ doing start point           15  of           30
+           fret  -2284.52362565581     
+ doing start point           16  of           30
+           fret  -2284.52362566298     
+ doing start point           17  of           30
+           fret  -2284.52362566611     
+ doing start point           18  of           30
+           fret  -2284.52362566114     
+ doing start point           19  of           30
+           fret  -2284.52362566118     
+ doing start point           20  of           30
+           fret  -2284.52362566431     
+ doing start point           21  of           30
+           fret  -2284.52362565976     
+ doing start point           22  of           30
+           fret  -2284.52362566587     
+ doing start point           23  of           30
+           fret  -2284.52362566572     
+ doing start point           24  of           30
+           fret  -2284.52362566470     
+ doing start point           25  of           30
+           fret  -2284.52362566097     
+ doing start point           26  of           30
+           fret  -2284.52362566418     
+ doing start point           27  of           30
+           fret  -2284.52362566196     
+ doing start point           28  of           30
+           fret  -2284.52362566168     
+ doing start point           29  of           30
+           fret  -2284.52362565909     
+ doing start point           30  of           30
+           fret  -2284.52362566477     
+Elapsed time is 149824.179929 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 8 of 10: const_080perc
+make: `optimise_lstar_2D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+           fret  -2626.13385458890     
+ doing start point            2  of           30
+           fret  -2626.13385458461     
+ doing start point            3  of           30
+           fret  -2626.13385458583     
+ doing start point            4  of           30
+           fret  -2626.13385458898     
+ doing start point            5  of           30
+           fret  -2626.13385458863     
+ doing start point            6  of           30
+           fret  -2626.13385459039     
+ doing start point            7  of           30
+           fret  -2626.13385458922     
+ doing start point            8  of           30
+           fret  -2626.13385458833     
+ doing start point            9  of           30
+           fret  -2626.13385458732     
+ doing start point           10  of           30
+           fret  -2626.13385458989     
+ doing start point           11  of           30
+           fret  -2626.13385458928     
+ doing start point           12  of           30
+           fret  -2626.13385458964     
+ doing start point           13  of           30
+           fret  -2626.13385458714     
+ doing start point           14  of           30
+           fret  -2626.13385458837     
+ doing start point           15  of           30
+           fret  -2626.13385458845     
+ doing start point           16  of           30
+           fret  -2626.13385458687     
+ doing start point           17  of           30
+           fret  -2626.13385458752     
+ doing start point           18  of           30
+           fret  -2626.13385458780     
+ doing start point           19  of           30
+           fret  -2626.13385458919     
+ doing start point           20  of           30
+           fret  -2626.13385458977     
+ doing start point           21  of           30
+           fret  -2626.13385458702     
+ doing start point           22  of           30
+           fret  -2626.13385458893     
+ doing start point           23  of           30
+           fret  -2626.13385459032     
+ doing start point           24  of           30
+           fret  -2626.13385458540     
+ doing start point           25  of           30
+           fret  -2626.13385458972     
+ doing start point           26  of           30
+           fret  -2626.13385458904     
+ doing start point           27  of           30
+           fret  -2626.13385459030     
+ doing start point           28  of           30
+           fret  -2626.13385459013     
+ doing start point           29  of           30
+           fret  -2626.13385458806     
+ doing start point           30  of           30
+           fret  -2626.13385458741     
+Elapsed time is 160729.872589 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 9 of 10: const_090perc
+make: `optimise_lstar_2D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+ ****did not converge****
+           fret  -2945.79098331157     
+ doing start point            2  of           30
+ ****did not converge****
+           fret  -2945.79090732573     
+ doing start point            3  of           30
+ ****did not converge****
+           fret  -2945.79097111211     
+ doing start point            4  of           30
+ ****did not converge****
+           fret  -2945.79043679790     
+ doing start point            5  of           30
+ ****did not converge****
+           fret  -2945.79069613387     
+ doing start point            6  of           30
+ ****did not converge****
+           fret  -2945.78857805355     
+ doing start point            7  of           30
+ ****did not converge****
+           fret  -2945.79109270750     
+ doing start point            8  of           30
+ ****did not converge****
+           fret  -2945.78935421921     
+ doing start point            9  of           30
+ ****did not converge****
+           fret  -2945.79067235735     
+ doing start point           10  of           30
+ ****did not converge****
+           fret  -2945.79105212231     
+ doing start point           11  of           30
+ ****did not converge****
+           fret  -2945.79097931218     
+ doing start point           12  of           30
+ ****did not converge****
+           fret  -2945.79083793312     
+ doing start point           13  of           30
+ ****did not converge****
+           fret  -2945.79103208185     
+ doing start point           14  of           30
+ ****did not converge****
+           fret  -2945.79095967075     
+ doing start point           15  of           30
+ ****did not converge****
+           fret  -2945.79025488579     
+ doing start point           16  of           30
+ ****did not converge****
+           fret  -2945.79107192302     
+ doing start point           17  of           30
+ ****did not converge****
+           fret  -2945.79098583255     
+ doing start point           18  of           30
+ ****did not converge****
+           fret  -2945.79024382713     
+ doing start point           19  of           30
+ ****did not converge****
+           fret  -2945.78939258026     
+ doing start point           20  of           30
+ ****did not converge****
+           fret  -2945.79096153796     
+ doing start point           21  of           30
+ ****did not converge****
+           fret  -2945.79080667056     
+ doing start point           22  of           30
+ ****did not converge****
+           fret  -2945.79023421409     
+ doing start point           23  of           30
+ ****did not converge****
+           fret  -2945.79084269513     
+ doing start point           24  of           30
+ ****did not converge****
+           fret  -2945.79009043067     
+ doing start point           25  of           30
+ ****did not converge****
+           fret  -2945.73425693333     
+ doing start point           26  of           30
+ ****did not converge****
+           fret  -2945.79053993975     
+ doing start point           27  of           30
+ ****did not converge****
+           fret  -2945.79093555097     
+ doing start point           28  of           30
+ ****did not converge****
+           fret  -2945.79088067459     
+ doing start point           29  of           30
+ ****did not converge****
+           fret  -2945.78818373842     
+ doing start point           30  of           30
+ ****did not converge****
+           fret  -2945.78873129623     
+Elapsed time is 210449.340961 seconds.
+runtime for original - i.e. not staggered
+===== Doing directory 10 of 10: const_100perc
+make: `optimise_lstar_2D' is up to date.
+ Enter: nrand (number of random start combinations) ... and ... nE (number of ev
+ ents) 
+ doing start point            1  of           30
+           fret  -3274.57287150795     
+ doing start point            2  of           30
+           fret  -3274.57287151966     
+ doing start point            3  of           30
+           fret  -3274.57287151906     
+ doing start point            4  of           30
+           fret  -3274.57287151778     
+ doing start point            5  of           30
+           fret  -3274.57287151695     
+ doing start point            6  of           30
+           fret  -3274.57287149059     
+ doing start point            7  of           30
+           fret  -3274.57287151738     
+ doing start point            8  of           30
+           fret  -3274.57287151354     
+ doing start point            9  of           30
+           fret  -3274.57287151902     
+ doing start point           10  of           30
+           fret  -3274.57287150942     
+ doing start point           11  of           30
+           fret  -3274.57287150642     
+ doing start point           12  of           30
+           fret  -3274.57287151641     
+ doing start point           13  of           30
+           fret  -3274.57287151040     
+ doing start point           14  of           30
+           fret  -3274.57287151474     
+ doing start point           15  of           30
+           fret  -3274.57287151888     
+ doing start point           16  of           30
+           fret  -3274.57287151935     
+ doing start point           17  of           30
+           fret  -3274.57287151600     
+ doing start point           18  of           30
+           fret  -3274.57287151570     
+ doing start point           19  of           30
+           fret  -3274.57287151976     
+ doing start point           20  of           30
+           fret  -3274.57287150736     
+ doing start point           21  of           30
+           fret  -3274.57287151660     
+ doing start point           22  of           30
+           fret  -3274.57287151067     
+ doing start point           23  of           30
+           fret  -3274.57287150700     
+ doing start point           24  of           30
+           fret  -3274.57287151992     
+ doing start point           25  of           30
+           fret  -3274.57287151822     
+ doing start point           26  of           30
+           fret  -3274.57287151272     
+ doing start point           27  of           30
+           fret  -3274.57287151794     
+ doing start point           28  of           30
+           fret  -3274.57287150267     
+ doing start point           29  of           30
+           fret  -3274.57287151838     
+ doing start point           30  of           30
+           fret  -3274.57287151974     
+Elapsed time is 231136.354360 seconds.
+runtime for original - i.e. not staggered
+Your MATLAB session has timed out.  All license keys have been returned.
+>> 
