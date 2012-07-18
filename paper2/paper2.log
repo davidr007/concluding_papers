@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_0) (format=latex 2012.7.11)  17 JUL 2012 23:20
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_0) (format=latex 2012.7.11)  18 JUL 2012 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -103,26 +103,24 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 43.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 74.
+(Font)              <9> on input line 80.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 145.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 148.
 
-LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 145.
+LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 148.
 
 [1
 
 
 ]
-Underfull \hbox (badness 1721) in paragraph at lines 255--277
+Underfull \hbox (badness 1721) in paragraph at lines 257--279
 \OT1/ptm/m/n/9 the pos-te-rior, like-li-hood and prior func-tions, re-spec-tive
 ly. In
  []
 
 
-Underfull \hbox (badness 5847) in paragraph at lines 255--277
+Underfull \hbox (badness 5847) in paragraph at lines 257--279
 \OML/cmm/m/it/9 P\OT1/cmr/m/n/9 (\OT1/cmr/bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/cmr/
 bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/cmr/bx/n/9 e[]\OMS/cmsy/m/n/9 j[][]\OML/cmm/m/
 it/9 ; \OT1/cmr/bx/n/9 ^^A[]\OT1/cmr/m/n/9 )$ \OT1/ptm/m/n/9 and $\OML/cmm/m/it
@@ -132,12 +130,12 @@ j\OT1/cmr/bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/cmr/bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--293
+Underfull \hbox (badness 10000) in paragraph at lines 280--295
 []\OT1/ptm/m/n/9 For three earth-quakes we have like-li-hoods;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--293
+Underfull \hbox (badness 10000) in paragraph at lines 280--295
 \OML/cmm/m/it/9 P\OT1/cmr/m/n/9 ([]\OMS/cmsy/m/n/9 j\OT1/cmr/bx/n/9 e[]\OML/cmm
 /m/it/9 ; \OT1/cmr/bx/n/9 e[]\OT1/cmr/m/n/9 )$\OT1/ptm/m/n/9 , $\OML/cmm/m/it/9
  P\OT1/cmr/m/n/9 ([]\OMS/cmsy/m/n/9 j\OT1/cmr/bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/
@@ -145,7 +143,7 @@ cmr/bx/n/9 e[]\OT1/cmr/m/n/9 )$ \OT1/ptm/m/n/9 and
  []
 
 
-Underfull \hbox (badness 4291) in paragraph at lines 278--293
+Underfull \hbox (badness 4291) in paragraph at lines 280--295
 \OML/cmm/m/it/9 P\OT1/cmr/m/n/9 ([]\OMS/cmsy/m/n/9 j\OT1/cmr/bx/n/9 e[]\OML/cmm
 /m/it/9 ; \OT1/cmr/bx/n/9 e[]\OT1/cmr/m/n/9 )$\OT1/ptm/m/n/9 . In writ-ing thes
 e like-li-hoods we have
@@ -161,11 +159,11 @@ File: diags/synth2Dmulti/ressummary_2Dsynth50eq.eps Graphic file (type eps)
 <diags/synth2Dmulti/ressummary_2Dsynth50eq.eps> [4]
 File: diags/synth3Dmulti/ressummary_3Dsynth50eq.eps Graphic file (type eps)
 
-<diags/synth3Dmulti/ressummary_3Dsynth50eq.eps> [5]
+<diags/synth3Dmulti/ressummary_3Dsynth50eq.eps>
 File: diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps Graphic fil
 e (type eps)
 
-<diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps>
+<diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps> [5]
 File: diags/CalaverasLoc1_hypoDD_SVD.eps Graphic file (type eps)
 
 <diags/CalaverasLoc1_hypoDD_SVD.eps>
@@ -173,12 +171,12 @@ File: diags/CalaverasMap/matlab/Calaveras_substationmap.eps Graphic file (type
 eps)
 
 <diags/CalaverasMap/matlab/Calaveras_substationmap.eps>
-Overfull \hbox (17.69417pt too wide) in paragraph at lines 809--826
+Overfull \hbox (17.69417pt too wide) in paragraph at lines 807--824
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--826
+Underfull \hbox (badness 10000) in paragraph at lines 807--824
 
  []
 
@@ -186,18 +184,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 809--826
 File: diags/CalaverasLoc2.eps Graphic file (type eps)
  <diags/CalaverasLoc2.eps>
 File: diags/CalaverasLoc3_hypoDD_SVD.eps Graphic file (type eps)
- <diags/CalaverasLoc3_hypoDD_SVD.eps> [7] [8]
+ <diags/CalaverasLoc3_hypoDD_SVD.eps>
 File: diags/CalaverasLoc4_hypoDD_SVD.eps Graphic file (type eps)
 
-<diags/CalaverasLoc4_hypoDD_SVD.eps> [9]
+<diags/CalaverasLoc4_hypoDD_SVD.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+[8] [9]
 File: diags/CalaverasLoc5_hypoDD_SVD.eps Graphic file (type eps)
- <diags/CalaverasLoc5_hypoDD_SVD.eps>
-[10]
+ <diags/CalaverasLoc5_hypoDD_SVD.eps> [10]
 File: diags/OmoriFigure.eps Graphic file (type eps)
  <diags/OmoriFigure.eps>
 File: diags/CalaverasLoc6_hypoDD_SVD.eps Graphic file (type eps)
- <diags/CalaverasLoc6_hypoDD_SVD.eps> [11]
-(./paper2.bbl
+
+<diags/CalaverasLoc6_hypoDD_SVD.eps> [11] (./paper2.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
@@ -231,37 +232,40 @@ cal Re-search\OT1/ptm/m/n/8 , \OT1/ptm/b/n/8 107\OT1/ptm/m/n/8 (B3),
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 1248) in paragraph at lines 304--309
 \OT1/ptm/m/n/8 double-difference meth-ods, \OT1/ptm/m/it/8 Jour-nal of Geo-phys
 -i-cal Re-search\OT1/ptm/m/n/8 , \OT1/ptm/b/n/8 133\OT1/ptm/m/n/8 ,
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-)
-Underfull \hbox (badness 1210) in paragraph at lines 1374--1377
+) [13]
+Underfull \hbox (badness 1210) in paragraph at lines 1380--1383
 \OT1/ptm/m/n/9 are re-quired by the Polak-Ribiere al-go-rithm. These are used
  []
 
 
-Underfull \hbox (badness 3000) in paragraph at lines 1374--1377
+Underfull \hbox (badness 3000) in paragraph at lines 1380--1383
 \OT1/ptm/m/n/9 to guide the op-ti-mi-sa-tion pro-ce-dure to-wards the val-ues o
 f
  []
 
-[13] [14] (./paper2.aux)
+[14] (./paper2.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 1103 strings out of 494764
- 13553 string characters out of 3171465
- 86972 words of memory out of 3000000
- 4347 multiletter control sequences out of 15000+200000
- 17628 words of font info for 50 fonts, out of 3000000 for 9000
+ 1101 strings out of 494764
+ 13524 string characters out of 3171465
+ 87999 words of memory out of 3000000
+ 4345 multiletter control sequences out of 15000+200000
+ 17109 words of font info for 49 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
  25i,12n,24p,950b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper2.dvi (14 pages, 108756 bytes).
+Output written on paper2.dvi (14 pages, 109112 bytes).

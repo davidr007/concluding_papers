@@ -959,7 +959,7 @@ $\reset@font\displaystyle##$\hfil\cr>\cr\approx\cr}}}
     \labelwidth\z@ \labelsep\z@  
     \leftmargin\left@zm \rightmargin\z@ 
     \parsep 0pt plus 1pt}\item[]\reset@font
-    \normalsize{\bf SUMMARY}\\\reset@font\large} % BK GJI 1.1 
+    \normalsize{\bf ABSTRACT}\\\reset@font\large} % BK GJI 1.1 
 
 % 
 \newif\ifGJ@keywords 
@@ -1051,7 +1051,7 @@ $\reset@font\displaystyle##$\hfil\cr>\cr\approx\cr}}}
   \def\@printed{} 
 \fi 
 
-\gdef\@journal{{\it Geophys.\ J.\ Int.} (\@pubyear) {\bf \@volume}, 
+\gdef\@journal{{\it Bulletin of the Seismological Society of America} (\@pubyear) {\bf \@volume}, 
  \@pagerange\  \@microfiche } 
 \ifGJ@referee
    \def\@journal{submitted to {\it Geophys.\ J.\ Int.} }
