@@ -15,25 +15,27 @@ prop_recorded = (Nend-Nstart)/Ntotal
 
 t1 = [0:tstart];
 N1 = Cumm_Omori(t1);
-plot(t1,N1,'k--','linewidth',4)
+plot(t1,N1,'linewidth',2,'color',[0.7,0.7,0.7])
 
 t2 = [tstart:tend];
 N2 = Cumm_Omori(t2);
 hold on
-plot(t2,N2,'k','linewidth',4)
+plot(t2,N2,'k','linewidth',2)
 
 tend2 = 1000;
 t3 = [tend:tend2];
 N3 = Cumm_Omori(t3);
-plot(t3,N3,'k--','linewidth',4)
+plot(t3,N3,'linewidth',2,'color',[0.7,0.7,0.7])
 
 fsize = 16;
-set(gca,'fontsize',fsize)
-xlabel('time (days)','fontsize',fsize)
-ylabel('Cummulative number of aftershocks','fontsize',fsize)
+%set(gca,'fontsize',fsize)
+xlabel('t (days)')%,'fontsize',fsize)
+%ylabel('Cummulative number of aftershocks','fontsize',fsize)
 
-set(gca,'xlim',[-25, tend2],'xtick',[0:100:tend2])
+ylabel('N(t)')
+set(gca,'xlim',[-25, tend2],'xtick',[0:200:tend2])
 
+set(gca,'units','centimeters','position',[4.6,1.5,7.5,6])
 print -depsc OmoriFigure.eps
 
 function [N] = Cumm_Omori(t)

@@ -1,15 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_0) (format=latex 2012.7.11)  18 JUL 2012 22:52
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=latex 2010.3.30)  20 JUL 2012 13:38
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**paper2.tex
-(./paper2.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, cz
-ech, slovak, dutch, ukenglish, usenglishmax, basque, french, german-x-2012-05-3
-0, ngerman-x-2012-05-30, german, ngerman, swissgerman, italian, polish, portugu
-ese, spanish, catalan, galician, loaded.
-(./gji.cls
+**Y:/earthquake/sandpits/drobinson/git/concluding_papers/paper2/paper2.tex
+(Y:/earthquake/sandpits/drobinson/git/concluding_papers/paper2/paper2.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, french, loaded.
+(gji.cls
 Document Class: gji 1995/11/30 v2.0 LaTeX2e document class
 Document Class `GJI' V2.0, released 1998 Nov
 \fntxvi=\skip41
@@ -29,7 +25,7 @@ Document Class `GJI' V2.0, released 1998 Nov
 \c@table=\count86
 \c@figure=\count87
 \mathindent=\dimen103
-(./gji_extra.sty
+(gji_extra.sty
 \@temptokenb=\toks14
 \pt@box=\box26
 \pt@width=\dimen104
@@ -41,101 +37,100 @@ Document Class `GJI' V2.0, released 1998 Nov
 LaTeX Info: Redefining \cite on input line 388.
 \c@NAT@ctr=\count91
 \oldvsize=\dimen105
-)) (./timet.sty
+)) (timet.sty
 Package: timet 1997/01/23 6.0 Times PSNFSS2e package
 )
-(/opt/local/share/texmf-texlive-dist/tex/latex/graphics/graphicx.sty
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/opt/local/share/texmf-texlive-dist/tex/latex/graphics/keyval.sty
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/opt/local/share/texmf-texlive-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\graphics.sty"
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/opt/local/share/texmf-texlive-dist/tex/latex/graphics/trig.sty
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/opt/local/share/texmf-texlive-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+("C:\Program Files\MiKTeX 2.7\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: dvips.def on input line 91.
+Package graphics Info: Driver file: dvips.def on input line 90.
 
-(/opt/local/share/texmf-texlive-dist/tex/latex/graphics/dvips.def
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\dvips.def"
 File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
 )
 \c@theorem=\count92
+ (paper2.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 40.
 
-(./paper2.aux)
-\openout1 = `paper2.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 39.
- (/opt/local/share/texmf-texlive-dist/tex/latex/psnfss/ot1ptm.fd
+("C:\Program Files\MiKTeX 2.7\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 43.
+(Font)              <14.4> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 43.
+(Font)              <7> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 43.
+(Font)              <8> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 43.
+(Font)              <6> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 43.
+(Font)              <5> on input line 44.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 80.
+(Font)              <9> on input line 85.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 148.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
 
-LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 148.
+
+LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 153.
 
 [1
 
 
 ]
-Underfull \hbox (badness 1721) in paragraph at lines 257--279
+Underfull \hbox (badness 1721) in paragraph at lines 262--284
 \OT1/ptm/m/n/9 the pos-te-rior, like-li-hood and prior func-tions, re-spec-tive
 ly. In
  []
 
 
-Underfull \hbox (badness 5847) in paragraph at lines 257--279
+Underfull \hbox (badness 5847) in paragraph at lines 262--284
 \OML/cmm/m/it/9 P\OT1/cmr/m/n/9 (\OT1/cmr/bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/cmr/
 bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/cmr/bx/n/9 e[]\OMS/cmsy/m/n/9 j[][]\OML/cmm/m/
-it/9 ; \OT1/cmr/bx/n/9 ^^A[]\OT1/cmr/m/n/9 )$ \OT1/ptm/m/n/9 and $\OML/cmm/m/it
-/9 P\OT1/cmr/m/n/9 ([][]\OML/cmm/m/it/9 ; \OT1/cmr/bx/n/9 ^^A[]\OMS/cmsy/m/n/9 
-j\OT1/cmr/bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/cmr/bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1
-/cmr/bx/n/9 e[]\OT1/cmr/m/n/9 )$
+it/9 ; \OT1/cmr/bx/n/9 []\OT1/cmr/m/n/9 )$ \OT1/ptm/m/n/9 and $\OML/cmm/m/it/9
+ P\OT1/cmr/m/n/9 ([][]\OML/cmm/m/it/9 ; \OT1/cmr/bx/n/9 []\OMS/cmsy/m/n/9 j\OT
+1/cmr/bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/cmr/bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/cmr
+/bx/n/9 e[]\OT1/cmr/m/n/9 )$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--295
-[]\OT1/ptm/m/n/9 For three earth-quakes we have like-li-hoods;
+Underfull \hbox (badness 10000) in paragraph at lines 285--300
+[][]\OT1/ptm/m/n/9 For three earth-quakes we have like-li-hoods;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--295
+Underfull \hbox (badness 10000) in paragraph at lines 285--300
 \OML/cmm/m/it/9 P\OT1/cmr/m/n/9 ([]\OMS/cmsy/m/n/9 j\OT1/cmr/bx/n/9 e[]\OML/cmm
 /m/it/9 ; \OT1/cmr/bx/n/9 e[]\OT1/cmr/m/n/9 )$\OT1/ptm/m/n/9 , $\OML/cmm/m/it/9
  P\OT1/cmr/m/n/9 ([]\OMS/cmsy/m/n/9 j\OT1/cmr/bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/
@@ -143,7 +138,7 @@ cmr/bx/n/9 e[]\OT1/cmr/m/n/9 )$ \OT1/ptm/m/n/9 and
  []
 
 
-Underfull \hbox (badness 4291) in paragraph at lines 280--295
+Underfull \hbox (badness 4291) in paragraph at lines 285--300
 \OML/cmm/m/it/9 P\OT1/cmr/m/n/9 ([]\OMS/cmsy/m/n/9 j\OT1/cmr/bx/n/9 e[]\OML/cmm
 /m/it/9 ; \OT1/cmr/bx/n/9 e[]\OT1/cmr/m/n/9 )$\OT1/ptm/m/n/9 . In writ-ing thes
 e like-li-hoods we have
@@ -171,12 +166,12 @@ File: diags/CalaverasMap/matlab/Calaveras_substationmap.eps Graphic file (type
 eps)
 
 <diags/CalaverasMap/matlab/Calaveras_substationmap.eps>
-Overfull \hbox (17.69417pt too wide) in paragraph at lines 807--824
-[][]
+Overfull \hbox (17.69417pt too wide) in paragraph at lines 819--836
+[][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 807--824
+Underfull \hbox (badness 10000) in paragraph at lines 819--836
 
  []
 
@@ -198,13 +193,13 @@ File: diags/OmoriFigure.eps Graphic file (type eps)
  <diags/OmoriFigure.eps>
 File: diags/CalaverasLoc6_hypoDD_SVD.eps Graphic file (type eps)
 
-<diags/CalaverasLoc6_hypoDD_SVD.eps> [11] (./paper2.bbl
+<diags/CalaverasLoc6_hypoDD_SVD.eps> [11] (paper2.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
 Underfull \hbox (badness 1509) in paragraph at lines 197--201
-[]\OT1/ptm/m/n/8 Rubinstein, J. L. & Beroza, G. C., 2007.  Full wave-form earth
--
+[][]\OT1/ptm/m/n/8 Rubinstein, J. L. & Beroza, G. C., 2007.  Full wave-form ear
+th-
  []
 
 
@@ -241,31 +236,29 @@ Underfull \hbox (badness 1248) in paragraph at lines 304--309
  []
 
 ) [13]
-Underfull \hbox (badness 1210) in paragraph at lines 1380--1383
-\OT1/ptm/m/n/9 are re-quired by the Polak-Ribiere al-go-rithm. These are used
+Underfull \hbox (badness 1210) in paragraph at lines 1403--1406
+[]\OT1/ptm/m/n/9 are re-quired by the Polak-Ribiere al-go-rithm. These are used
+
  []
 
 
-Underfull \hbox (badness 3000) in paragraph at lines 1380--1383
-\OT1/ptm/m/n/9 to guide the op-ti-mi-sa-tion pro-ce-dure to-wards the val-ues o
-f
+Underfull \hbox (badness 2865) in paragraph at lines 1403--1406
+\OT1/ptm/m/n/9 to guide the op-ti-miza-tion pro-ce-dure to-wards the val-ues of
+
  []
 
-[14] (./paper2.aux)
+[14] (paper2.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 1101 strings out of 494764
- 13524 string characters out of 3171465
- 87999 words of memory out of 3000000
- 4345 multiletter control sequences out of 15000+200000
- 17109 words of font info for 49 fonts, out of 3000000 for 9000
- 134 hyphenation exceptions out of 8191
- 25i,12n,24p,950b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 1101 strings out of 95341
+ 13082 string characters out of 1184190
+ 80491 words of memory out of 1500000
+ 4302 multiletter control sequences out of 110000
+ 17109 words of font info for 49 fonts, out of 1200000 for 2000
+ 14 hyphenation exceptions out of 8191
+ 25i,12n,23p,1018b,317s stack positions out of 5000i,500n,10000p,200000b,5000s
 
-Output written on paper2.dvi (14 pages, 109112 bytes).
+Output written on paper2.dvi (14 pages, 126796 bytes).
