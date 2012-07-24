@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=latex 2010.3.30)  20 JUL 2012 13:58
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=latex 2010.3.30)  24 JUL 2012 15:56
 entering extended mode
-**C:/datafiles/sandpit_ANU/concluding_papers/paper3/paper3.tex
-(C:/datafiles/sandpit_ANU/concluding_papers/paper3/paper3.tex
+**Y:/earthquake/sandpits/drobinson/git/concluding_papers/paper3/paper3.tex
+(Y:/earthquake/sandpits/drobinson/git/concluding_papers/paper3/paper3.tex
 LaTeX2e <2005/12/01>
 Babel <v3.8h> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman, ngerman, french, loaded.
@@ -226,8 +226,48 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 252.
 
 
+LaTeX Warning: Reference `fig:-Kalannie-map' on page 1 undefined on input line 
+256.
+
+
 LaTeX Warning: Reference `tab-Dawson-Kalannie-results' on page 1 undefined on i
 nput line 257.
+
+
+LaTeX Warning: Reference `tab:Kalannie-eventsizes' on page 1 undefined on input
+ line 264.
+
+
+LaTeX Warning: Reference `fig:-Kalannie-map' on page 1 undefined on input line 
+283.
+
+
+LaTeX Warning: Reference `fig:-Kalannie-map' on page 1 undefined on input line 
+284.
+
+
+LaTeX Warning: Reference `fig:-Kalannie-map' on page 1 undefined on input line 
+285.
+
+
+LaTeX Warning: Reference `fig:Kalannie-CWI-Posteriors' on page 1 undefined on i
+nput line 286.
+
+
+LaTeX Warning: Reference `tab:Kalannie-InversionRes' on page 1 undefined on inp
+ut line 287.
+
+
+LaTeX Warning: Reference `fig:Kalannie-CWI-NAB-1Dmarginals' on page 1 undefined
+ on input line 288.
+
+
+LaTeX Warning: Reference `fig:Kalannie-2Dmarginals_param23' on page 1 undefined
+ on input line 289.
+
+
+LaTeX Warning: Reference `tab:-KalannieRes-separations' on page 1 undefined on 
+input line 291.
 
 (paper3.bbl
 Underfull \hbox (badness 7012) in paragraph at lines 36--36
@@ -244,70 +284,38 @@ Overfull \vbox (47.40057pt too high) has occurred while \output is active []
 
 
 [2]
-File: ../../thesis_version2/diags/eq_location_simple/KalannieMap/KalannieMap1.e
-ps Graphic file (type eps)
-
-<../../thesis_version2/diags/eq_location_simple/KalannieMap/KalannieMap1.eps>
-Overfull \vbox (83.34535pt too high) detected at line 468
+File: ./diags/KalannieMap/KalannieMap1.eps Graphic file (type eps)
+ <./diags/KalannieMap/KalannieMap1.eps>
+Overfull \vbox (61.23112pt too high) detected at line 469
  []
 
 File: diags/waves_and_CWIest.eps Graphic file (type eps)
 <diags/waves_and_CWIest.eps>
-Overfull \vbox (30.5873pt too high) detected at line 469
+Overfull \vbox (30.5873pt too high) detected at line 470
  []
 
-File: ../../thesis_version2/diags/eq_location_simple/Kalannie_figs/Kalannie_Pos
-teriors_timeclip_1to2Hz_tw5.eps Graphic file (type eps)
 
-<../../thesis_version2/diags/eq_location_simple/Kalannie_figs/Kalannie_Posterio
-rs_timeclip_1to2Hz_tw5.eps>
-File: ../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie-CWI-N
-AB-1Dmarginals-withareas.eps Graphic file (type eps)
+LaTeX Warning: File `../../thesis_version2/diags/eq_location_simple/Kalannie_fi
+gs/Kalannie_Posteriors_timeclip_1to2Hz_tw5.eps' not found on input line 507.
 
-<../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie-CWI-NAB-1D
-marginals-withareas.eps>
-Overfull \vbox (216.93242pt too high) detected at line 516
- []
 
-File: ../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie_covar
-iance.eps Graphic file (type eps)
+! LaTeX Error: File `../../thesis_version2/diags/eq_location_simple/Kalannie_fi
+gs/Kalannie_Posteriors_timeclip_1to2Hz_tw5.eps' not found.
 
-<../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie_covariance
-.eps>
-Overfull \vbox (80.48326pt too high) detected at line 516
- []
-
-File: ../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie_corre
-lation.eps Graphic file (type eps)
-
-<../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie_correlatio
-n.eps>
-Overfull \vbox (86.60568pt too high) detected at line 526
- []
-
-File: ../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie_margi
-nals2Dcont_param2_3.eps Graphic file (type eps)
-
-<../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie_marginals2
-Dcont_param2_3.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 555--561
-
- []
-
-[3] [4] [5]
-\dblfigandtabbox1=\box57
- [6] (paper3.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.507 ...annie_Posteriors_timeclip_1to2Hz_tw5.eps}
+                                                  
+? x
+ 
 Here is how much of TeX's memory you used:
- 1470 strings out of 95341
- 17906 string characters out of 1184190
+ 1451 strings out of 95341
+ 17339 string characters out of 1184190
  85515 words of memory out of 1500000
- 4688 multiletter control sequences out of 110000
- 13523 words of font info for 46 fonts, out of 1200000 for 2000
+ 4677 multiletter control sequences out of 110000
+ 12902 words of font info for 44 fonts, out of 1200000 for 2000
  14 hyphenation exceptions out of 8191
- 25i,10n,26p,469b,360s stack positions out of 5000i,500n,10000p,200000b,5000s
-
-Output written on paper3.dvi (6 pages, 22584 bytes).
+ 25i,10n,26p,336b,360s stack positions out of 5000i,500n,10000p,200000b,5000s
+Output written on paper3.dvi (2 pages, 11588 bytes).

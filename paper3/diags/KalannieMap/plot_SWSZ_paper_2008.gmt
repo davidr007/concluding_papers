@@ -1,4 +1,4 @@
-range="115/119/-33/-29"
+range="115/119/-32.5/-29"
 
 rm -f .gmt*
 
@@ -72,27 +72,25 @@ EOD
 #
 # earthquake focal mechanism
 #
-psmeca  -R -JM -O -K leonard.txt -C1/50 -W5 -Sa0.3/12 -V -C >> KalannieMap1.ps
-psmeca  -R -JM -O -K dawson.txt  -C1/50 -W5 -Sa0.3/12 -V -C >> KalannieMap1.ps
+#psmeca  -R -JM -O -K leonard.txt -C1/50 -W5 -Sa0.3/12 -V -C >> KalannieMap1.ps
+#psmeca  -R -JM -O -K dawson.txt  -C1/50 -W5 -Sa0.3/12 -V -C >> KalannieMap1.ps
 
 #
 # Katanning and Kalannie earthquakes
 #
 psxy -R -JM -Sa0.3 -G255/255/0 -W1 -K -O <<EOD>> KalannieMap1.ps
-#117.53018  -33.94891 
-117.17030  -30.14670 
+117.17030  -30.14670 # Plot a star to symbolise the event
 EOD
+# label the star
 pstext -R -JM -K -O <<EOD>> KalannieMap1.ps
-#117.53018  -33.94891 13 0 1 1 M4.7 Katanning
-117.17030  -30.14670 13 0 1 1 M4.4 Kalannie
+117.17030  -30.14670 13 0 1 1 M4.4 Kalannie 
 EOD
 psxy -V -R -JM -O -W1 -Sc0.05 -G0 -K <<EOD>> KalannieMap1.ps
-#117.583 -33.692 12 0 1 1 Katanning
-117.117 -30.361 12 0 1 1 Kalannie
+117.117 -30.361 12 0 1 1 Kalannie  #Plot a dot for the town
 EOD
+# label the town
 pstext -V -R -JM -O -K <<EOD>> KalannieMap1.ps
-#117.583 -33.692 12 0 1 BR Katanning
-117.117 -30.351 12 0 1 1 Kalannie
+117.117 -30.351 12 0 1 1 Kalannie 
 EOD
 
 #
@@ -134,7 +132,7 @@ EOD
 # inset map
 #
 gmtset BASEMAP_TYPE plain
-pscoast -R111/160/-45/-5 -JM1.2 -Dl -W1 -S240 -G255 -O -B0 -X0.1 -Y0.1 -K >> KalannieMap1.ps
+pscoast -R111/160/-45/-5 -JM1.2 -Dl -W1 -S240 -G255 -O -B0 -X0.1 -Y4.6 -K >> KalannieMap1.ps
 psxy -O -R -JM -W1/255/0/0 -K <<EOD>>KalannieMap1.ps
 115 -33
 119 -33
@@ -146,7 +144,7 @@ EOD
 #
 # scale for topography
 #
-psscale -Y-0.3 -D3/0/4/.3h -B100:"Elevation (m)": -O -Ccpt.cpt >> KalannieMap1.ps
+psscale -Y-4.9 -D3/0/4/.3h -B100:"Elevation (m)": -O -Ccpt.cpt >> KalannieMap1.ps
 rm .gmt*
 
 ps2epsi  KalannieMap1.ps
