@@ -1,0 +1,36 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Clark}(2009)}]{dr_Clark09a}
+Clark, D. (2009), Identification of {Q}uarternary scarps in southwest and
+  central west {W}estern {A}ustralia using {DEM}, \textit{International Journal
+  of Remote Sensing}, p. (submitted).
+
+\bibitem[{\textit{Dawson et~al.}(2008)\textit{Dawson, Cummins, Tregoning, and
+  Leonard}}]{dr_Dawson08a}
+Dawson, J., P.~Cummins, P.~Tregoning, and M.~Leonard (2008), Shallow intraplate
+  earthquakes in {W}estern {A}ustralia observed by {I}nterferometric
+  {S}ynthetic {A}perture {R}adar, \textit{Journal of Geophysical Research},
+  \textit{113}(B11408), doi:10.1029/2008JB005807.
+
+\bibitem[{\textit{Robinson et~al.}(2007)\textit{Robinson, Sambridge, and
+  Snieder}}]{dr_Robinson07b}
+Robinson, D.~J., M.~Sambridge, and R.~Snieder (2007), Constraints on coda wave
+  interferometry estimates of source separation: The 2.5d acoustic case,
+  \textit{Exploration Geophysics}, \textit{38}(3), 189--199.
+
+\bibitem[{\textit{Snieder}(2006)}]{dr_Snieder06a}
+Snieder, R. (2006), The theory of coda wave interferometry, \textit{Pure and
+  Applied Geophysics}, \textit{163}, 455--473.
+
+\bibitem[{\textit{Snieder and Vrijlandt}(2005)}]{dr_Snieder05a}
+Snieder, R., and M.~Vrijlandt (2005), Constraining the source separation with
+  coda wave interferometry: Theory and application to earthquake doublets in
+  the {H}ayward {F}ault, {C}alifornia, \textit{Journal of Geophysical
+  Research}, \textit{110}(B04301), doi:10.1029/2004JB003317.
+
+\end{thebibliography}

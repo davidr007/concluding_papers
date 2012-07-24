@@ -1,0 +1,313 @@
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=latex 2010.3.30)  20 JUL 2012 13:58
+entering extended mode
+**C:/datafiles/sandpit_ANU/concluding_papers/paper3/paper3.tex
+(C:/datafiles/sandpit_ANU/concluding_papers/paper3/paper3.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, french, loaded.
+(agutex.cls
+
+
+ AGUTeX Journal Style, American Geophysical Union 
+ This version is dated Feb 9, 2008
+
+
+Document Class: agutex 02/09/2008
+\c@chapter=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@figure=\count83
+\c@table=\count84
+\mathindent=\dimen102
+\abovefigcaptionskip=\skip41
+\abovetabcaptionskip=\skip42
+\abovetableskip=\skip43
+\belowtabcaptionskip=\dimen103
+\landscapebox=\box26
+\c@plate=\count85
+\savecurrtable=\box27
+\abovetabularskip=\skip44
+\belowtabularskip=\skip45
+\timing=\count86
+\hourcount=\count87
+\oldtime=\count88
+\totpages=\count89
+\belowtitleskip=\dimen104
+\abovesubtitleskip=\dimen105
+\belowsubtitleskip=\dimen106
+\aboveauthorskip=\dimen107
+\belowauthorskip=\dimen108
+\thanksnum=\count90
+\dothanks=\count91
+\thankscounter=\count92
+\titlethanksnum=\count93
+\dotitlethanks=\count94
+\titlethankscounter=\count95
+\thanksnum=\count96
+\dothanks=\count97
+\thankscounter=\count98
+\authorwidth=\dimen109
+\authorbaselineskip=\dimen110
+\aboveaffilskip=\dimen111
+\belowaffilskip=\dimen112
+\affilwidth=\dimen113
+\aboveabstractskip=\dimen114
+\belowabstractskip=\dimen115
+\belowabstractnameskip=\dimen116
+\abstractmargin=\dimen117
+\abovereceivedskip=\skip46
+\aboverevisedskip=\skip47
+\aboveacceptedskip=\skip48
+\abovepublishededskip=\skip49
+\barticle=\box28
+\thanksbox=\box29
+\titlethanksbox=\box30
+\c@appendnum=\count99
+\footnum=\count100
+\savefootnum=\count101
+\ackskip=\skip50
+\saveparskip=\dimen118
+\captionskip=\dimen119
+\PushOneColTopFig=\dimen120
+\PushOneColBotFig=\dimen121
+\PushOneColTopTab=\dimen122
+\PushOneColBotTab=\dimen123
+\PushTwoColTopFig=\dimen124
+\PushTwoColBotFig=\dimen125
+\PushTwoColTopTab=\dimen126
+\PushTwoColBotTab=\dimen127
+\intextfloatskip=\skip51
+\c@appfigure=\count102
+\c@apptable=\count103
+\c@appplate=\count104
+\checkforspace=\dimen128
+\savetopinsert=\box31
+\savebotinsert=\box32
+\secondsavetopinsert=\box33
+\secondsavebotinsert=\box34
+\firstcolbox=\box35
+\secondcolbox=\box36
+\thefirstbox=\box37
+\thesecondbox=\box38
+\firstcol=\dimen129
+\secondcol=\dimen130
+\checkheight=\dimen131
+\loopnum=\count105
+\firstcolsavefignum=\count106
+\footnotebox=\box39
+\ColUsed=\dimen132
+\FigSpace=\dimen133
+\testdblbotins=\box40
+\pageloopnum=\count107
+\endcolsavetopinsert=\box41
+\endcolsavebotinsert=\box42
+\testpagesize=\box43
+\savelastskip=\dimen134
+\partialpage=\box44
+\figandtabnumber=\count108
+\figandtabbox=\box45
+\pagefloatnumber=\count109
+\sizeoffloat=\box46
+\bogus=\count110
+\figinsert=\insert233
+\herebox=\box47
+\endfigbox=\box48
+\spanbox=\box49
+\dbltopins=\box50
+\dblbotins=\box51
+\dblbotskip=\skip52
+\dblfigandtabnumber=\count111
+\dblfigandtabbox=\box52
+\dblloopnum=\count112
+\savedblfigandtabnumber=\count113
+\dblspanherebox=\box53
+\bigpagenum=\count114
+\littlepagenum=\count115
+\wholepagenum=\count116
+\@cprtype=\count117
+\@slugcmmntwidth=\dimen135
+\affilnum=\count118
+\totalaffils=\count119
+\figcount=\count120
+\saveequation=\count121
+\c@currlett=\count122
+\notationwidth=\dimen136
+\betweennotationskip=\skip53
+\WidestEntry=\dimen137
+\premulticols=\dimen138
+\page@free=\dimen139
+\partial@page=\box54
+\multicoltolerance=\count123
+\doublecol@number=\count124
+\multicolbaselineskip=\skip54
+\c@collectmore=\count125
+\loopcount=\count126
+\fixdimen=\dimen140
+\c@unbalance=\count127
+\savedimen=\dimen141
+\savehsize=\dimen142
+\mycolumnwidth=\dimen143
+\saveparindent=\dimen144
+\saveparskip=\dimen145
+\abstractwidth=\dimen146
+\currlastnumber=\count128
+\altaffilbox=\box55
+\sectskip=\skip55
+\belowsectionskip=\skip56
+\subsectskip=\skip57
+\belowsubsectskip=\skip58
+\subsubsectskip=\skip59
+\belowsubsubsectskip=\skip60
+\c@subsubsubsection=\count129
+\captionwidth=\dimen147
+\widecaptionwidth=\dimen148
+\landscapecaptionwidth=\dimen149
+\@temptokenb=\toks14
+\beforeendskip=\skip61
+
+
+ GRL class option, October 1, 2001,
+ \documentclass[grl]{AGUTeX}
+ ``Geophysical Research Letters'', 
+ Published by American Geophysical Union
+
+
+\titlesize=\dimen150
+LaTeX Info: Redefining \cite on input line 7417.
+\c@NAT@ctr=\count130
+) ("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\graphics.sty"
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 90.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\dvips.def"
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen153
+) (paper3.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 244.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 244.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 244.
+\figandtabbox0=\box56
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 252.
+
+
+LaTeX Warning: Reference `tab-Dawson-Kalannie-results' on page 1 undefined on i
+nput line 257.
+
+(paper3.bbl
+Underfull \hbox (badness 7012) in paragraph at lines 36--36
+| \OT1/cmr/m/n/8 J. Daw-son, Earth Mon-i-tor-ing Group,Geoscience Aus-
+ []
+
+) [1
+
+]
+Overfull \vbox (47.40057pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (47.40057pt too high) has occurred while \output is active []
+
+
+[2]
+File: ../../thesis_version2/diags/eq_location_simple/KalannieMap/KalannieMap1.e
+ps Graphic file (type eps)
+
+<../../thesis_version2/diags/eq_location_simple/KalannieMap/KalannieMap1.eps>
+Overfull \vbox (83.34535pt too high) detected at line 468
+ []
+
+File: diags/waves_and_CWIest.eps Graphic file (type eps)
+<diags/waves_and_CWIest.eps>
+Overfull \vbox (30.5873pt too high) detected at line 469
+ []
+
+File: ../../thesis_version2/diags/eq_location_simple/Kalannie_figs/Kalannie_Pos
+teriors_timeclip_1to2Hz_tw5.eps Graphic file (type eps)
+
+<../../thesis_version2/diags/eq_location_simple/Kalannie_figs/Kalannie_Posterio
+rs_timeclip_1to2Hz_tw5.eps>
+File: ../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie-CWI-N
+AB-1Dmarginals-withareas.eps Graphic file (type eps)
+
+<../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie-CWI-NAB-1D
+marginals-withareas.eps>
+Overfull \vbox (216.93242pt too high) detected at line 516
+ []
+
+File: ../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie_covar
+iance.eps Graphic file (type eps)
+
+<../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie_covariance
+.eps>
+Overfull \vbox (80.48326pt too high) detected at line 516
+ []
+
+File: ../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie_corre
+lation.eps Graphic file (type eps)
+
+<../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie_correlatio
+n.eps>
+Overfull \vbox (86.60568pt too high) detected at line 526
+ []
+
+File: ../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie_margi
+nals2Dcont_param2_3.eps Graphic file (type eps)
+
+<../../thesis_version2/diags/eq_location_simple/KalannieNAB/Kalannie_marginals2
+Dcont_param2_3.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 555--561
+
+ []
+
+[3] [4] [5]
+\dblfigandtabbox1=\box57
+ [6] (paper3.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1470 strings out of 95341
+ 17906 string characters out of 1184190
+ 85515 words of memory out of 1500000
+ 4688 multiletter control sequences out of 110000
+ 13523 words of font info for 46 fonts, out of 1200000 for 2000
+ 14 hyphenation exceptions out of 8191
+ 25i,10n,26p,469b,360s stack positions out of 5000i,500n,10000p,200000b,5000s
+
+Output written on paper3.dvi (6 pages, 22584 bytes).

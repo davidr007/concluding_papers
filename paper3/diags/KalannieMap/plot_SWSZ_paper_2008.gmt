@@ -1,0 +1,156 @@
+range="115/119/-33/-29"
+
+rm -f .gmt*
+
+gmtset MEASURE_UNIT inch
+gmtset LABEL_FONT_SIZE 18p
+
+#
+# resample SRTM dem
+#
+#grdsample -R$range -N1500/1500 -Gs.grd dem.grd
+#grdmath s.grd DUP 0 GE XOR = s.grd
+
+echo "
+#   cpt file created by: makecpt -T0/650/650 -Z
+#COLOR_MODEL = +HSV
+#
+0   150 1   1   650 1   1   1
+B   0   0   0
+F   0   0   1
+N   0   0   0.501961
+" > cpt.cpt
+
+grdgradient -V  s.grd -A45/135 -Gintensity.grd -Ne.85
+grdimage -R$range -JM6  -Ccpt.cpt -Y2 s.grd -V -Iintensity.grd -K -P > KalannieMap1.ps
+psxy -R -JM -W2/0/0/255 -G255 -Sc eq_1998to2007_GA.dat -K -O >> KalannieMap1.ps
+pscoast -Dh -R -B2EwNs -JM -V -K -Lf118.1/-34.6/-34.6/150k -O -S200 >> KalannieMap1.ps
+
+#
+# ENVISAT frame
+#
+#psxy -R -JM -O -W8/255 -M -K <<EOD>> KalannieMap1.ps
+#117.661250 -30.100128
+#116.630453 -29.863296
+#116.349985 -30.791251
+#117.393418 -31.030622 
+#117.661250 -30.100128
+#>
+#116.161114 -30.157049
+#116.419635 -31.054596
+#117.490515 -30.808897
+#117.219501 -29.913861
+#116.161114 -30.157049
+#EOD
+
+# ALOS frame
+#psxy -V -R -JM -O -W8/255 -M -K <<EOD>> KalannieMap1.ps
+#117.484660 -34.283220
+#117.310755 -33.765063
+#118.094639 -33.576436
+#118.273330 -34.093374
+#117.484660 -34.283220
+#EOD
+
+#
+# earthquake scale
+#
+psxy -R -JM -W2/0/0/255 -G255 -Sc -K -O <<EOD>> KalannieMap1.ps
+115.2 -31.75 0.04 
+115.2 -31.9 0.08 
+115.2 -32.05 0.10 
+115.2 -32.2 0.12 
+EOD
+pstext -R -JM -K -O <<EOD>> KalannieMap1.ps
+115.1 -31.60 12 0 0 ML Magnitude
+115.4 -31.75 12 0 0 ML 2
+115.4 -31.9 12 0 0 ML 3
+115.4 -32.05 12 0 0 ML 4
+115.4 -32.2 12 0 0 ML 5
+EOD
+
+#
+# earthquake focal mechanism
+#
+psmeca  -R -JM -O -K leonard.txt -C1/50 -W5 -Sa0.3/12 -V -C >> KalannieMap1.ps
+psmeca  -R -JM -O -K dawson.txt  -C1/50 -W5 -Sa0.3/12 -V -C >> KalannieMap1.ps
+
+#
+# Katanning and Kalannie earthquakes
+#
+psxy -R -JM -Sa0.3 -G255/255/0 -W1 -K -O <<EOD>> KalannieMap1.ps
+#117.53018  -33.94891 
+117.17030  -30.14670 
+EOD
+pstext -R -JM -K -O <<EOD>> KalannieMap1.ps
+#117.53018  -33.94891 13 0 1 1 M4.7 Katanning
+117.17030  -30.14670 13 0 1 1 M4.4 Kalannie
+EOD
+psxy -V -R -JM -O -W1 -Sc0.05 -G0 -K <<EOD>> KalannieMap1.ps
+#117.583 -33.692 12 0 1 1 Katanning
+117.117 -30.361 12 0 1 1 Kalannie
+EOD
+pstext -V -R -JM -O -K <<EOD>> KalannieMap1.ps
+#117.583 -33.692 12 0 1 BR Katanning
+117.117 -30.351 12 0 1 1 Kalannie
+EOD
+
+#
+# Dan Clark's scarp database
+#
+psxy -R -JM -O -K -M -W5/0 PALEO_SCARPS_Clark2008.dat >> KalannieMap1.ps
+
+#
+# Perth city
+#
+#psxy -R -JM -O -K -Sc0.035 -W1 <<EOD>> KalannieMap1.ps
+psxy -V -R -JM -O -W1 -Sc0.05 -G0 -K <<EOD>> KalannieMap1.ps
+#115.850  -31.95 14 0 0 BL Perth
+115.850  -31.95 12 0 1 1 Perth
+EOD
+pstext -R -JM -O -K -S2/255/255/255 <<EOD>> KalannieMap1.ps
+#115.850  -31.95 14 0 0 BR Perth
+115.850  -31.9 12 0 1 1 Perth
+EOD
+
+
+#
+# Plot the station locations
+#
+psxy -V -R -JM -O -W1 -St.12i -Gred -K <<EOD>> KalannieMap1.ps
+116.038800 -29.068300    #MORW
+116.709100 -30.614700    #BLDU
+117.754600 -31.591500    #KLBR
+EOD
+pstext -R -JM -O -K -S2/255/255/255 <<EOD>> KalannieMap1.ps
+115.968800 -29.068300 8 0 1 7 MORW
+116.639100 -30.614700 8 0 1 7 BLDU
+117.684600 -31.591500 8 0 1 7 KLBR
+EOD
+
+
+
+#
+# inset map
+#
+gmtset BASEMAP_TYPE plain
+pscoast -R111/160/-45/-5 -JM1.2 -Dl -W1 -S240 -G255 -O -B0 -X0.1 -Y0.1 -K >> KalannieMap1.ps
+psxy -O -R -JM -W1/255/0/0 -K <<EOD>>KalannieMap1.ps
+115 -33
+119 -33
+119 -29
+115 -29
+115 -33
+EOD
+
+#
+# scale for topography
+#
+psscale -Y-0.3 -D3/0/4/.3h -B100:"Elevation (m)": -O -Ccpt.cpt >> KalannieMap1.ps
+rm .gmt*
+
+ps2epsi  KalannieMap1.ps
+eps2eps KalannieMap1.epsi KalannieMap1.eps  
+rm  KalannieMap1.ps
+rm  KalannieMap1.epsi
+gv  KalannieMap1.eps
