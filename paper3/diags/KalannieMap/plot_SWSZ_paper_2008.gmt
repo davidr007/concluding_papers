@@ -2,8 +2,14 @@ range="115/119/-32.5/-29"
 
 rm -f .gmt*
 
+# OLD VERSION FOR GMT4 and below
 gmtset MEASURE_UNIT inch
 gmtset LABEL_FONT_SIZE 18p
+# NEW VERSION for GMT5
+#gmtset PROJ_LENGTH_UNIT inch
+#gmtset FONT_LABEL 18p
+
+
 
 #
 # resample SRTM dem
@@ -23,8 +29,8 @@ N   0   0   0.501961
 
 grdgradient -V  s.grd -A45/135 -Gintensity.grd -Ne.85
 grdimage -R$range -JM6  -Ccpt.cpt -Y2 s.grd -V -Iintensity.grd -K -P > KalannieMap1.ps
-psxy -R -JM -W2/0/0/255 -G255 -Sc eq_1998to2007_GA.dat -K -O >> KalannieMap1.ps
-pscoast -Dh -R -B2EwNs -JM -V -K -Lf118.1/-34.6/-34.6/150k -O -S200 >> KalannieMap1.ps
+psxy -R -JM -W2/0/0/255 -G255 -Sc eq_1992to2012_GA.dat -K -O >> KalannieMap1.ps
+pscoast -Dh -R -B2EwNs -JM -V -K -Lf118.1/-32.2/-32.2/100k -O -S200 >> KalannieMap1.ps
 
 #
 # ENVISAT frame
@@ -72,7 +78,7 @@ EOD
 #
 # earthquake focal mechanism
 #
-#psmeca  -R -JM -O -K leonard.txt -C1/50 -W5 -Sa0.3/12 -V -C >> KalannieMap1.ps
+psmeca  -R -JM -O -K leonard.txt -C1/50 -W5 -Sa0.3/12 -V -C >> KalannieMap1.ps
 #psmeca  -R -JM -O -K dawson.txt  -C1/50 -W5 -Sa0.3/12 -V -C >> KalannieMap1.ps
 
 #
@@ -82,16 +88,16 @@ psxy -R -JM -Sa0.3 -G255/255/0 -W1 -K -O <<EOD>> KalannieMap1.ps
 117.17030  -30.14670 # Plot a star to symbolise the event
 EOD
 # label the star
-pstext -R -JM -K -O <<EOD>> KalannieMap1.ps
-117.17030  -30.14670 13 0 1 1 M4.4 Kalannie 
-EOD
-psxy -V -R -JM -O -W1 -Sc0.05 -G0 -K <<EOD>> KalannieMap1.ps
-117.117 -30.361 12 0 1 1 Kalannie  #Plot a dot for the town
-EOD
+#pstext -R -JM -K -O <<EOD>> KalannieMap1.ps
+#117.17030  -30.14670 13 0 1 1 M4.4 Kalannie 
+#EOD
+#psxy -V -R -JM -O -W1 -Sc0.05 -G0 -K <<EOD>> KalannieMap1.ps
+#117.117 -30.361 12 0 1 1 Kalannie  #Plot a dot for the town
+#EOD
 # label the town
-pstext -V -R -JM -O -K <<EOD>> KalannieMap1.ps
-117.117 -30.351 12 0 1 1 Kalannie 
-EOD
+#pstext -V -R -JM -O -K <<EOD>> KalannieMap1.ps
+#117.117 -30.351 12 0 1 1 Kalannie 
+#EOD
 
 #
 # Dan Clark's scarp database
