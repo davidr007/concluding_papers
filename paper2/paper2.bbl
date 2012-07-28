@@ -1,4 +1,4 @@
-\begin{thebibliography}{54}
+\begin{thebibliography}{45}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[Ake et~al.(2005)Ake, O'{C}onnell, \& Block]{dr_Ake05a}
@@ -16,12 +16,6 @@ Aki, K., 1969.
 Aster, R.~C., Borchers, B., \& Thurber, C.~H., 2005.
 \newblock {\it Parameter estimation and inverse problems\/}, vol.~90 of {\bf
   International Geophysics Series}, Elsevier Academic Press, USA.
-
-\bibitem[Bokelmann \& Harjes(2000)]{dr_Bokelmann00a}
-Bokelmann, G. H.~R. \& Harjes, H., 2000.
-\newblock Evidence for temporal variation of seismic velocity within the upper
-  continental crust, {\it Journal of Geophysical Research\/}, {\bf 105}(B10),
-  23,879--23,894.
 
 \bibitem[Bond\'ar et~al.(2004)Bond\'ar, Myers, Engdahl, \&
   Bergman]{dr_Bondar04a}
@@ -73,14 +67,6 @@ Fr\`emont, M.-J. \& Malone, S.~D., 1987.
   {H}elens, {\it Journal of Geophysical Research\/}, {\bf 92}(B10),
   10,223--10,236.
 
-\bibitem[Giardini et~al.(2002)Giardini, Gruenthal, Shedlock, \&
-  Zhang]{dr_Giardini03a}
-Giardini, D., Gruenthal, G., Shedlock, K., \& Zhang, P., 2002.
-\newblock The {GSHAP} global seismic hazard map, in {\em International Handbook
-  of Earthquake Engineering Seismology\/}, vol.~{A}, chap.~74, pp. 1233--1239,
-  eds Lee, W.~H., Kanamori, H., Jennings, P.~C., \& Kisslinger, C., Academic
-  Press, London.
-
 \bibitem[Got et~al.(1994)Got, Fr\`echet, \& Klein]{dr_Got94a}
 Got, J.-L., Fr\`echet, J., \& Klein, F.~W., 1994.
 \newblock Deep fault plane geometry inferred from multiplet relative relocation
@@ -91,16 +77,6 @@ Got, J.-L., Fr\`echet, J., \& Klein, F.~W., 1994.
 Gutenberg, B., 1945.
 \newblock Amplitudes of surface waves and magnitudes of shallow earthquakes,
   {\it Bulletin of the Seismological Society of America\/}, {\bf 35}, 3--12.
-
-\bibitem[Gutenberg \& Richter(1944)]{dr_Gutenberg44a}
-Gutenberg, B. \& Richter, C.~F., 1944.
-\newblock Frequency of earthquakes in {C}alifornia, {\it Bulletin of
-  Seismological Society of America\/}, {\bf 34}, 185--188.
-
-\bibitem[Isacks et~al.(1968)Isacks, Oliver, \& Sykes]{dr_Isacks68a}
-Isacks, B., Oliver, J., \& Sykes, L.~R., 1968.
-\newblock Seismology and the new {G}lobal tectonics, {\it Journal of
-  Geophysical Research\/}, {\bf 73}(18), 5855--5899.
 
 \bibitem[Ito(1985)]{dr_Ito85a}
 Ito, A., 1985.
@@ -142,12 +118,6 @@ Pavlis, G.~L., 1992.
 \newblock Appraising relative earthquake location errors, {\it Bulletin of the
   Seismological Society of America\/}, {\bf 82}(2), 836--859.
 
-\bibitem[Poupinet et~al.(1984)Poupinet, Ellsworth, \& Frechet]{dr_Poupinet84a}
-Poupinet, G., Ellsworth, W.~L., \& Frechet, J., 1984.
-\newblock Monitoring velocity variations in the crust using earthquake
-  doublets: {A}n application to the {C}alaveras {F}ault, {C}alifornia, {\it
-  Journal of Geophysical Research\/}, {\bf 89}(B7), 5719--5731.
-
 \bibitem[Press et~al.(1987)Press, Flannery, Teukolsky, \&
   Vetterling]{dr_Press87a}
 Press, W.~H., Flannery, B.~P., Teukolsky, S.~A., \& Vetterling, W.~T., 1987.
@@ -164,11 +134,19 @@ Robinson, D., Dhu, T., \& Schneider, J., 2006.
 \newblock Practical probabilistic seismic risk analysis: {A} demonstration of
   capability, {\it Seismological Research Letters\/}, {\bf 77}(4), 452--458.
 
-\bibitem[Robinson et~al.(2007)Robinson, Sambridge, \& Snieder]{dr_Robinson07b}
-Robinson, D.~J., Sambridge, M., \& Snieder, R., 2007.
+\bibitem[Robinson et~al.(2007{\natexlab{a}})Robinson, Sambridge, \&
+  Snieder]{dr_Robinson07b}
+Robinson, D.~J., Sambridge, M., \& Snieder, R., 2007{\natexlab{a}}.
 \newblock Constraints on coda wave interferometry estimates of source
   separation: The 2.5d acoustic case, {\it Exploration Geophysics\/}, {\bf
   38}(3), 189--199.
+
+\bibitem[Robinson et~al.(2007{\natexlab{b}})Robinson, Snieder, \&
+  Sambridge]{dr_Robinson07c}
+Robinson, D.~J., Snieder, R., \& Sambridge, M., 2007{\natexlab{b}}.
+\newblock Using coda wave interferometry for estimating the variation in source
+  mechanism between double couple events, {\it Journal of Geophysical
+  Research\/}, {\bf 112}, B12302, doi:10.1029/2007JB004925.
 
 \bibitem[Robinson et~al.(2011)Robinson, Sambridge, \& Snieder]{dr_Robinson11a}
 Robinson, D.~J., Sambridge, M., \& Snieder, R., 2011.
@@ -176,14 +154,8 @@ Robinson, D.~J., Sambridge, M., \& Snieder, R., 2011.
   of earthquakes directly from their coda waves, {\it Journal of Geophysical
   Research\/}, {\bf B04309}, 1--17.
 
-\bibitem[Rubin(2002{\natexlab{a}})]{dr_Rubin02b}
-Rubin, A., 2002{\natexlab{a}}.
-\newblock Using repeating earthquakes to correct high-precision earthquake
-  catalogs for time-dependant station delays, {\it Bulletin of the
-  Seismological Society of America\/}, {\bf 92}(5), 1647--1659.
-
-\bibitem[Rubin(2002{\natexlab{b}})]{dr_Rubin02a}
-Rubin, A.~M., 2002{\natexlab{b}}.
+\bibitem[Rubin(2002)]{dr_Rubin02a}
+Rubin, A.~M., 2002.
 \newblock Aftershocks of microearthquakes as probes of the mechanics of
   rupture, {\it Journal of Geophysical Research\/}, {\bf 107}(B7,2142),
   10.1029/2001JB000496.
@@ -192,12 +164,6 @@ Rubin, A.~M., 2002{\natexlab{b}}.
 Rubin, A.~M., Gillard, D., \& Got, J.-L., 1999.
 \newblock Streaks of microearthquakes along creeping faults, {\it Nature\/},
   {\bf 400}, 635--641.
-
-\bibitem[Rubinstein \& Beroza(2007)]{dr_Rubinstein07a}
-Rubinstein, J.~L. \& Beroza, G.~C., 2007.
-\newblock Full waveform earthquake location: {A}pplication to seismic streaks
-  on the {C}alaveras {F}ault, {C}alifornia, {\it Journal of Geophysical
-  Research\/}, {\bf 112}, B05303, doi:10.1029/2006JB004463.
 
 \bibitem[Schaff et~al.(2002)Schaff, Bokelmann, \& Beroza]{dr_Schaff02a}
 Schaff, D.~P., Bokelmann, G. H.~R., \& Beroza, G.~C., 2002.
@@ -247,23 +213,11 @@ Spencer, C. \& Gubbins, D., 1980.
   velocity structure determination in laterally varying media, {\it Geophysical
   Journal of the Royal Astronomical Society\/}, {\bf 63}, 95--116.
 
-\bibitem[Stein \& Klosko(2002)]{dr_Stein02a}
-Stein, S. \& Klosko, E., 2002.
-\newblock Earthquake mechanism and plate tectonics, in {\em International
-  Handbook of Earthquake Engineering Seismology\/}, vol.~{A}, chap.~7, pp.
-  69--78, eds Lee, W.~H., Kanamori, H., Jennings, P.~C., \& Kisslinger, C.,
-  Academic Press, London.
-
 \bibitem[Stirling et~al.(2002)Stirling, Mc{V}erry, \&
   Berrryman]{dr_Stirling02a}
 Stirling, M.~W., Mc{V}erry, G.~H., \& Berrryman, K.~R., 2002.
 \newblock A new seismic hazard model for {N}ew {Z}ealand, {\it Bulletin of the
   Seismological Society of America\/}, {\bf 92}(5), 1878--1903.
-
-\bibitem[Sykes(1967)]{dr_Sykes67a}
-Sykes, L., 1967.
-\newblock Mechanism of earthquake and nature of faulting on the {M}id-{O}ceanic
-  {R}idges, {\it Journal of Geophysical Research\/}, {\bf 72}(8), 2131--2153.
 
 \bibitem[Toro et~al.(1997)Toro, Abrahamson, \& Schneider]{dr_Toro97a}
 Toro, G.~R., Abrahamson, N.~A., \& Schneider, J.~F., 1997.
@@ -312,12 +266,5 @@ Waldhauser, F. \& Schaff, D.~P., 2008.
 Waldhauser, F., Ellsworth, W.~L., \& Cole, A., 1999.
 \newblock Slip-parallel lineations on the {N}orthern {H}ayward {F}ault,
   {C}alifornia, {\it Geophysical Research Letters\/}, {\bf 26}(23), 3525--3528.
-
-\bibitem[Waldhauser et~al.(2004)Waldhauser, Ellsworth, Schaff, \&
-  Cole]{dr_Waldhauser04a}
-Waldhauser, F., Ellsworth, W.~L., Schaff, D.~P., \& Cole, A., 2004.
-\newblock Streaks, multiplets, and holes: {H}igh-resolution spatio-temporal
-  behavior of {P}arkfield seismicity, {\it Geophysical Research Letters\/},
-  {\bf 31}, L18608, doi:10.1029/2004GL020649.
 
 \end{thebibliography}

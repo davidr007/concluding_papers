@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=latex 2010.3.30)  20 JUL 2012 13:38
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=latex 2010.3.30)  27 JUL 2012 14:01
 entering extended mode
 **Y:/earthquake/sandpits/drobinson/git/concluding_papers/paper2/paper2.tex
 (Y:/earthquake/sandpits/drobinson/git/concluding_papers/paper2/paper2.tex
@@ -97,168 +97,90 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 44.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 85.
+
+Underfull \vbox (badness 1371) has occurred while \output is active []
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 84.
 
 
-LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 153.
+LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 84.
 
 [1
 
-
 ]
-Underfull \hbox (badness 1721) in paragraph at lines 262--284
-\OT1/ptm/m/n/9 the pos-te-rior, like-li-hood and prior func-tions, re-spec-tive
-ly. In
- []
-
-
-Underfull \hbox (badness 5847) in paragraph at lines 262--284
-\OML/cmm/m/it/9 P\OT1/cmr/m/n/9 (\OT1/cmr/bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/cmr/
-bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/cmr/bx/n/9 e[]\OMS/cmsy/m/n/9 j[][]\OML/cmm/m/
-it/9 ; \OT1/cmr/bx/n/9 []\OT1/cmr/m/n/9 )$ \OT1/ptm/m/n/9 and $\OML/cmm/m/it/9
- P\OT1/cmr/m/n/9 ([][]\OML/cmm/m/it/9 ; \OT1/cmr/bx/n/9 []\OMS/cmsy/m/n/9 j\OT
-1/cmr/bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/cmr/bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/cmr
-/bx/n/9 e[]\OT1/cmr/m/n/9 )$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--300
-[][]\OT1/ptm/m/n/9 For three earth-quakes we have like-li-hoods;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--300
-\OML/cmm/m/it/9 P\OT1/cmr/m/n/9 ([]\OMS/cmsy/m/n/9 j\OT1/cmr/bx/n/9 e[]\OML/cmm
-/m/it/9 ; \OT1/cmr/bx/n/9 e[]\OT1/cmr/m/n/9 )$\OT1/ptm/m/n/9 , $\OML/cmm/m/it/9
- P\OT1/cmr/m/n/9 ([]\OMS/cmsy/m/n/9 j\OT1/cmr/bx/n/9 e[]\OML/cmm/m/it/9 ; \OT1/
-cmr/bx/n/9 e[]\OT1/cmr/m/n/9 )$ \OT1/ptm/m/n/9 and
- []
-
-
-Underfull \hbox (badness 4291) in paragraph at lines 285--300
-\OML/cmm/m/it/9 P\OT1/cmr/m/n/9 ([]\OMS/cmsy/m/n/9 j\OT1/cmr/bx/n/9 e[]\OML/cmm
-/m/it/9 ; \OT1/cmr/bx/n/9 e[]\OT1/cmr/m/n/9 )$\OT1/ptm/m/n/9 . In writ-ing thes
-e like-li-hoods we have
- []
-
-[2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 87.
+ [2] [3] [4] [5] [6]
 File: diags/locs_2D_50eq_1.eps Graphic file (type eps)
  <diags/locs_2D_50eq_1.eps>
 File: diags/locs_2D_50eq_3.eps Graphic file (type eps)
- <diags/locs_2D_50eq_3.eps> [3]
-File: diags/synth2Dmulti/ressummary_2Dsynth50eq.eps Graphic file (type eps)
+ <diags/locs_2D_50eq_3.eps>
+Underfull \vbox (badness 1810) has occurred while \output is active []
 
-<diags/synth2Dmulti/ressummary_2Dsynth50eq.eps> [4]
+ [7]
+[8]
+File: diags/synth2Dmulti/ressummary_2Dsynth50eq.eps Graphic file (type eps)
+ <diags/synth2Dmulti/ressummary_2Dsynth50eq.eps> [9] [10]
 File: diags/synth3Dmulti/ressummary_3Dsynth50eq.eps Graphic file (type eps)
 
 <diags/synth3Dmulti/ressummary_3Dsynth50eq.eps>
+Underfull \vbox (badness 1205) has occurred while \output is active []
+
+ [11]
 File: diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps Graphic fil
 e (type eps)
 
-<diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps> [5]
+<diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps>
 File: diags/CalaverasLoc1_hypoDD_SVD.eps Graphic file (type eps)
 
-<diags/CalaverasLoc1_hypoDD_SVD.eps>
+<diags/CalaverasLoc1_hypoDD_SVD.eps> [12] [13]
 File: diags/CalaverasMap/matlab/Calaveras_substationmap.eps Graphic file (type 
 eps)
 
 <diags/CalaverasMap/matlab/Calaveras_substationmap.eps>
-Overfull \hbox (17.69417pt too wide) in paragraph at lines 819--836
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 819--836
-
- []
-
-[6]
 File: diags/CalaverasLoc2.eps Graphic file (type eps)
- <diags/CalaverasLoc2.eps>
+
+<diags/CalaverasLoc2.eps>
 File: diags/CalaverasLoc3_hypoDD_SVD.eps Graphic file (type eps)
- <diags/CalaverasLoc3_hypoDD_SVD.eps>
+ <diags/CalaverasLoc3_hypoDD_SVD.eps> [14]
 File: diags/CalaverasLoc4_hypoDD_SVD.eps Graphic file (type eps)
 
-<diags/CalaverasLoc4_hypoDD_SVD.eps>
+<diags/CalaverasLoc4_hypoDD_SVD.eps> [15] [16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
-[8] [9]
+ [17]
+[18] [19]
 File: diags/CalaverasLoc5_hypoDD_SVD.eps Graphic file (type eps)
- <diags/CalaverasLoc5_hypoDD_SVD.eps> [10]
+ <diags/CalaverasLoc5_hypoDD_SVD.eps> [20]
 File: diags/OmoriFigure.eps Graphic file (type eps)
  <diags/OmoriFigure.eps>
 File: diags/CalaverasLoc6_hypoDD_SVD.eps Graphic file (type eps)
 
-<diags/CalaverasLoc6_hypoDD_SVD.eps> [11] (paper2.bbl
+<diags/CalaverasLoc6_hypoDD_SVD.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12]
-Underfull \hbox (badness 1509) in paragraph at lines 197--201
-[][]\OT1/ptm/m/n/8 Rubinstein, J. L. & Beroza, G. C., 2007.  Full wave-form ear
-th-
- []
+ [21]
+[22]
+Underfull \vbox (badness 1275) has occurred while \output is active []
 
-
-Underfull \hbox (badness 2600) in paragraph at lines 197--201
-\OT1/ptm/m/n/8 quake lo-ca-tion: Ap-pli-ca-tion to seis-mic streaks on the Cala
-v-eras
- []
-
-
-Underfull \hbox (badness 1400) in paragraph at lines 197--201
-\OT1/ptm/m/n/8 Fault, Cal-i-for-nia, \OT1/ptm/m/it/8 Jour-nal of Geo-phys-i-cal
- Re-search\OT1/ptm/m/n/8 , \OT1/ptm/b/n/8 112\OT1/ptm/m/n/8 , B05303,
- []
-
-
-Underfull \hbox (badness 1478) in paragraph at lines 298--302
-\OT1/ptm/m/n/8 chan-ics of the Hay-ward Fault, Cal-i-for-nia, from double--diff
-erence
- []
-
-
-Underfull \hbox (badness 2818) in paragraph at lines 298--302
-\OT1/ptm/m/n/8 earth-quake lo-ca-tions, \OT1/ptm/m/it/8 Jour-nal of Geo-phys-i-
-cal Re-search\OT1/ptm/m/n/8 , \OT1/ptm/b/n/8 107\OT1/ptm/m/n/8 (B3),
- []
-
-
+ [23]
+(paper2.bbl [24]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \hbox (badness 1248) in paragraph at lines 304--309
-\OT1/ptm/m/n/8 double-difference meth-ods, \OT1/ptm/m/it/8 Jour-nal of Geo-phys
--i-cal Re-search\OT1/ptm/m/n/8 , \OT1/ptm/b/n/8 133\OT1/ptm/m/n/8 ,
- []
-
-) [13]
-Underfull \hbox (badness 1210) in paragraph at lines 1403--1406
-[]\OT1/ptm/m/n/9 are re-quired by the Polak-Ribiere al-go-rithm. These are used
-
- []
-
-
-Underfull \hbox (badness 2865) in paragraph at lines 1403--1406
-\OT1/ptm/m/n/9 to guide the op-ti-miza-tion pro-ce-dure to-wards the val-ues of
-
- []
-
-[14] (paper2.aux)
+ [25])
+[26] [27] [28] [29] (paper2.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1101 strings out of 95341
- 13082 string characters out of 1184190
- 80491 words of memory out of 1500000
- 4302 multiletter control sequences out of 110000
+ 1092 strings out of 95341
+ 12943 string characters out of 1184190
+ 71151 words of memory out of 1500000
+ 4293 multiletter control sequences out of 110000
  17109 words of font info for 49 fonts, out of 1200000 for 2000
  14 hyphenation exceptions out of 8191
- 25i,12n,23p,1018b,317s stack positions out of 5000i,500n,10000p,200000b,5000s
+ 25i,12n,23p,1018b,325s stack positions out of 5000i,500n,10000p,200000b,5000s
 
-Output written on paper2.dvi (14 pages, 126796 bytes).
+Output written on paper2.dvi (29 pages, 122496 bytes).
