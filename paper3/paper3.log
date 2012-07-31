@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=latex 2010.3.30)  24 JUL 2012 15:56
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=latex 2010.3.30)  31 JUL 2012 17:22
 entering extended mode
 **Y:/earthquake/sandpits/drobinson/git/concluding_papers/paper3/paper3.tex
 (Y:/earthquake/sandpits/drobinson/git/concluding_papers/paper3/paper3.tex
@@ -226,48 +226,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 252.
 
 
-LaTeX Warning: Reference `fig:-Kalannie-map' on page 1 undefined on input line 
-256.
-
-
 LaTeX Warning: Reference `tab-Dawson-Kalannie-results' on page 1 undefined on i
 nput line 257.
-
-
-LaTeX Warning: Reference `tab:Kalannie-eventsizes' on page 1 undefined on input
- line 264.
-
-
-LaTeX Warning: Reference `fig:-Kalannie-map' on page 1 undefined on input line 
-283.
-
-
-LaTeX Warning: Reference `fig:-Kalannie-map' on page 1 undefined on input line 
-284.
-
-
-LaTeX Warning: Reference `fig:-Kalannie-map' on page 1 undefined on input line 
-285.
-
-
-LaTeX Warning: Reference `fig:Kalannie-CWI-Posteriors' on page 1 undefined on i
-nput line 286.
-
-
-LaTeX Warning: Reference `tab:Kalannie-InversionRes' on page 1 undefined on inp
-ut line 287.
-
-
-LaTeX Warning: Reference `fig:Kalannie-CWI-NAB-1Dmarginals' on page 1 undefined
- on input line 288.
-
-
-LaTeX Warning: Reference `fig:Kalannie-2Dmarginals_param23' on page 1 undefined
- on input line 289.
-
-
-LaTeX Warning: Reference `tab:-KalannieRes-separations' on page 1 undefined on 
-input line 291.
 
 (paper3.bbl
 Underfull \hbox (badness 7012) in paragraph at lines 36--36
@@ -286,7 +246,7 @@ Overfull \vbox (47.40057pt too high) has occurred while \output is active []
 [2]
 File: ./diags/KalannieMap/KalannieMap1.eps Graphic file (type eps)
  <./diags/KalannieMap/KalannieMap1.eps>
-Overfull \vbox (61.23112pt too high) detected at line 469
+Overfull \vbox (60.82945pt too high) detected at line 469
  []
 
 File: diags/waves_and_CWIest.eps Graphic file (type eps)
@@ -294,28 +254,44 @@ File: diags/waves_and_CWIest.eps Graphic file (type eps)
 Overfull \vbox (30.5873pt too high) detected at line 470
  []
 
+File: ./diags/CopiedFromThesis/Kalannie_Posteriors_timeclip_1to2Hz_tw5.eps Grap
+hic file (type eps)
+<./diags/CopiedFromThesis/Kalannie_Posteriors_timeclip_1to2Hz_tw5.eps>
+File: ./diags/CopiedFromThesis/Kalannie-CWI-NAB-1Dmarginals-withareas.eps Graph
+ic file (type eps)
 
-LaTeX Warning: File `../../thesis_version2/diags/eq_location_simple/Kalannie_fi
-gs/Kalannie_Posteriors_timeclip_1to2Hz_tw5.eps' not found on input line 507.
+<./diags/CopiedFromThesis/Kalannie-CWI-NAB-1Dmarginals-withareas.eps>
+Overfull \vbox (216.93242pt too high) detected at line 518
+ []
 
+File: ./diags/CopiedFromThesis/Kalannie_covariance.eps Graphic file (type eps)
+<./diags/CopiedFromThesis/Kalannie_covariance.eps>
+Overfull \vbox (80.48326pt too high) detected at line 520
+ []
 
-! LaTeX Error: File `../../thesis_version2/diags/eq_location_simple/Kalannie_fi
-gs/Kalannie_Posteriors_timeclip_1to2Hz_tw5.eps' not found.
+File: ./diags/CopiedFromThesis/Kalannie_correlation.eps Graphic file (type eps)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.507 ...annie_Posteriors_timeclip_1to2Hz_tw5.eps}
-                                                  
-? x
- 
+<./diags/CopiedFromThesis/Kalannie_correlation.eps>
+Overfull \vbox (86.60568pt too high) detected at line 532
+ []
+
+File: ./diags/CopiedFromThesis/Kalannie_marginals2Dcont_param2_3.eps Graphic fi
+le (type eps)
+<./diags/CopiedFromThesis/Kalannie_marginals2Dcont_param2_3.eps> [3] [4]
+[5]
+\dblfigandtabbox1=\box57
+ [6] (paper3.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1451 strings out of 95341
- 17339 string characters out of 1184190
+ 1469 strings out of 95341
+ 17597 string characters out of 1184190
  85515 words of memory out of 1500000
- 4677 multiletter control sequences out of 110000
- 12902 words of font info for 44 fonts, out of 1200000 for 2000
+ 4688 multiletter control sequences out of 110000
+ 13523 words of font info for 46 fonts, out of 1200000 for 2000
  14 hyphenation exceptions out of 8191
  25i,10n,26p,336b,360s stack positions out of 5000i,500n,10000p,200000b,5000s
-Output written on paper3.dvi (2 pages, 11588 bytes).
+
+Output written on paper3.dvi (6 pages, 22896 bytes).
