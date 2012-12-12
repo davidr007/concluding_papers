@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_0) (format=latex 2012.7.11)  12 DEC 2012 21:18
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_0) (format=latex 2012.7.11)  12 DEC 2012 23:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -115,7 +115,7 @@ LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 90.
 ] [2]
 
 Package natbib Warning: Citation `dr_Sniedr05a' on page 3 undefined on input li
-ne 206.
+ne 211.
 
 [3]
 Missing character: There is no – in font ptmr7t!
@@ -123,20 +123,14 @@ Missing character: There is no – in font ptmr7t!
 File: diags/locs_2D_50eq_1.eps Graphic file (type eps)
  <diags/locs_2D_50eq_1.eps>
 File: diags/locs_2D_50eq_3.eps Graphic file (type eps)
- <diags/locs_2D_50eq_3.eps>
-Underfull \vbox (badness 1810) has occurred while \output is active []
-
- [7]
+ <diags/locs_2D_50eq_3.eps> [7]
 [8]
 File: diags/synth2Dmulti/ressummary_2Dsynth50eq.eps Graphic file (type eps)
- <diags/synth2Dmulti/ressummary_2Dsynth50eq.eps> [9]
+ <diags/synth2Dmulti/ressummary_2Dsynth50eq.eps> [9] [10]
 File: diags/synth3Dmulti/ressummary_3Dsynth50eq.eps Graphic file (type eps)
 
 <diags/synth3Dmulti/ressummary_3Dsynth50eq.eps>
-Underfull \vbox (badness 1708) has occurred while \output is active []
-
- [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1226) has occurred while \output is active []
 
  [11]
 File: diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps Graphic fil
@@ -188,17 +182,14 @@ Package natbib Warning: There were undefined citations.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 1094 strings out of 494764
- 13412 string characters out of 3171465
- 76614 words of memory out of 3000000
- 4338 multiletter control sequences out of 15000+200000
+ 1093 strings out of 494764
+ 13404 string characters out of 3171465
+ 76713 words of memory out of 3000000
+ 4337 multiletter control sequences out of 15000+200000
  17109 words of font info for 49 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
  25i,12n,23p,956b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper2.dvi (29 pages, 106036 bytes).
+Output written on paper2.dvi (29 pages, 106844 bytes).
