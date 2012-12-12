@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_0) (format=latex 2012.7.11)  12 DEC 2012 20:21
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_0) (format=latex 2012.7.11)  12 DEC 2012 21:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -103,496 +103,75 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 44.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
-
-Package natbib Warning: Citation `dr_Richter35a' on page 1 undefined on input l
-ine 75.
-
-
-Package natbib Warning: Citation `dr_Gutenberg45a' on page 1 undefined on input
- line 75.
-
-
-Package natbib Warning: Citation `dr_Sipkin02a' on page 1 undefined on input li
-ne 76.
-
-
-Package natbib Warning: Citation `dr_Spencer80a' on page 1 undefined on input l
-ine 78.
-
-
-Package natbib Warning: Citation `dr_Kennett95a' on page 1 undefined on input l
-ine 78.
-
-
-Package natbib Warning: Citation `dr_Curtis02a' on page 1 undefined on input li
-ne 78.
-
-
-Package natbib Warning: Citation `dr_Kennett04a' on page 1 undefined on input l
-ine 78.
-
-
-Package natbib Warning: Citation `dr_Toro97a' on page 1 undefined on input line
- 80.
-
-
-Package natbib Warning: Citation `dr_Campbell03a' on page 1 undefined on input 
-line 80.
-
-
-Package natbib Warning: Citation `dr_Frankel00a' on page 1 undefined on input l
-ine 82.
-
-
-Package natbib Warning: Citation `dr_Stirling02a' on page 1 undefined on input 
-line 82.
-
-
-Package natbib Warning: Citation `dr_Robinson06b' on page 1 undefined on input 
-line 82.
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 87.
+(Font)              <9> on input line 86.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
 
-LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 91.
+LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 90.
 
 [1
 
-]
+] [2]
 
-Package natbib Warning: Citation `dr_Shearer99a' on page 2 undefined on input l
-ine 101.
-
-
-Package natbib Warning: Citation `dr_Bondar04a' on page 2 undefined on input li
-ne 105.
-
-
-Package natbib Warning: Citation `dr_Douglas67a' on page 2 undefined on input l
-ine 114.
-
-
-Package natbib Warning: Citation `dr_Douglas67a' on page 2 undefined on input l
-ine 117.
-
-
-Package natbib Warning: Citation `dr_Pavlis92a' on page 2 undefined on input li
-ne 119.
-
-
-Package natbib Warning: Citation `dr_Ito85a' on page 2 undefined on input line 
-124.
-
-
-Package natbib Warning: Citation `dr_Got94a' on page 2 undefined on input line 
-124.
-
-
-Package natbib Warning: Citation `dr_Nadeau97a' on page 2 undefined on input li
-ne 124.
-
-
-Package natbib Warning: Citation `dr_Waldhauser99a' on page 2 undefined on inpu
-t line 124.
-
-
-Package natbib Warning: Citation `dr_Shearer99a' on page 2 undefined on input l
-ine 127.
-
-
-Package natbib Warning: Citation `dr_Ito85a' on page 2 undefined on input line 
-131.
-
-
-Package natbib Warning: Citation `dr_Got94a' on page 2 undefined on input line 
-131.
-
-
-Package natbib Warning: Citation `dr_Waldhauser99a' on page 2 undefined on inpu
-t line 131.
-
-
-Package natbib Warning: Citation `dr_Waldhauser08a' on page 2 undefined on inpu
-t line 131.
-
-
-Package natbib Warning: Citation `dr_Deichmann92a' on page 2 undefined on input
- line 135.
-
-
-Package natbib Warning: Citation `dr_Got94a' on page 2 undefined on input line 
-135.
-
-
-Package natbib Warning: Citation `dr_Waldhauser99a' on page 2 undefined on inpu
-t line 135.
-
-
-Package natbib Warning: Citation `dr_Waldhauser02a' on page 2 undefined on inpu
-t line 135.
-
-
-Package natbib Warning: Citation `dr_Shearer05a' on page 2 undefined on input l
-ine 135.
-
-
-Package natbib Warning: Citation `dr_Rubin99a' on page 2 undefined on input lin
-e 136.
-
-
-Package natbib Warning: Citation `dr_Rubin02a' on page 2 undefined on input lin
-e 136.
-
-
-Package natbib Warning: Citation `dr_Fremont87a' on page 2 undefined on input l
-ine 137.
-
-
-Package natbib Warning: Citation `dr_Lees98a' on page 2 undefined on input line
- 138.
-
-
-Package natbib Warning: Citation `dr_Ake05a' on page 2 undefined on input line 
-138.
-
-
-Package natbib Warning: Citation `dr_Aki69a' on page 2 undefined on input line 
-154.
-
-
-Package natbib Warning: Citation `dr_Snieder99a' on page 2 undefined on input l
-ine 154.
-
-
-Package natbib Warning: Citation `dr_Snieder06a' on page 2 undefined on input l
-ine 154.
-
-[2]
-
-Package natbib Warning: Citation `dr_Snieder05a' on page 3 undefined on input l
-ine 159.
-
-
-Package natbib Warning: Citation `dr_Robinson07b' on page 3 undefined on input 
-line 166.
-
-
-Package natbib Warning: Citation `dr_Snieder05a' on page 3 undefined on input l
-ine 176.
-
-
-Package natbib Warning: Citation `dr_Snieder05a' on page 3 undefined on input l
-ine 199.
-
-
-Package natbib Warning: Citation `dr_Robinson07c' on page 3 undefined on input 
-line 202.
-
-
-Package natbib Warning: Citation `dr_Robinson11a' on page 3 undefined on input 
-line 209.
-
-
-Package natbib Warning: Citation `dr_Snieder05a' on page 3 undefined on input l
-ine 211.
-
-Missing character: There is no – in font ptmr7t!
-
-Package natbib Warning: Citation `dr_Robinson11a' on page 3 undefined on input 
-line 215.
+Package natbib Warning: Citation `dr_Sniedr05a' on page 3 undefined on input li
+ne 206.
 
 [3]
-
-Package natbib Warning: Citation `dr_Robinson11a' on page 4 undefined on input 
-line 241.
-
-
-LaTeX Warning: Reference `sec-Appendix-noisylikelihood' on page 4 undefined on 
-input line 242.
-
-
-LaTeX Warning: Reference `sec:CalaverasLoc-CWIandTT' on page 4 undefined on inp
-ut line 285.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
-[5]
-
-LaTeX Warning: Reference `sec:CalaverasLoc-CWIandTT' on page 6 undefined on inp
-ut line 408.
-
-
-Package natbib Warning: Citation `dr_Press87a' on page 6 undefined on input lin
-e 416.
-
-
-LaTeX Warning: Reference `sec-Appendix-derivatives_ofL' on page 6 undefined on 
-input line 418.
-
-
-Package natbib Warning: Citation `dr_Snieder05a' on page 6 undefined on input l
-ine 436.
-
-
-Package natbib Warning: Citation `dr_Robinson07b' on page 6 undefined on input 
-line 436.
-
-
-Package natbib Warning: Citation `dr_Robinson11a' on page 6 undefined on input 
-line 436.
-
-
-Underfull \vbox (badness 3849) has occurred while \output is active []
-
- [6]
-
-LaTeX Warning: Reference `eq:mu1' on page 7 undefined on input line 456.
-
-
-Package natbib Warning: Citation `dr_Robinson11a' on page 7 undefined on input 
-line 458.
-
+Missing character: There is no – in font ptmr7t!
+ [4] [5] [6]
 File: diags/locs_2D_50eq_1.eps Graphic file (type eps)
-<diags/locs_2D_50eq_1.eps>
+ <diags/locs_2D_50eq_1.eps>
 File: diags/locs_2D_50eq_3.eps Graphic file (type eps)
  <diags/locs_2D_50eq_3.eps>
+Underfull \vbox (badness 1810) has occurred while \output is active []
 
-Package natbib Warning: Citation `dr_Robinson11a' on page 7 undefined on input 
-line 484.
-
-
-Package natbib Warning: Citation `dr_Robinson11a' on page 7 undefined on input 
-line 493.
-
-[7]
-
-Package natbib Warning: Citation `dr_Aster05a' on page 8 undefined on input lin
-e 535.
-
-
-LaTeX Warning: Reference `sec:CalaverasLoc-CWIandTT' on page 8 undefined on inp
-ut line 541.
-
+ [7]
 [8]
 File: diags/synth2Dmulti/ressummary_2Dsynth50eq.eps Graphic file (type eps)
  <diags/synth2Dmulti/ressummary_2Dsynth50eq.eps> [9]
-
-Package natbib Warning: Citation `dr_VanDecar94a' on page 10 undefined on input
- line 613.
-
 File: diags/synth3Dmulti/ressummary_3Dsynth50eq.eps Graphic file (type eps)
-<diags/synth3Dmulti/ressummary_3Dsynth50eq.eps> [10]
 
-Package natbib Warning: Citation `dr_Waldhauser00a' on page 11 undefined on inp
-ut line 693.
+<diags/synth3Dmulti/ressummary_3Dsynth50eq.eps>
+Underfull \vbox (badness 1708) has occurred while \output is active []
 
-
-Package natbib Warning: Citation `dr_Waldhauser01a' on page 11 undefined on inp
-ut line 693.
-
-
-Package natbib Warning: Citation `dr_Waldhauser01a' on page 11 undefined on inp
-ut line 703.
-
-
-Package natbib Warning: Citation `dr_Schaff02a' on page 11 undefined on input l
-ine 703.
-
-
-Package natbib Warning: Citation `dr_Waldhauser08a' on page 11 undefined on inp
-ut line 703.
-
-[11]
-File: diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps Graphic fil
-e (type eps)
- <diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps>
-
-LaTeX Warning: Reference `fig-69Calaverasevents_eg1' on page 12 undefined on in
-put line 737.
-
-
-Underfull \vbox (badness 6725) has occurred while \output is active []
-
- [12]
-File: diags/CalaverasLoc1_hypoDD_SVD.eps Graphic file (type eps)
-
-<diags/CalaverasLoc1_hypoDD_SVD.eps>
-
-Package natbib Warning: Citation `dr_Robinson11a' on page 13 undefined on input
- line 773.
-
-
-LaTeX Warning: Reference `fig-69Calaverasevents_eg1' on page 13 undefined on in
-put line 782.
-
-
-LaTeX Warning: Reference `fig-69Calaverasevents_eg1' on page 13 undefined on in
-put line 785.
-
-
+ [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13]
+ [11]
+File: diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps Graphic fil
+e (type eps)
 
-LaTeX Warning: Reference `fig:-eqopti-Calaveras-substations' on page 14 undefin
-ed on input line 830.
+<diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps>
+File: diags/CalaverasLoc1_hypoDD_SVD.eps Graphic file (type eps)
 
-
-LaTeX Warning: Reference `tab:Calaveras-stationremoval' on page 14 undefined on
- input line 831.
-
+<diags/CalaverasLoc1_hypoDD_SVD.eps> [12] [13]
 File: diags/CalaverasMap/matlab/Calaveras_substationmap.eps Graphic file (type 
 eps)
+
 <diags/CalaverasMap/matlab/Calaveras_substationmap.eps>
-
-LaTeX Warning: Reference `tab:Calaveras-stationremoval' on page 14 undefined on
- input line 841.
-
-
-LaTeX Warning: Reference `tab:Calaveras-stationremoval' on page 14 undefined on
- input line 841.
-
-
-LaTeX Warning: Reference `fig-CWIreducesstats' on page 14 undefined on input li
-ne 869.
-
-
-LaTeX Warning: Reference `fig-69Calaverasevents_eg1' on page 14 undefined on in
-put line 872.
-
 File: diags/CalaverasLoc2.eps Graphic file (type eps)
+
 <diags/CalaverasLoc2.eps>
-
-LaTeX Warning: Reference `fig-HYPODDreducesstats' on page 14 undefined on input
- line 885.
-
-
-LaTeX Warning: Reference `fig-69Calaverasevents_eg1' on page 14 undefined on in
-put line 893.
-
 File: diags/CalaverasLoc3_hypoDD_SVD.eps Graphic file (type eps)
-<diags/CalaverasLoc3_hypoDD_SVD.eps>
-
-LaTeX Warning: Reference `fig-statremoval_summarystats' on page 14 undefined on
- input line 919.
-
-[14]
+ <diags/CalaverasLoc3_hypoDD_SVD.eps> [14]
 File: diags/CalaverasLoc4_hypoDD_SVD.eps Graphic file (type eps)
- <diags/CalaverasLoc4_hypoDD_SVD.eps>
 
-Package natbib Warning: Citation `dr_Waldhauser00a' on page 15 undefined on inp
-ut line 959.
-
-
-LaTeX Warning: Reference `fig-statremoval_summarystats' on page 15 undefined on
- input line 960.
-
-[15] [16]
-
-LaTeX Warning: Reference `fig-statremoval_summarystats' on page 17 undefined on
- input line 966.
-
-
+<diags/CalaverasLoc4_hypoDD_SVD.eps> [15] [16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
-
-Package natbib Warning: Citation `dr_Waldhauser01a' on page 18 undefined on inp
-ut line 1021.
-
-[18]
-
-Package natbib Warning: Citation `dr_Press87a' on page 19 undefined on input li
-ne 1049.
-
-
-LaTeX Warning: Reference `sec-Appendix-derivatives_ofL' on page 19 undefined on
- input line 1075.
-
-[19]
-
-LaTeX Warning: Reference `eq-ttcomponent' on page 20 undefined on input line 11
-11.
-
-
-LaTeX Warning: Reference `fig-68Calaverasevents_ttandcoda1' on page 20 undefine
-d on input line 1123.
-
-
-LaTeX Warning: Reference `fig-69Calaverasevents_eg1' on page 20 undefined on in
-put line 1127.
-
-
-LaTeX Warning: Reference `fig-68Calaverasevents_ttandcoda1' on page 20 undefine
-d on input line 1129.
-
+[18] [19]
 File: diags/CalaverasLoc5_hypoDD_SVD.eps Graphic file (type eps)
-<diags/CalaverasLoc5_hypoDD_SVD.eps>
-
-Package natbib Warning: Citation `dr_Bowman90a' on page 20 undefined on input l
-ine 1167.
-
-
-Package natbib Warning: Citation `dr_Leonard02a' on page 20 undefined on input 
-line 1167.
-
-
-Package natbib Warning: Citation `dr_Utsu95a' on page 20 undefined on input lin
-e 1183.
-
-
-Package natbib Warning: Citation `dr_Utsu95a' on page 20 undefined on input lin
-e 1187.
-
-[20]
-
-LaTeX Warning: Reference `fig:Omorifigure' on page 21 undefined on input line 1
-196.
-
+ <diags/CalaverasLoc5_hypoDD_SVD.eps> [20]
 File: diags/OmoriFigure.eps Graphic file (type eps)
-<diags/OmoriFigure.eps>
-
-LaTeX Warning: Reference `eq:CumOmori' on page 21 undefined on input line 1210.
-
-
-
-LaTeX Warning: Reference `eq:CumOmori' on page 21 undefined on input line 1210.
-
-
-
-LaTeX Warning: Reference `fig-68Calaverasevents_ttsubsetandcoda1' on page 21 un
-defined on input line 1219.
-
-
-LaTeX Warning: Reference `fig-68Calaverasevents_ttandcoda1' on page 21 undefine
-d on input line 1221.
-
+ <diags/OmoriFigure.eps>
 File: diags/CalaverasLoc6_hypoDD_SVD.eps Graphic file (type eps)
+
 <diags/CalaverasLoc6_hypoDD_SVD.eps>
-
-LaTeX Warning: Reference `fig-69Calaverasevents_eg1' on page 21 undefined on in
-put line 1255.
-
-
-LaTeX Warning: Reference `fig-69Calaverasevents_eg1' on page 21 undefined on in
-put line 1255.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
-
-LaTeX Warning: Reference `fig-CWIreducesstats' on page 22 undefined on input li
-ne 1272.
-
-
-LaTeX Warning: Reference `fig-68Calaverasevents_ttsubsetandcoda1' on page 22 un
-defined on input line 1273.
-
 [22]
 Underfull \vbox (badness 1275) has occurred while \output is active []
 
@@ -601,57 +180,11 @@ Underfull \vbox (badness 1275) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25])
-[26]
-
-Package natbib Warning: Citation `dr_Robinson11a' on page 27 undefined on input
- line 1374.
-
-
-LaTeX Warning: Reference `eq:Adefn' on page 27 undefined on input line 1375.
-
-
-LaTeX Warning: Reference `tab-const4-mu1-sigma1' on page 27 undefined on input 
-line 1388.
-
-
-LaTeX Warning: Reference `eq:Cdefn' on page 27 undefined on input line 1389.
-
-
-LaTeX Warning: Reference `eq:mu1' on page 27 undefined on input line 1407.
-
-
-LaTeX Warning: Reference `eq:sigma1' on page 27 undefined on input line 1407.
-
-[27]
-
-LaTeX Warning: Reference `eq:deltat4chapt6deriv' on page 28 undefined on input 
-line 1453.
-
-
-LaTeX Warning: Reference `eq:mu1' on page 28 undefined on input line 1477.
-
-
-LaTeX Warning: Reference `eq-dmu1-by-dx1' on page 28 undefined on input line 14
-88.
-
-
-LaTeX Warning: Reference `tab-const4-mu1-sigma1' on page 28 undefined on input 
-line 1489.
-
-
-LaTeX Warning: Reference `eq-cummulative-Gaussian' on page 28 undefined on inpu
-t line 1491.
-
-[28] [29]
+[26] [27] [28] [29]
 
 Package natbib Warning: There were undefined citations.
 
-(./paper2.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+(./paper2.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -660,12 +193,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 1092 strings out of 494764
- 13379 string characters out of 3171465
- 72730 words of memory out of 3000000
- 4336 multiletter control sequences out of 15000+200000
+ 1094 strings out of 494764
+ 13412 string characters out of 3171465
+ 76614 words of memory out of 3000000
+ 4338 multiletter control sequences out of 15000+200000
  17109 words of font info for 49 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
- 25i,12n,22p,743b,292s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,12n,23p,956b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper2.dvi (29 pages, 104588 bytes).
+Output written on paper2.dvi (29 pages, 106036 bytes).
