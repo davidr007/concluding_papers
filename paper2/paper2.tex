@@ -140,7 +140,7 @@ monitoring pumping induced seismicity \citep{dr_Lees98a, dr_Ake05a}.
 In traditional approaches to absolute and relative location only
 early onset body waves, typically $P$ and/or $S$ waves, are used.
 The data utilised may be the direct arrival times; travel time
-difference computed between direct arrivals of two waveforms; or
+difference computed between picked arrivals of two waveforms; or
 time differences inferred from time-lagged cross correlation of
 relatively small windows around the body wave arrivals.
  In all three cases, the majority of the
@@ -224,9 +224,9 @@ P(\widetilde{\delta}_t|\widetilde{\delta}_{CWIN}) \propto P(\widetilde{\delta}_{
 where  $P(\widetilde{\delta}_t|\widetilde{\delta}_{CWIN})$ is the posterior function
 indicating the probability of true separation $\widetilde{\delta}_t$ given the noisy CWI separation
 estimates $\widetilde{\delta}_{CWIN}$; $P(\widetilde{\delta}_{CWIN}|\widetilde{\delta}_t)$
-is the likelihood function representing the forward model between the
-desired separation $\widetilde{\delta}_t$ and the data $\widetilde{\delta}_{CWIN}$; and
-$P(\widetilde{\delta}_t)$ is the prior function accounting for all a-priori information.
+is the likelihood function (or forward model) giving the probability that the separation
+estimates $\widetilde{\delta}_{CWIN}$ would be observed if the true separation was $\widetilde{\delta}_t$; and
+$P(\widetilde{\delta}_t)$ is the prior PDF accounting for all a-priori information.
 The tilde above the separation parameters in eq. (\ref{eq:-bayesian-noisyform})
 indicates the use of a wavelength normalised separation parameter
 \begin{equation}
@@ -235,8 +235,8 @@ indicates the use of a wavelength normalised separation parameter
 \end{equation}
 which measures separation ($\delta$ = $\delta_{CWIN}$ or $\delta_t$)
 with respect to dominant wavelength $\lambda_{d}$. In this paper we
-consider a uniform prior which gives emphasis to the recorded data.
-The algorithm for computing the noisy likelihood
+consider a uniform prior over appropriate bounds which gives emphasis to the recorded data.
+The procedure for computing the noisy likelihood
 $P(\widetilde{\delta}_{CWIN}|\widetilde{\delta}_t)$ is derived by
 \citet{dr_Robinson11a} and summarised in Appendix
 \ref{sec-Appendix-noisylikelihood}. With these two pieces in place
@@ -247,9 +247,9 @@ waves.
 
 We seek a probability density function (PDF) which links
  individual pairwise posteriors $P(\widetilde{\delta}_t|\widetilde{\delta}_{CWIN})$
-to describe the location of multiple events with maximum identifying
+to describe the location of multiple events whose maximum corresponding to
  the most probable combination of locations.
-More importantly however, the PDF will
+More importantly however, the PDF shall
 quantify location uncertainty and provide information
 on the degree to which individual events are constrained
  by the data.
@@ -294,9 +294,9 @@ In writing
 these likelihoods we have replaced the conditional term on separation
 $\widetilde{\delta}_t$ with the locations (e.g. $\mathbf{e}_1$ and $\mathbf{e}_2$).
 This can be done because
-knowledge of location translates to separation.\footnote{Note that the reverse
-can not be said. That is, knowledge of separation between a single event pair
-does not translate to location but rather places a non-unique constraint on
+knowledge of location translates to separation.\footnote{Note that the reverse is 
+not true. That is, knowledge of separation between a single event pair
+does not uniquely translate to location but rather places a non-unique constraint on
 location.}
 Furthermore, since the pairwise functions are independent the joint
 likelihood becomes
@@ -330,34 +330,35 @@ A detailed understanding of the location of a single event (e.g. $\mathbf{e}_2$)
 marginal
 \begin{equation}
 \label{eq:-E2-marginal}
-P(\mathbf{e}_2) = \int \int P(\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3 | \widetilde{\mathbf{\delta}}_{CWIN}) d\mathbf{e}_1 d\mathbf{e}_3
+P(\mathbf{e}_2|\mathbf{\delta}_{CWIN}) = \int \int P(\mathbf{e}_1, \mathbf{e}_2,
+ \mathbf{e}_3 | \widetilde{\mathbf{\delta}}_{CWIN}) d\mathbf{e}_1 d\mathbf{e}_3
 \end{equation}
 where the intergral is taken over all plausible locations for
 $\mathbf{e}_1$ and $\mathbf{e}_3$. Alternatively, we can compute the
 marginal for a single event coordinate by integrating the posterior
 over all events and remaining coordinates for the chosen earthquake.
-Evaluation of $c$ in equation (\ref{eq-3eqposterior}) involves
-finding the value which normalises the posterior function to unit
-area over all plausible locations. In many applications the constant
-of proportionality $c$ is not important. For example, it is not
+Evaluation of the normalizing constant $c$ in equation (\ref{eq-3eqposterior}) involves
+finding the integral of the posterior function
+over all plausible locations. In many applications the constant
+of proportionality $c$ can be ignored. For example, it is not
 required when seeking the combination of locations which maximise
  the posterior function, nor in Bayesian sampling algorithms such as Markov-chain Monte-Carlo
-techniques which require evaluation of a function proportional to the PDF.
+techniques which only require evaluation of a function proportional to the PDF.
 
-Following the same argument we get the posterior function
+Extending to $n$ events we get the posterior function
 \begin{equation}
 \begin{array}{l}
 \label{posterior-n-events}
 P(\mathbf{e}_1,...,\mathbf{e}_n | \widetilde{\mathbf{\delta}}_{CWIN}) = c \displaystyle \prod_{i=1}^n P(\mathbf{e}_i) \\
-\hspace{4em} \displaystyle  \times \prod_{i=1}^{n-1} \prod_{j=i+1}^n P(\widetilde{\delta}_{CWIN,ij}|\mathbf{e}_i,\mathbf{e}_j)
+\hspace{4em} \displaystyle  \times \prod_{i=1}^{n-1} \prod_{j=i+1}^n P(\widetilde{\delta}_{CWIN,ij}|\mathbf{e}_i,\mathbf{e}_j).
 \end{array}
 \end{equation}
-for $n$ events. When evaluating equation (\ref{posterior-n-events})
+When evaluating equation (\ref{posterior-n-events})
 over a range of locations it is necessary to compute and multiply
 many numbers close to zero. This is because the PDFs tend to zero as
 the locations get less likely (i.e. near the boundaries of the
 plausible region). Such calculations are prone to truncation errors
-so we work with the negative logarithm
+and so we work with the negative logarithm
 \begin{equation}
 \label{eq:-negative-log-part1}
 L(\mathbf{e}_1, \mathbf{e}_2, ..., \mathbf{e}_n) = -ln\left[ P(\mathbf{e}_1,...,\mathbf{e}_n | \widetilde{\mathbf{\delta}}_{CWIN} )  \right]
@@ -413,9 +414,9 @@ describe the joint probability of multiple event locations given the
 observed coda waves. The most likely set of locations is given by
 the minimum of $L$.   In this paper we use the Polak-Ribiere
 technique \citep{dr_Press87a}, a conjugate gradient method, to
-optimise $L$. It uses the derivatives of $L$ to guide the
-optimization procedure. We derive the derivatives in Appendix
-\ref{sec-Appendix-derivatives_ofL}. Note that when optimizing
+optimize $L$. It uses the derivatives of $L$, derived in Appendix
+\ref{sec-Appendix-derivatives_ofL}, to guide the
+optimization procedure. Note that when optimizing
 equation \ref{eq:-negative-log} the values of $ln \left[ c \right]$
 and $ln \left[ P(e_i) \right]$ can be ignored because they are
 constant\footnote{$ln \left[ P(e_i) \right]$ is constant because we
@@ -458,7 +459,7 @@ known CWI biases \citep{dr_Robinson11a}. In example 1 we use
 $\bar{\sigma}_N=0.02$ between all event pairs. Application of our
 optimization procedure on the hypothetical CWI data yields the
 circles in Figure \ref{fig-2D50eq-relocation_eg1}. The optimization
-does not lead to the correct solution due to the addition of noise
+does not lead to the exact solution due to the addition of noise
 ($\bar{\sigma}_N=0.02$) on the hypothetical CWI data. The average
 coordinate error is 2.0\,m which is small compared to the noise of
 $\bar{\sigma}_N=0.02$ which for $v_s=3300$\,ms$^{-1}$ and
@@ -545,7 +546,7 @@ different starting locations and because of the small average
 coordinate errors of 2.0\,m and 2.8\,m for examples 1 and 2,
 respectively.
 
-\subsection{Example 3 - The impact of reduced linkage}
+\subsection{Example 3 - The impact of incomplete event pairs in 2D}
 
 Synthetic examples 1 and 2 use 100\% direct linkage between event
 pairs. That is, there is a constraint between each earthquake and
@@ -616,7 +617,7 @@ fixed with preconditioning in some cases. Their findings suggest
 that it may be possible to improve the convergence (stability and/or
 speed) of the CWI optimization by preconditioning.
 
-\subsection{Example 4 - 3D synthetic examples with reduced linkage}
+\subsection{Example 4 - The impact of incomplete event pairs in 3D}
 
 In Example 4 we expand the optimization routine to 3D by randomly
 picking
@@ -871,8 +872,8 @@ inversions and the locations shown in Figure
 \ref{fig-69Calaverasevents_eg1} (column 2) when all stations are
 considered. That is, the coda wave approach is self-consistent
 regardless of the number of stations available, reinforcing our
-hypothesis that coda waves can constrain location in poor recording
-situations.
+hypothesis that coda waves can constrain location in what would
+normally be regarded as a poor station network.
 
 \begin{figure*}
 \includegraphics[angle=90,height = 50pc]{diags/CalaverasLoc2.eps}
@@ -946,7 +947,7 @@ considered.} \label{fig-statremoval_summarystats}
 %%=========================================================================
 
 
-The hypoDD program also struggles to locate all events as the number
+The hypoDD algorithm also struggles to locate all events as the number
 of stations is reduced. In the case of hypoDD an event can be
 identified as unconstrainable in one of two stages. Firstly, the
 data are analysed to ensure that there exists travel time
@@ -1317,8 +1318,10 @@ the Colorado School of Mines, are acknowledged for supporting this
 research. The paper is published with permission of the CEO
 Geoscience Australia. Work was conducted as part of an Australian
 Research Council Discovery Project (DP0665111).  This paper has
-benefited significantly from reviews by ......... at Geoscience
-Australia.
+benefited significantly from: reviews by Trevor Allen and Clive Collins 
+at Geoscience Australia as well; as well as comments and advice received from 
+Felix Waldhauser on the this and earlier research on the application of 
+CWI to earthquake location. 
 \end{acknowledgments}
 
 
