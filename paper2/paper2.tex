@@ -204,12 +204,13 @@ impact of a change in mechanism.
 
 The $\sigma_\tau$ in equation (\ref{eq:Theory-dcwi_g_sigmat}) is
 related to $R_{max}$, the maximum of the cross correlation between
-the coda of the two waveforms and hence can be computed directly
+the coda of the two waveforms, and hence can be computed directly
 from the recorded data. In this paper we use the autocorrelation
 approach of \citet{dr_Robinson11a} when relating these parameters
 and we apply a restricted time lag search when evaluating $R_{max}$.
 These extensions to the original technique of \citet{dr_Snieder05a}
-increase the range of applicability of CWI by 50\%.
+increase the range of applicability of CWI by 50\% (i.e. from 300 to
+450\,m separation for 1–5\,Hz filtered coda waves).
 
 \citet{dr_Robinson11a} show that coda waves provide only
 probabilistic constraints on source separation and introduce a
@@ -370,8 +371,9 @@ L(\mathbf{e}_1, \mathbf{e}_2, ..., \mathbf{e}_n) =
 \hspace{3em} - \displaystyle \sum_{i=1}^{n-1} \sum_{j=i+1}^n ln\left[P(\widetilde{\delta}_{CWIN,ij}|\mathbf{e}_i,\mathbf{e}_j)\right].
 \end{array}
 \end{equation}
-The logarithm improves numerical stability by replacing products with summations. The negative assists with
-optimisation, many algorithms for which are designed to minimise an objective function.
+The logarithm improves numerical stability by replacing products
+with summations. The negative facilitates the use of optimisation
+algorithms that are designed to minimise an objective function.
 
 The event locations $\mathbf{e}_1, \mathbf{e}_2, ..., \mathbf{e}_n$
 are defined by coordinates $\hat{x}$, $\hat{y}$ and $\hat{z}$
@@ -412,7 +414,7 @@ observed coda waves. The most likely set of locations is given by
 the minimum of $L$.   In this paper we use the Polak-Ribiere
 technique \citep{dr_Press87a}, a conjugate gradient method, to
 optimise $L$. It uses the derivatives of $L$ to guide the
-optimisation procedure. We derive the derivatives in Appendix
+optimization procedure. We derive the derivatives in Appendix
 \ref{sec-Appendix-derivatives_ofL}. Note that when optimizing
 equation \ref{eq:-negative-log} the values of $ln \left[ c \right]$
 and $ln \left[ P(e_i) \right]$ can be ignored because they are
@@ -424,13 +426,13 @@ consider a uniform prior.}
 \label{sec:benchmarking}
 
 We use synthetic examples in 2D and 3D with 50 earthquakes to test
-the performance of the optimisation routine. In these examples the
+the performance of the optimization routine. In these examples the
 synthetic earthquakes are located randomly and CWI data generated
 according to the event separation. It is not necessary to generate
 synthetic waveforms and compute CWI estimates directly because we
-are testing the performance of the optimisation routine only. The
-ability of CWI to estimate event sepration has been demonstrated
-already \citep{dr_Snieder05a, dr_Robinson11a, dr_Robinson07b}. We
+are testing the performance of the optimization routine only. The
+ability of CWI to estimate event separation has been demonstrated
+already \citep{dr_Snieder05a, dr_Robinson07b, dr_Robinson11a}. We
 undertake a complete coda wave location experiment, including the
 calculation of CWI separation estimates, for recorded earthquakes on
 the Calaveras Fault, California, in Section
@@ -440,9 +442,9 @@ the Calaveras Fault, California, in Section
 
 We design a 2D synthetic experiment (example 1) by randomly
 selecting $\hat{x}$- and $\hat{y}$-coordinates such that $-50 \leq
-\hat{x}, \hat{y} \leq 50$. These are indicated with triangles in
+\hat{x}, \hat{y} \leq 50$\,m. These are indicated with triangles in
 Figure \ref{fig-2D50eq-relocation_eg1}.
- We assume a local velocity of $v=3300\,$ms$^{-1}$ between all
+ We assume a local velocity of $v=3,300\,$ms$^{-1}$ between all
 event pairs and a dominant frequency of 2.5$\,$Hz to represent waveform data filtered between 1 and 5$\,$Hz.
 The CWI data are defined by the positive bounded Gaussian with statistics
 $\bar{\mu}_N$ and $\bar{\sigma}_N$. A hypothetical CWI mean is created by setting
@@ -454,8 +456,8 @@ using equation (\ref{eq:mu1}). This assumption ensures that the
 sample mean of hypothetical separation estimates is consistent with
 known CWI biases \citep{dr_Robinson11a}. In example 1 we use
 $\bar{\sigma}_N=0.02$ between all event pairs. Application of our
-optimisation procedure on the hypothetical CWI data yields the
-circles in Figure \ref{fig-2D50eq-relocation_eg1}. The optimisation
+optimization procedure on the hypothetical CWI data yields the
+circles in Figure \ref{fig-2D50eq-relocation_eg1}. The optimization
 does not lead to the correct solution due to the addition of noise
 ($\bar{\sigma}_N=0.02$) on the hypothetical CWI data. The average
 coordinate error is 2.0\,m which is small compared to the noise of
@@ -465,7 +467,7 @@ $f_{dom}=2.5$\,Hz corresponds to roughly 25\,m.
 \includegraphics[width = 20pc]{diags/locs_2D_50eq_1.eps}
 \caption{Example 1 - Synthetic relocation of 50 earthquakes in 2D
 using all constraints with noise $\bar{\sigma}_N=0.02$. Actual and
-optimisation event locations are shown in triangles and circles,
+optimization event locations are shown in triangles and circles,
 respectively.} \label{fig-2D50eq-relocation_eg1}
 \end{figure}
 
@@ -474,7 +476,7 @@ respectively.} \label{fig-2D50eq-relocation_eg1}
 \caption{Example 2 - Synthetic relocation of 50 earthquakes in 2D
 using all constraints with noise $\bar{\sigma}_N= 2
 \sigma_{1to5Hz}(\delta_t)$.
- Actual and optimisation event locations
+ Actual and optimization event locations
 are shown in triangles and circles, respectively.}
 \label{fig-2D50eq-relocation_eg3}
 \end{figure}
@@ -488,15 +490,15 @@ $\bar{\sigma}_N=\sigma_{1to5Hz}(\delta_t)$, where
 $\sigma_{1to5Hz}(\delta_t)$ is the half-width of the errorbars for a
 synthetic acoustic experiment with filtering between 1 and 5\,Hz
 \citep[see Fig. 4(b) of ][]{dr_Robinson11a}. Repeating the
-optimisation leads to the circles in Figure
+optimization leads to the circles in Figure
 \ref{fig-2D50eq-relocation_eg3} which have an average coordinate
 error of 2.8\,m.
 
-Conjugate gradient based optimisation techniques are susceptible to
+Conjugate gradient based optimization techniques are susceptible to
 the presence of local minima. This is because they use the slope of
 the target function to explore the solution space. We explore the
 impact of local minima for our CWI location problem by beginning the
-optimisation from 25 randomly chosen starting positions. We observe
+optimization from 25 randomly chosen starting positions. We observe
 no differences in the solution for either example.
 
 Three observations can be drawn from the error structure in Figures
@@ -511,7 +513,7 @@ observation is analogous to problems associated with poor azimuthal
 coverage in common triangulation problems such as individual
 earthquake location from limited travel time data, or GPS
 positioning with few satellites. Our third observation is that the
-location errors aare circular, despite our attempt to correct for
+location errors are circular, despite our attempt to correct for
 rotational non-uniqueness with the local coordinate system.
 
 The local coordinate system works by constraining the location of
@@ -535,39 +537,36 @@ using coda waves alone since the constraints are based on
 separation. Fortunately however, combining coda waves with
 measurements of travel times alleviates this problem and facilitate
 the removal of a local coordinate system altogether (see Section
-\ref{sec:CalaverasLoc-CWIandTT}.
+\ref{sec:CalaverasLoc-CWIandTT}).
 
 Despite our observations about the error structure however, we gain
-confidence in the optimisation procedure due to its stability for
+confidence in the optimization procedure due to its stability for
 different starting locations and because of the small average
 coordinate errors of 2.0\,m and 2.8\,m for examples 1 and 2,
 respectively.
 
 \subsection{Example 3 - The impact of reduced linkage}
 
-A set of earthquakes and their corresponding coda wave estimates of
-separation form a network. In this network the earthquakes are nodes
-and the constraints are branches or links which join the nodes
-together. Synthetic examples 1 and 2 use 100\% direct linkage
-between event pairs. That is, there is a constraint between each
-earthquake and all other events. In reality, we might expect that
-the separation between some pairs will not be constrained by CWI
-data due to poor signal to noise ratio in the coda for common
-stations. Obviously, the less stations that record an event the more
-likely it is that links between it and other events will be broken.
-In such cases the probabilistic distance constraint between a pair
-of events may only exist indirectly through multiple pairs. In this
-section we consider the impact of reduced linkage between event
-pairs. In example 3, we repeat example 2 using 90\%, 80\%, ..., 10\%
-of the links. As with the above examples, we undertake the
-optimisation with 25 randomly chosen starting locations.
+Synthetic examples 1 and 2 use 100\% direct linkage between event
+pairs. That is, there is a constraint between each earthquake and
+all other events. In reality, we might expect that the separation
+between some pairs will not be constrained by CWI data due to poor
+signal to noise ratio in the coda for common stations. Obviously,
+the fewer stations that record an event the more likely it is that
+links between it and other events will be broken. In such cases the
+probabilistic distance constraint between a pair of events may only
+exist indirectly through multiple pairs. In this section we consider
+the impact of reduced linkage between event pairs. In example 3, we
+repeat example 2 using 90\%, 80\%, ..., 10\% of the links. As with
+the above examples, we undertake the optimization with 25 randomly
+chosen starting locations.
 
 \begin{figure}
 %\noindent\includegraphics[width = 20pc]{../../thesis_version2/diags/eq_location_optimisation/synth2Dmulti/ressummary_2Dsynth50eq.eps}
 \noindent\includegraphics[width =
 20pc]{diags/synth2Dmulti/ressummary_2Dsynth50eq.eps}
 \caption{Example 3 - Statistical measures of error in the
-optimisation solutions for the 2D synthetic cases when all (gray)
+optimization solutions for the 2D synthetic cases when all (gray)
 and best (black) results are considered. The statistics
 $\Delta_{max}$ and $\Delta_\mu$  are the maximum and mean coordinate
 error, respectively. The bottom subplot shows the average minimum
@@ -578,9 +577,9 @@ number of branches required to link the 2450 pairs.}
 Figures \ref{fig:optimisationresults-2Dsynth}(a) and (b) illustrates
 the maximum $\Delta_{max}$ (top) and mean $\Delta_\mu$ (middle) of
 the coordinate error as a function of increasing linkage. We show
-the statistics for the `best' optimisation solution (black) and for
-the solution space when all 25 optimisations are considered (gray).
-In the later case the best solution is determined by the set of
+the statistics for the `best' optimization solution (black) and for
+the solution space when all 25 optimizations are considered (gray).
+In the latter case the best solution is determined by the set of
 event locations which lead to the smallest value of $L$. The error
 in the best solution is consistent when 30\% or more of the branches
 are used. The errors increase when only 10\% or 20\% of the
@@ -589,15 +588,15 @@ to 30\% coincides with the point where the average number of
 branches required to link each pair reaches 2 (see
 Fig.\ref{fig:optimisationresults-2Dsynth} (bottom)). Since the
 average number of branches can be computed in advance it can be used
-as an indication of the inversion stability prior to optimisation. A
+as an indication of the inversion stability prior to optimization. A
 higher breakdown is observed when all 25 solutions are considered
 collectively. For example, the maximum coordinate error
 $\Delta_{max}$ exceeds that for the best solution for linkage
-$\leq$60\% confirming that the optimisation is susceptible to local
+$\leq$60\% confirming that the optimization is susceptible to local
 minima and that a range of starting points should be considered.
 
-Some optimisations fail to converge after 1200 iterations when the
-linkage is 60\% or lower. All optimisations fail when then linkage
+Some optimizations fail to converge after 1200 iterations when the
+linkage is 60\% or lower. All optimizations fail when then linkage
 is 20\% or lower. Despite their failure to converge, the locations
 at final iteration are close to the actual solution.
 
@@ -613,72 +612,75 @@ examples do not converge after 1200 iterations.
 \citet{dr_VanDecar94a} show that gradient damping acts slowly
 through iterative least-squares, because
  every cell in one iteration communicates only with its neighbours, and they demonstrate that this can be
-fixed with preconditioning in some cases. Their findings suggest that it may be possible to improve
-the convergence (stability and/or speed) of the CWI optimisation by preconditioning.
+fixed with preconditioning in some cases. Their findings suggest
+that it may be possible to improve the convergence (stability and/or
+speed) of the CWI optimization by preconditioning.
 
 \subsection{Example 4 - 3D synthetic examples with reduced linkage}
 
-In Example 4 we expand the optimisation routine to 3D by randomly picking
+In Example 4 we expand the optimization routine to 3D by randomly
+picking
  a set of actual event locations for 50 earthquakes with
 $-50$\,m$\leq \hat{x},\hat{y},\hat{z} \leq 50$\,m. As in the 2D case we assume a local velocity
 of $v=3300\,$ms$^{-1}$ between all event pairs and a dominant frequency of 2.5$\,$Hz to represent
  waveform data filtered between 1 and 5$\,$Hz.
-The hypothetical CWI mean is created using equation (\ref{eq:hypothetical-CWI-mean-optichapt})
-which ensures consistency between the sample mean of hypothetical separation estimates and CWI
-biases. We use a standard deviation for the noisy CWI estimates
-of $\bar{\sigma}_N = \sigma_{1to5Hz}$ and perform the optimisation using 10\%,
-20\%, ..., 100\% of the direct links.
-In each case we repeat the
-optimisation 25 times using randomly chosen starting locations. The results are
-summarised in Figure \ref{fig:optimisationresults-3Dsynth}.
+The hypothetical CWI mean is created using equation
+(\ref{eq:hypothetical-CWI-mean-optichapt}) which ensures consistency
+between the sample mean of hypothetical separation estimates and CWI
+biases. We use a standard deviation for the noisy CWI estimates of
+$\bar{\sigma}_N = \sigma_{1to5Hz}$ and perform the optimization
+using 10\%, 20\%, ..., 100\% of the direct links. In each case we
+repeat the optimization 25 times using randomly chosen starting
+locations. The results are summarised in Figure
+\ref{fig:optimisationresults-3Dsynth}.
 
 \begin{figure}
 %\noindent\includegraphics[width = 20pc]{../../thesis_version2/diags/eq_location_optimisation/synth3Dmulti/ressummary_3Dsynth50eq.eps}
 \noindent\includegraphics[width =
 20pc]{diags/synth3Dmulti/ressummary_3Dsynth50eq.eps}
 \caption{Example 4 - Statistical measures of error in the
-optimisation solutions for the 3D synthetic cases when all (gray)
+optimization solutions for the 3D synthetic cases when all (gray)
 and best (black) results are considered. The statistics
 $\Delta_{max}$ and $\Delta_\mu$ are the maximum and mean coordinate
 error, respectively. The absence of the gray and black lines below
 60\% and 30\% indicates a breakdown in the solutions when all or
-best optimisation result(s) are considered, respectively.}
+best optimization result(s) are considered, respectively.}
 \label{fig:optimisationresults-3Dsynth}
 \end{figure}
 
-When 70\% of the direct constraints are considered all optimisation
+When 70\% of the direct constraints are considered all optimization
 results (gray) are consistent with the best solution (black). The
 best solution constrains the event locations down to 30\% of the
 direct links.
 
 There is one notable difference between the 3D and 2D results. In 2D
 the final iteration was close to the actual solution when the
-optimisation failed to converge. Contrastingly, in 3D the
-optimisation appears to converge to the correct solution or fail
-completely, leading to a set of locations at final iteration which
-do not resemble the actual solution. This is depicted in Figure
+optimization failed to converge. Conversely, in 3D the optimization
+appears to converge to the correct solution or fail completely,
+leading to a set of locations at final iteration which do not
+resemble the actual solution. This is depicted in Figure
 \ref{fig:optimisationresults-3Dsynth} by the absence of the gray and
 black lines below 60\% and 30\% of the constraints, respectively.
 The reason for this difference may be due to the increased number of
 degrees of freedom in 3D requiring a greater number of iterations to
 converge. Nevertheless, the accurate convergence of the best
 solution for cases with 30\% linkage or higher is encouraging for
-the potential of coda wave optimisation to constrain earthquake
+the potential of coda wave optimization to constrain earthquake
 location.
 
 \subsubsection{Summary of synthetic experiments}
 
 In summary, the synthetic examples demonstrate the ability of coda
-wave data to constrain relative event location using optimisation.
-The optimisation error is influenced by the noise on CWI estimates
+wave data to constrain relative event location using optimization.
+The optimization error is influenced by the noise on CWI estimates
 with greater $\bar{\sigma}_N$ leading to larger errors in the
 solutions. When 70\% or more of the direct branches are used the
 optimiser is stable with no observable difference in the solution
 for 25 randomly chosen starting locations. As the direct linkage
-reduces to 50\% the optimisation becomes less stable and the best
+reduces to 50\% the optimization becomes less stable and the best
 solution from 25 random starting locations is required to find the
-optimal solution. As the number of links decrease below
-30\% the best solution fails to converge.
+optimal solution. As the number of links decrease below 30\% the
+best solution fails to converge.
 
 
 \section{Relocating Earthquakes on the Calaveras Fault}
@@ -693,7 +695,7 @@ reasons. Firstly, they are recorded by a large number of stations
 (Fig. \ref{fig:-eqopti-California-Calaveras}) and therefore lend
 themselves to accurate travel time location. This makes them ideal
 for assessing the performance of a new location technique. Secondly,
-they are distributed over distances from near zero to hundreds
+they are distributed with separations from near zero to hundreds
 meters making them ideal for application of CWI. Finally, Calaveras
 earthquakes have been well researched with several studies having
 relocated events in the region \citep{dr_Waldhauser01a,
@@ -754,11 +756,12 @@ all events.
 % Now we have the SVD version
 \begin{figure*}
 \includegraphics{diags/CalaverasLoc1_hypoDD_SVD.eps}
-\caption{Example 5 - Comparison of earthquake locations using three
-different methods: catalogue location (column 1), CWI (column 2) and
-hypoDD (column 3). Note that in the case of the hypoDD and CWI
-inversions we consider only the 68 earthquakes in black, the gray
-events are shown for the purpose of orientation only.}
+\caption{Example 5 - Comparison of relative earthquake locations
+using three different methods: catalogue location (column 1), CWI
+(column 2) and hypoDD (column 3). Note that in the case of the
+hypoDD and CWI inversions we consider only the 68 earthquakes in
+black, the gray catalogue locations for the remaining 240 (308-68)
+earthquakes are shown for the purpose of orientation only.}
 \label{fig-69Calaverasevents_eg1}
 \end{figure*}
 %%=======================================================================================
@@ -772,7 +775,7 @@ estimates are obtained from 5\,s wide non-overlapping time windows
 between $2.5 \leq t \leq 20$\,s and used to create probabilistic
 constraints on event separation. We introduce the local coordinate
 system of Section \ref{sec:theory} and find the optimum relative
-locations using Polak-Ribiere optimisation.
+locations using Polak-Ribiere optimization.
 
 CWI locations for the 68 events are illustrated in column two of
 Figure \ref{fig-69Calaverasevents_eg1}. Catalogue locations (gray)
@@ -782,12 +785,13 @@ comparison. The third column of Figure
 hypoDD with Singular Value Decomposition (SVD), absolute arrival
 times and cross correlation computed travel time differences.
 
-Global locations can not be found by CWI alone.
-For the sake of comparison, we arbitrary choose a
-`master' event and translate our relative locations to align with the hypoDD
-location for the same event. We return to this issue of relative
-versus actual location in Example 7 by introducing a combined travel
-time and coda wave inversion.
+Global locations cannot be found by CWI alone. For the sake of
+comparison, we arbitrarily choose a `master' event and translate our
+relative locations to align with the hypoDD location for the same
+event. This arbitrary translation does not change the relative
+locations. We return to this issue of relative versus actual
+location in Example 7 by introducing a combined travel time and coda
+wave inversion.
 
 The spatial distribution of the CWI locations is clearly tighter
 than the catalogue locations of column 1. That is, CWI provides an
@@ -812,10 +816,10 @@ phases because of the excellent recording situation in California
 with many stations and strong azimuthal coverage (see Fig.
 \ref{fig:-eqopti-California-Calaveras}). In contrast, a small number
 of stations and poor azimuthal coverage are common limitations when
-trying to locate intraplate clusters. For example, there are only 3
-network seismic stations in the South West Seismic Zone of Western
-Australia, a region similar in size to that hosting 805 stations in
-Figure \ref{fig:-eqopti-California-Calaveras}.
+trying to locate intraplate clusters. For example, there are only
+four network seismic stations in the South West Seismic Zone of
+Western Australia, a region similar in size to that hosting 805
+stations in Figure \ref{fig:-eqopti-California-Calaveras}.
 
 We explore the impact of poorer recording situations in example 6 by
 re-locating the 68 Calaveras events  using hypoDD and coda waves
@@ -838,7 +842,7 @@ events are indicated with black circles.}
 \end{figure}
 
 \begin{table}
-\caption{Stations considered when exploring the imnpact of reduced
+\caption{Stations considered when exploring the impact of reduced
 station coverage.} \label{tab:Calaveras-stationremoval}
 \begin{tabular}{|r|l|}
 \hline
@@ -872,20 +876,20 @@ situations.
 
 \begin{figure*}
 \includegraphics[angle=90,height = 50pc]{diags/CalaverasLoc2.eps}
-\caption{Example 6 - CWI locations with reduced stations.}
+\caption{Example 6 - CWI relative locations with reduced stations.}
 \label{fig-CWIreducesstats}
 \end{figure*}
 
 
 Figure \ref{fig-HYPODDreducesstats} illustrates the hypoDD inversion
-results for 7, 5 and 4 stations. The travel time problem is
-ill-posed for fewer than 4 stations so it is not possible to apply
-hypoDD with SVD for 3 or fewer stations.  The hypoDD locations are
-not self-consistent as the number of stations is reduced. We observe
-a general increase in scatter and a higher number of stray events
-outside the cluster when less stations are used with hypoDD. Even
-with 7 stations the linear streak of Figure
-\ref{fig-69Calaverasevents_eg1} (column 3) is less evident.
+results for seven, five and four stations. The travel time problem
+is ill-posed for fewer than four stations so it is not possible to
+apply hypoDD with SVD for three or fewer stations.  The hypoDD
+locations are not self-consistent as the number of stations is
+reduced. We observe a general increase in scatter and a higher
+number of stray events outside the cluster when less stations are
+used with hypoDD. Even with seven stations the linear geometry of
+Figure \ref{fig-69Calaverasevents_eg1} (column 3) is less evident.
 
 %%=========================================================================
 % this is the original version using hypoDD with LSQ
@@ -898,8 +902,8 @@ with 7 stations the linear streak of Figure
 % This is the version using hypoDD with SVD
 \begin{figure*}
 \includegraphics[height = 25pc]{diags/CalaverasLoc3_hypoDD_SVD.eps}
-\caption{Example 6 - HypoDD (SVD) locations with reduced stations.}
-\label{fig-HYPODDreducesstats}
+\caption{Example 6 - HypoDD (SVD) relative locations with reduced
+stations.} \label{fig-HYPODDreducesstats}
 \end{figure*}
 %%=========================================================================
 
@@ -912,10 +916,10 @@ there must be at least one station that records it and at least one
 other earthquake sufficiently well to apply CWI. Fortunately, we can
 make an assessment of this prior to starting the inversion. The top
 row of Figure \ref{fig-statremoval_summarystats} demonstrates that
-when 5 or more stations are used CWI can constrain the location of
-all 68 earthquakes. When less than 5 stations are used the coda
-waves constrain a decreasing number of events until at 1 station it
-is only possible to locate 55 of the 68 events.
+when five or more stations are used, CWI can constrain the location
+of all 68 earthquakes. When less than five stations are used the
+coda waves constrain a decreasing number of events until at one
+station it is only possible to locate 55 of the 68 events.
 
 %%=========================================================================
 % This is the original version using hypoDD with LSQ
@@ -935,9 +939,9 @@ is only possible to locate 55 of the 68 events.
 Statistics on coordinate differences for reduced station inversions.
 Differences are computed between the inversion results (CWI and
 hypoDD) and the complete hypoDD locations for all 308 events. The
-top subplot illustrates the number of constrainable events in the
-CWI and hypoDD inversions as a function of the stations considered.}
-\label{fig-statremoval_summarystats}
+top subplot illustrates the number of constrainable events,$nE$ in
+the CWI and hypoDD inversions as a function of the stations
+considered.} \label{fig-statremoval_summarystats}
 \end{figure}
 %%=========================================================================
 
@@ -1108,7 +1112,7 @@ associated with translation, rotation and reflection around a global
 coordinate system. This means that it is no longer necessary to use
 a local coordinate system and we can solve directly for location
 with respect to a global reference. Collectively, these advantages
-improve the behavior of the Polak-Ribiere optimisation leading to
+improve the behavior of the Polak-Ribiere optimization leading to
 faster and more stable convergence. Consequently, we no longer have
 to consider multiple randomly chosen starting locations.
 
@@ -1117,16 +1121,16 @@ to consider multiple randomly chosen starting locations.
  Figure
 \ref{fig-68Calaverasevents_ttandcoda1} illustrates the earthquake
 locations obtained when we combine the travel time and coda wave
-data using all data (left) and 5 stations (right). The linear
+data using all data (left) and five stations (right). The linear
 features observed in the original hypoDD inversions (see Fig.
-\ref{fig-69Calaverasevents_eg1}) is evident in both cases. However,
+\ref{fig-69Calaverasevents_eg1}) are evident in both cases. However,
 the coda waves introduce a scatter around these streaks. That is,
 the locations in figure \ref{fig-68Calaverasevents_ttandcoda1}
 result from a trade-off between hypoDD's desire to place the events
 on linear features and the coda waves voracity to push them away
 from streaks. When all stations are used the hypoDD constraints are
 strong and little off-streak scatter is introduced. As we reduce
-hypoDD's leverage by decreasing the number of stations to 5, we
+hypoDD's leverage by decreasing the number of stations to five, we
 observe an increase in off-streak scatter resulting from the
 enhanced influence of the coda.
 
@@ -1145,28 +1149,29 @@ enhanced influence of the coda.
 % This is the version using hypoDD with SVD
 \begin{figure}
 \includegraphics{diags/CalaverasLoc5_hypoDD_SVD.eps}
-\caption{Example 7 - Combined HypoDD (SVD) and CWI locations using
-data form all stations (left) and 5 stations (right).}
-\label{fig-68Calaverasevents_ttandcoda1}
+\caption{Example 7 - Combined HypoDD (SVD) and CWI relative
+locations using data form all stations (left) and 5 stations
+(right).} \label{fig-68Calaverasevents_ttandcoda1}
 \end{figure}
 
 
 %%=========================================================================
 
 
-\subsection{Example 4 - Combining CWI and travel times when the travel times constrain a limited number of events}
+\subsection{Example 8 - Combining CWI and travel times when the travel times constrain a limited number of events}
 
 
 In intraplate regions such as Australia it is common to deploy
 temporary seismometers to monitor aftershocks for significant events
 \citep{dr_Bowman90a, dr_Leonard02a}. Traditionally, these
-deployments are used to locate aftershocks to an accuracy of the
-temporary array, whereas events occurring outside the deployment
-period can only be located to the accuracy of the network. Using our
-combined inversion it is possible to re-locate all events by
-employing the detailed travel time data when the temporary network
-is in-situ and using coda waves from network stations when the
-deployment is absent.
+deployments facilitate a higher accuracy of location for events
+occuring during the deployment period. Using our combined inversion
+it is possible to re-locate all events by employing the detailed
+travel time data when the temporary network is in-situ and using
+coda waves from network stations when the deployment is absent. The
+hypothesis, to be tested in this section, is that conducting such a
+combined inversion will improve the location accuracy of events
+outside the deployment period.
 
 An estimate of the cummulative number of aftershocks $N(t)$ after
 $t$ days is given by the modified Omori formula
@@ -1242,11 +1247,11 @@ earthquakes in regions with limited station coverage.
 \includegraphics{diags/CalaverasLoc6_hypoDD_SVD.eps}
 \caption{Example 8 - Mimicking the deployment of a temporary network
 by ignoring data from all but station CCO for 50\% (or 34) of the
-events. Locations are shown for the combined CWI and travel time
-inversion (left) and the inversion with travel times only (right)
-Only by combining the data is it possible to locate all 68 events.
-Furthermore, combining the data leads to a solution more consistent
-with Figure \ref{fig-69Calaverasevents_eg1}. }
+events. Relative locations are shown for the combined CWI and travel
+time inversion (left) and the inversion with travel times only
+(right) Only by combining the data is it possible to locate all 68
+events. Furthermore, combining the data leads to a solution more
+consistent with Figure \ref{fig-69Calaverasevents_eg1}. }
 \label{fig-68Calaverasevents_ttsubsetandcoda1}
 \end{figure}
 %%=========================================================================
@@ -1264,7 +1269,7 @@ isolation or combination with early onset body waves. The strength
 of coda is that it is possible to constrain earthquake location from
 a single station, an outcome demonstrated most clearly by Figures
 \ref{fig-CWIreducesstats} and
-\ref{fig-68Calaverasevents_ttsubsetandcoda1}
+\ref{fig-68Calaverasevents_ttsubsetandcoda1}.
 
 Coda wave interferometry offers a new technique for understanding
 earthquakes in intraplate areas with sparse networks and poor

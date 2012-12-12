@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=latex 2010.3.30)  27 JUL 2012 14:01
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=latex 2010.3.30)  12 DEC 2012 17:11
 entering extended mode
 **Y:/earthquake/sandpits/drobinson/git/concluding_papers/paper2/paper2.tex
 (Y:/earthquake/sandpits/drobinson/git/concluding_papers/paper2/paper2.tex
@@ -111,7 +111,9 @@ LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 84.
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 87.
- [2] [3] [4] [5] [6]
+ [2]
+Missing character: There is no – in font ptmr7t!
+ [3] [4] [5] [6]
 File: diags/locs_2D_50eq_1.eps Graphic file (type eps)
  <diags/locs_2D_50eq_1.eps>
 File: diags/locs_2D_50eq_3.eps Graphic file (type eps)
@@ -125,7 +127,7 @@ File: diags/synth2Dmulti/ressummary_2Dsynth50eq.eps Graphic file (type eps)
 File: diags/synth3Dmulti/ressummary_3Dsynth50eq.eps Graphic file (type eps)
 
 <diags/synth3Dmulti/ressummary_3Dsynth50eq.eps>
-Underfull \vbox (badness 1205) has occurred while \output is active []
+Underfull \vbox (badness 5119) has occurred while \output is active []
 
  [11]
 File: diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps Graphic fil
@@ -183,4 +185,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  25i,12n,23p,1018b,325s stack positions out of 5000i,500n,10000p,200000b,5000s
 
-Output written on paper2.dvi (29 pages, 122496 bytes).
+Output written on paper2.dvi (29 pages, 122720 bytes).
