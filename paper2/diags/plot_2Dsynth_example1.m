@@ -1,5 +1,12 @@
-datadir = 'C:\datafiles\workstuff\sandpit\davidr\thesis_version2\diags\eq_location_optimisation\example_2D_50eq_1\';
-
+home_switch = 0; %1=> at home PC, 0=> at work PC
+if home_switch ==1
+    datadir = 'C:\datafiles\workstuff\sandpit\davidr\thesis_version2\diags\eq_location_optimisation\example_2D_50eq_1\';
+elseif home_switch ==0
+    datadir = 'C:\datafiles\sandpit_ANU\thesis_version2\diags\eq_location_optimisation\example_2D_50eq_1\';
+end
+    
+    
+    
 if strcmp(filesep,'/')
     error('You must be on Windows to get the Latex Interpreter for these figures')
 end
@@ -31,22 +38,43 @@ figure
 colorlookup = {'b+','bo','b^','bV','bd','bs','b*','bp','b>','b<'}
 colorlookup2 = {'r+','ro','r^','rV','rd','rs','r*','rp','r>','r<'}
 ind = find(f<-127.38);
+h1 = plot(E(:,1), E(:,2), 'ko', 'markerfacecolor','w','markersize',10);
+hold on
+
+count = 1
 for i = 1:nevnts
-    h1 = plot(E(i,1), E(i,2), 'ko', 'markerfacecolor','w','markersize',10);
-    hold on
+    %h1 = plot(E(i,1), E(i,2), 'ko', 'markerfacecolor','w','markersize',10);
     %plot(xend(i,ind(j)),-yend(i,ind(j)), colorlookup{i})
     for j = 1:length(ind)
-        h2 = plot(xend(i,ind(j)),yend(i,ind(j)), 'k^','markerfacecolor','w','markersize',10)
-        hold on
+        h2(count) = plot(xend(i,ind(j)),yend(i,ind(j)), 'k^','markerfacecolor','w','markersize',10)
         plot([xend(i,ind(j)) E(i,1)], [yend(i,ind(j)) E(i,2)],'Color',[0.7 0.7 0.7],'linewidth',2,'markersize',10)
+        count = count+1;
     end
 end
-set(gca,'xlim',[-70,70], 'ylim',[-70,70], 'fontsize',18)
+set(gca,'xlim',[-70,70], 'ylim',[-70,70])
 xlabel('$\hat{x}$ (m)','Interpreter','Latex')
 ylabel('$\hat{y}$ (m)','Interpreter','Latex') 
-legend([h2,h1],{'Actual Location','Optimisation Soln'},'Location','NorthWest') 
+legend([h2(1),h1],{'Actual','Optimisation'},'Location','NorthWest') 
+set(gca,'ytick',[-50,0,50],'xtick',[-50,0,50])
+set(gca,'units','centimeters') 
+statwidth = 7.5;
+statheight = 7.5;
+statxstart = 4.6;
+statystart = 1.95;
+set(gca, 'position',[statxstart, statystart, statwidth, statheight])
 
-print -depsc locs_2D_50eq_1.eps
+
+%print -depsc locs_2D_50eq_1.eps
+print -depsc ../Figure1_bw.eps
+
+%Now lets do this in colour
+set(h1,'markeredgecolor','r')
+for i = 1:length(h2)
+    set(h2(i),'markeredgecolor','b')
+end
+print -depsc ../Figure1_c.eps
+
+
 
 [nevnts, nrand] = size(xend);
 % compute error as distancenorm

@@ -3,6 +3,20 @@
 % .... This version (i.e. plot_calaveras_loc2.m utilises hypoDD with
 % .... SVD ........
 
+ 
+homeswitch =0; %1=> on home computer - 0=> on work PC
+if homeswitch ==1
+    path2thesis = '../../../thesis_version2/';
+elseif homeswitch ==0
+    path2thesis = '../../../../invert/davidr/thesis_version2/';
+end
+
+if homeswitch ==1
+        thesisdiags = '../../../thesis_version2/';
+elseif homeswitch ==0
+        thesisdiags = '../../../../invert/davidr/thesis_version2/diags/eq_location_optimisation/';
+end
+
 %% Machine check - must be on notebook for best figure
 if strcmp(filesep,'/')
     error('ERROR: must be on notebook for best figure quality')
@@ -44,9 +58,9 @@ ay_start = 0.7;
 
 
 %% Load inputdata
-events_oi = load('../../../thesis_version2/diags/eq_location_optimisation/events_oi.txt');
 
-CatLoc = load('../../../thesis_version2/diags/eq_location_optimisation/Calaveras_cat_locations.txt'); 
+events_oi = load([path2thesis,'/diags/eq_location_optimisation/events_oi.txt']);
+CatLoc = load([path2thesis,'/diags/eq_location_optimisation/Calaveras_cat_locations.txt']); 
 [n m] = size(CatLoc); 
 CatLoc_68 = [];
 CatLoc_not68 = [];
@@ -69,7 +83,8 @@ end
 if strcmp(filesep,'/')
     dirname = '/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/';
 else
-    dirname = '../../../thesis_version2/diags/eq_location_optimisation/'
+    dirname = '../../../../invert/davidr/thesis_version2/diags/eq_location_optimisation/';
+    %dirname = '../../../thesis_version2/diags/eq_location_optimisation/'
     dirname_hypoDD_SVD = '..\..\..\concluding_papers\paper2\diags\runs2\Hypodd_SVD\HYPODD2\runs\orig_68eqonly\';
 end
 % Get the original best hypoDD locations (i.e. those where we used LSQR)
@@ -95,6 +110,8 @@ Locs_hypoDDbest.not68z = tmphypoDDnot68(:,7);
 if strcmp(filesep,'/')
     dirname = '/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/example_69eq_calaveras3';
 else
+    
+    
     dirname = '..\..\..\thesis_version2/diags/eq_location_optimisation/example_69eq_calaveras3';
 end
 %dirname = '/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/CalaverasMultiSim/CWI/stat10';
