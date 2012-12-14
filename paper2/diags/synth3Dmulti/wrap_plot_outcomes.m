@@ -74,24 +74,27 @@ maxvals_best(ind_best) = NaN;
 fh.maxvals = figure;
 
 sh(1) = subplot(3,1,1)
-h2 = plot(maxvals_best,'color','k','linewidth',2) %  best
+h1b = plot(maxvals_best,'color','k','linewidth',2) %  best
 hold on
-h1 = plot(maxvals_all,'color',[0.7,0.7,0.7],'linewidth',1); % all
+h1g = plot(maxvals_all,'color',[0.7,0.7,0.7],'linewidth',1); % all
 %legend([h1,h2], {'all', 'best'})
 set(gca,'xlim',[1 10])
 set(gca,'xtick',1:10,'ytick',[0 50 100 150])
 set(gca,'xticklabel',{})%ticklabelstr)
 set(gca,'fontsize',fsize)
 set(gca,'ylim',[0 150],'xlim',[1 10],'units','centimeters')
+lh = legend([h1b,h1g],{'best','all'},'Location','Northeast')
+set(lh,'fontsize',10)
+set(lh,'Box','off')
 ylabel('$\Delta_{max}$\,(m)','fontsize',fsize,'Interpreter','LaTex')
 %xlabel('Number of constraints','fontsize',fsize)
 
 meanvals_all(ind_all) = NaN;
 meanvals_best(ind_best) = NaN;
 sh(2) = subplot(3,1,2)
-h2 = plot(meanvals_best,'color','k','linewidth',2) % best
+h2b = plot(meanvals_best,'color','k','linewidth',2) % best
 hold on
-h1 = plot(meanvals_all,'color',[0.7,0.7,0.7],'linewidth',1); % all
+h2g = plot(meanvals_all,'color',[0.7,0.7,0.7],'linewidth',1); % all
 set(gca,'xlim',[1 10])
 set(gca,'xtick',1:10,'ytick',[0 20 40])
 ticklabelstr = {' ','20%',' ','40%',' ','60%',' ','80%',' ','100%'};
@@ -126,9 +129,15 @@ set(sh(2), 'position',[statxstart, statystart+statheight+statygap, statwidth, st
 set(sh(1), 'position',[statxstart, statystart+2*statheight+2*statygap, statwidth, statheight])
 
 
+%print -depsc ressummary_3Dsynth50eq.eps
+print -depsc ../../Figure4_bw.eps
 
-print -depsc ressummary_3Dsynth50eq.eps
-
+% Now lets make the colour version
+set(h1b,'color','b')
+set(h1g,'color','r')
+set(h2b,'color','b')
+set(h2g,'color','r')
+print -depsc ../../Figure4_c.eps
 
 % now let us draw the constraints 
 % setup a colormap for the pathlengths
