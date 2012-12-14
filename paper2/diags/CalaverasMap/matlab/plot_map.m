@@ -7,7 +7,7 @@ figure_switch = 1;
 %   2 => also compute large figure with all stations (SLOW)
 %====================================
 
-fsize = 16;
+fsize = 10;
 
 
 % Load the earthquakes
@@ -36,8 +36,20 @@ set(gca,'fontsize',fsize)
 [s, alpha12, alpha21] = vincenty_inverse(37.35,-121.65,37.35,-121.53705)
 plot([-121.65 -121.53705],[37.35 37.35],'k','linewidth',2)
 text(mean([-121.65 -121.53705])-0.015,37.36,'10km','fontsize',fsize)
+arrow([-121.6169,37.3048],[-121.6563,37.2916],10)
+text(-121.61,37.3180,'Calaveras')
+text(-121.61,37.2964,'Events')
 
-print -depsc Calaveras_substationmap.eps
+
+statwidth = 7.5;
+statheight = 7.5;
+statxstart = 1.5%4.6;
+statystart = 1.5%1.95;
+set(gca,'units','centimeters')
+set(gca, 'position',[statxstart, statystart, statwidth, statheight])
+
+%print -depsc Calaveras_substationmap.eps
+print -depsc ../../../Figure7.eps
 
 if figure_switch ==2
     figure
