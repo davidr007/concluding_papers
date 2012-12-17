@@ -1,4 +1,4 @@
-function [hypoDDstats,Locs,fh] = plot_outcomes_hypoDD(dirname,plot_struct,colorchoice)
+function [hypoDDstats,Locs,fh] = plot_outcomes_hypoDD(dirname,plot_struct,colorchoice,path2thesis)
 % This function plots the hypoDD outcomes. It is typically called by 
 % batch_doplots. 
 %
@@ -6,6 +6,9 @@ function [hypoDDstats,Locs,fh] = plot_outcomes_hypoDD(dirname,plot_struct,colorc
 % dirname       [char]  director where hypoDD outputs are stored. Note that 
 %               eps figures are saved here as well. 
 % plot_struct   [structure] settings for the figures. 
+% colorchoice 
+% path2thesis   [string] path to where the thesis is stored on the macjhine
+%               being used
 %
 % OUTPUTS: 
 % hypoDDstats   [structure] contains statistics of interest
@@ -27,7 +30,7 @@ function [hypoDDstats,Locs,fh] = plot_outcomes_hypoDD(dirname,plot_struct,colorc
 % David Robinson
 % 9 December 2009
 
-if nargin ==2
+if nargin ==2 | isempty(colorchoice)
     colorchoice = 'c';
 end
 
@@ -68,9 +71,9 @@ fsize = plot_struct.fsize;
 msize = plot_struct.msize;
 
 if strcmp(filesep,'/') % i.e. in Linus
-    parentdir = '/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/';
+    parentdir = [path2thesis,'/diags/eq_location_optimisation/'];
 else 
-    parentdir = 'c:/datafiles/workstuff/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/';
+    parentdir = [path2thesis,'/diags/eq_location_optimisation/'];
 %    error('Not yet operation for the Windows machine')
 end
 

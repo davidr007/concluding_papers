@@ -1,4 +1,4 @@
-function [CWIstats,Locs,fh] = plot_outcomes_cwi(dirname,plot_struct)
+function [CWIstats,Locs,fh] = plot_outcomes_cwi(dirname,plot_struct,path2thesis)
 % This function plots the CWI outcomes. It is typically called by 
 % batch_doplots. 
 %
@@ -6,6 +6,8 @@ function [CWIstats,Locs,fh] = plot_outcomes_cwi(dirname,plot_struct)
 % dirname       [char]  director where hypoDD outputs are stored. Note that 
 %               eps figures are saved here as well. 
 % plot_struct   [structure] settings for the figures. 
+% path2thesis   [string] path to where the thesis is stored on the macjhine
+%               being used
 % 
 % OUTPUTS: 
 % CWIstats      [structure] contains statistics of interest
@@ -53,9 +55,9 @@ msize = plot_struct.msize;
 
 
 if strcmp(filesep,'/') % i.e. in Linus
-    parentdir = '/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/';
+    parentdir = [path2thesis,'/diags/eq_location_optimisation/'];
 else
-    parentdir = 'c:/datafiles/workstuff/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/';
+    parentdir = [path2thesis,'/diags/eq_location_optimisation/'];
     %error('Not yet operation for the Windows machine')
 end
 
