@@ -11,7 +11,11 @@ elseif homeswitch ==0
     path2thesis = '../../../../invert/davidr/thesis_version2/';
 end
 
-
+if homeswitch ==1
+        thesisdiags = '../../../thesis_version2/';
+elseif homeswitch ==0
+        thesisdiags = '../../../../invert/davidr/thesis_version2/diags/eq_location_optimisation/';
+end
 
 %% Machine check - must be on notebook for best figure
 if strcmp(filesep,'/')
@@ -77,14 +81,9 @@ end
 
 % Lets get the results we need for this figure
 if strcmp(filesep,'/')
-    dirname = '/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/';
+    dirname = [path2thesis,'/diags/eq_location_optimisation/'];
 else
-
-    if homeswitch ==1
-        dirname = '../../../thesis_version2/diags/eq_location_optimisation/';
-    elseif homeswitch ==0
-        dirname = '../../../../invert/davidr/thesis_version2/diags/eq_location_optimisation/';
-    end
+    dirname = [path2thesis,'/diags/eq_location_optimisation/'];
     %dirname = '../../../thesis_version2/diags/eq_location_optimisation/'
     dirname_hypoDD_SVD = '..\..\..\concluding_papers\paper2\diags\runs2\Hypodd_SVD\HYPODD2\runs\orig_68eqonly\';
 end
@@ -109,11 +108,9 @@ Locs_hypoDDbest.not68x = tmphypoDDnot68(:,5);
 Locs_hypoDDbest.not68y = tmphypoDDnot68(:,6);
 Locs_hypoDDbest.not68z = tmphypoDDnot68(:,7);
 if strcmp(filesep,'/')
-    dirname = '/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/example_69eq_calaveras3';
+    dirname = [path2thesis,'/diags/eq_location_optimisation/example_69eq_calaveras3'];
 else
-    
-    
-    dirname = '..\..\..\thesis_version2/diags/eq_location_optimisation/example_69eq_calaveras3';
+    dirname = [path2thesis,'/diags/eq_location_optimisation/example_69eq_calaveras3';
 end
 %dirname = '/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/CalaverasMultiSim/CWI/stat10';
 [CWIstats_best,Locs_CWIbest,fh] = plot_outcomes_cwi(dirname,plot_struct);

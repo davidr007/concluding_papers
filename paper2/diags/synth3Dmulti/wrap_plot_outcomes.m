@@ -102,7 +102,7 @@ set(gca,'xticklabel',ticklabelstr)
 set(gca,'fontsize',fsize)
 set(gca,'ylim',[0 40],'xlim',[1 10],'units','centimeters')
 ylabel('$\Delta_\mu$\,(m)','fontsize',fsize,'Interpreter','LaTex')
-
+xlabel('Number of constraints','fontsize',fsize)
 % sh(3) = subplot(3,1,3)
 % stdvals_all(ind_all) = NaN;
 % stdvals_best(ind_best) = NaN;

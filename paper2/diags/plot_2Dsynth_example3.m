@@ -2,9 +2,11 @@ home_switch = 0; %1=> at home PC, 0=> at work PC
 if home_switch ==1
     datadir = 'C:\datafiles\workstuff\sandpit\davidr\thesis_version2\diags\eq_location_optimisation\example_2D_50eq_3\';
 elseif home_switch ==0
-    datadir = 'C:\datafiles\sandpit_ANU\thesis_version2\diags\eq_location_optimisation\example_2D_50eq_3\';
+    datadir = 'Y:\earthquake\sandpits\drobinson\invert\davidr\thesis_version2\diags\eq_location_optimisation\example_2D_50eq_3\';
 end
-    
+
+msize = 6; 
+
 if strcmp(filesep,'/')
     error('You must be on Windows to get the Latex Interpreter for these figures')
 end
@@ -20,9 +22,9 @@ figure
 colorlookup = {'b.','r.','g.','c.','m.','y.','k.','bo','ro','go'}
 colorlookup2 = {'b^','r^','g^','c^','m^','y^','k^','bd','rd','gd'}
 for i = 1:nevnts
-    h1 = plot(xend(i,:), yend(i,:),'ko','markerfacecolor','k', 'markersize',10);
+    h1 = plot(xend(i,:), yend(i,:),'ko','markerfacecolor','k', 'markersize',msize);
     hold on
-    h2 = plot(E(i,1),E(i,2), 'k^', 'markerfacecolor','k','markersize',10);
+    h2 = plot(E(i,1),E(i,2), 'k^', 'markerfacecolor','k','markersize',msize);
     hold on
     plot([xend(i,:) E(i,1)], [yend(i,:) E(i,2)],'Color',[0.5 0.5 0.5],'linewidth',2)
 end
@@ -36,15 +38,15 @@ figure
 colorlookup = {'b+','bo','b^','bV','bd','bs','b*','bp','b>','b<'}
 colorlookup2 = {'r+','ro','r^','rV','rd','rs','r*','rp','r>','r<'}
 ind = find(f<-127.38);
-h1 = plot(E(:,1), E(:,2), 'ko', 'markerfacecolor','w','markersize',10);
+h1 = plot(E(:,1), E(:,2), 'ko', 'markerfacecolor','w','markersize',msize);
 hold on
 count = 1
 for i = 1:nevnts
     %plot(xend(i,ind(j)),-yend(i,ind(j)), colorlookup{i})
     for j = 1:length(ind)
-        h2(count) = plot(xend(i,ind(j)),yend(i,ind(j)), 'k^','markerfacecolor','w','markersize',10)
+        h2(count) = plot(xend(i,ind(j)),yend(i,ind(j)), 'k^','markerfacecolor','w','markersize',msize)
         hold on
-        plot([xend(i,ind(j)) E(i,1)], [yend(i,ind(j)) E(i,2)],'Color',[0.7 0.7 0.7],'linewidth',2,'markersize',10)
+        plot([xend(i,ind(j)) E(i,1)], [yend(i,ind(j)) E(i,2)],'Color',[0.7 0.7 0.7],'linewidth',2,'markersize',msize)
         count = count+1;
     end
 end

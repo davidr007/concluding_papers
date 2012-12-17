@@ -81,9 +81,9 @@ end
 
 % Lets get the results we need for this figure
 if strcmp(filesep,'/')
-    dirname = '/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/';
+    dirname = [path2thesis,'/diags/eq_location_optimisation/'];
 else
-    dirname = '../../../../invert/davidr/thesis_version2/diags/eq_location_optimisation/';
+    dirname = [path2thesis,'/diags/eq_location_optimisation/'];
     %dirname = '../../../thesis_version2/diags/eq_location_optimisation/'
     dirname_hypoDD_SVD = '..\..\..\concluding_papers\paper2\diags\runs2\Hypodd_SVD\HYPODD2\runs\orig_68eqonly\';
 end
@@ -108,14 +108,12 @@ Locs_hypoDDbest.not68x = tmphypoDDnot68(:,5);
 Locs_hypoDDbest.not68y = tmphypoDDnot68(:,6);
 Locs_hypoDDbest.not68z = tmphypoDDnot68(:,7);
 if strcmp(filesep,'/')
-    dirname = '/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/example_69eq_calaveras3';
+    dirname = [path2thesis,'/diags/eq_location_optimisation/example_69eq_calaveras3'];
 else
-    
-    
-    dirname = '..\..\..\thesis_version2/diags/eq_location_optimisation/example_69eq_calaveras3';
+    dirname = [path2thesis,'/diags/eq_location_optimisation/example_69eq_calaveras3'];
 end
 %dirname = '/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/CalaverasMultiSim/CWI/stat10';
-[CWIstats_best,Locs_CWIbest,fh] = plot_outcomes_cwi(dirname,plot_struct);
+[CWIstats_best,Locs_CWIbest,fh] = plot_outcomes_cwi(dirname,plot_struct,path2thesis);
 for i = 1:length(fh)
     close(fh(i))
 end
@@ -277,7 +275,7 @@ for j = 1: length(statlist)
     else
         dirname = ['..\..\..\concluding_papers\paper2\diags\runs2\Hypodd_SVD\HYPODD2\runs\',statlist{j},'/'];
     end
-    [tmpstats,Locs_HYPODD_rs.(statlist{j}),fh] = plot_outcomes_hypoDD(dirname,plot_struct);
+    [tmpstats,Locs_HYPODD_rs.(statlist{j}),fh] = plot_outcomes_hypoDD(dirname,plot_struct,[],path2thesis);
     for i = 1:length(fh)
         close(fh(i))
     end
@@ -442,16 +440,16 @@ station_counts = [10,9,8,7,6,5,4,3,2,1];
 
 
 if strcmp(filesep,'/')
-    parentdir_CWI = ['/export/storage/davidr/sandpit/davidr/thesis_version2/diags/eq_location_optimisation/CalaverasMultiSim/'];
+    parentdir_CWI = [path2thesis,'/diags/eq_location_optimisation/CalaverasMultiSim/'];
     parentdir_HYPODD = ['/export/storage/davidr/sandpit/davidr/concluding_papers/paper2/diags/runs2/Hypodd_SVD/HYPODD2/runs/'];
 else
-    parentdir_CWI = ['..\..\..\thesis_version2/diags/eq_location_optimisation/CalaverasMultiSim/'];
+    parentdir_CWI = [path2thesis,'/diags/eq_location_optimisation/CalaverasMultiSim/'];
     parentdir_HYPODD = ['..\..\..\concluding_papers\paper2\diags\runs2\Hypodd_SVD\HYPODD2\runs\'];
 end
 
 for i = 1: length(station_counts)
     dirname2 = [parentdir_CWI,filesep, 'CWI/stat',num2str(station_counts(i))];
-    [CWIstats_tmp, tmp, fh] = plot_outcomes_cwi(dirname2,plot_struct);
+    [CWIstats_tmp, tmp, fh] = plot_outcomes_cwi(dirname2,plot_struct,path2thesis);
     for k = 1:length(fh)
         close(fh(k))
     end
@@ -465,7 +463,7 @@ for i = 1: length(station_counts)
     dirname3 = [parentdir_HYPODD,filesep, 'stat',num2str(station_counts(i))];
     
     try, % if the hypodd.reloc exists
-        [hypoDD2stats_tmp, hypoDD_DetailedLocs.(['stat',num2str(station_counts(i))]), fh] = plot_outcomes_hypoDD(dirname3,plot_struct);
+        [hypoDD2stats_tmp, hypoDD_DetailedLocs.(['stat',num2str(station_counts(i))]), fh] = plot_outcomes_hypoDD(dirname3,plot_struct,[],path2thesis);
         for k = 1:length(fh)
             close(fh(k))
         end
@@ -531,32 +529,34 @@ set(sh(1), 'position',[statxstart, statystart+2*statheight+2*statygap, statwidth
 
 print -depsc CalaverasLoc4_hypoDD_SVD.eps
 
+%%============
+% The following was not working on 17 Dec so commented it out - DR
 % Now lets have a look at the sigmas 
-figure
-for i = 1:7
-    statstr = ['stat', num2str(10-i+1)];
-    
-    subplot(7,3,(i-1)*3+1)
-    hist(hypoDD_DetailedLocs.(statstr).sigmax)
-    if i ==7
-       xlabel('\sigma_x (m)')
-    end
-    
-    subplot(7,3,(i-1)*3+2)
-    hist(hypoDD_DetailedLocs.(statstr).sigmay)
-    title(statstr)
-    if i ==7
-       xlabel('\sigma_y (m)')
-    end
-    
-    subplot(7,3,(i-1)*3+3)
-    hist(hypoDD_DetailedLocs.(statstr).sigmaz)
-    if i ==7
-       xlabel('\sigma_x (m)')
-    end
-    
-end
-print -depsc CalaverasLoc4b_hypoDD_SVD_sigmahists.eps
+% figure
+% for i = 1:7
+%     statstr = ['stat', num2str(10-i+1)];
+%     
+%     subplot(7,3,(i-1)*3+1)
+%     hist(hypoDD_DetailedLocs.(statstr).sigmax)
+%     if i ==7
+%        xlabel('\sigma_x (m)')
+%     end
+%     
+%     subplot(7,3,(i-1)*3+2)
+%     hist(hypoDD_DetailedLocs.(statstr).sigmay)
+%     title(statstr)
+%     if i ==7
+%        xlabel('\sigma_y (m)')
+%     end
+%     
+%     subplot(7,3,(i-1)*3+3)
+%     hist(hypoDD_DetailedLocs.(statstr).sigmaz)
+%     if i ==7
+%        xlabel('\sigma_x (m)')
+%     end
+%     
+% end
+% print -depsc CalaverasLoc4b_hypoDD_SVD_sigmahists.eps
 
 
 
@@ -571,15 +571,15 @@ print -depsc CalaverasLoc4b_hypoDD_SVD_sigmahists.eps
 parentdir = 'runs2\Hypodd_SVD\HYPODD2\runs\';
 
 
-[CWIstats_tmp,CombLocs_Low,fh] = plot_outcomes_cwi_cartesian([parentdir,'example_68eq_calaveras1/'],plot_struct)
+[CWIstats_tmp,CombLocs_Low,fh] = plot_outcomes_cwi_cartesian([parentdir,'example_68eq_calaveras1/'],plot_struct,path2thesis)
 for i = 1:length(fh)
     close(fh(i))
 end
-[CWIstats_tmp,CombLocs_Med,fh] = plot_outcomes_cwi_cartesian([parentdir,'example_68eq_calaveras2/'],plot_struct)
+[CWIstats_tmp,CombLocs_Med,fh] = plot_outcomes_cwi_cartesian([parentdir,'example_68eq_calaveras2/'],plot_struct,path2thesis)
 for i = 1:length(fh)
     close(fh(i))
 end
-[CWIstats_tmp,CombLocs_High,fh] = plot_outcomes_cwi_cartesian([parentdir,'example_68eq_calaveras2/'],plot_struct)
+[CWIstats_tmp,CombLocs_High,fh] = plot_outcomes_cwi_cartesian([parentdir,'example_68eq_calaveras2/'],plot_struct,path2thesis)
 for i = 1:length(fh)
     close(fh(i))
 end
@@ -721,13 +721,13 @@ if strcmp(filesep,'/')
 else
     parentdir = './runs2\HYpodd_SVD\HyPODD2\runs\example_68eq_calaveras4';
 end
-[CWIstats_tmp,CombLocs_CWI_2deploy,fh] = plot_outcomes_cwi_cartesian(parentdir,plot_struct)
+[CWIstats_tmp,CombLocs_CWI_2deploy,fh] = plot_outcomes_cwi_cartesian(parentdir,plot_struct,path2thesis)
 for i = 1:length(fh)
     close(fh(i))
 end
 
 parentdir='./extra_hypoDD3/';
-[HYPODDstats_tmp,CombLocs_HYPODD_2deploy,fh] = plot_outcomes_hypoDD(parentdir,plot_struct)
+[HYPODDstats_tmp,CombLocs_HYPODD_2deploy,fh] = plot_outcomes_hypoDD(parentdir,plot_struct,[],path2thesis)
 for i = 1:length(fh)
     close(fh(i))
 end
@@ -735,7 +735,7 @@ end
 
 figure
 set(gcf,'units','centimeter')
-
+ay_start = 1.2
 % catalogue x vs y
 subplot(3,2,1)
 plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68y,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
@@ -818,7 +818,8 @@ set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimet
 set(gca,'xtick', plot_struct.ytickspots, 'ytick',plot_struct.ztickspots, 'yticklabel',plot_struct.zticklabels)
 set(gca,'fontsize',plot_struct.fsize)
 set(gca,'units','centimeters')
-set(gca,'position',[ax_start+awidth+hgap, 2*hgap+ay_start, awidth, aheight])
+%set(gca,'position',[ax_start+awidth+hgap, 2*hgap+ay_start, awidth, aheight])
+set(gca,'position',[ax_start+awidth+hgap, ay_start, awidth, aheight])
 set(gca,'yticklabel',[])
 
 print -depsc CalaverasLoc6_hypoDD_SVD.eps
