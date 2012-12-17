@@ -492,23 +492,7 @@ does not lead to the exact solution due to the addition of noise
 coordinate error is 2.0\,m which is small compared to the noise of
 $\bar{\sigma}_N=0.02$ which for $v_s=3300$\,ms$^{-1}$ and
 $f_{dom}=2.5$\,Hz corresponds to roughly 25\,m.
-\begin{figure}
-\includegraphics[width = 20pc]{diags/locs_2D_50eq_1.eps}
-\caption{Example 1 - Synthetic relocation of 50 earthquakes in 2D
-using all constraints with noise $\bar{\sigma}_N=0.02$. Actual and
-optimization event locations are shown in triangles and circles,
-respectively.} \label{fig-2D50eq-relocation_eg1}
-\end{figure}
 
-\begin{figure}
-\includegraphics[width = 20pc]{diags/locs_2D_50eq_3.eps}
-\caption{Example 2 - Synthetic relocation of 50 earthquakes in 2D
-using all constraints with noise $\bar{\sigma}_N= 2
-\epsilon(\delta_t)$.
- Actual and optimization event locations
-are shown in triangles and circles, respectively.}
-\label{fig-2D50eq-relocation_eg3}
-\end{figure}
 \citet{dr_Robinson11a} demonstrates that the noise on CWI estimates
 is often larger than 0.02 and that it increases with event
 separation. Consequently, example 1 is simplistic because we fix
@@ -586,18 +570,6 @@ repeat example 2 using 90\%, 80\%, ..., 10\% of the links. As with
 the above examples, we undertake the optimization with 25 randomly
 chosen starting locations.
 
-\begin{figure}
-%\noindent\includegraphics[width = 20pc]{../../thesis_version2/diags/eq_location_optimisation/synth2Dmulti/ressummary_2Dsynth50eq.eps}
-\noindent\includegraphics[width =
-20pc]{diags/synth2Dmulti/ressummary_2Dsynth50eq.eps}
-\caption{Example 3 - Statistical measures of error in the
-optimization solutions for the 2D synthetic cases when all (gray)
-and best (black) results are considered. The statistics
-$\Delta_{max}$ and $\Delta_\mu$  are the maximum and mean coordinate
-error, respectively. The bottom subplot shows the average minimum
-number of branches required to link the 2450 pairs.}
- \label{fig:optimisationresults-2Dsynth}
-\end{figure}
 
 Figures \ref{fig:optimisationresults-2Dsynth}(a) and (b) illustrates
 the maximum $\Delta_{max}$ (top) and mean $\Delta_\mu$ (middle) of
@@ -660,19 +632,6 @@ repeat the optimization 25 times using randomly chosen starting
 locations. The results are summarised in Figure
 \ref{fig:optimisationresults-3Dsynth}.
 
-\begin{figure}
-%\noindent\includegraphics[width = 20pc]{../../thesis_version2/diags/eq_location_optimisation/synth3Dmulti/ressummary_3Dsynth50eq.eps}
-\noindent\includegraphics[width =
-20pc]{diags/synth3Dmulti/ressummary_3Dsynth50eq.eps}
-\caption{Example 4 - Statistical measures of error in the
-optimization solutions for the 3D synthetic cases when all (gray)
-and best (black) results are considered. The statistics
-$\Delta_{max}$ and $\Delta_\mu$ are the maximum and mean coordinate
-error, respectively. The absence of the gray and black lines below
-60\% and 30\% indicates a breakdown in the solutions when all or
-best optimization result(s) are considered, respectively.}
-\label{fig:optimisationresults-3Dsynth}
-\end{figure}
 
 When 70\% of the direct constraints are considered all optimization
 results (gray) are consistent with the best solution obtained from
@@ -731,14 +690,6 @@ assumption for the application of equation
 \ref{eq:LitReview-g-3d-dc}. The relocations in this paper are sorted
 into four examples as summarised in Table \ref{tab:examples}.
 
-\begin{figure}
-\noindent\includegraphics[width =
-20pc]{diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps}
-\caption{Map showing location of the Calaveras
-cluster (white star) and 805 seismic stations (black triangles).}
-\label{fig:-eqopti-California-Calaveras}
-\end{figure}
-
 
 \begin{table}
 \caption{Location examples for the 68 Calaveras earthquakes.}
@@ -770,29 +721,6 @@ study are differentiated in black. Catalogue locations suggest that
 the 68 earthquakes of interest are spatially widely distributed on the scale of
  Figure \ref{fig-69Calaverasevents_eg1}.
 
-%%=======================================================================================
-% This is the original figure using HypoDD with LSQR
-%\begin{figure*}
-%\includegraphics{diags/CalaverasLoc1.eps}
-%\caption{Comparison of earthquake hypocenters using three different methods: catalogue location (column 1), hypoDD with all
-%308 events (column 2) and CWI example 1 (column 3).
-%Note that in the case of the CWI locations we consider only the 68 earthquakes in red, the
-%blue events are shown for the purpose of orientation only.}
-%\label{fig-69Calaverasevents_eg1}
-%\end{figure*}
-
-% Now we have the SVD version
-\begin{figure*}
-\includegraphics{diags/CalaverasLoc1_hypoDD_SVD.eps}
-\caption{Example 5 - Comparison of relative earthquake locations
-using three different methods: catalogue location (column 1), CWI
-(column 2) and hypoDD (column 3). Note that in the case of the
-hypoDD and CWI inversions we consider only the 68 earthquakes in
-black, the gray catalogue locations for the remaining 240 (308-68)
-earthquakes are shown for the purpose of orientation only.}
-\label{fig-69Calaverasevents_eg1}
-\end{figure*}
-%%=======================================================================================
 
 To apply CWI we download available waveforms from the Northern
 California Earthquake Data Center (See Data and Resources Section).
@@ -879,16 +807,7 @@ remains. The 10 stations considered are shown in Figure
 explained in Table \ref{tab:Calaveras-stationremoval}.
 
 
-\begin{figure}
-\noindent\includegraphics[width =
-20pc]{diags/CalaverasMap/matlab/Calaveras_substationmap}
-\caption{Location of the 10 stations (triangles) used to relocate
-the Calaveras events in Example 6 to 8. Stations are removed one at
-a time according to the order in Table
-\ref{tab:Calaveras-stationremoval} and the events relocated. The
-events are indicated with black circles.}
-\label{fig:-eqopti-Calaveras-substations}
-\end{figure}
+
 
 \begin{table}
 \caption{Stations considered when exploring the impact of reduced
@@ -923,12 +842,6 @@ regardless of the number of stations available, reinforcing our
 hypothesis that coda waves can constrain location in what would
 normally be regarded as a poor station network.
 
-\begin{figure*}
-\includegraphics[angle=90,height = 50pc]{diags/CalaverasLoc2.eps}
-\caption{Example 6 - CWI relative locations with reduced stations.}
-\label{fig-CWIreducesstats}
-\end{figure*}
-
 
 Figure \ref{fig-HYPODDreducesstats} illustrates the hypoDD inversion
 results for seven, five and four stations. The travel time problem
@@ -939,22 +852,6 @@ reduced. We observe a general increase in scatter and a higher
 number of stray events outside the cluster when less stations are
 used with hypoDD. Even with seven stations the linear geometry of
 Figure \ref{fig-69Calaverasevents_eg1} (column 3) is less evident.
-
-%%=========================================================================
-% this is the original version using hypoDD with LSQ
-%\begin{figure*}
-%\includegraphics[angle=90,height = 50pc]{diags/CalaverasLoc3.eps}
-%\caption{....}
-%\label{fig-HYPODDreducesstats}
-%\end{figure*}
-
-% This is the version using hypoDD with SVD
-\begin{figure*}
-\includegraphics[height = 25pc]{diags/CalaverasLoc3_hypoDD_SVD.eps}
-\caption{Example 6 - HypoDD (SVD) relative locations with reduced
-stations.} \label{fig-HYPODDreducesstats}
-\end{figure*}
-%%=========================================================================
 
 
 As the number of stations are reduced both the CWI and hypoDD
@@ -985,28 +882,6 @@ for ten to four stations and it demonstrates that the number of
 events located by hypoDD is less than or equal to the number located
 by CWI.
 
-%%=========================================================================
-% This is the original version using hypoDD with LSQ
-%\begin{figure}
-%\noindent\includegraphics[width = 20pc]{diags/CalaverasLoc4.eps}
-%\caption{Statistics on coordinate differences for reduced station inversions. Differences
-%are computed between the inversion results (CWI and hypoDD) and the complete hypoDD
-%locations for all 308 events. The top subplot illustrates the number of constrainable
-%events in the CWI and hypoDD inversions as a function of the stations considered.}
-%\label{fig-statremoval_summarystats}
-%\end{figure}
-
-% This is the version using hypoDD with SVD
-\begin{figure}
-\noindent\includegraphics[width =
-20pc]{diags/CalaverasLoc4_hypoDD_SVD.eps} \caption{Example 6 -
-Number of constrainable events $nE$ in the CWI and hypoDD inversions
-as a function of the stations considered (top). Mean (middle) and
-maximum (bottom) of the difference computed between the reduced
-station inversion results (CWI and hypoDD) and the complete hypoDD
-locations for all 308 events. } \label{fig-statremoval_summarystats}
-\end{figure}
-%%=========================================================================
 
 The remaining panels of Figure \ref{fig-statremoval_summarystats}
 illustrate a statistical comparison of the CWI and hypoDD reduced
@@ -1180,28 +1055,6 @@ hypoDD's leverage by decreasing the number of stations to five, we
 observe an increase in off-streak scatter resulting from the
 enhanced influence of the coda.
 
-%%=========================================================================
-% This is the original version using hypoDD with LSQ
-% This is only makes sense for LSQR so we remove it from this manuscript
-%\begin{figure*}
-%\noindent\includegraphics{diags/CalaverasLoc5.eps}
-%\caption{Locations of the 68 Calaveras earthquakes combining all available coda wave and travel time constraints with three different
-%levels of uncertainty on the travel time PDFs. Column 1 sets $\sigma_x = \sigma_y = 19.5$\,m and $\sigma_z = 15$\,m
-%\citep[after]{dr_Waldhauser08a}, Column 2 uses $\sigma_x = \sigma_y = 3 \times19.5$\,m and $\sigma_z = 3\times15$\,m and
-%column 3 considers $\sigma_x = \sigma_y = 152$\,m and $\sigma_z = 232$\,m \citep[after]{dr_Shearer97a}. }
-%\label{fig-68Calaverasevents_ttandcoda1}
-%\end{figure*}
-
-% This is the version using hypoDD with SVD
-\begin{figure}
-\includegraphics{diags/CalaverasLoc5_hypoDD_SVD.eps}
-\caption{Example 7 - Combined HypoDD (SVD) and CWI relative
-locations using data form all stations (left) and 5 stations
-(right).} \label{fig-68Calaverasevents_ttandcoda1}
-\end{figure}
-
-
-%%=========================================================================
 
 
 \subsection{Example 8 - Combining CWI and travel times when the travel times constrain a limited number of events}
@@ -1243,19 +1096,6 @@ the best fitting Omori Formula separated into segments before
 (gray), during (black) and after (gray) the pseudo temporary
 deployment.
 
-\begin{figure}
-\noindent\includegraphics[width = 20pc]{diags/OmoriFigure.eps}
-\caption{Cumulative number of aftershocks for the
-Hokkaido-Nansei-Oki, Japan $M_s=7.8$ earthquake of 12 July 1993
-using equation (\ref{eq:CumOmori}). The leftmost gray, middle black
-and rightmost gray lines signify aftershocks occurring before,
-during and after the deployment of a pseudo temporary array
-installed 4 days after the main shock and left for 150 days. A
-temporary deployment of this kind will record roughly 50\% of the
-aftershocks in the 1000 days following the mainshock. }
-\label{fig:Omorifigure}
-\end{figure}
-
 With this idea of a temporary deployment in mind we have another
 attempt at relocating the Calaveras earthquakes. In Example 8 we
 consider the travel time constraints on half (34) of the earthquakes
@@ -1276,32 +1116,6 @@ deployment. This
 ability of  coda waves to constrain the location of events recorded
 by a single station creates new opportunities for understanding
 earthquakes in regions with limited station coverage.
-
-%%=========================================================================
-% This is the original version using hypoDD with LSQ
-%\begin{figure}
-%\noindent\includegraphics{diags/CalaverasLoc6.eps}
-%\caption{Left - Combined travel time and coda wave inversions using travel time constraints on
-%22 (or 32\%) of the events and coda waves from station CCO only. All travel time based uncertainties
-%are assigned $\sigma_x = \sigma_y = 3 \times19.5$\,m and $\sigma_z = 3\times15$\,m. Right - travel time
-%relocation only (i.e. no CWI) using ........}
-%\label{fig-68Calaverasevents_ttsubsetandcoda1}
-%\end{figure}
-
-% This is the version using hypoDD with SVD
-\begin{figure}
-\includegraphics{diags/CalaverasLoc6_hypoDD_SVD.eps}
-\caption{Example 8 - Mimicking the deployment of a temporary network
-by ignoring data from all but station CCO for 50\% (or 34) of the
-events. Relative locations are shown for the combined CWI and travel
-time inversion (left) and the inversion with travel times only
-(right) Only by combining the data is it possible to locate all 68
-events. Furthermore, combining the data leads to a solution more
-consistent with Figure \ref{fig-69Calaverasevents_eg1}. }
-\label{fig-68Calaverasevents_ttsubsetandcoda1}
-\end{figure}
-%%=========================================================================
-
 
 
 \section{Discussion and Conclusions}
@@ -1374,6 +1188,230 @@ CWI to earthquake location.
 \bibliography{../refs/drrefs}
 
 
+\section{Tables}
+
+
+\clearpage
+\section{Figures and Captions}
+
+%%=======================================================================================
+
+%Figure 1
+\begin{figure}
+\includegraphics[width = 20pc]{diags/locs_2D_50eq_1.eps}
+\caption{Example 1 - Synthetic relocation of 50 earthquakes in 2D
+using all constraints with noise $\bar{\sigma}_N=0.02$. Actual and
+optimization event locations are shown in triangles and circles,
+respectively.} \label{fig-2D50eq-relocation_eg1}
+\end{figure}
+
+%%=======================================================================================
+
+%Figure 2
+\begin{figure}
+\includegraphics[width = 20pc]{diags/locs_2D_50eq_3.eps}
+\caption{Example 2 - Synthetic relocation of 50 earthquakes in 2D
+using all constraints with noise $\bar{\sigma}_N= 2
+\epsilon(\delta_t)$.
+ Actual and optimization event locations
+are shown in triangles and circles, respectively.}
+\label{fig-2D50eq-relocation_eg3}
+\end{figure}
+
+%%=======================================================================================
+
+% Figure 3
+\begin{figure}
+%\noindent\includegraphics[width = 20pc]{../../thesis_version2/diags/eq_location_optimisation/synth2Dmulti/ressummary_2Dsynth50eq.eps}
+\noindent\includegraphics[width =
+20pc]{diags/synth2Dmulti/ressummary_2Dsynth50eq.eps}
+\caption{Example 3 - Statistical measures of error in the
+ solutions for the 2D synthetic cases when all and best
+optimization results are considered. The statistics $\Delta_{max}$
+and $\Delta_\mu$  are the maximum and mean coordinate error,
+respectively. The bottom subplot shows the average minimum number of
+branches required to link the 2450 pairs.}
+ \label{fig:optimisationresults-2Dsynth}
+\end{figure}
+
+%%=======================================================================================
+
+% Figure 4
+\begin{figure}
+%\noindent\includegraphics[width = 20pc]{../../thesis_version2/diags/eq_location_optimisation/synth3Dmulti/ressummary_3Dsynth50eq.eps}
+\noindent\includegraphics[width =
+20pc]{diags/synth3Dmulti/ressummary_3Dsynth50eq.eps}
+\caption{Example 4 - Statistical measures of error in the
+optimization solutions for the 3D synthetic cases when all (gray)
+and best (black) results are considered. The statistics
+$\Delta_{max}$ and $\Delta_\mu$ are the maximum and mean coordinate
+error, respectively. The absence of the gray and black lines below
+60\% and 30\% indicates a breakdown in the solutions when all or
+best optimization result(s) are considered, respectively.}
+\label{fig:optimisationresults-3Dsynth}
+\end{figure}
+
+%%=======================================================================================
+
+% Figure 5
+\begin{figure}
+\noindent\includegraphics[width =
+20pc]{diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps}
+\caption{Map showing location of the Calaveras cluster (white star)
+and 805 seismic stations (black triangles).}
+\label{fig:-eqopti-California-Calaveras}
+\end{figure}
+
+%%=======================================================================================
+% Figure 6
+
+% This is the original figure using HypoDD with LSQR
+%\begin{figure*}
+%\includegraphics{diags/CalaverasLoc1.eps}
+%\caption{Comparison of earthquake hypocenters using three different methods: catalogue location (column 1), hypoDD with all
+%308 events (column 2) and CWI example 1 (column 3).
+%Note that in the case of the CWI locations we consider only the 68 earthquakes in red, the
+%blue events are shown for the purpose of orientation only.}
+%\label{fig-69Calaverasevents_eg1}
+%\end{figure*}
+
+% Now we have the SVD version
+\begin{figure*}
+\includegraphics{diags/CalaverasLoc1_hypoDD_SVD.eps}
+\caption{Example 5 - Comparison of relative earthquake locations
+using three different methods: catalogue location (column 1), CWI
+(column 2) and hypoDD (column 3). Note that in the case of the
+hypoDD and CWI inversions we consider only the 68 earthquakes in
+black, the gray catalogue locations for the remaining 240 (308-68)
+earthquakes are shown for the purpose of orientation only.}
+\label{fig-69Calaverasevents_eg1}
+\end{figure*}
+%%=======================================================================================
+
+% Figure 7
+\begin{figure}
+\noindent\includegraphics[width =
+20pc]{diags/CalaverasMap/matlab/Calaveras_substationmap}
+\caption{Location of the 10 stations (triangles) used to relocate
+the Calaveras events in Example 6 to 8. Stations are removed one at
+a time according to the order in Table
+\ref{tab:Calaveras-stationremoval} and the events relocated. The
+events are indicated with black circles.}
+\label{fig:-eqopti-Calaveras-substations}
+\end{figure}
+
+%%=======================================================================================
+
+%Figure 8
+\begin{figure*}
+\includegraphics[angle=90,height = 50pc]{diags/CalaverasLoc2.eps}
+\caption{Example 6 - CWI relative locations with reduced stations.}
+\label{fig-CWIreducesstats}
+\end{figure*}
+
+%%=========================================================================
+% Figure 9
+
+% this is the original version using hypoDD with LSQ
+%\begin{figure*}
+%\includegraphics[angle=90,height = 50pc]{diags/CalaverasLoc3.eps}
+%\caption{....}
+%\label{fig-HYPODDreducesstats}
+%\end{figure*}
+
+% This is the version using hypoDD with SVD
+\begin{figure*}
+\includegraphics[height = 25pc]{diags/CalaverasLoc3_hypoDD_SVD.eps}
+\caption{Example 6 - HypoDD (SVD) relative locations with reduced
+stations.} \label{fig-HYPODDreducesstats}
+\end{figure*}
+%%=========================================================================
+
+%%=========================================================================
+% This is the original version using hypoDD with LSQ
+%\begin{figure}
+%\noindent\includegraphics[width = 20pc]{diags/CalaverasLoc4.eps}
+%\caption{Statistics on coordinate differences for reduced station inversions. Differences
+%are computed between the inversion results (CWI and hypoDD) and the complete hypoDD
+%locations for all 308 events. The top subplot illustrates the number of constrainable
+%events in the CWI and hypoDD inversions as a function of the stations considered.}
+%\label{fig-statremoval_summarystats}
+%\end{figure}
+
+% This is the version using hypoDD with SVD
+\begin{figure}
+\noindent\includegraphics[width =
+20pc]{diags/CalaverasLoc4_hypoDD_SVD.eps} \caption{Example 6 -
+Number of constrainable events $nE$ in the CWI and hypoDD inversions
+as a function of the stations considered (top). Mean (middle) and
+maximum (bottom) of the difference computed between the reduced
+station inversion results (CWI and hypoDD) and the complete hypoDD
+locations for all 308 events. } \label{fig-statremoval_summarystats}
+\end{figure}
+%%=========================================================================
+
+
+%%=========================================================================
+% This is the original version using hypoDD with LSQ
+% This is only makes sense for LSQR so we remove it from this manuscript
+%\begin{figure*}
+%\noindent\includegraphics{diags/CalaverasLoc5.eps}
+%\caption{Locations of the 68 Calaveras earthquakes combining all available coda wave and travel time constraints with three different
+%levels of uncertainty on the travel time PDFs. Column 1 sets $\sigma_x = \sigma_y = 19.5$\,m and $\sigma_z = 15$\,m
+%\citep[after]{dr_Waldhauser08a}, Column 2 uses $\sigma_x = \sigma_y = 3 \times19.5$\,m and $\sigma_z = 3\times15$\,m and
+%column 3 considers $\sigma_x = \sigma_y = 152$\,m and $\sigma_z = 232$\,m \citep[after]{dr_Shearer97a}. }
+%\label{fig-68Calaverasevents_ttandcoda1}
+%\end{figure*}
+
+% This is the version using hypoDD with SVD
+\begin{figure}
+\includegraphics{diags/CalaverasLoc5_hypoDD_SVD.eps}
+\caption{Example 7 - Combined HypoDD (SVD) and CWI relative
+locations using data form all stations (left) and 5 stations
+(right).} \label{fig-68Calaverasevents_ttandcoda1}
+\end{figure}
+
+
+%%=========================================================================
+
+
+\begin{figure}
+\noindent\includegraphics[width = 20pc]{diags/OmoriFigure.eps}
+\caption{Cumulative number of aftershocks for the
+Hokkaido-Nansei-Oki, Japan $M_s=7.8$ earthquake of 12 July 1993
+using equation (\ref{eq:CumOmori}). The leftmost gray, middle black
+and rightmost gray lines signify aftershocks occurring before,
+during and after the deployment of a pseudo temporary array
+installed 4 days after the main shock and left for 150 days. A
+temporary deployment of this kind will record roughly 50\% of the
+aftershocks in the 1000 days following the mainshock. }
+\label{fig:Omorifigure}
+\end{figure}
+
+%%=========================================================================
+% This is the original version using hypoDD with LSQ
+%\begin{figure}
+%\noindent\includegraphics{diags/CalaverasLoc6.eps}
+%\caption{Left - Combined travel time and coda wave inversions using travel time constraints on
+%22 (or 32\%) of the events and coda waves from station CCO only. All travel time based uncertainties
+%are assigned $\sigma_x = \sigma_y = 3 \times19.5$\,m and $\sigma_z = 3\times15$\,m. Right - travel time
+%relocation only (i.e. no CWI) using ........}
+%\label{fig-68Calaverasevents_ttsubsetandcoda1}
+%\end{figure}
+
+% This is the version using hypoDD with SVD
+\begin{figure}
+\includegraphics{diags/CalaverasLoc6_hypoDD_SVD.eps}
+\caption{Example 8 - Mimicking the deployment of a temporary network
+by ignoring data from all but station CCO for 50\% (or 34) of the
+events. Relative locations are shown for the combined CWI and travel
+time inversion (left) and the inversion with travel times only
+(right) Only by combining the data is it possible to locate all 68
+events. Furthermore, combining the data leads to a solution more
+consistent with Figure \ref{fig-69Calaverasevents_eg1}. }
+\label{fig-68Calaverasevents_ttsubsetandcoda1}
+\end{figure}
+%%=========================================================================
 
 
 \appendix
