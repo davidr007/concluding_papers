@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=latex 2010.3.30)  17 DEC 2012 17:14
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=latex 2010.3.30)  21 DEC 2012 16:38
 entering extended mode
 **Y:/earthquake/sandpits/drobinson/git/concluding_papers/paper2/paper2.tex
 (Y:/earthquake/sandpits/drobinson/git/concluding_papers/paper2/paper2.tex
@@ -99,13 +99,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 86.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
-
-
-LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 90.
-
-[1
+ [1
 
 ]
 Underfull \vbox (badness 5878) has occurred while \output is active []
@@ -122,7 +116,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-[13] [14] [15] [16] (paper2.bbl [17]
+[13] [14] [15] [16] (paper2.bbl
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+ [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18])
@@ -135,46 +132,38 @@ File: Figure3_c.eps Graphic file (type eps)
  <Figure3_c.eps>
 File: Figure4_c.eps Graphic file (type eps)
  <Figure4_c.eps>
-File: diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps Graphic fil
-e (type eps)
+File: Figure5.eps Graphic file (type eps)
 
-<diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps>
-File: diags/CalaverasLoc1_hypoDD_SVD.eps Graphic file (type eps)
-
-<diags/CalaverasLoc1_hypoDD_SVD.eps>
+<Figure5.eps>
+File: Figure6_bw.eps Graphic file (type eps)
+ <Figure6_bw.eps>
 File: Figure7.eps Graphic file (type eps)
  <Figure7.eps>
-File: diags/CalaverasLoc2.eps Graphic file (type eps)
- <diags/CalaverasLoc2.eps>
-File: diags/CalaverasLoc3_hypoDD_SVD.eps Graphic file (type eps)
+File: Figure8_bw.eps Graphic file (type eps)
+ <Figure8_bw.eps>
+File: Figure9_bw.eps Graphic file (type eps)
+ <Figure9_bw.eps>
+File: Figure10_c.eps Graphic file (type eps)
 
-<diags/CalaverasLoc3_hypoDD_SVD.eps>
-File: diags/CalaverasLoc4_hypoDD_SVD.eps Graphic file (type eps)
- <diags/CalaverasLoc4_hypoDD_SVD.eps>
-File: diags/CalaverasLoc5_hypoDD_SVD.eps Graphic file (type eps)
-
-<diags/CalaverasLoc5_hypoDD_SVD.eps>
+<Figure10_c.eps>
+File: Figure11_bw.eps Graphic file (type eps)
+ <Figure11_bw.eps>
 File: Figure12_c.eps Graphic file (type eps)
  <Figure12_c.eps>
-File: diags/CalaverasLoc6_hypoDD_SVD.eps Graphic file (type eps)
-
-<diags/CalaverasLoc6_hypoDD_SVD.eps> [22] [23] [24] [25] [26] [27] [28]
-[29] [30
-
+File: Figure13_bw.eps Graphic file (type eps)
+ <Figure13_bw.eps> [22]
+[23] [24] [25] [26] [27] [28] [29] [30
 
 
-] [31] [32] [33] (paper2.aux)
 
-LaTeX Warning: There were undefined references.
-
- ) 
+] [31] [32] (paper2.aux) ) 
 Here is how much of TeX's memory you used:
- 1090 strings out of 95341
- 12738 string characters out of 1184190
- 71861 words of memory out of 1500000
- 4294 multiletter control sequences out of 110000
+ 1087 strings out of 95341
+ 12444 string characters out of 1184190
+ 71651 words of memory out of 1500000
+ 4293 multiletter control sequences out of 110000
  17109 words of font info for 49 fonts, out of 1200000 for 2000
  14 hyphenation exceptions out of 8191
- 25i,12n,24p,1018b,325s stack positions out of 5000i,500n,10000p,200000b,5000s
+ 25i,12n,24p,1017b,325s stack positions out of 5000i,500n,10000p,200000b,5000s
 
-Output written on paper2.dvi (33 pages, 126416 bytes).
+Output written on paper2.dvi (32 pages, 126092 bytes).
