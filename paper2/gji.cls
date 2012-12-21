@@ -1051,8 +1051,7 @@ $\reset@font\displaystyle##$\hfil\cr>\cr\approx\cr}}}
   \def\@printed{} 
 \fi 
 
-\gdef\@journal{{\it Bulletin of the Seismological Society of America} (\@pubyear) {\bf \@volume}, 
- \@pagerange\  \@microfiche } 
+\gdef\@journal{{\it Submitted to Bulletin of the Seismological Society of America}} 
 \ifGJ@referee
    \def\@journal{submitted to {\it Geophys.\ J.\ Int.} }
 \fi
