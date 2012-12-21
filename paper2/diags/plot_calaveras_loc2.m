@@ -85,8 +85,10 @@ if strcmp(filesep,'/')
 else
     dirname = [path2thesis,'/diags/eq_location_optimisation/'];
     %dirname = '../../../thesis_version2/diags/eq_location_optimisation/'
-    dirname_hypoDD_SVD = '..\..\..\concluding_papers\paper2\diags\runs2\Hypodd_SVD\HYPODD2\runs\orig_68eqonly\';
+    %dirname_hypoDD_SVD = '..\..\..\concluding_papers\paper2\diags\runs2\Hypodd_SVD\HYPODD2\runs\orig_68eqonly\';
+    dirname_hypoDD_SVD = '.\runs2\Hypodd_SVD\HYPODD2\runs\orig_68eqonly\';
 end
+
 % Get the original best hypoDD locations (i.e. those where we used LSQR)
 tmphypoDD68 = load([dirname,'hypoDD_loc68.txt']);
 Locs_hypoDDbest_LSQR.relocx = tmphypoDD68(:,5);
@@ -242,8 +244,8 @@ set(gca,'fontsize',plot_struct.fsize)
 set(gca,'units','centimeters')
 set(gca,'position',[ax_start+2*awidth+2*hgap, ay_start, awidth, aheight])
 
-print -depsc CalaverasLoc1_hypoDD_SVD.eps
-
+%print -depsc CalaverasLoc1_hypoDD_SVD.eps
+print -depsc ../Figure6_bw.eps
 
 %% Figure 2 - CWI Reduces Stations
 % NO NEED TO MAKE THIS AGAIN SINCE IT DOESN'T CHANGE
@@ -429,8 +431,8 @@ set(gcf,'units','centimeters')
 set(gcf,'position',[5, 5, 26, 12.5],'PaperOrientation','Portrait')
 set(gcf,'PaperPosition',[0.6345    6.3452   27   15.2284])
 
-print -depsc CalaverasLoc3_hypoDD_SVD.eps
-
+%print -depsc CalaverasLoc3_hypoDD_SVD.eps
+print -depsc ../Figure9_bw.eps
 
 
 %% Figure 4 - statistical comparison of CWI and Travel Times
@@ -491,30 +493,30 @@ end
 sh = [];
 figure
 sh(1) = subplot(3,1,1); 
-hCWI = plot(station_counts,CWIstats_nE,'color',c2,'linewidth',2);
+hCWI_s1 = plot(station_counts,CWIstats_nE,'color',c2,'linewidth',2);
 hold on
-hhypoDD2 = plot(station_counts,hypoDD2stats_nE,'color', c1,'linewidth',2);
+hhypoDD2_s1 = plot(station_counts,hypoDD2stats_nE,'color', c1,'linewidth',2);
 set(gca,'xdir','reverse')
 %xlabel('Number of stations')
 ylabel('nE')
 set(gca,'units','centimeters','xlim',[1,10])
 
 sh(2) = subplot(3,1,2); 
-hCWI = plot(station_counts,CWIstats_meanval,'color',c2,'linewidth',2);
+hCWI_s2 = plot(station_counts,CWIstats_meanval,'color',c2,'linewidth',2);
 hold on
-hhypoDD2 = plot(station_counts,hypoDD2stats_meanval,'color', c1,'linewidth',2);
+hhypoDD2_s2 = plot(station_counts,hypoDD2stats_meanval,'color', c1,'linewidth',2);
 set(gca,'xdir','reverse')
-ylabel('mean')
+ylabel('$\Delta_\mu$\,(m)','Interpreter','LaTex')
 set(gca,'units','centimeters','xlim',[1,10])
 
 sh(3) = subplot(3,1,3);
-hCWI = plot(station_counts,CWIstats_maxval,'color',c2,'linewidth',2);
+hCWI_s3 = plot(station_counts,CWIstats_maxval,'color',c2,'linewidth',2);
 hold on
-hhypoDD2 = plot(station_counts,hypoDD2stats_maxval,'color', c1,'linewidth',2);
+hhypoDD2_s3 = plot(station_counts,hypoDD2stats_maxval,'color', c1,'linewidth',2);
 set(gca,'xdir','reverse')
 xlabel('Number of stations')
-ylabel('max')
-legend([hCWI,hhypoDD2],{'CWI','TT'},'Location','NorthEast')
+ylabel('$\Delta_{max}$\,(m)','Interpreter','LaTex')
+legend([hCWI_s3,hhypoDD2_s3],{'CWI','TT'},'Location','NorthEast')
 set(gca,'units','centimeters','xlim',[1,10],'ylim',[0 5000])
 
 statwidth = 7.5;
@@ -527,7 +529,16 @@ set(sh(3), 'position',[statxstart, statystart, statwidth, statheight])
 set(sh(2), 'position',[statxstart, statystart+statheight+statygap, statwidth, statheight])
 set(sh(1), 'position',[statxstart, statystart+2*statheight+2*statygap, statwidth, statheight])
 
-print -depsc CalaverasLoc4_hypoDD_SVD.eps
+%print -depsc CalaverasLoc4_hypoDD_SVD.eps
+print -depsc ..\Figure10_bw.eps
+
+set(hCWI_s1,'color','b')
+set(hhypoDD2_s1,'color','r')
+set(hCWI_s2,'color','b')
+set(hhypoDD2_s2,'color','r')
+set(hCWI_s3,'color','b')
+set(hhypoDD2_s3,'color','r')
+print -depsc ..\Figure10_c.eps
 
 %%============
 % The following was not working on 17 Dec so commented it out - DR
@@ -589,14 +600,12 @@ set(gcf,'units','centimeter')
 
 % catalogue x vs y
 subplot(3,2,1)
-plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68y,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+%plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68y,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+plot(CatLoc_not68(:,5), CatLoc_not68(:,6),'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_Low.relocx, CombLocs_Low.relocy,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
-%xlabel('x (m)','fontsize',plot_struct.fsize)
-%ylabel('y (m)','fontsize',plot_struct.fsize)
 ylabel('x vs y (m)','fontsize',plot_struct.fsize)
 set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.ylimits,'units','centimeters')
-%set(gca,'position',axes_posy)
 set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ytickspots)
 set(gca,'fontsize',plot_struct.fsize)
 title('All','fontsize',plot_struct.fsize)
@@ -605,7 +614,8 @@ set(gca,'xticklabel',[])
 
 % CWI x vs y
 subplot(3,2,2)
-plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68y,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+%plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68y,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+plot(CatLoc_not68(:,5), CatLoc_not68(:,6),'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_Med.relocx, CombLocs_Med.relocy,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
 set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.ylimits,'units','centimeters')
@@ -629,7 +639,8 @@ set(gca,'xticklabel',[],'yticklabel',[])
 
 % catalogue x vs z
 subplot(3,2,3)
-plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+%plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+plot(CatLoc_not68(:,5), CatLoc_not68(:,7),'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_Low.relocx, CombLocs_Low.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
 %xlabel('x (m)','fontsize',plot_struct.fsize)
@@ -645,7 +656,8 @@ set(gca,'xticklabel',[])
 
 % CWI x vs z
 subplot(3,2,4)
-plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+%plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+plot(CatLoc_not68(:,5), CatLoc_not68(:,7),'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_Med.relocx, CombLocs_Med.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
 set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
@@ -669,7 +681,8 @@ set(gca,'xticklabel',[],'yticklabel',[])
 
 % catalogue y vs z
 subplot(3,2,5)
-plot(Locs_hypoDDbest.not68y, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+%plot(Locs_hypoDDbest.not68y, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+plot(CatLoc_not68(:,6), CatLoc_not68(:,7),'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_Low.relocy, CombLocs_Low.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
 %xlabel('y (m)','fontsize',plot_struct.fsize)
@@ -684,7 +697,8 @@ set(gca,'position',[ax_start, ay_start, awidth, aheight])
 
 % CWI y vs z
 subplot(3,2,6)
-plot(Locs_hypoDDbest.not68y, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+%plot(Locs_hypoDDbest.not68y, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+plot(CatLoc_not68(:,6), CatLoc_not68(:,7),'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_Med.relocy, CombLocs_Med.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
 set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
@@ -706,8 +720,8 @@ set(gca,'yticklabel',[])
 % set(gca,'position',[ax_start+2*awidth+2*hgap, ay_start, awidth, aheight])
 % set(gca,'yticklabel',[])
 
-print -depsc CalaverasLoc5_hypoDD_SVD.eps
-
+%print -depsc CalaverasLoc5_hypoDD_SVD.eps
+print -depsc ../Figure11_bw.eps
 
 
 %% Figure 6 - Combining deployment types (network and temporary)
@@ -738,11 +752,10 @@ set(gcf,'units','centimeter')
 ay_start = 1.2
 % catalogue x vs y
 subplot(3,2,1)
-plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68y,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+%plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68y,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+plot(CatLoc_not68(:,5), CatLoc_not68(:,6),'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_CWI_2deploy.relocx, CombLocs_CWI_2deploy.relocy,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
-%xlabel('x (m)','fontsize',plot_struct.fsize)
-%ylabel('y (m)','fontsize',plot_struct.fsize)
 ylabel('x vs y (m)','fontsize',plot_struct.fsize)
 set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.ylimits,'units','centimeters')
 %set(gca,'position',axes_posy)
@@ -754,7 +767,8 @@ set(gca,'xticklabel',[])
 
 % CWI x vs y
 subplot(3,2,2)
-plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68y,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+%plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68y,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+plot(CatLoc_not68(:,5), CatLoc_not68(:,6),'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_HYPODD_2deploy.relocx, CombLocs_HYPODD_2deploy.relocy,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
 set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.ylimits,'units','centimeters')
@@ -766,14 +780,12 @@ set(gca,'xticklabel',[],'yticklabel',[])
 
 % catalogue x vs z
 subplot(3,2,3)
-plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+%plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+plot(CatLoc_not68(:,5), CatLoc_not68(:,7),'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_CWI_2deploy.relocx, CombLocs_CWI_2deploy.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
-%xlabel('x (m)','fontsize',plot_struct.fsize)
-%ylabel('z (m)','fontsize',plot_struct.fsize)
 ylabel('x vs z (m)','fontsize',plot_struct.fsize)
 set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
-%set(gca,'position',axes_posy)
 set(gca,'xtick', plot_struct.xtickspots, 'ytick',plot_struct.ztickspots,'yticklabel',plot_struct.zticklabels)
 set(gca,'fontsize',plot_struct.fsize)
 set(gca,'units','centimeters')
@@ -782,7 +794,8 @@ set(gca,'xticklabel',[])
 
 % CWI x vs z
 subplot(3,2,4)
-plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+%plot(Locs_hypoDDbest.not68x, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+plot(CatLoc_not68(:,5), CatLoc_not68(:,7),'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_HYPODD_2deploy.relocx, CombLocs_HYPODD_2deploy.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
 set(gca,'xlim',plot_struct.xlimits, 'ylim',plot_struct.zlimits,'units','centimeters')
@@ -794,7 +807,8 @@ set(gca,'xticklabel',[],'yticklabel',[])
 
 % catalogue y vs z
 subplot(3,2,5)
-plot(Locs_hypoDDbest.not68y, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+%plot(Locs_hypoDDbest.not68y, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+plot(CatLoc_not68(:,6), CatLoc_not68(:,7),'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_CWI_2deploy.relocy, CombLocs_CWI_2deploy.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
 %xlabel('y (m)','fontsize',plot_struct.fsize)
@@ -810,7 +824,8 @@ set(gca,'position',[ax_start, ay_start, awidth, aheight])
 
 % CWI y vs z
 subplot(2,3,6)
-plot(Locs_hypoDDbest.not68y, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+%plot(Locs_hypoDDbest.not68y, Locs_hypoDDbest.not68z,'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
+plot(CatLoc_not68(:,6), CatLoc_not68(:,7),'o','markeredgecolor',c1,'markerfacecolor',c3,'markersize',plot_struct.msize)
 hold on
 plot(CombLocs_HYPODD_2deploy.relocy, CombLocs_HYPODD_2deploy.relocz,'o','markeredgecolor',c2,'markerfacecolor',c2,'markersize',plot_struct.msize)
 xlabel(['nE = ', num2str(length(CombLocs_HYPODD_2deploy.relocy))])
@@ -822,9 +837,8 @@ set(gca,'units','centimeters')
 set(gca,'position',[ax_start+awidth+hgap, ay_start, awidth, aheight])
 set(gca,'yticklabel',[])
 
-print -depsc CalaverasLoc6_hypoDD_SVD.eps
-
-
+%print -depsc CalaverasLoc6_hypoDD_SVD.eps
+print -depsc ../Figure13_bw.eps
 
 
 
