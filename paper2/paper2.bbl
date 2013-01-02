@@ -1,270 +1,267 @@
 \begin{thebibliography}{45}
-\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
 
-\bibitem[Ake et~al.(2005)Ake, O'{C}onnell, \& Block]{dr_Ake05a}
-Ake, J., O'{C}onnell, D., \& Block, L., 2005.
-\newblock Deep-injection and closely monitored induced seismicity at {P}aradox
-  {V}alley, {C}olorado, {\it Bulletin of the Seismological Society of
-  America\/}, {\bf 95}(2), 664--683.
+\bibitem[{\textit{Ake et~al.}(2005)\textit{Ake, O'{C}onnell, and
+  Block}}]{dr_Ake05a}
+Ake, J., D.~O'{C}onnell, and L.~Block (2005), Deep-injection and closely
+  monitored induced seismicity at {P}aradox {V}alley, {C}olorado,
+  \textit{Bulletin of the Seismological Society of America}, \textit{95}(2),
+  664--683.
 
-\bibitem[Aki(1969)]{dr_Aki69a}
-Aki, K., 1969.
-\newblock Analysis of the seismic coda of local earthquakes as scattered waves,
-  {\it Journal of Geophysical Research\/}, {\bf 74}(2), 615--631.
+\bibitem[{\textit{Aki}(1969)}]{dr_Aki69a}
+Aki, K. (1969), Analysis of the seismic coda of local earthquakes as scattered
+  waves, \textit{Journal of Geophysical Research}, \textit{74}(2), 615--631.
 
-\bibitem[Aster et~al.(2005)Aster, Borchers, \& Thurber]{dr_Aster05a}
-Aster, R.~C., Borchers, B., \& Thurber, C.~H., 2005.
-\newblock {\it Parameter estimation and inverse problems\/}, vol.~90 of {\bf
-  International Geophysics Series}, Elsevier Academic Press, USA.
+\bibitem[{\textit{Aster et~al.}(2005)\textit{Aster, Borchers, and
+  Thurber}}]{dr_Aster05a}
+Aster, R.~C., B.~Borchers, and C.~H. Thurber (2005), \textit{Parameter
+  estimation and inverse problems}, \textit{International Geophysics Series},
+  vol.~90, Elsevier Academic Press, USA.
 
-\bibitem[Bond\'ar et~al.(2004)Bond\'ar, Myers, Engdahl, \&
-  Bergman]{dr_Bondar04a}
-Bond\'ar, I., Myers, S.~C., Engdahl, E.~R., \& Bergman, E.~A., 2004.
-\newblock Epicentre accuracy based on seismic network criteria, {\it
-  Geophysical Journal International\/}, {\bf 156}, 483--496.
+\bibitem[{\textit{Bond\'ar et~al.}(2004)\textit{Bond\'ar, Myers, Engdahl, and
+  Bergman}}]{dr_Bondar04a}
+Bond\'ar, I., S.~C. Myers, E.~R. Engdahl, and E.~A. Bergman (2004), Epicentre
+  accuracy based on seismic network criteria, \textit{Geophysical Journal
+  International}, \textit{156}, 483--496.
 
-\bibitem[Bowman et~al.(1990)Bowman, Gibson, \& Jones]{dr_Bowman90a}
-Bowman, J.~R., Gibson, G., \& Jones, T., 1990.
-\newblock Aftershocks of the 1988 {J}anuary 22 {T}ennant {C}reek, {A}ustralia
-  intraplate earthquakes: evidence for a complex thrust-fault geometry, {\it
-  Geophysical Journal International\/}, {\bf 100}, 87--97.
+\bibitem[{\textit{Bowman et~al.}(1990)\textit{Bowman, Gibson, and
+  Jones}}]{dr_Bowman90a}
+Bowman, J.~R., G.~Gibson, and T.~Jones (1990), Aftershocks of the 1988
+  {J}anuary 22 {T}ennant {C}reek, {A}ustralia intraplate earthquakes: evidence
+  for a complex thrust-fault geometry, \textit{Geophysical Journal
+  International}, \textit{100}, 87--97.
 
-\bibitem[Campbell(2003)]{dr_Campbell03a}
-Campbell, K.~W., 2003.
-\newblock Strong motion attenuation, in {\em International Handbook of
-  Earthquake and Engineering Seismology\/}, vol.~B, chap.~60, pp. 1003--1012,
-  eds Lee, W. H.~K., Kanamori, H., Jennings, P.~C., \& Kisslinger, C., Academic
-  Press, London.
+\bibitem[{\textit{Campbell}(2003)}]{dr_Campbell03a}
+Campbell, K.~W. (2003), Strong motion attenuation, in \textit{International
+  Handbook of Earthquake and Engineering Seismology}, vol.~B, edited by
+  W.~H.~K. Lee, H.~Kanamori, P.~C. Jennings, and C.~Kisslinger, chap.~60, pp.
+  1003--1012, Academic Press, London.
 
-\bibitem[Curtis \& Snieder(2002)]{dr_Curtis02a}
-Curtis, A. \& Snieder, R., 2002.
-\newblock Probing the {E}arth's interior with seismic tomography, in {\em
-  International Handbook of Earthquake Engineering Seismology\/}, vol.~{A},
-  chap.~52, pp. 861--874, eds Lee, W.~H., Kanamori, H., Jennings, P.~C., \&
-  Kisslinger, C., Academic Press, London.
+\bibitem[{\textit{Curtis and Snieder}(2002)}]{dr_Curtis02a}
+Curtis, A., and R.~Snieder (2002), Probing the {E}arth's interior with seismic
+  tomography, in \textit{International Handbook of Earthquake Engineering
+  Seismology}, vol.~{A}, edited by W.~H. Lee, H.~Kanamori, P.~C. Jennings, and
+  C.~Kisslinger, chap.~52, pp. 861--874, Academic Press, London.
 
-\bibitem[Deichmann \& Garcia-{F}ernandez(1992)]{dr_Deichmann92a}
-Deichmann, N. \& Garcia-{F}ernandez, M., 1992.
-\newblock Rupture geometry from high-precision relative hypocentre locations of
-  microearthquake clusters, {\it Geophysical Journal International\/}, {\bf
-  110}, 501--517.
+\bibitem[{\textit{Deichmann and Garcia-{F}ernandez}(1992)}]{dr_Deichmann92a}
+Deichmann, N., and M.~Garcia-{F}ernandez (1992), Rupture geometry from
+  high-precision relative hypocentre locations of microearthquake clusters,
+  \textit{Geophysical Journal International}, \textit{110}, 501--517.
 
-\bibitem[Douglas(1967)]{dr_Douglas67a}
-Douglas, A., 1967.
-\newblock Joint epicentre determination, {\it Nature\/}, {\bf 215}, 47--48.
+\bibitem[{\textit{Douglas}(1967)}]{dr_Douglas67a}
+Douglas, A. (1967), Joint epicentre determination, \textit{Nature},
+  \textit{215}, 47--48.
 
-\bibitem[Frankel et~al.(2000)Frankel, Mueller, Barnhard, Leyendecker, Wesson,
-  Harmsen, Klein, Perkins, Dickman, Hanson, \& Hopper]{dr_Frankel00a}
-Frankel, A.~D., Mueller, C.~S., Barnhard, T.~P., Leyendecker, E.~V., Wesson,
-  R.~L., Harmsen, S.~C., Klein, F.~W., Perkins, D.~M., Dickman, N.~C., Hanson,
-  S.~L., \& Hopper, M.~G., 2000.
-\newblock {USGS} {N}ational seismic hazard maps, {\it Earthquake Spectra\/},
-  {\bf 16}(1), 1--19.
+\bibitem[{\textit{Frankel et~al.}(2000)\textit{Frankel, Mueller, Barnhard,
+  Leyendecker, Wesson, Harmsen, Klein, Perkins, Dickman, Hanson, and
+  Hopper}}]{dr_Frankel00a}
+Frankel, A.~D., C.~S. Mueller, T.~P. Barnhard, E.~V. Leyendecker, R.~L. Wesson,
+  S.~C. Harmsen, F.~W. Klein, D.~M. Perkins, N.~C. Dickman, S.~L. Hanson, and
+  M.~G. Hopper (2000), {USGS} {N}ational seismic hazard maps,
+  \textit{Earthquake Spectra}, \textit{16}(1), 1--19.
 
-\bibitem[Fr\`emont \& Malone(1987)]{dr_Fremont87a}
-Fr\`emont, M.-J. \& Malone, S.~D., 1987.
-\newblock High precision relative locations of earthquakes at {M}ount {St.}
-  {H}elens, {\it Journal of Geophysical Research\/}, {\bf 92}(B10),
-  10,223--10,236.
+\bibitem[{\textit{Fr\`emont and Malone}(1987)}]{dr_Fremont87a}
+Fr\`emont, M.-J., and S.~D. Malone (1987), High precision relative locations of
+  earthquakes at {M}ount {St.} {H}elens, \textit{Journal of Geophysical
+  Research}, \textit{92}(B10), 10,223--10,236.
 
-\bibitem[Got et~al.(1994)Got, Fr\`echet, \& Klein]{dr_Got94a}
-Got, J.-L., Fr\`echet, J., \& Klein, F.~W., 1994.
-\newblock Deep fault plane geometry inferred from multiplet relative relocation
-  beneath the south flank of {K}ilauea, {\it Journal of Geophysical
-  Research\/}, {\bf 99}(B8), 15,375--15,386.
+\bibitem[{\textit{Got et~al.}(1994)\textit{Got, Fr\`echet, and
+  Klein}}]{dr_Got94a}
+Got, J.-L., J.~Fr\`echet, and F.~W. Klein (1994), Deep fault plane geometry
+  inferred from multiplet relative relocation beneath the south flank of
+  {K}ilauea, \textit{Journal of Geophysical Research}, \textit{99}(B8),
+  15,375--15,386.
 
-\bibitem[Gutenberg(1945)]{dr_Gutenberg45a}
-Gutenberg, B., 1945.
-\newblock Amplitudes of surface waves and magnitudes of shallow earthquakes,
-  {\it Bulletin of the Seismological Society of America\/}, {\bf 35}, 3--12.
+\bibitem[{\textit{Gutenberg}(1945)}]{dr_Gutenberg45a}
+Gutenberg, B. (1945), Amplitudes of surface waves and magnitudes of shallow
+  earthquakes, \textit{Bulletin of the Seismological Society of America},
+  \textit{35}, 3--12.
 
-\bibitem[Ito(1985)]{dr_Ito85a}
-Ito, A., 1985.
-\newblock High resolution relative hypocenters of similar earthquakes by
-  cross-spectral analysis method, {\it Journal of Physics of the Earth\/}, {\bf
-  33}, 279--294.
+\bibitem[{\textit{Ito}(1985)}]{dr_Ito85a}
+Ito, A. (1985), High resolution relative hypocenters of similar earthquakes by
+  cross-spectral analysis method, \textit{Journal of Physics of the Earth},
+  \textit{33}, 279--294.
 
-\bibitem[Kennett et~al.(1995)Kennett, Engdahl, \& Buland]{dr_Kennett95a}
-Kennett, B. L.~N., Engdahl, E.~R., \& Buland, R., 1995.
-\newblock Constraints on seismic velocities in the {E}arth from traveltimes,
-  {\it Geophysical Journal International\/}, {\bf 122}, 108--124.
+\bibitem[{\textit{Kennett et~al.}(1995)\textit{Kennett, Engdahl, and
+  Buland}}]{dr_Kennett95a}
+Kennett, B. L.~N., E.~R. Engdahl, and R.~Buland (1995), Constraints on seismic
+  velocities in the {E}arth from traveltimes, \textit{Geophysical Journal
+  International}, \textit{122}, 108--124.
 
-\bibitem[Kennett et~al.(2004)Kennett, Fishwick, \& Heintz]{dr_Kennett04a}
-Kennett, B. L.~N., Fishwick, S., \& Heintz, M., 2004.
-\newblock Lithospheric structure in the {A}ustralian region - a synthesis of
-  surface wave and body wave studies, {\it Exploration Geophysics\/}, {\bf 35},
-  242--250.
+\bibitem[{\textit{Kennett et~al.}(2004)\textit{Kennett, Fishwick, and
+  Heintz}}]{dr_Kennett04a}
+Kennett, B. L.~N., S.~Fishwick, and M.~Heintz (2004), Lithospheric structure in
+  the {A}ustralian region - a synthesis of surface wave and body wave studies,
+  \textit{Exploration Geophysics}, \textit{35}, 242--250.
 
-\bibitem[Lees(1998)]{dr_Lees98a}
-Lees, J.~M., 1998.
-\newblock Multiplet analysis at {C}oso {G}eothermal, {\it Bulletin of the
-  Seismological Society of America\/}, {\bf 88}(5), 1127--1143.
+\bibitem[{\textit{Lees}(1998)}]{dr_Lees98a}
+Lees, J.~M. (1998), Multiplet analysis at {C}oso {G}eothermal, \textit{Bulletin
+  of the Seismological Society of America}, \textit{88}(5), 1127--1143.
 
-\bibitem[Leonard(2002)]{dr_Leonard02a}
-Leonard, M., 2002.
-\newblock The {B}urakin {WA} earthquake sequence {S}ept 2000 -- {J}une 2002, in
-  {\em Total Risk Management in the Privatised Era\/}, vol. 10th of {\bf
-  Australian Earthquake Engineering Society Conference}, pp. 22(1)--22(5),
-  AEES, University of Adelaide.
+\bibitem[{\textit{Leonard}(2002)}]{dr_Leonard02a}
+Leonard, M. (2002), The {B}urakin {WA} earthquake sequence {S}ept 2000 --
+  {J}une 2002, in \textit{Total Risk Management in the Privatised Era},
+  \textit{Australian Earthquake Engineering Society Conference}, vol. 10th,
+  edited by M.~Griffith, D.~Love, P.~Mc{B}ean, A.~Mc{D}ougall, and B.~Butler,
+  pp. 22(1)--22(5), AEES, University of Adelaide.
 
-\bibitem[Nadeau \& Mc{E}villy(1997)]{dr_Nadeau97a}
-Nadeau, R.~M. \& Mc{E}villy, T.~V., 1997.
-\newblock Seismological studies at {P}arkfield {V}: {C}haracteristic
-  microearthquake sequences as fault--zone drilling targets, {\it Bulletin of
-  the Seismological Society of America\/}, {\bf 87}(6), 1463--1472.
+\bibitem[{\textit{Nadeau and Mc{E}villy}(1997)}]{dr_Nadeau97a}
+Nadeau, R.~M., and T.~V. Mc{E}villy (1997), Seismological studies at
+  {P}arkfield {V}: {C}haracteristic microearthquake sequences as fault--zone
+  drilling targets, \textit{Bulletin of the Seismological Society of America},
+  \textit{87}(6), 1463--1472.
 
-\bibitem[Pavlis(1992)]{dr_Pavlis92a}
-Pavlis, G.~L., 1992.
-\newblock Appraising relative earthquake location errors, {\it Bulletin of the
-  Seismological Society of America\/}, {\bf 82}(2), 836--859.
+\bibitem[{\textit{Pavlis}(1992)}]{dr_Pavlis92a}
+Pavlis, G.~L. (1992), Appraising relative earthquake location errors,
+  \textit{Bulletin of the Seismological Society of America}, \textit{82}(2),
+  836--859.
 
-\bibitem[Press et~al.(1987)Press, Flannery, Teukolsky, \&
-  Vetterling]{dr_Press87a}
-Press, W.~H., Flannery, B.~P., Teukolsky, S.~A., \& Vetterling, W.~T., 1987.
-\newblock {\it Numerical Recipes: The Art of Scientific Computing\/}, Cambridge
+\bibitem[{\textit{Press et~al.}(1987)\textit{Press, Flannery, Teukolsky, and
+  Vetterling}}]{dr_Press87a}
+Press, W.~H., B.~P. Flannery, S.~A. Teukolsky, and W.~T. Vetterling (1987),
+  \textit{Numerical Recipes: The Art of Scientific Computing}, Cambridge
   University Press, USA.
 
-\bibitem[Richter(1935)]{dr_Richter35a}
-Richter, C.~F., 1935.
-\newblock An instrumental earthquake magnitude scale, {\it Bulletin of the
-  Seismological Society of America\/}, {\bf 25}(1), 1--32.
+\bibitem[{\textit{Richter}(1935)}]{dr_Richter35a}
+Richter, C.~F. (1935), An instrumental earthquake magnitude scale,
+  \textit{Bulletin of the Seismological Society of America}, \textit{25}(1),
+  1--32.
 
-\bibitem[Robinson et~al.(2006)Robinson, Dhu, \& Schneider]{dr_Robinson06b}
-Robinson, D., Dhu, T., \& Schneider, J., 2006.
-\newblock Practical probabilistic seismic risk analysis: {A} demonstration of
-  capability, {\it Seismological Research Letters\/}, {\bf 77}(4), 452--458.
+\bibitem[{\textit{Robinson et~al.}(2006)\textit{Robinson, Dhu, and
+  Schneider}}]{dr_Robinson06b}
+Robinson, D., T.~Dhu, and J.~Schneider (2006), Practical probabilistic seismic
+  risk analysis: {A} demonstration of capability, \textit{Seismological
+  Research Letters}, \textit{77}(4), 452--458.
 
-\bibitem[Robinson et~al.(2007{\natexlab{a}})Robinson, Sambridge, \&
-  Snieder]{dr_Robinson07b}
-Robinson, D.~J., Sambridge, M., \& Snieder, R., 2007{\natexlab{a}}.
-\newblock Constraints on coda wave interferometry estimates of source
-  separation: The 2.5d acoustic case, {\it Exploration Geophysics\/}, {\bf
-  38}(3), 189--199.
+\bibitem[{\textit{Robinson et~al.}(2007{\natexlab{a}})\textit{Robinson,
+  Sambridge, and Snieder}}]{dr_Robinson07b}
+Robinson, D.~J., M.~Sambridge, and R.~Snieder (2007{\natexlab{a}}), Constraints
+  on coda wave interferometry estimates of source separation: The 2.5d acoustic
+  case, \textit{Exploration Geophysics}, \textit{38}(3), 189--199.
 
-\bibitem[Robinson et~al.(2007{\natexlab{b}})Robinson, Snieder, \&
-  Sambridge]{dr_Robinson07c}
-Robinson, D.~J., Snieder, R., \& Sambridge, M., 2007{\natexlab{b}}.
-\newblock Using coda wave interferometry for estimating the variation in source
-  mechanism between double couple events, {\it Journal of Geophysical
-  Research\/}, {\bf 112}, B12302, doi:10.1029/2007JB004925.
+\bibitem[{\textit{Robinson et~al.}(2007{\natexlab{b}})\textit{Robinson,
+  Snieder, and Sambridge}}]{dr_Robinson07c}
+Robinson, D.~J., R.~Snieder, and M.~Sambridge (2007{\natexlab{b}}), Using coda
+  wave interferometry for estimating the variation in source mechanism between
+  double couple events, \textit{Journal of Geophysical Research}, \textit{112},
+  b12302, doi:10.1029/2007JB004925.
 
-\bibitem[Robinson et~al.(2011)Robinson, Sambridge, \& Snieder]{dr_Robinson11a}
-Robinson, D.~J., Sambridge, M., \& Snieder, R., 2011.
-\newblock A probabilistic approach for estimating the separation between a pair
-  of earthquakes directly from their coda waves, {\it Journal of Geophysical
-  Research\/}, {\bf B04309}, 1--17.
+\bibitem[{\textit{Robinson et~al.}(2011)\textit{Robinson, Sambridge, and
+  Snieder}}]{dr_Robinson11a}
+Robinson, D.~J., M.~Sambridge, and R.~Snieder (2011), A probabilistic approach
+  for estimating the separation between a pair of earthquakes directly from
+  their coda waves, \textit{Journal of Geophysical Research}, \textit{B04309},
+  1--17.
 
-\bibitem[Rubin(2002)]{dr_Rubin02a}
-Rubin, A.~M., 2002.
-\newblock Aftershocks of microearthquakes as probes of the mechanics of
-  rupture, {\it Journal of Geophysical Research\/}, {\bf 107}(B7,2142),
-  10.1029/2001JB000496.
+\bibitem[{\textit{Rubin}(2002)}]{dr_Rubin02a}
+Rubin, A.~M. (2002), Aftershocks of microearthquakes as probes of the mechanics
+  of rupture, \textit{Journal of Geophysical Research}, \textit{107}(B7,2142),
+  10.1029/2001JB000,496.
 
-\bibitem[Rubin et~al.(1999)Rubin, Gillard, \& Got]{dr_Rubin99a}
-Rubin, A.~M., Gillard, D., \& Got, J.-L., 1999.
-\newblock Streaks of microearthquakes along creeping faults, {\it Nature\/},
-  {\bf 400}, 635--641.
+\bibitem[{\textit{Rubin et~al.}(1999)\textit{Rubin, Gillard, and
+  Got}}]{dr_Rubin99a}
+Rubin, A.~M., D.~Gillard, and J.-L. Got (1999), Streaks of microearthquakes
+  along creeping faults, \textit{Nature}, \textit{400}, 635--641.
 
-\bibitem[Schaff et~al.(2002)Schaff, Bokelmann, \& Beroza]{dr_Schaff02a}
-Schaff, D.~P., Bokelmann, G. H.~R., \& Beroza, G.~C., 2002.
-\newblock High-resolution image of {C}alaveras {F}ault seismicity, {\it Journal
-  of Geophysical Research\/}, {\bf 107}(B9), 2186, doi:10.1029/2001JB000633.
+\bibitem[{\textit{Schaff et~al.}(2002)\textit{Schaff, Bokelmann, and
+  Beroza}}]{dr_Schaff02a}
+Schaff, D.~P., G.~H.~R. Bokelmann, and G.~C. Beroza (2002), High-resolution
+  image of {C}alaveras {F}ault seismicity, \textit{Journal of Geophysical
+  Research}, \textit{107}(B9), 2186, doi:10.1029/2001JB000,633.
 
-\bibitem[Shearer et~al.(2005)Shearer, Hauksson, \& Lin]{dr_Shearer05a}
-Shearer, P., Hauksson, E., \& Lin, G., 2005.
-\newblock Southern {C}alifornia hypocenter relocation with waveform
-  cross-correlation, {P}art 2: {R}esults using source-specific station terms
-  and cluster analysis, {\it Bulletin of the Seismological Society of
-  America\/}, {\bf 95}(3), 904--915. doi:10.1785/0120040168.
+\bibitem[{\textit{Shearer et~al.}(2005)\textit{Shearer, Hauksson, and
+  Lin}}]{dr_Shearer05a}
+Shearer, P., E.~Hauksson, and G.~Lin (2005), Southern {C}alifornia hypocenter
+  relocation with waveform cross-correlation, {P}art 2: {R}esults using
+  source-specific station terms and cluster analysis, \textit{Bulletin of the
+  Seismological Society of America}, \textit{95}(3), 904--915.
+  doi:10.1785/0120040,168.
 
-\bibitem[Shearer(1999)]{dr_Shearer99a}
-Shearer, P.~M., 1999.
-\newblock {\it Introduction to Seismology\/}, Cambridge University Press, USA,
-  260pp.
+\bibitem[{\textit{Shearer}(1999)}]{dr_Shearer99a}
+Shearer, P.~M. (1999), \textit{Introduction to Seismology}, Cambridge
+  University Press, USA, 260pp.
 
-\bibitem[Sipkin(2002)]{dr_Sipkin02a}
-Sipkin, S.~A., 2002.
-\newblock {USGS} earthquake moment tensor catalog, in {\em International
-  Handbook of Earthquake Engineering Seismology\/}, vol.~{A}, chap.~50, pp.
-  823--825, eds Lee, W.~H., Kanamori, H., Jennings, P.~C., \& Kisslinger, C.,
-  Academic Press, London.
+\bibitem[{\textit{Sipkin}(2002)}]{dr_Sipkin02a}
+Sipkin, S.~A. (2002), {USGS} earthquake moment tensor catalog, in
+  \textit{International Handbook of Earthquake Engineering Seismology},
+  vol.~{A}, edited by W.~H. Lee, H.~Kanamori, P.~C. Jennings, and
+  C.~Kisslinger, chap.~50, pp. 823--825, Academic Press, London.
 
-\bibitem[Snieder(1999)]{dr_Snieder99a}
-Snieder, R., 1999.
-\newblock Imaging and averaging in complex media, in {\em Diffuse waves in
-  complex media\/}, vol. 531 of {\bf NATO Science Series C}, pp. 405--454, ed.
-  Fouque, J.~P., Kluwer Academic Publishers.
+\bibitem[{\textit{Snieder}(1999)}]{dr_Snieder99a}
+Snieder, R. (1999), Imaging and averaging in complex media, in \textit{Diffuse
+  waves in complex media}, \textit{NATO Science Series C}, vol. 531, edited by
+  J.~P. Fouque, pp. 405--454, Kluwer Academic Publishers.
 
-\bibitem[Snieder(2006)]{dr_Snieder06a}
-Snieder, R., 2006.
-\newblock The theory of coda wave interferometry, {\it Pure and Applied
-  Geophysics\/}, {\bf 163}, 455--473.
+\bibitem[{\textit{Snieder}(2006)}]{dr_Snieder06a}
+Snieder, R. (2006), The theory of coda wave interferometry, \textit{Pure and
+  Applied Geophysics}, \textit{163}, 455--473.
 
-\bibitem[Snieder \& Vrijlandt(2005)]{dr_Snieder05a}
-Snieder, R. \& Vrijlandt, M., 2005.
-\newblock Constraining the source separation with coda wave interferometry:
-  Theory and application to earthquake doublets in the {H}ayward {F}ault,
-  {C}alifornia, {\it Journal of Geophysical Research\/}, {\bf 110}(B04301),
-  doi:10.1029/2004JB003317.
+\bibitem[{\textit{Snieder and Vrijlandt}(2005)}]{dr_Snieder05a}
+Snieder, R., and M.~Vrijlandt (2005), Constraining the source separation with
+  coda wave interferometry: Theory and application to earthquake doublets in
+  the {H}ayward {F}ault, {C}alifornia, \textit{Journal of Geophysical
+  Research}, \textit{110}(B04301), doi:10.1029/2004JB003317.
 
-\bibitem[Spencer \& Gubbins(1980)]{dr_Spencer80a}
-Spencer, C. \& Gubbins, D., 1980.
-\newblock Travel-time inversion for simultaneous earthquake location and
-  velocity structure determination in laterally varying media, {\it Geophysical
-  Journal of the Royal Astronomical Society\/}, {\bf 63}, 95--116.
+\bibitem[{\textit{Spencer and Gubbins}(1980)}]{dr_Spencer80a}
+Spencer, C., and D.~Gubbins (1980), Travel-time inversion for simultaneous
+  earthquake location and velocity structure determination in laterally varying
+  media, \textit{Geophysical Journal of the Royal Astronomical Society},
+  \textit{63}, 95--116.
 
-\bibitem[Stirling et~al.(2002)Stirling, Mc{V}erry, \&
-  Berrryman]{dr_Stirling02a}
-Stirling, M.~W., Mc{V}erry, G.~H., \& Berrryman, K.~R., 2002.
-\newblock A new seismic hazard model for {N}ew {Z}ealand, {\it Bulletin of the
-  Seismological Society of America\/}, {\bf 92}(5), 1878--1903.
+\bibitem[{\textit{Stirling et~al.}(2002)\textit{Stirling, Mc{V}erry, and
+  Berrryman}}]{dr_Stirling02a}
+Stirling, M.~W., G.~H. Mc{V}erry, and K.~R. Berrryman (2002), A new seismic
+  hazard model for {N}ew {Z}ealand, \textit{Bulletin of the Seismological
+  Society of America}, \textit{92}(5), 1878--1903.
 
-\bibitem[Toro et~al.(1997)Toro, Abrahamson, \& Schneider]{dr_Toro97a}
-Toro, G.~R., Abrahamson, N.~A., \& Schneider, J.~F., 1997.
-\newblock Model of strong ground motions from earthquakes in {C}entral and
-  {E}astern {N}orth {A}merica: {B}est estimates and uncertainties, {\it
-  Seismological Research Letters\/}, {\bf 68}(1), 41--57.
+\bibitem[{\textit{Toro et~al.}(1997)\textit{Toro, Abrahamson, and
+  Schneider}}]{dr_Toro97a}
+Toro, G.~R., N.~A. Abrahamson, and J.~F. Schneider (1997), Model of strong
+  ground motions from earthquakes in {C}entral and {E}astern {N}orth {A}merica:
+  {B}est estimates and uncertainties, \textit{Seismological Research Letters},
+  \textit{68}(1), 41--57.
 
-\bibitem[Utsu et~al.(1995)Utsu, Ogata, \& Matsu'ura]{dr_Utsu95a}
-Utsu, T., Ogata, Y., \& Matsu'ura, R.~S., 1995.
-\newblock The {C}entenary of the {O}mori {F}ormula for a decay law of
-  aftershock activity, {\it Journal of Physics of the Earth\/}, {\bf 43},
-  1--33.
+\bibitem[{\textit{Utsu et~al.}(1995)\textit{Utsu, Ogata, and
+  Matsu'ura}}]{dr_Utsu95a}
+Utsu, T., Y.~Ogata, and R.~S. Matsu'ura (1995), The {C}entenary of the {O}mori
+  {F}ormula for a decay law of aftershock activity, \textit{Journal of Physics
+  of the Earth}, \textit{43}, 1--33.
 
-\bibitem[Van{D}ecar \& Snieder(1994)]{dr_VanDecar94a}
-Van{D}ecar, J.~C. \& Snieder, R., 1994.
-\newblock Obtaining smooth solutions to large linear inverse problems, {\it
-  Geophysics\/}, {\bf 59}, 818--829.
+\bibitem[{\textit{Van{D}ecar and Snieder}(1994)}]{dr_VanDecar94a}
+Van{D}ecar, J.~C., and R.~Snieder (1994), Obtaining smooth solutions to large
+  linear inverse problems, \textit{Geophysics}, \textit{59}, 818--829.
 
-\bibitem[Waldhauser(2001)]{dr_Waldhauser01a}
-Waldhauser, F., 2001.
-\newblock hypo{DD} -- a program to compute double-difference hypocenter
-  locations (hypo{DD} version 1.0 - 03/2001), Open file report 01-113, United
-  States Geological Survey, Menlo Park, California.
+\bibitem[{\textit{Waldhauser}(2001)}]{dr_Waldhauser01a}
+Waldhauser, F. (2001), hypo{DD} -- a program to compute double-difference
+  hypocenter locations (hypo{DD} version 1.0 - 03/2001), \textit{Open file
+  report 01-113}, United States Geological Survey, Menlo Park, California.
 
-\bibitem[Waldhauser \& Ellsworth(2000)]{dr_Waldhauser00a}
-Waldhauser, F. \& Ellsworth, W.~L., 2000.
-\newblock A double--difference earthquake location algorithm: method and
-  application to the northern {H}ayward {F}ault, {C}alifornia, {\it Bulletin of
-  the Seismological Society of America\/}, {\bf 90}(6), 1353--1368.
+\bibitem[{\textit{Waldhauser and Ellsworth}(2000)}]{dr_Waldhauser00a}
+Waldhauser, F., and W.~L. Ellsworth (2000), A double--difference earthquake
+  location algorithm: method and application to the northern {H}ayward {F}ault,
+  {C}alifornia, \textit{Bulletin of the Seismological Society of America},
+  \textit{90}(6), 1353--1368.
 
-\bibitem[Waldhauser \& Ellsworth(2002)]{dr_Waldhauser02a}
-Waldhauser, F. \& Ellsworth, W.~L., 2002.
-\newblock Fault structure and mechanics of the {H}ayward {F}ault, {C}alifornia,
-  from double--difference earthquake locations, {\it Journal of Geophysical
-  Research\/}, {\bf 107}(B3), 10.1029/2000JB000084.
+\bibitem[{\textit{Waldhauser and Ellsworth}(2002)}]{dr_Waldhauser02a}
+Waldhauser, F., and W.~L. Ellsworth (2002), Fault structure and mechanics of
+  the {H}ayward {F}ault, {C}alifornia, from double--difference earthquake
+  locations, \textit{Journal of Geophysical Research}, \textit{107}(B3),
+  10.1029/2000JB000,084.
 
-\bibitem[Waldhauser \& Schaff(2008)]{dr_Waldhauser08a}
-Waldhauser, F. \& Schaff, D.~P., 2008.
-\newblock Large-scale relocation of two decades of {N}orthern {C}alifornia
-  seismicity using cross-correlation and double-difference methods, {\it
-  Journal of Geophysical Research\/}, {\bf 133}, {B08311,
-  doi10.1029/2007JB005479}.
+\bibitem[{\textit{Waldhauser and Schaff}(2008)}]{dr_Waldhauser08a}
+Waldhauser, F., and D.~P. Schaff (2008), Large-scale relocation of two decades
+  of {N}orthern {C}alifornia seismicity using cross-correlation and
+  double-difference methods, \textit{Journal of Geophysical Research},
+  \textit{133}, {B08311, doi10.1029/2007JB005479}.
 
-\bibitem[Waldhauser et~al.(1999)Waldhauser, Ellsworth, \&
-  Cole]{dr_Waldhauser99a}
-Waldhauser, F., Ellsworth, W.~L., \& Cole, A., 1999.
-\newblock Slip-parallel lineations on the {N}orthern {H}ayward {F}ault,
-  {C}alifornia, {\it Geophysical Research Letters\/}, {\bf 26}(23), 3525--3528.
+\bibitem[{\textit{Waldhauser et~al.}(1999)\textit{Waldhauser, Ellsworth, and
+  Cole}}]{dr_Waldhauser99a}
+Waldhauser, F., W.~L. Ellsworth, and A.~Cole (1999), Slip-parallel lineations
+  on the {N}orthern {H}ayward {F}ault, {C}alifornia, \textit{Geophysical
+  Research Letters}, \textit{26}(23), 3525--3528.
 
 \end{thebibliography}

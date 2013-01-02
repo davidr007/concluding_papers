@@ -3,29 +3,39 @@
 % V2.1 released 2003 October 7 -- Gregor Hutton, updated the web address for the style files.
 
 %\documentclass[extra,mreferee]{gji}
-\documentclass[extra, onecolumn, doublespacing]{gji}
+%\documentclass[extra, onecolumn, doublespacing]{gji}
 %\documentclass[extra]{gji}
+%\RequirePackage{lineno}
+\documentclass[12pt,double]{article}
 
-\bibliographystyle{gji}
+
+%\bibliographystyle{agufull08} % Uncomment when generating bibliography
 \usepackage{timet}
 \usepackage[dvips]{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{rotating}
+\usepackage{natbib}
+\usepackage{lineno}
+%\usepackage{titlesec}
+\linenumbers
 
-\title{Relocating a Cluster of Earthquakes Using a Single Seismic Station}
-\author[D.J. Robinson, M. Sambridge, R. Snieder and J Hauser]
-  {David J. Robinson$^{1,2}$, Malcolm Sambridge$^{1}$, Roel Snieder$^{3}$, Juerg Hauser$^{4}$ \\
-  $^1$ Research School of Earth Sciences, Australian National
-    University, Canberra ACT \emph{0200}, Australia, E-mail: david.robinson@anu.edu.au \\
-$^2$  Risk Analysis Methods, Geoscience Australia, GPO Box \emph{383} Canberra ACT \emph{2601} Australia, E-mail: david.robinson@ga.gov.au\\
-$^3$ Center for Wave Phenomena and Department of Geophysics, Colorado School of Mines, Golden CO \emph{80401-1887}, USA \\
-$^4$ CSIRO Earth Science and Resource Engineering, Dick Perry Av, Kensington WA \emph{6151} Australia}
+\linespread{1.5}
+
+\newcommand{\mitbf}[1]{  
+  \hbox{\mathversion{bold}$#1$}}  
+  \newcommand{\rmn}[1] {{\mathrm #1}}  
+  \newcommand{\itl}[1] {{\mathit #1}}  
+  \newcommand{\bld}[1] {{\mathbf #1}}  
 
 
+%\titleformat{\section}
+%{\bf}{\thesection}{1em}{\MakeUppercase{#1}}
 
-
-\date{Received 2012 Month Day; in original form 2012 Month Day}
-\pagerange{\pageref{firstpage}--\pageref{lastpage}}
-\volume{200}
-\pubyear{2012}
+%\date{Received 2012 Month Day; in original form 2012 Month Day}
+%\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+%\volume{200}
+%\pubyear{2012}
 
 %\def\LaTeX{L\kern-.36em\raise.3ex\hbox{{\small A}}\kern-.15em
 %    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}
@@ -39,12 +49,33 @@ $^4$ CSIRO Earth Science and Resource Engineering, Dick Perry Av, Kensington WA 
 
 \begin{document}
 
+\begin{centering}
+\LARGE{\textbf{Relocating a Cluster of Earthquakes Using a Single Seismic Station}} \\  
+\end{centering}
+\vspace{3em}
+\begin{centering}
+David J. Robinson, Malcolm Sambridge, Roel Snieder, Juerg Hauser \\
+\end{centering}
+
+\vspace{7em}
+\begin{tabular}{lp{0.6\textwidth}}
+ & \\
+David Robinson: & Earth Monitoring and Hazard Group \\
+ &  Geoscience Australia \\
+ & GPO Box \emph{383} \\
+ & Canberra ACT \emph{2601} Australia \\
+ & E-mail: david.robinson@ga.gov.au\\
+\end{tabular}
+
+\clearpage
 \label{firstpage}
 
-\maketitle
+%\maketitle
 
-
-\begin{summary}
+\vspace{2em}
+\begin{centering}
+\section*{Abstract}
+\end{centering}
 Coda waves arise from scattering to form the later arriving
 components of a seismogram. Coda wave interferometry is an emerging
 tool for constraining earthquake source properties from the
@@ -61,14 +92,18 @@ stations is small; (b) is self-consistent across a broad range of
 station situations; and (c) can be used with a single station to
 locate earthquakes.
 
-\end{summary}
 
 %\begin{keywords}
 % Probability distributions; Earthquake source observations;
 %Seismicity and tectonics; Wave scattering and diffraction
 %\end{keywords}
 
-\section{Introduction}
+
+
+\vspace{2em}
+\begin{centering}
+\section*{Introduction} 
+\end{centering}
 
 Accurate earthquake location is important for many applications. Locations
 are required for:  magnitude
@@ -99,13 +134,13 @@ several kilometers because they are susceptible to uncertainty in
 the velocity structure along the entire path between the source and
 receiver. For example, \citet{dr_Shearer99a} states that location
 uncertainty in the ISC (International Sesimological
-Centre\footnote{http://www.isc.ac.uk}) and PDE (National Earthquake
+Centre) and PDE (National Earthquake
 Information
-Center\footnote{http://earthquake.usgs.gov/earthquakes/eqarchives/epic/})
+Center)
 catalogues are generally around 25\,km horizontally and at least
-25\,km in depth.\footnote{Here the depth uncertainties of 25\,km
+25\,km in depth (Here the depth uncertainties of 25\,km
 assume the use of depth dependent phases such as $pP$. Without such
-phases the uncertainty is higher.} \citet{dr_Bondar04a} demonstrate
+phases the uncertainty is higher). \citet{dr_Bondar04a} demonstrate
 that at the local scale, absolute locations are accurate to within
 5\,km with a 95\% confidence level when local networks meet a number
 of station related criteria. Such errors are too large for many
@@ -115,9 +150,9 @@ surfaces from aftershock sequences.
 Relative earthquake location involves locating a group of
 earthquakes with respect to one another and was first introduced by
 \citet{dr_Douglas67a} who developed the technique commonly known as
-joint hypocenter determination.\footnote{\citet{dr_Douglas67a}
+joint hypocenter determination (\citet{dr_Douglas67a}
 originally used the term joint epicentre determination. However, he
-was solving for hypocentre.} In principle, relative locations can be
+was solving for hypocentre). In principle, relative locations can be
 computed by differencing absolute locations. However,
 \citet{dr_Pavlis92a} shows that inadequate knowledge of velocity
 structure leads to systematic biases when relative positions are
@@ -171,21 +206,24 @@ for regions where station density is low such as intraplate settings. In this
 paper we demonstrate how CWI separation estimates can be used to constrain
 location with data from a single station.
 Our technique can be used on coda waves alone or in combination with
-travel times. We begin by introducing the theory of CWI based earthquake location
-(Section \ref{sec:theory}). This is followed by a demonstration of capability using
-synthetic examples (Section \ref{sec:benchmarking}) and application to earthquakes
-on the Calaveras fault, California using CWI alone (Section \ref{sec:CalaverasLoc-CWIonly}
-and CWI in combination with travel time constraints (Section \ref{sec:CalaverasLoc-CWIandTT}).
+travel times. We begin by introducing the theory of CWI based earthquake location. 
+This is followed by a demonstration of capability using
+synthetic examples and application to earthquakes
+on the Calaveras fault, California using CWI alone
+and CWI in combination with travel time constraints.
 
-\section{Theory}
+\vspace{2em}
+\begin{centering}
+\section*{Theory}
+\end{centering}
 \label{sec:theory}
 
 \citet{dr_Snieder05a} introduce a CWI based estimator of source
 separation $\delta_{CWI}$ between two earthquakes
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:Theory-dcwi_g_sigmat}
 \delta_{CWI}^2 = g(\alpha,\beta)\sigma_\tau^2,
-\end{equation}
+\end{equation} \end{linenomath*}
 where $\sigma_\tau$ is the standard deviation of the travel time
 perturbation between the coda waves of two earthquakes, and $\alpha$
 and $\beta$ are the near-source $P$ and $S$ wave velocities,
@@ -194,15 +232,15 @@ respectively. The function $g$ depends on the type of excitation
 source displacement relative to the point force or double couple.
 For example, for two double couple sources displaced in the fault
 plane,
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:LitReview-g-3d-dc}
 g(\alpha,\beta) = 7
 \frac{\left(\frac{2}{\alpha^6}+\frac{3}{\beta^6}\right)}{\left(\frac{6}{\alpha^8}+\frac{7}{\beta^8}\right)},
-\end{equation}
+\end{equation} \end{linenomath*}
 whereas, for two point sources in a 2D acoustic medium
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:LitReview-g-2d-ps} g(\alpha,\beta) = 2 \alpha^2
-\end{equation}
+\end{equation} \end{linenomath*}
 \citep{dr_Snieder05a}. In this paper we use equation
 \ref{eq:LitReview-g-3d-dc} which assumes that the source mechanism
 of both events are identical, an assumption likely to be true for
@@ -216,10 +254,10 @@ from the recorded data. The original formulation by
 \citet{dr_Snieder05a} used a second-order Taylor series expansion of
 the waveform autocorrelation function to relate $\sigma_\tau$ and
 $R_{max}$ by
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:Rmax-disp-orig} R_{max}^{(t,t_w)} = 1 - \frac{1}{2}
 \overline{\omega^2} \sigma_\tau^2,
-\end{equation}
+\end{equation} \end{linenomath*}
 In this paper we use the autocorrelation approach of
 \citet{dr_Robinson11a} to relate the parameters directly and we
 apply a restricted time lag search when evaluating $R_{max}$. These
@@ -231,11 +269,11 @@ increase the range of applicability of CWI by 50\% (i.e. from 300 to
 probabilistic constraints on source separation and introduce a
 Bayesian approach for describing the probability of true separation
 given the CWI data. Their approach is summarised by
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:-bayesian-noisyform}
 P(\widetilde{\delta}_t|\widetilde{\delta}_{CWIN}) \propto P(\widetilde{\delta}_{CWIN}|\widetilde{\delta}_t)
 \times P(\widetilde{\delta}_t)
-\end{equation}
+\end{equation} \end{linenomath*}
 where  $P(\widetilde{\delta}_t|\widetilde{\delta}_{CWIN})$ is the
 posterior function indicating the probability of true separation
 $\widetilde{\delta}_t$ given the noisy CWI separation estimates
@@ -248,10 +286,10 @@ $P(\widetilde{\delta}_t)$ is the prior PDF accounting for all
 a-priori information. The tilde above the separation parameters in
 equation (\ref{eq:-bayesian-noisyform}) indicates the use of a
 wavelength normalised separation parameter
-\begin{equation}
+\begin{linenomath*} \begin{equation} 
 \label{eq-normalisation-eqn}
 \widetilde{\delta} = \frac{\delta}{\lambda_{d}},
-\end{equation}
+\end{equation} \end{linenomath*}
 which measures separation ($\delta$ = $\delta_{CWIN}$ or $\delta_t$)
 with respect to dominant wavelength $\lambda_{d}$. In this paper we
 consider a uniform prior over appropriate bounds to ensure that the
@@ -275,11 +313,11 @@ on the degree to which individual events are constrained
  by the data. For convenience, we begin with three earthquakes having locations
 $\mathbf{e}_1$, $\mathbf{e}_2$ and $\mathbf{e}_3$. Using a Bayesian
 formulation we write
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq-Bayes-three-locations}
 P(\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3| \mathbf{d}) \propto P( \mathbf{d}|\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3)
 \times P(\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3),
-\end{equation}
+\end{equation} \end{linenomath*}
 where $P(\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3 | \mathbf{d})$,
 $P(\mathbf{d}|\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3)$ and
 $P(\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3)$ are the posterior,
@@ -298,10 +336,10 @@ CWI and travel time data we may write $P(\mathbf{e}_1, \mathbf{e}_2,
 \mathbf{\Delta}_{TT})$ and
 $P(\widetilde{\mitbf{\delta}}_{CWIN},\mathbf{\Delta}_{TT}|\mathbf{e}_1,
 \mathbf{e}_2, \mathbf{e}_3)$ where $\mathbf{\Delta}_{TT}$ represent
-travel time differences. In the following derivation and in Sections
-\ref{sec:benchmarking} and \ref{sec:CalaverasLoc-CWIonly} we focus
-on the constraints imposed by coda waves, whereas in Section
-\ref{sec:CalaverasLoc-CWIandTT} we demonstrate how CWI and travel
+travel time differences. In the following derivation and in 
+Synthetic Experiements and Relocating Earthquakes on the Calaveras Fault we focus
+on the constraints imposed by coda waves, whereas in 
+Combining Travel Time and CWI Constraints we demonstrate how CWI and travel
 time data can be combined.
 
 For three earthquakes we have likelihoods;
@@ -313,13 +351,13 @@ In writing
 these likelihoods we have replaced the conditional term on separation
 $\widetilde{\delta}_t$ with the locations (e.g. $\mathbf{e}_1$ and $\mathbf{e}_2$).
 This can be done because
-knowledge of location translates to separation.\footnote{Note that the reverse is
+knowledge of location translates to separation.Note that the reverse is
 not true. That is, knowledge of separation between a single event pair
 does not uniquely translate to location but rather places a non-unique constraint on
-location.}
+location.
 Furthermore, since the pairwise functions are independent the joint
 likelihood becomes
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \begin{array}{l}
 \label{eq:-joint-likelihood4three}
 P(\widetilde{\mathbf{\delta}}_{CWIN} | \mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3) =
@@ -327,34 +365,34 @@ P(\widetilde{\delta}_{CWIN,12} | \mathbf{e}_1, \mathbf{e}_2) \\
 \hspace{2em} \times P(\widetilde{\delta}_{CWIN,13} | \mathbf{e}_1, \mathbf{e}_3)
 \times  P(\widetilde{\delta}_{CWIN,23} | \mathbf{e}_2, \mathbf{e}_3).
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 Similarly, the earthquake locations are independent and the
 joint prior becomes
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:-joint-prior4three} P(\mathbf{e}_1, \mathbf{e}_2,
 \mathbf{e}_3) = P(\mathbf{e}_1) \times P(\mathbf{e}_2) \times
 P(\mathbf{e}_3).
-\end{equation}
+\end{equation} \end{linenomath*}
 Combining equations (\ref{eq:-joint-likelihood4three}) and
 (\ref{eq:-joint-prior4three}) gives the joint posterior function
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq-3eqposterior}
 \begin{array}{l}
 P(\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3 | \widetilde{\mitbf{\delta}}_{CWIN}) = c \displaystyle \prod_{i=1}^3 P(\mathbf{e}_i) \\
 \hspace{4em}  \times \displaystyle \prod_{i=1}^2 \prod_{j=i+1}^3
 P(\widetilde{\delta}_{CWIN,ij}|\mathbf{e}_i,\mathbf{e}_j)
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 for three events.
 
 A detailed understanding of the location of a single event (e.g. $\mathbf{e}_2$) is obtained by computing the
 marginal
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:-E2-marginal}
 P(\mathbf{e}_2|\mathbf{\delta}_{CWIN}) = \int \int P(\mathbf{e}_1, \mathbf{e}_2,
  \mathbf{e}_3 | \widetilde{\mathbf{\delta}}_{CWIN}) d\mathbf{e}_1
  d\mathbf{e}_3,
-\end{equation}
+\end{equation} \end{linenomath*}
 where the intergral is taken over all plausible locations for
 $\mathbf{e}_1$ and $\mathbf{e}_3$. Alternatively, we can compute the
 marginal for a single event coordinate by integrating the posterior
@@ -368,32 +406,32 @@ required when seeking the combination of locations which maximise
 techniques which only require evaluation of a function proportional to the PDF.
 
 Extending to $n$ events we get the posterior function
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \begin{array}{l}
 \label{posterior-n-events}
 P(\mathbf{e}_1,...,\mathbf{e}_n | \widetilde{\mathbf{\delta}}_{CWIN}) = c \displaystyle \prod_{i=1}^n P(\mathbf{e}_i) \\
 \hspace{4em} \displaystyle  \times \prod_{i=1}^{n-1} \prod_{j=i+1}^n P(\widetilde{\delta}_{CWIN,ij}|\mathbf{e}_i,\mathbf{e}_j).
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 When evaluating equation (\ref{posterior-n-events})
 over a range of locations it is necessary to compute and multiply
 many numbers close to zero. This is because the PDFs tend to zero as
 the locations get less likely (i.e. near the boundaries of the
 plausible region). Such calculations are prone to truncation errors
 and so we work with the negative logarithm
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:-negative-log-part1}
 L(\mathbf{e}_1, \mathbf{e}_2, ..., \mathbf{e}_n) = -ln\left[ P(\mathbf{e}_1,...,\mathbf{e}_n | \widetilde{\mathbf{\delta}}_{CWIN} )  \right]
-\end{equation}
+\end{equation} \end{linenomath*}
 or
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \begin{array}{l}
 \label{eq:-negative-log}
 L(\mathbf{e}_1, \mathbf{e}_2, ..., \mathbf{e}_n) =
 -ln\left[ c \right] - \displaystyle \sum_{i=1}^n ln\left[P(\mathbf{e}_i)\right] \\
 \hspace{3em} - \displaystyle \sum_{i=1}^{n-1} \sum_{j=i+1}^n ln\left[P(\widetilde{\delta}_{CWIN,ij}|\mathbf{e}_i,\mathbf{e}_j)\right].
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 The logarithm improves numerical stability by replacing products
 with summations. The negative facilitates the use of optimisation
 algorithms that are designed to minimise an objective function.
@@ -407,30 +445,30 @@ because the distances between events are invariant for rotations,
 reflections and translations of the seismicity pattern and hence
 cannot be resolved from CWI alone. In defining this coordinate
 system we fix the first event at the origin
-\begin{equation}
+\begin{linenomath*} \begin{equation} 
 \label{eq:coord-const1}
 \mathbf{e}_1 = (0,0,0),
-\end{equation}
+\end{equation} \end{linenomath*}
 the second event on the positive $\hat{x}$-axis
-\begin{equation}
+\begin{linenomath*} \begin{equation} 
 \label{eq:coord-const2}
 \mathbf{e}_2 = (\hat{x}_2, 0, 0), \hat{x}_2>0
-\end{equation}
+\end{equation} \end{linenomath*}
 the third on the $\hat{x}-\hat{y}$ plane
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:coord-const3}
 \mathbf{e}_3 = (\hat{x}_3,\hat{y}_3,0), \hat{y}_3>0
-\end{equation}
+\end{equation} \end{linenomath*}
 and the fourth to
-\begin{equation}
+\begin{linenomath*} \begin{equation} 
 \label{eq:coord-const4}
 \mathbf{e}_4 = (\hat{x}_4,\hat{y}_4,\hat{z}_4), \hat{z}_4>0.
-\end{equation}
+\end{equation} \end{linenomath*}
 This coordinate system reduces translational (equation \ref{eq:coord-const1})
 and rotational (equations \ref{eq:coord-const2} to \ref{eq:coord-const4}) non-uniqueness
 without loss of generality. It is necessary to work with a local coordinate
 system when using coda waves alone because the CWI technique constrains only event separation
-between earthquakes. The inclusion of travel times in Section \ref{sec:CalaverasLoc-CWIandTT}
+between earthquakes. The inclusion of travel times in Combining Travel Time and CWI Constraints
 allows us to move to a global reference system.
 
 In summary, the posterior $P(\mathbf{e}_1,...,\mathbf{e}_n |
@@ -444,11 +482,14 @@ minimize $L$. It uses the derivatives of $L$, derived in Appendix
 optimization procedure. Note that when optimizing
 equation \ref{eq:-negative-log} the values of $ln \left[ c \right]$
 and $ln \left[ P(e_i) \right]$ can be ignored because they are
-constant\footnote{$ln \left[ P(e_i) \right]$ is constant because we
-consider a uniform prior.}
+constant ($ln \left[ P(e_i) \right]$ is constant because we
+consider a uniform prior).
 
+\vspace{2em}
+\begin{centering}
+\section*{Synthetic experiments}
+\end{centering}
 
-\section{Synthetic experiments}
 \label{sec:benchmarking}
 
 We use synthetic examples in 2D and 3D with 50 earthquakes to test
@@ -460,11 +501,12 @@ are testing the performance of the optimization routine only. The
 ability of CWI to estimate event separation has been demonstrated
 already \citep{dr_Snieder05a, dr_Robinson07b, dr_Robinson11a}. We
 undertake a complete coda wave location experiment, including the
-calculation of CWI separation estimates, for recorded earthquakes on
-the Calaveras Fault, California, in Section
-\ref{sec:CalaverasLoc-CWIonly}.
+calculation of CWI separation estimates, for recorded earthquakes in 
+Relocating Earthquakes on the Calaveras 
+Fault and in Combining Travel Time and CWI Constraints.
 
-\subsection{Examples 1 and 2 - 2D synthetic experiments}
+\vspace{1em}
+\subsection*{Examples 1 and 2 - 2D synthetic experiments}
 
 We design a 2D synthetic acoustic experiment (example 1) by randomly
 selecting $\hat{x}$- and $\hat{y}$-coordinates such that $-50 \leq
@@ -477,10 +519,10 @@ defined by the dominant wavelength normalized positive bounded
 Gaussian PDF with statistics $\bar{\mu}_N$ and $\bar{\sigma}_N$
 \citep{dr_Robinson11a}. A hypothetical CWI mean is created by
 setting
-\begin{equation}
+\begin{linenomath*} \begin{equation} 
 \label{eq:hypothetical-CWI-mean-optichapt}
 \bar{\mu}_N = \mu_1 \left( \widetilde{\delta}_t \right)
-\end{equation}
+\end{equation} \end{linenomath*}
 using equation (\ref{eq:mu1}). This assumption ensures that the
 sample mean of hypothetical separation estimates is consistent with
 known CWI biases \citep{dr_Robinson11a}. In example 1 we use
@@ -537,8 +579,8 @@ constraints on later events weakens allowing small rotations of
 events with respect to each other. That is, even though the
 rotational freedom of the cluster is in principal removed by the
 constraints imposed on the events (see equations
-(\ref{eq:coord-const1}) to (\ref{eq:coord-const3})\footnote{equation
-\ref{eq:coord-const4} is needed in 3D only}) we observe that in
+(\ref{eq:coord-const1}) to (\ref{eq:coord-const3} - equation
+\ref{eq:coord-const4} is needed in 3D only) we observe that in
 practice the presence of noise allows the rotational non-uniqueness
 to reappear. This is because errors align themselves in directions
 least constrained by data. For the CWI technique this ammounts to rotations in 2D.
@@ -547,14 +589,14 @@ creates large spurious model changes in directions of the
 eigenvectors with the smallest singular values \citep{dr_Aster05a}.
  Fortunately however, combining coda waves with
 measurements of travel times alleviates this problem and facilitate
-the removal of a local coordinate system altogether (see Section
-\ref{sec:CalaverasLoc-CWIandTT}). On balance however, we gain
+the removal of a local coordinate system altogether (see Combining Travel Time and 
+CWI Constraints). On balance however, we gain
 confidence in the optimization procedure due to its stability for
 different starting locations and because of the small average
 coordinate errors of 2.0\,m and 2.8\,m for examples 1 and 2,
 respectively.
 
-\subsection{Example 3 - The impact of incomplete event pairs in 2D}
+\subsection*{Example 3 - The impact of incomplete event pairs in 2D}
 
 Synthetic examples 1 and 2 use 100\% direct linkage between event
 pairs. That is, there is a constraint between each earthquake and
@@ -613,7 +655,7 @@ fixed with preconditioning in some cases. Their findings suggest
 that it may be possible to improve the convergence (stability and/or
 speed) of the CWI optimization by preconditioning.
 
-\subsection{Example 4 - The impact of incomplete event pairs in 3D}
+\subsection*{Example 4 - The impact of incomplete event pairs in 3D}
 
 In Example 4 we expand the optimization routine to 3D by randomly
 picking
@@ -652,7 +694,7 @@ solution for cases with 30\% linkage or higher is encouraging for
 the potential of coda wave optimization to constrain earthquake
 location.
 
-\subsubsection{Summary of synthetic experiments}
+\subsection*{Summary of synthetic experiments}
 
 In summary, the synthetic examples demonstrate the ability of coda
 wave data to constrain relative event location using optimization.
@@ -666,15 +708,17 @@ solution from 25 random starting locations is required to find the
 optimal solution. All optimisations fail to converge as the number
 of links decrease below 30\%.
 
-
-\section{Relocating Earthquakes on the Calaveras Fault}
+\vspace{2em}
+\begin{centering}
+\section*{Relocating Earthquakes on the Calaveras Fault}
+\end{centering}
 \label{sec:CalaverasLoc-CWIonly}
 
 In this section we relocate 68 earthquakes from the Calaveras Fault,
 California. The 68 earthquakes are selected from the 308 earthquake
 Calaveras example released with the open source Double Difference
 algorithm or hypoDD \citep{dr_Waldhauser00a, dr_Waldhauser01a} [See
-also Data and Resources Section]. These events are chosen for four
+also Data and Resources]. These events are chosen for four
 reasons. Firstly, they are recorded by a large number of stations
 (Fig. \ref{fig:-eqopti-California-Calaveras}) and therefore lend
 themselves to accurate travel time location. This makes them ideal
@@ -690,7 +734,7 @@ assumption for the application of equation
 \ref{eq:LitReview-g-3d-dc}. The relocations in this paper are sorted
 into four examples as summarised in Table \ref{tab:examples}.
 
-\subsection{Example 5 - comparison of CWI, catalogue and hypoDD locations}
+\subsection*{Example 5 - comparison of CWI, catalogue and hypoDD locations}
 
 Figure \ref{fig-69Calaverasevents_eg1} illustrates three sets of
 locations for the Calaveras earthquakes. The first column shows the
@@ -703,14 +747,14 @@ the 68 earthquakes of interest are spatially widely distributed on the scale of
 
 
 To apply CWI we download available waveforms from the Northern
-California Earthquake Data Center (See Data and Resources Section).
+California Earthquake Data Center (See Data and Resources).
 Unsuitable waveforms are removed using the conditions summarised in
 Table \ref{tab:-conditions4unsuitablewaveform}. Remaining waveforms
 are filtered between 1 and 5\,Hz and aligned  to $P$ arrivals at
 0\,s. CWI estimates are obtained from 5\,s wide non-overlapping time
 windows between $2.5 \leq t \leq 20$\,s and used to create
-probabilistic constraints on event separation. We introduce the
-local coordinate system of Section \ref{sec:theory} and find the
+probabilistic constraints on event separation. We utilize the
+local coordinate system introduced in Theory and find the
 optimum relative locations using Polak-Ribiere optimization.
 
 CWI locations for the 68 events are illustrated in column two of
@@ -745,7 +789,7 @@ understanding how both techniques perform with fewer stations
 (Examples 7 and 8).
 
 
-\subsection{Example 6 - Dependance on the number of stations}
+\subsection*{Example 6 - Dependance on the number of stations}
 
 
 Accurate location of the Calaveras events is possible using arrival
@@ -826,7 +870,10 @@ contrast, the hypoDD mean and maximum coordinate error fluctuate
 above those for CWI confirming that the hypoDD inversion is less
 stable than CWI with fewer stations.
 
-\section{Theory for Combining travel time and CWI constraints}
+\vspace{2em}
+\begin{centering}
+\section*{Combining Travel Time and CWI Constraints}
+\end{centering}
 \label{sec:CalaverasLoc-CWIandTT}
 In Examples 5 and 6 we compare the location of the Calaveras
 earthquakes using coda wave and arrival time based constraints
@@ -840,7 +887,7 @@ We do not propose a new technique for earthquake location using
 travel time differences. Rather, we exploit the information created
 by hypoDD with SVD to define a probability density (or posterior)
 function
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq-multi-var-Gauss-tt}
 \begin{array}{l}
 P(\mathbf{e}_p|\Delta_{TT})
@@ -849,23 +896,23 @@ P(\mathbf{e}_p|\Delta_{TT})
 \left({-\frac{1}{2}\left([\mathbf{e}_p-\mu_{\mathbf{e}_p}]^T
 \Sigma^{-1} [\mathbf{e}_p-\mu_{\mathbf{e}_p}]\right)} \right),
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 where
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \mathbf{e}_p = (x_p,y_p,z_p)^T
-\end{equation}
+\end{equation} \end{linenomath*}
 is the location of event $p$,
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \mu_{\mathbf{e}_p} = (\mu_{x_p}, \mu_{y_p},\mu_{z_p})^T
-\end{equation}
+\end{equation} \end{linenomath*}
 is the most likely location as determined using the travel time
 data, and
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:Sigma-expression}
 \Sigma = \left( \begin{array}{ccc} \sigma_{x_p}^2 & 0 & 0\\
 0 &  \sigma_{y_p}^2 & 0 \\
 0 & 0 & \sigma_{z_p}^2  \end{array} \right)
-\end{equation}
+\end{equation} \end{linenomath*}
 is the covariance matrix. In this paper we define the mean location
 $\mu_{\mathbf{e}_p}$ and covariance matrix by the hypoDD optimum
 solution and its uncertainties. It is important to note that hypoDD
@@ -875,7 +922,7 @@ conjugate gradient methods (LSQR) are grossly underestimated in
 hypoDD \citep{dr_Waldhauser01a}.
 
 We pose the location problem using the negative log likelihood
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq-Lstar-tt-cwi}
 \begin{array}{l}
  L(\mathbf{e}_1, \mathbf{e}_2, ...,
@@ -885,25 +932,25 @@ ln\left[P(\mathbf{e}_i|\Delta_{TT})\right] \\
 \sum_{j=i+1}^n
 ln\left[P(\delta_{CWIN}|\mathbf{e}_i,\mathbf{e}_j)\right],
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 where $(\mathbf{e}_1, \mathbf{e}_2, ..., \mathbf{e}_n)$ is the joint
 location,
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq-ttcomponent} \sum_{i=1}^n
 ln\left[P(\mathbf{e}_i|\Delta_{TT})\right]
-\end{equation}
+\end{equation} \end{linenomath*}
 incorporates the travel time constraints and
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq-codacomponent} \sum_{i=1}^{n-1} \sum_{j=i+1}^n
 ln\left[P(\delta_{CWIN}|\mathbf{e}_i,\mathbf{e}_j)\right]
-\end{equation}
+\end{equation} \end{linenomath*}
  the coda waves.
 
 We must differentiate $L$ to use the Polak-Ribiere conjugate
 gradient technique of \citet{dr_Press87a}. The derivative of
 $L(\mathbf{e}_1, \mathbf{e}_2, ..., \mathbf{e}_n)$ with respect to
 $x_p$ is given by
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \begin{array}{l}
 \frac{\partial L}{\partial x_p} =  - \frac{\partial ln\left[P(\mathbf{e}_p|t_{DD})\right]}{\partial x_p}
 - \sum_{i=p+1}^{N} \frac{ \partial \ln
@@ -913,21 +960,21 @@ x_p} \\
 \left[P(\delta_{CWIN}|\mathbf{e}_j,\mathbf{e}_p)\right]}{\partial
 x_p}
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 where
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \sum_{i=p+1}^{N} \frac{ \partial \ln
 \left[P(\delta_{CWIN}|\mathbf{e}_p,\mathbf{e}_i)\right]}{\partial
 x_p}
-\end{equation}
+\end{equation} \end{linenomath*}
 and
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \sum_{j=1}^{p-1} \frac{ \partial \ln
 \left[P(\delta_{CWIN}|\mathbf{e}_j,\mathbf{e}_p)\right]}{\partial
 x_p}
-\end{equation}
+\end{equation} \end{linenomath*}
 are defined in Appendix \ref{sec-Appendix-derivatives_ofL} and
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \begin{array}{l}
 \frac{\partial ln\left[P(\mathbf{e}_p|t_{DD})\right]}{\partial x_p}
 = -\frac{1}{2}[1,0,0]^T \Sigma^{-1}
@@ -935,10 +982,10 @@ are defined in Appendix \ref{sec-Appendix-derivatives_ofL} and
 \hspace{9em} -\frac{1}{2}
 [\mathbf{e}_p-\mu_{\mathbf{e}_p}]^T \Sigma^{-1} [1,0,0].
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 Similarly, for the derivatives with respect to $y_p$ and $z_p$ we
 have
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \begin{array}{l}
 \frac{\partial ln\left[P(\mathbf{e}_p|t_{DD})\right]}{\partial y_p}
 = -\frac{1}{2} [0,1,0]^T \Sigma^{-1}
@@ -946,9 +993,9 @@ have
 \hspace{9em} -\frac{1}{2}
 [\mathbf{e}_p-\mu_{\mathbf{e}_p}]^T \Sigma^{-1} [0,1,0]
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 and
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \begin{array}{l}
 \frac{\partial ln\left[P(\mathbf{e}_p|t_{DD})\right]}{\partial z_p}
 = -\frac{1}{2} [0,0,1]^T \Sigma^{-1}
@@ -956,7 +1003,7 @@ and
 \hspace{9em} -\frac{1}{2}
 [\mathbf{e}_p-\mu_{\mathbf{e}_p}]^T \Sigma^{-1} [0,0,1].
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 
 Combining the travel time and coda wave data offers two advantages.
 Firstly, it combines independent constraints on the event locations
@@ -971,9 +1018,9 @@ improve the behavior of the Polak-Ribiere optimization leading to
 faster and more stable convergence. Consequently, we no longer have
 to consider multiple randomly chosen starting locations.
 
-
-\subsection{Example 7 - Combining travel time and CWI constraints}
- Figure
+\vspace{1em}
+\subsection*{Example 7 - Combining travel time and CWI constraints}
+Figure
 \ref{fig-68Calaverasevents_ttandcoda1} illustrates the earthquake
 locations obtained when we combine the travel time and coda wave
 data using all data (left) and five stations (right). The linear
@@ -990,9 +1037,7 @@ observe an increase in off-streak scatter resulting from the
 enhanced influence of the coda.
 
 
-
-\subsection{Example 8 - Combining CWI and travel times when the travel times constrain a limited number of events}
-
+\subsection*{Example 8 - Combining CWI and travel times when the travel times constrain a limited number of events}
 
 In intraplate regions such as Australia it is common to deploy
 temporary seismometers to monitor aftershocks for significant events
@@ -1008,10 +1053,10 @@ outside the deployment period.
 
 An estimate of the cummulative number of aftershocks $N(t)$ after
 $t$ days is given by the modified Omori formula
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:CumOmori}
  N(t) = K \frac{c^{1-p} + (t+c)^{1-p}}{p-1}
-\end{equation}
+\end{equation} \end{linenomath*}
 \citep{dr_Utsu95a}.
 The empirically derived constants, $K$, $C$ and $p$ vary between
 tectonic settings. For example, using recorded aftershocks with
@@ -1022,9 +1067,9 @@ respectively.  With these empirically derived values an array
 deployed within 4 days and left for 150 days will record roughly one
 half of the aftershocks occurring within the first 1000 days. That
 is,
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \frac{N(150+4)-N(4)}{N(1000)} = \frac{2257-934}{2626} \approx 0.5.
-\end{equation}
+\end{equation} \end{linenomath*}
 This idea is illustrated in Figure \ref{fig:Omorifigure} which shows
 the best fitting Omori Formula separated into segments before
 (gray), during (black) and after (gray) the pseudo temporary
@@ -1051,8 +1096,10 @@ ability of  coda waves to constrain the location of events recorded
 by a single station creates new opportunities for understanding
 earthquakes in regions with limited station coverage.
 
-
-\section{Discussion and Conclusions}
+\vspace{2em}
+\begin{centering}
+\section*{Discussion and Conclusions}
+\end{centering}
 
 Coda wave interferometry is an emerging technique for constraining
 earthquake location. The technique relies on the interference
@@ -1093,19 +1140,34 @@ depths. It may also be possible to utilize coda for understanding
 hazard in tunneled mining operations where the location of deep
 tunnels prohibits azimuthal coverage of induced events.
 
-\section{Data and Resources}
+\vspace{2em}
+\begin{centering}
+\section*{Data and Resources}
+\end{centering}
 We thank the Northern California Earthquake Data Center (NCEDC) for
 providing the Calaveras data and the Northern California Seismic
 Network (NCSN), U.S. Geological Survey, Menlo Park and Berkeley
 Seismological Laboratory, University of California, Berkeley for
 contributing it to the NCEDC. The waveforms can be downloaded from
-http://www.ncedc.org/ncedc/access.html. We also acknowledge Felix
+http://www.ncedc.org/ncedc/access.html (last accessed August 2012). 
+We also acknowledge Felix
 Waldhauser and William Ellsworth, the authors of the openly
 available Double Difference location algorithm, hypoDD which can be
-downloaded from http://www.ldeo.columbia.edu/~felixw/hypoDD.html.
+downloaded from http://www.ldeo.columbia.edu/~felixw/hypoDD.html
+(last accessed August 2012).
+The International Sesimological Centre can be found at 
+http://www.isc.ac.uk/ (last accessed December 2012).
+The National Earthquake
+Information
+Center catalogue can be accessed from \\
+http://earthquake.usgs.gov/earthquakes/eqarchives/epic/
+(last accessed December 2012).
 
+\vspace{2em}
+\begin{centering}
+\section*{Acknowledgments}
+\end{centering}
 
-\begin{acknowledgments}
 Geoscience Australia, the Research School of Earth Sciences at The
 Australian National University, and the Center for Wave Phenomena at
 the Colorado School of Mines, are acknowledged for supporting this
@@ -1116,13 +1178,333 @@ benefited significantly from: reviews by Trevor Allen and Clive Collins
 at Geoscience Australia; as well as comments and advice received from
 Felix Waldhauser on this and earlier research on the application of
 CWI to earthquake location.
-\end{acknowledgments}
+
+%=============================================
+% Bibliography
+\vspace{2em}
+%\bibliography{../refs/drrefs}  %Uncomment when generating bibliography
 
 
-\bibliography{../refs/drrefs}
+\newcommand{\areps}{\textit{Ann.\ Rev.\ Earth Planet\ Sci.}}
+\newcommand{\bssa}{\textit{Bull.\ Seism.\ Soc.\ Am.}}
+\newcommand{\eos}{\textit{Eos Trans.\ AGU}} 
+\newcommand{\eps}{\textit{Earth~Planets~Space}}
+\newcommand{\epsl}{\textit{Earth~Planet.\ Sci.\ Lett.}}
+\newcommand{\gca}{\textit{Geochim.\ Cosmochim.\ Acta}}
+\newcommand{\geo}{\textit{Geology}}
+\newcommand{\geop}{\textit{Geophysics}}
+\newcommand{\gji}{\textit{Geophys.\ J.\ Int.}}
+\newcommand{\gjras}{\textit{Geophys.\ J.\ R.\ Astr.\ Soc.}}
+\newcommand{\grl}{\textit{Geophys.\ Res.\ Lett.}}
+\newcommand{\gsab}{\textit{Geol.\ Soc.\ Am.\ Bull.}}
+\newcommand{\gs}{\textit{Geophys.\ Surv.}}
+\newcommand{\jgr}{\textit{J.\ Geophys.\ Res.}}
+\newcommand{\jpo}{\textit{J.\ Phys.\ Oceanogr.}} 
+\newcommand{\jseis}{\textit{J.~Seismology}}
+\newcommand{\mnras}{\textit{Mon.\ Not.\ R.\ astr.\ Soc.}} 
+\newcommand{\pag}{\textit{Pure Appl.\ Geophys.}}
+\newcommand{\pepi}{\textit{Phys.\ Earth Planet.\ Inter.}}
+\newcommand{\rg}{\textit{Rev.\ Geophys.}}
+\newcommand{\tecto}{\textit{Tectonophysics}}
+\newcommand{\jpe}{\textit{J. Phys. Earth}}  % Added by DR
+\newcommand{\srl}{\textit{Seism. Res. Let.}}  % Added by DR
+
+\begin{thebibliography}{45}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Ake et~al.}(2005)\textit{Ake, O'{C}onnell, and
+  Block}}]{dr_Ake05a}
+Ake, J., D.~O'{C}onnell, and L.~Block (2005), Deep-injection and closely
+  monitored induced seismicity at {P}aradox {V}alley, {C}olorado,
+  \bssa, \textit{95}(2),
+  664--683.
+
+\bibitem[{\textit{Aki}(1969)}]{dr_Aki69a}
+Aki, K. (1969), Analysis of the seismic coda of local earthquakes as scattered
+  waves, \jgr, \textit{74}(2), 615--631.
+
+\bibitem[{\textit{Aster et~al.}(2005)\textit{Aster, Borchers, and
+  Thurber}}]{dr_Aster05a}
+Aster, R.~C., B.~Borchers, and C.~H. Thurber (2005), \textit{Parameter
+  estimation and inverse problems}, \textit{International Geophysics Series},
+  vol.~90, Elsevier Academic Press, USA.
+
+\bibitem[{\textit{Bond\'ar et~al.}(2004)\textit{Bond\'ar, Myers, Engdahl, and
+  Bergman}}]{dr_Bondar04a}
+Bond\'ar, I., S.~C. Myers, E.~R. Engdahl, and E.~A. Bergman (2004), Epicentre
+  accuracy based on seismic network criteria, \gji, \textit{156}, 483--496.
+
+\bibitem[{\textit{Bowman et~al.}(1990)\textit{Bowman, Gibson, and
+  Jones}}]{dr_Bowman90a}
+Bowman, J.~R., G.~Gibson, and T.~Jones (1990), Aftershocks of the 1988
+  {J}anuary 22 {T}ennant {C}reek, {A}ustralia intraplate earthquakes: evidence
+  for a complex thrust-fault geometry, \gji, \textit{100}, 87--97.
+
+\bibitem[{\textit{Campbell}(2003)}]{dr_Campbell03a}
+Campbell, K.~W. (2003), Strong motion attenuation, in \textit{International
+  Handbook of Earthquake and Engineering Seismology}, vol.~B, edited by
+  W.~H.~K. Lee, H.~Kanamori, P.~C. Jennings, and C.~Kisslinger, chap.~60, pp.
+  1003--1012, Academic Press, London.
+
+\bibitem[{\textit{Curtis and Snieder}(2002)}]{dr_Curtis02a}
+Curtis, A., and R.~Snieder (2002), Probing the {E}arth's interior with seismic
+  tomography, in \textit{International Handbook of Earthquake Engineering
+  Seismology}, vol.~{A}, edited by W.~H. Lee, H.~Kanamori, P.~C. Jennings, and
+  C.~Kisslinger, chap.~52, pp. 861--874, Academic Press, London.
+
+\bibitem[{\textit{Deichmann and Garcia-{F}ernandez}(1992)}]{dr_Deichmann92a}
+Deichmann, N., and M.~Garcia-{F}ernandez (1992), Rupture geometry from
+  high-precision relative hypocentre locations of microearthquake clusters,
+  \gji, \textit{110}, 501--517.
+
+\bibitem[{\textit{Douglas}(1967)}]{dr_Douglas67a}
+Douglas, A. (1967), Joint epicentre determination, \textit{Nature},
+  \textit{215}, 47--48.
+
+\bibitem[{\textit{Frankel et~al.}(2000)\textit{Frankel, Mueller, Barnhard,
+  Leyendecker, Wesson, Harmsen, Klein, Perkins, Dickman, Hanson, and
+  Hopper}}]{dr_Frankel00a}
+Frankel, A.~D., C.~S. Mueller, T.~P. Barnhard, E.~V. Leyendecker, R.~L. Wesson,
+  S.~C. Harmsen, F.~W. Klein, D.~M. Perkins, N.~C. Dickman, S.~L. Hanson, and
+  M.~G. Hopper (2000), {USGS} {N}ational seismic hazard maps,
+  \textit{Earthquake Spectra}, \textit{16}(1), 1--19.
+
+\bibitem[{\textit{Fr\`emont and Malone}(1987)}]{dr_Fremont87a}
+Fr\`emont, M.-J., and S.~D. Malone (1987), High precision relative locations of
+  earthquakes at {M}ount {St.} {H}elens, \jgr, \textit{92}(B10), 10,223--10,236.
+
+\bibitem[{\textit{Got et~al.}(1994)\textit{Got, Fr\`echet, and
+  Klein}}]{dr_Got94a}
+Got, J.-L., J.~Fr\`echet, and F.~W. Klein (1994), Deep fault plane geometry
+  inferred from multiplet relative relocation beneath the south flank of
+  {K}ilauea, \jgr, \textit{99}(B8),
+  15,375--15,386.
+
+\bibitem[{\textit{Gutenberg}(1945)}]{dr_Gutenberg45a}
+Gutenberg, B. (1945), Amplitudes of surface waves and magnitudes of shallow
+  earthquakes, \bssa,
+  \textit{35}, 3--12.
+
+\bibitem[{\textit{Ito}(1985)}]{dr_Ito85a}
+Ito, A. (1985), High resolution relative hypocenters of similar earthquakes by
+  cross-spectral analysis method, \jpe,
+  \textit{33}, 279--294.
+
+\bibitem[{\textit{Kennett et~al.}(1995)\textit{Kennett, Engdahl, and
+  Buland}}]{dr_Kennett95a}
+Kennett, B. L.~N., E.~R. Engdahl, and R.~Buland (1995), Constraints on seismic
+  velocities in the {E}arth from traveltimes, \gji, \textit{122}, 108--124.
+
+\bibitem[{\textit{Kennett et~al.}(2004)\textit{Kennett, Fishwick, and
+  Heintz}}]{dr_Kennett04a}
+Kennett, B. L.~N., S.~Fishwick, and M.~Heintz (2004), Lithospheric structure in
+  the {A}ustralian region - a synthesis of surface wave and body wave studies,
+  \textit{Exploration Geophysics}, \textit{35}, 242--250.
+
+\bibitem[{\textit{Lees}(1998)}]{dr_Lees98a}
+Lees, J.~M. (1998), Multiplet analysis at {C}oso {G}eothermal, \bssa, \textit{88}(5), 1127--1143.
+
+\bibitem[{\textit{Leonard}(2002)}]{dr_Leonard02a}
+Leonard, M. (2002), The {B}urakin {WA} earthquake sequence {S}ept 2000 --
+  {J}une 2002, in \textit{Total Risk Management in the Privatised Era},
+  \textit{Australian Earthquake Engineering Society Conference}, vol. 10th,
+  edited by M.~Griffith, D.~Love, P.~Mc{B}ean, A.~Mc{D}ougall, and B.~Butler,
+  pp. 22(1)--22(5), AEES, University of Adelaide.
+
+\bibitem[{\textit{Nadeau and Mc{E}villy}(1997)}]{dr_Nadeau97a}
+Nadeau, R.~M., and T.~V. Mc{E}villy (1997), Seismological studies at
+  {P}arkfield {V}: {C}haracteristic microearthquake sequences as fault--zone
+  drilling targets, \bssa,
+  \textit{87}(6), 1463--1472.
+
+\bibitem[{\textit{Pavlis}(1992)}]{dr_Pavlis92a}
+Pavlis, G.~L. (1992), Appraising relative earthquake location errors,
+  \bssa, \textit{82}(2),
+  836--859.
+
+\bibitem[{\textit{Press et~al.}(1987)\textit{Press, Flannery, Teukolsky, and
+  Vetterling}}]{dr_Press87a}
+Press, W.~H., B.~P. Flannery, S.~A. Teukolsky, and W.~T. Vetterling (1987),
+  \textit{Numerical Recipes: The Art of Scientific Computing}, Cambridge
+  University Press, USA.
+
+\bibitem[{\textit{Richter}(1935)}]{dr_Richter35a}
+Richter, C.~F. (1935), An instrumental earthquake magnitude scale,
+  \bssa, \textit{25}(1),
+  1--32.
+
+\bibitem[{\textit{Robinson et~al.}(2006)\textit{Robinson, Dhu, and
+  Schneider}}]{dr_Robinson06b}
+Robinson, D., T.~Dhu, and J.~Schneider (2006), Practical probabilistic seismic
+  risk analysis: {A} demonstration of capability, \srl, \textit{77}(4), 452--458.
+
+\bibitem[{\textit{Robinson et~al.}(2007{\natexlab{a}})\textit{Robinson,
+  Sambridge, and Snieder}}]{dr_Robinson07b}
+Robinson, D.~J., M.~Sambridge, and R.~Snieder (2007{\natexlab{a}}), Constraints
+  on coda wave interferometry estimates of source separation: The 2.5d acoustic
+  case, \textit{Exploration Geophysics}, \textit{38}(3), 189--199.
+
+\bibitem[{\textit{Robinson et~al.}(2007{\natexlab{b}})\textit{Robinson,
+  Snieder, and Sambridge}}]{dr_Robinson07c}
+Robinson, D.~J., R.~Snieder, and M.~Sambridge (2007{\natexlab{b}}), Using coda
+  wave interferometry for estimating the variation in source mechanism between
+  double couple events, \jgr, \textit{112},
+  b12302, doi:10.1029/2007JB004925.
+
+\bibitem[{\textit{Robinson et~al.}(2011)\textit{Robinson, Sambridge, and
+  Snieder}}]{dr_Robinson11a}
+Robinson, D.~J., M.~Sambridge, and R.~Snieder (2011), A probabilistic approach
+  for estimating the separation between a pair of earthquakes directly from
+  their coda waves, \jgr, \textit{B04309},
+  1--17.
+
+\bibitem[{\textit{Rubin}(2002)}]{dr_Rubin02a}
+Rubin, A.~M. (2002), Aftershocks of microearthquakes as probes of the mechanics
+  of rupture, \jgr, \textit{107}(B7,2142),
+  10.1029/2001JB000,496.
+
+\bibitem[{\textit{Rubin et~al.}(1999)\textit{Rubin, Gillard, and
+  Got}}]{dr_Rubin99a}
+Rubin, A.~M., D.~Gillard, and J.-L. Got (1999), Streaks of microearthquakes
+  along creeping faults, \textit{Nature}, \textit{400}, 635--641.
+
+\bibitem[{\textit{Schaff et~al.}(2002)\textit{Schaff, Bokelmann, and
+  Beroza}}]{dr_Schaff02a}
+Schaff, D.~P., G.~H.~R. Bokelmann, and G.~C. Beroza (2002), High-resolution
+  image of {C}alaveras {F}ault seismicity, \jgr, \textit{107}(B9), 2186, doi:10.1029/2001JB000,633.
+
+\bibitem[{\textit{Shearer et~al.}(2005)\textit{Shearer, Hauksson, and
+  Lin}}]{dr_Shearer05a}
+Shearer, P., E.~Hauksson, and G.~Lin (2005), Southern {C}alifornia hypocenter
+  relocation with waveform cross-correlation, {P}art 2: {R}esults using
+  source-specific station terms and cluster analysis, \bssa, \textit{95}(3), 904--915.
+  doi:10.1785/0120040,168.
+
+\bibitem[{\textit{Shearer}(1999)}]{dr_Shearer99a}
+Shearer, P.~M. (1999), \textit{Introduction to Seismology}, Cambridge
+  University Press, USA, 260pp.
+
+\bibitem[{\textit{Sipkin}(2002)}]{dr_Sipkin02a}
+Sipkin, S.~A. (2002), {USGS} earthquake moment tensor catalog, in
+  \textit{International Handbook of Earthquake Engineering Seismology},
+  vol.~{A}, edited by W.~H. Lee, H.~Kanamori, P.~C. Jennings, and
+  C.~Kisslinger, chap.~50, pp. 823--825, Academic Press, London.
+
+\bibitem[{\textit{Snieder}(1999)}]{dr_Snieder99a}
+Snieder, R. (1999), Imaging and averaging in complex media, in \textit{Diffuse
+  waves in complex media}, \textit{NATO Science Series C}, vol. 531, edited by
+  J.~P. Fouque, pp. 405--454, Kluwer Academic Publishers.
+
+\bibitem[{\textit{Snieder}(2006)}]{dr_Snieder06a}
+Snieder, R. (2006), The theory of coda wave interferometry, \pag, 
+\textit{163}, 455--473.
+
+\bibitem[{\textit{Snieder and Vrijlandt}(2005)}]{dr_Snieder05a}
+Snieder, R., and M.~Vrijlandt (2005), Constraining the source separation with
+  coda wave interferometry: Theory and application to earthquake doublets in
+  the {H}ayward {F}ault, {C}alifornia, \jgr, \textit{110}(B04301), doi:10.1029/2004JB003317.
+
+\bibitem[{\textit{Spencer and Gubbins}(1980)}]{dr_Spencer80a}
+Spencer, C., and D.~Gubbins (1980), Travel-time inversion for simultaneous
+  earthquake location and velocity structure determination in laterally varying
+  media, \gjras,
+  \textit{63}, 95--116.
+
+\bibitem[{\textit{Stirling et~al.}(2002)\textit{Stirling, Mc{V}erry, and
+  Berrryman}}]{dr_Stirling02a}
+Stirling, M.~W., G.~H. Mc{V}erry, and K.~R. Berrryman (2002), A new seismic
+  hazard model for {N}ew {Z}ealand, \bssa, \textit{92}(5), 1878--1903.
+
+\bibitem[{\textit{Toro et~al.}(1997)\textit{Toro, Abrahamson, and
+  Schneider}}]{dr_Toro97a}
+Toro, G.~R., N.~A. Abrahamson, and J.~F. Schneider (1997), Model of strong
+  ground motions from earthquakes in {C}entral and {E}astern {N}orth {A}merica:
+  {B}est estimates and uncertainties, \srl,
+  \textit{68}(1), 41--57.
+
+\bibitem[{\textit{Utsu et~al.}(1995)\textit{Utsu, Ogata, and
+  Matsu'ura}}]{dr_Utsu95a}
+Utsu, T., Y.~Ogata, and R.~S. Matsu'ura (1995), The {C}entenary of the {O}mori
+  {F}ormula for a decay law of aftershock activity, \jpe, \textit{43}, 1--33.
+
+\bibitem[{\textit{Van{D}ecar and Snieder}(1994)}]{dr_VanDecar94a}
+Van{D}ecar, J.~C., and R.~Snieder (1994), Obtaining smooth solutions to large
+  linear inverse problems, \textit{Geophysics}, \textit{59}, 818--829.
+
+\bibitem[{\textit{Waldhauser}(2001)}]{dr_Waldhauser01a}
+Waldhauser, F. (2001), hypo{DD} -- a program to compute double-difference
+  hypocenter locations (hypo{DD} version 1.0 - 03/2001), \textit{Open file
+  report 01-113}, United States Geological Survey, Menlo Park, California.
+
+\bibitem[{\textit{Waldhauser and Ellsworth}(2000)}]{dr_Waldhauser00a}
+Waldhauser, F., and W.~L. Ellsworth (2000), A double--difference earthquake
+  location algorithm: method and application to the northern {H}ayward {F}ault,
+  {C}alifornia, \bssa,
+  \textit{90}(6), 1353--1368.
+
+\bibitem[{\textit{Waldhauser and Ellsworth}(2002)}]{dr_Waldhauser02a}
+Waldhauser, F., and W.~L. Ellsworth (2002), Fault structure and mechanics of
+  the {H}ayward {F}ault, {C}alifornia, from double--difference earthquake
+  locations, \jgr, \textit{107}(B3),
+  10.1029/2000JB000,084.
+
+\bibitem[{\textit{Waldhauser and Schaff}(2008)}]{dr_Waldhauser08a}
+Waldhauser, F., and D.~P. Schaff (2008), Large-scale relocation of two decades
+  of {N}orthern {C}alifornia seismicity using cross-correlation and
+  double-difference methods, \jgr,
+  \textit{133}, {B08311, doi10.1029/2007JB005479}.
+
+\bibitem[{\textit{Waldhauser et~al.}(1999)\textit{Waldhauser, Ellsworth, and
+  Cole}}]{dr_Waldhauser99a}
+Waldhauser, F., W.~L. Ellsworth, and A.~Cole (1999), Slip-parallel lineations
+  on the {N}orthern {H}ayward {F}ault, {C}alifornia, \grl, \textit{26}(23), 3525--3528.
+
+\end{thebibliography}
+
+
+
+
+
+\vspace{2em}
+\begin{centering}
+\section*{Authors' Affiliations, Adresses}
+\end{centering}
+
+\begin{tabular}{lp{0.6\textwidth}}
+ & \\
+David Robinson: & Earth Monitoring and Hazard Group \\
+ &  Geoscience Australia \\
+ & GPO Box \emph{383} \\
+ & Canberra ACT \emph{2601} Australia \\
+ & E-mail: david.robinson@ga.gov.au\\
+ & \\
+ & Also at: Research School of Earth Sciences \\
+ & Australian National University \\ 
+ & Canberra ACT \emph{0200}, Australia \\
+ & E-mail: david.robinson@anu.edu.au \\
+ & \\
+ Malcolm Sambridge: & Research School of Earth Sciences \\
+ & Australian National University \\ 
+ & Canberra ACT \emph{0200}, Australia \\
+  & \\
+Roel Snieder: & Center for Wave Phenomena and Department of Geophysics \\
+ & Colorado School of Mines \\
+ & Golden CO \emph{80401-1887}, USA \\
+ & \\
+Juerg Hauser: & CSIRO Earth Science and Resource Engineering \\
+ & Dick Perry Av \\
+ & Kensington WA \emph{6151} Australia
+\end{tabular}
 
 \clearpage
 
+%\begin{centering}
+%\section*{Tables}
+%\end{centering}
 %%=======================================================================================
 % Table 1
 
@@ -1191,32 +1573,19 @@ Stations  & \\
 \end{tabular}
 \end{table}
 
-\begin{table}
-\caption{Coefficients for equations. (\ref{eq:mu1}) and
-(\ref{eq:sigma1}).} \label{tab-const4-mu1-sigma1}
-\begin{tabular}{|c|c|}
-\hline
-$\mu_1(\widetilde{\delta}_t)$ & $\sigma_1(\widetilde{\delta}_t)$ \\
-\hline
-$a1 = 0.4661$ & $a1 = 0.1441$\\
-$a2 = 48.9697$ & $a2 = 101.0376$\\
-$a3 = 2.4693$ & $a3 = 120.3864$\\
-$a4 = 4.2467$ & $a4 = 2.8430$\\
-$a5 = 1.1619$ & $a5 = 6.0823$ \\
-     & $c = 0.017$ \\
-\hline
-\end{tabular}
-\end{table}
 
 
 \clearpage
 
+%\begin{centering}
+%\section*{Figure Captions}
+%\end{centering} 
 %%=======================================================================================
 
 %Figure 1
 \begin{figure}
 %\includegraphics[width = 20pc]{diags/locs_2D_50eq_1.eps}
-\includegraphics[width = 20pc]{Figure1_c.eps}
+%\includegraphics[width = 20pc]{Figure1_c.eps}
 \caption{Example 1 - Synthetic relocation of 50 earthquakes in 2D
 using all constraints with noise $\bar{\sigma}_N=0.02$. Actual and
 optimization event locations are shown in triangles and circles,
@@ -1228,7 +1597,7 @@ respectively.} \label{fig-2D50eq-relocation_eg1}
 %Figure 2
 \begin{figure}
 %\includegraphics[width = 20pc]{diags/locs_2D_50eq_3.eps}
-\includegraphics[width = 20pc]{Figure2_c.eps}
+%\includegraphics[width = 20pc]{Figure2_c.eps}
 \caption{Example 2 - Synthetic relocation of 50 earthquakes in 2D
 using all constraints with noise $\bar{\sigma}_N= 2
 \epsilon(\delta_t)$.
@@ -1243,7 +1612,7 @@ are shown in triangles and circles, respectively.}
 \begin{figure}
 %\noindent\includegraphics[width = 20pc]{../../thesis_version2/diags/eq_location_optimisation/synth2Dmulti/ressummary_2Dsynth50eq.eps}
 %\noindent\includegraphics[width=20pc]{diags/synth2Dmulti/ressummary_2Dsynth50eq.eps}
-\noindent\includegraphics[width=20pc]{Figure3_c.eps}
+%\noindent\includegraphics[width=20pc]{Figure3_c.eps}
 \caption{Example 3 - Statistical measures of error in the
  solutions for the 2D synthetic cases when all and best
 optimization results are considered. The statistics $\Delta_{max}$
@@ -1259,7 +1628,7 @@ branches required to link the 2450 pairs.}
 \begin{figure}
 %\noindent\includegraphics[width = 20pc]{../../thesis_version2/diags/eq_location_optimisation/synth3Dmulti/ressummary_3Dsynth50eq.eps}
 %\noindent\includegraphics[width=20pc]{diags/synth3Dmulti/ressummary_3Dsynth50eq.eps}
-\noindent\includegraphics[width=20pc]{Figure4_c.eps}
+%\noindent\includegraphics[width=20pc]{Figure4_c.eps}
 \caption{Example 4 - Statistical measures of error in the
 optimization solutions for the 3D synthetic cases when all (gray)
 and best (black) results are considered. The statistics
@@ -1275,7 +1644,8 @@ best optimization result(s) are considered, respectively.}
 % Figure 5
 \begin{figure}
 %\noindent\includegraphics[width=20pc]{diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps}
-\noindent\includegraphics[width=20pc]{Figure5.eps} \caption{Map
+%\noindent\includegraphics[width=20pc]{Figure5.eps} 
+\caption{Map
 showing location of the Calaveras cluster (white star) and 805
 seismic stations (black triangles).}
 \label{fig:-eqopti-California-Calaveras}
@@ -1284,20 +1654,10 @@ seismic stations (black triangles).}
 %%=======================================================================================
 % Figure 6
 
-% This is the original figure using HypoDD with LSQR
-%\begin{figure*}
-%\includegraphics{diags/CalaverasLoc1.eps}
-%\caption{Comparison of earthquake hypocenters using three different methods: catalogue location (column 1), hypoDD with all
-%308 events (column 2) and CWI example 1 (column 3).
-%Note that in the case of the CWI locations we consider only the 68 earthquakes in red, the
-%blue events are shown for the purpose of orientation only.}
-%\label{fig-69Calaverasevents_eg1}
-%\end{figure*}
-
 % Now we have the SVD version
-\begin{figure*}
+\begin{figure}
 %\includegraphics{diags/CalaverasLoc1_hypoDD_SVD.eps}
-\includegraphics{Figure6_bw.eps}
+%\includegraphics{Figure6_bw.eps}
 \caption{Example 5 - Comparison of relative earthquake locations
 using three different methods: catalogue location (column 1), CWI
 (column 2) and hypoDD (column 3). Note that in the case of the
@@ -1305,13 +1665,14 @@ hypoDD and CWI inversions we consider only the 68 earthquakes in
 black, the gray catalogue locations for the remaining 240 (308-68)
 earthquakes are shown for the purpose of orientation only.}
 \label{fig-69Calaverasevents_eg1}
-\end{figure*}
+\end{figure}
 %%=======================================================================================
 
 % Figure 7
 \begin{figure}
 %\noindent\includegraphics[width=20pc]{diags/CalaverasMap/matlab/Calaveras_substationmap}
-\noindent\includegraphics[width=20pc]{Figure7.eps} \caption{Location
+%\noindent\includegraphics[width=20pc]{Figure7.eps} 
+\caption{Location
 of the 10 stations (triangles) used to relocate the Calaveras events
 in Example 6 to 8. Stations are removed one at a time according to
 the order in Table \ref{tab:Calaveras-stationremoval} and the events
@@ -1322,48 +1683,32 @@ relocated. The events are indicated with black circles.}
 %%=======================================================================================
 
 %Figure 8
-\begin{figure*}
+\begin{figure}
 %\includegraphics[angle=90,height = 50pc]{diags/CalaverasLoc2.eps}
-\includegraphics[angle=90,height = 50pc]{Figure8_bw.eps}
-\caption{Example 6 - CWI relative locations with reduced stations.}
+%\includegraphics[angle=90,height = 50pc]{Figure8_bw.eps}
+\caption{Example 6 - CWI relative locations with reduced stations. \hspace{20em}}
 \label{fig-CWIreducesstats}
-\end{figure*}
+\end{figure}
 
 %%=========================================================================
 % Figure 9
 
-% this is the original version using hypoDD with LSQ
-%\begin{figure*}
-%\includegraphics[angle=90,height = 50pc]{diags/CalaverasLoc3.eps}
-%\caption{....}
-%\label{fig-HYPODDreducesstats}
-%\end{figure*}
-
 % This is the version using hypoDD with SVD
-\begin{figure*}
+\begin{figure}
 %\includegraphics[height = 25pc]{diags/CalaverasLoc3_hypoDD_SVD.eps}
-\includegraphics[height = 25pc]{Figure9_bw.eps}
+%\includegraphics[height = 25pc]{Figure9_bw.eps}
 \caption{Example 6 - HypoDD (SVD) relative locations with reduced
-stations.} \label{fig-HYPODDreducesstats}
-\end{figure*}
+stations. \hspace{20em} }
+\label{fig-HYPODDreducesstats}
+\end{figure}
 %%=========================================================================
 
 %Figure 10
 
-% This is the original version using hypoDD with LSQ
-%\begin{figure}
-%\noindent\includegraphics[width = 20pc]{diags/CalaverasLoc4.eps}
-%\caption{Statistics on coordinate differences for reduced station inversions. Differences
-%are computed between the inversion results (CWI and hypoDD) and the complete hypoDD
-%locations for all 308 events. The top subplot illustrates the number of constrainable
-%events in the CWI and hypoDD inversions as a function of the stations considered.}
-%\label{fig-statremoval_summarystats}
-%\end{figure}
-
 % This is the version using hypoDD with SVD
 \begin{figure}
 %\noindent\includegraphics[width=20pc]{diags/CalaverasLoc4_hypoDD_SVD.eps}
-\noindent\includegraphics[width=20pc]{Figure10_c.eps}
+%\noindent\includegraphics[width=20pc]{Figure10_c.eps}
 \caption{Example 6 - Number of constrainable events $nE$ in the CWI
 and hypoDD inversions as a function of the stations considered
 (top). Mean (middle) and maximum (bottom) of the difference computed
@@ -1376,21 +1721,10 @@ the complete hypoDD locations for all 308 events. }
 
 % Figure 11
 
-% This is the original version using hypoDD with LSQ
-% This is only makes sense for LSQR so we remove it from this manuscript
-%\begin{figure*}
-%\noindent\includegraphics{diags/CalaverasLoc5.eps}
-%\caption{Locations of the 68 Calaveras earthquakes combining all available coda wave and travel time constraints with three different
-%levels of uncertainty on the travel time PDFs. Column 1 sets $\sigma_x = \sigma_y = 19.5$\,m and $\sigma_z = 15$\,m
-%\citep[after]{dr_Waldhauser08a}, Column 2 uses $\sigma_x = \sigma_y = 3 \times19.5$\,m and $\sigma_z = 3\times15$\,m and
-%column 3 considers $\sigma_x = \sigma_y = 152$\,m and $\sigma_z = 232$\,m \citep[after]{dr_Shearer97a}. }
-%\label{fig-68Calaverasevents_ttandcoda1}
-%\end{figure*}
-
 % This is the version using hypoDD with SVD
 \begin{figure}
 %\includegraphics{diags/CalaverasLoc5_hypoDD_SVD.eps}
-\includegraphics{Figure11_bw.eps}
+%\includegraphics{Figure11_bw.eps}
 \caption{Example 7 - Combined HypoDD (SVD) and CWI relative
 locations using data form all stations (left) and 5 stations
 (right).} \label{fig-68Calaverasevents_ttandcoda1}
@@ -1403,7 +1737,7 @@ locations using data form all stations (left) and 5 stations
 
 \begin{figure}
 %\noindent\includegraphics[width = 20pc]{diags/OmoriFigure.eps}
-\noindent\includegraphics[width = 20pc]{Figure12_c.eps}
+%\noindent\includegraphics[width = 20pc]{Figure12_c.eps}
 \caption{Cumulative number of aftershocks for the
 Hokkaido-Nansei-Oki, Japan $M_s=7.8$ earthquake of 12 July 1993
 using equation (\ref{eq:CumOmori}). The leftmost red, middle blue
@@ -1418,20 +1752,10 @@ in the 1000 days following the mainshock. } \label{fig:Omorifigure}
 
 % Figure 13
 
-% This is the original version using hypoDD with LSQ
-%\begin{figure}
-%\noindent\includegraphics{diags/CalaverasLoc6.eps}
-%\caption{Left - Combined travel time and coda wave inversions using travel time constraints on
-%22 (or 32\%) of the events and coda waves from station CCO only. All travel time based uncertainties
-%are assigned $\sigma_x = \sigma_y = 3 \times19.5$\,m and $\sigma_z = 3\times15$\,m. Right - travel time
-%relocation only (i.e. no CWI) using ........}
-%\label{fig-68Calaverasevents_ttsubsetandcoda1}
-%\end{figure}
-
 % This is the version using hypoDD with SVD
 \begin{figure}
 %\includegraphics{diags/CalaverasLoc6_hypoDD_SVD.eps}
-\includegraphics{Figure13_bw.eps}
+%\includegraphics{Figure13_bw.eps}
 \caption{Example 8 - Mimicking the deployment of a temporary network
 by ignoring data from all but station CCO for 50\% (or 34) of the
 events. Relative locations are shown for the combined CWI and travel
@@ -1444,15 +1768,110 @@ consistent with Figure \ref{fig-69Calaverasevents_eg1}. }
 %%=========================================================================
 
 
+\clearpage
+%\begin{centering}
+%\section*{Figure Captions}
+%\end{centering} 
+%%=======================================================================================
+
+%Figure 1
+\noindent\includegraphics[width = 20pc]{Figure1_c.eps} \\
+\textbf{Figure 1:} 
+
+%%=======================================================================================
+
+%Figure 2
+\clearpage
+\noindent\includegraphics[width = 20pc]{Figure2_c.eps} \\
+\textbf{Figure 2:} 
+
+%%=======================================================================================
+
+% Figure 3
+\clearpage
+\noindent\includegraphics[width=20pc]{Figure3_c.eps} \\
+\textbf{Figure 3:} 
+
+%%=======================================================================================
+
+% Figure 4
+\clearpage
+\noindent\includegraphics[width=20pc]{Figure4_c.eps} \\
+\textbf{Figure 4:} 
+
+%%=======================================================================================
+
+% Figure 5
+\clearpage
+\noindent\includegraphics[width=20pc]{Figure5.eps} \\
+\textbf{Figure 5:} 
+
+%%=======================================================================================
+% Figure 6
+\clearpage
+\includegraphics{Figure6_bw.eps} \\
+\textbf{Figure 6:} 
+
+%%=======================================================================================
+
+% Figure 7
+\clearpage
+\noindent\includegraphics[width=20pc]{Figure7.eps} \\
+\textbf{Figure 7:} 
+
+%%=======================================================================================
+
+%Figure 8
+\textbf{Figure 8:} \noindent\includegraphics[angle=90,height = 50pc]{Figure8_bw.eps} \\
+%\noindent\includegraphics[width= 50pc]{Figure8_bw.eps} \\
+
+%%=========================================================================
+% Figure 9
+\noindent\includegraphics[height = 25pc]{Figure9_bw.eps} \\
+\textbf{Figure 9:} 
+
+%%=========================================================================
+
+%Figure 10
+\clearpage
+\noindent\includegraphics[width=20pc]{Figure10_c.eps} \\
+\textbf{Figure 10:} 
+
+%%=========================================================================
+
+% Figure 11
+\clearpage
+\includegraphics{Figure11_bw.eps} \\
+\textbf{Figure 11:} 
+
+%%=========================================================================
+
+% Figure 12
+\clearpage
+\noindent\includegraphics[width = 20pc]{Figure12_c.eps} \\
+\textbf{Figure 12:} 
+
+%%=========================================================================
+
+% Figure 13
+\clearpage
+\includegraphics{Figure13_bw.eps} \\
+\textbf{Figure 13:} 
+
+
 \appendix
 \clearpage
 
-\section{The likelihood}
+\vspace{2em}
+\begin{centering}
+\section*{The Likelihood}
+\end{centering}
+
 \label{sec-Appendix-noisylikelihood}
 
 The likelihood $P(\widetilde{\delta}_{CWIN}|\widetilde{\delta}_t)$
 used in equation (\ref{eq:-bayesian-noisyform}) is given by
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \begin{array}{l}
 \label{eq-likelihood-int}
 P(\widetilde{\delta}_{CWIN}|\widetilde{\delta}_t)  =
@@ -1462,42 +1881,42 @@ B(\widetilde{\delta}_t,\widetilde{\delta}_{CWI})
 D(\widetilde{\delta}_{CWI},\bar{\sigma}_N,\bar{\mu}_N )
 d\widetilde{\delta}_{CWI}
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 where $\widetilde{\delta}_{CWI}$ is an estimate of CWI separation in the absence
 of noise,
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:Adefn}
 A(\widetilde{\delta}_t) = \frac{1}{(1-\Phi_{\mu_1,\sigma_1}(0))\sigma_1\sqrt{2\pi} },
-\end{equation}
-\begin{equation}
+\end{equation} \end{linenomath*}
+\begin{linenomath*} \begin{equation}
 B(\widetilde{\delta}_t,\widetilde{\delta}_{CWI})=e^{  \frac{-(\widetilde{\delta}_{CWI}-\mu_1)^2}{2\sigma_1^2} },
-\end{equation}
-\begin{equation}
+\end{equation} \end{linenomath*}
+\begin{linenomath*} \begin{equation}
 \label{eq:Cdefn}
 C(\bar{\mu}_N, \bar{\sigma}_N) =  \frac{1}{(1-\Phi_{\bar{\mu}_N,\bar{\sigma}_N}(0))\sigma_N\sqrt{2\pi}},
-\end{equation}
-\begin{equation}
+\end{equation} \end{linenomath*}
+\begin{linenomath*} \begin{equation}
 D(\widetilde{\delta}_{CWI},\bar{\sigma}_N,\bar{\mu}_N )=e^{  \frac{-(\widetilde{\delta}_{CWI}-\bar{\mu}_N)^2}{2 \bar{\sigma}_N ^2} }
-\end{equation}
+\end{equation} \end{linenomath*}
 and $\Phi_{\mu,\sigma}(x)$ is the cumulative Gaussian distribution function
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq-cummulative-Gaussian}
 \Phi_{\mu,\sigma}(x) = \frac{1}{\sigma \sqrt{2 \pi}}
 \int_{-\infty}^x e^{  \frac{-(s-\mu)^2}{2\sigma^2}  } ds
-\end{equation}
+\end{equation} \end{linenomath*}
 \citep{dr_Robinson11a}. The parameters $\mu_1$ and $\sigma_1$ used
 in equation (\ref{eq:Adefn}) are defined by the expressions
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:mu1}
 \mu_1(\widetilde{\delta}_t) = a_1\frac{a_2 \widetilde{\delta}_t^{a_4}+a_3
 \widetilde{\delta}_t^{a_5}}{a_2 \widetilde{\delta}_t^{a_4}+a_3 \widetilde{\delta_t}^{a_5}+1}
-\end{equation}
+\end{equation} \end{linenomath*}
 and
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:sigma1}
 \sigma_1(\widetilde{\delta}_t) = c + a_1\frac{a_2 \widetilde{\delta}_t^{a_4}+
 a_3 \widetilde{\delta}_t^{a_5}}{a_2 \widetilde{\delta}_t^{a_4}+a_3 \widetilde{\delta}_t^{a_5}+1}
-\end{equation}
+\end{equation} \end{linenomath*}
 with coefficients $a_1$ to $a_5$ and $c$ defined in Table
 \ref{tab-const4-mu1-sigma1}. The parameters $\bar{\mu}_N$ and
 $\bar{\sigma}_N$ used in equation (\ref{eq:Cdefn}) are obtained by
@@ -1505,21 +1924,47 @@ finding the values which minimize the difference in a least squares
 sense between the noisy CWI estimates $\widetilde{\delta}_{CWIN}$
 computed from the waveforms and the positively bounded Gaussian
 density function
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq-likelihood-noisydata-pdf-orig}
 \begin{array}{l}
 P(\widetilde{\delta}_{CWIN}|\widetilde{\delta}_t,\widetilde{\delta}_{CWI}) \\
 \hspace{5em} = \frac{1}{\left(1-\Phi_{\bar{\mu}_N,\bar{\sigma}_N}(0)\right)\bar{\sigma}_N\sqrt{2\pi}}
 e^{  \frac{-(\widetilde{\delta}_{CWIN}-\bar{\mu}_N)^2}{2\bar{\sigma}_N^2}  }
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 with $\widetilde{\delta}_{CWIN} \geq 0$.
 
-\section{Derivatives}
+%=======================================================
+% Appendix Table
+
+\begin{table}
+\caption{Coefficients for equations (\ref{eq:mu1}) and
+(\ref{eq:sigma1}).} \label{tab-const4-mu1-sigma1}
+\begin{tabular}{|c|c|}
+\hline
+$\mu_1(\widetilde{\delta}_t)$ & $\sigma_1(\widetilde{\delta}_t)$ \\
+\hline
+$a1 = 0.4661$ & $a1 = 0.1441$\\
+$a2 = 48.9697$ & $a2 = 101.0376$\\
+$a3 = 2.4693$ & $a3 = 120.3864$\\
+$a4 = 4.2467$ & $a4 = 2.8430$\\
+$a5 = 1.1619$ & $a5 = 6.0823$ \\
+     & $c = 0.017$ \\
+\hline
+\end{tabular}
+\end{table}
+
+%=======================================================
+
+\vspace{2em}
+\begin{centering}
+\section*{Derivatives}
+\end{centering}
+
 \label{sec-Appendix-derivatives_ofL}
 
 The derivatives of $L(\mathbf{e}_1,\mathbf{e}_2,...,\mathbf{e}_N)$
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \frac{\partial L}{\partial \hat{x}_1},
 \frac{\partial L}{\partial \hat{y}_1},
  \frac{\partial L}{\partial \hat{z}_1},
@@ -1530,7 +1975,7 @@ The derivatives of $L(\mathbf{e}_1,\mathbf{e}_2,...,\mathbf{e}_N)$
 \frac{\partial L}{\partial \hat{x}_N},
 \frac{\partial L}{\partial \hat{y}_N},
 \frac{\partial L}{\partial \hat{z}_N}
-\end{equation}
+\end{equation} \end{linenomath*}
 are required by the Polak-Ribiere algorithm. These are used to guide
 the optimization procedure towards the values of
 $(\mathbf{e}_1,\mathbf{e}_2,...,\mathbf{e}_N)$ which minimize $L$.
@@ -1540,13 +1985,13 @@ gradually. We start with an expression for $\delta_t$, the
 wavelength normalized separation between two events $\mathbf{e}_p=
 (\hat{x}_p,\hat{y}_p,\hat{z}_p)$ and $\mathbf{e}_q =
 (\hat{x}_q,\hat{y}_q,\hat{z}_q)$
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:deltat4chapt6deriv}
 \delta_t = \frac{f_{dom}}{v_s}\sqrt{(\hat{x}_p-\hat{x}_q)^2 + (\hat{y}_p-\hat{y}_q)^2 +  (\hat{z}_p-\hat{z}_q)^2},
-\end{equation}
+\end{equation} \end{linenomath*}
 where $f_{dom}$ is the dominant frequency of the waveforms and $v_s$ is the velocity between the events. Expression
 \ref{eq:deltat4chapt6deriv} has derivatives
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq-partial-xyz1}
 \begin{array}{l}
 \frac{\partial \widetilde{\delta}_t}{\partial \hat{x}_p} = \frac{f_{dom}^2 (\hat{x}_p-\hat{x}_q)}{v_s^2 \widetilde{\delta}_t},
@@ -1556,80 +2001,80 @@ where $f_{dom}$ is the dominant frequency of the waveforms and $v_s$ is the velo
 \frac{\partial \widetilde{\delta}_t}{\partial \hat{y}_q} = \frac{f_{dom}^2 (\hat{y}_q-\hat{y}_p)}{v_s^2 \widetilde{\delta}_t},
 \frac{\partial \widetilde{\delta}_t}{\partial \hat{z}_q} = \frac{f_{dom}^2 (\hat{z}_q-\hat{z}_p)}{v_s^2 \widetilde{\delta}_t}.
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 For brevity we focus the following derivation in terms of $\hat{x}_p$. The remaining terms for $\mathbf{e}_p$
 (i.e. $\hat{y}_p$ and $\hat{z}_p$) can be computed
 by following the same procedure. The derivatives for $\mathbf{e}_q$ can be attained by exploiting the symmetry
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq:ep2eq-deriv-symmetry}
 \frac{\partial \widetilde{\delta}_t}{\partial \hat{x}_q} = - \frac{\partial \widetilde{\delta}_t}{\partial \hat{x}_p}.
-\end{equation}
+\end{equation} \end{linenomath*}
 
 The chain rule gives
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \frac{\partial \mu_1}{\partial \hat{x}_p} = \frac{\partial \mu_1}{\partial \widetilde{\delta}_t} \frac{\partial \widetilde{\delta}_t}{\partial \hat{x}_p}
-\end{equation}
+\end{equation} \end{linenomath*}
 where differentiating equation (\ref{eq:mu1}) gives
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \label{eq-dmu1-by-dx1}
 \frac{\partial \mu_1}{\partial \widetilde{\delta}_t} = a_1 \frac{a_2 a_4 \widetilde{\delta}_t^{a_4-1} +a_3 a_5 \widetilde{\delta}_t^{a_5-1}}
 {\left(a_2 \widetilde{\delta}_t^{a_4} +a_3 \widetilde{\delta}_t^{a_5} +1 \right)^2}.
-\end{equation}
+\end{equation} \end{linenomath*}
 Similarly, we have
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \frac{\partial \sigma_1}{\partial \hat{x}_p} = \frac{\partial \sigma_1}{\partial \widetilde{\delta}_t} \frac{\partial \widetilde{\delta}_t}
 {\partial \hat{x}_p}
-\end{equation}
+\end{equation} \end{linenomath*}
 where $\frac{\partial \sigma_1}{\partial \widetilde{\delta}_t}$ has the identical form as \ref{eq-dmu1-by-dx1} with different constants
 $a_1,a_2,...,a_5$ (see table \ref{tab-const4-mu1-sigma1}).
 
 The cumulative Gaussian distribution function \ref{eq-cummulative-Gaussian} is
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \Phi_{\mu_1,\sigma_1}(0) = \frac{1}{\sigma_1 \sqrt{2 \pi}}
 \int_{-\infty}^0 e^{  \frac{-(s-\mu_1)^2}{2\sigma_1^2}  } ds
-\end{equation}
+\end{equation} \end{linenomath*}
 which has derivative
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \frac{\partial \Phi_{\mu_1,\sigma_1}(0)}{\partial \hat{x}_p} =
 \frac{ \sigma_1 \int_{-\infty}^0 \frac{\partial g}{\partial \hat{x}_p} e^g ds -
 \frac{\partial \sigma_1}{\partial \hat{x}_p} \int_{-\infty}^0 e^g ds}
 {\sigma_1^2 \sqrt{2 \pi}},
-\end{equation}
+\end{equation} \end{linenomath*}
 where
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 g = \frac{-(s-\mu_1)^2}{2 \sigma_1^2}
-\end{equation}
+\end{equation} \end{linenomath*}
 and
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \frac{\partial g}{\partial \hat{x}_p} = \frac{4 \sigma_1^2 (s-\mu_1) \frac{\partial \mu_1}{\partial \hat{x}_p}
 + 4\sigma_1 \frac{\partial \sigma_1}{\partial \hat{x}_p}(s-\mu_1)^2}
 {4 \sigma_1^4}.
-\end{equation}
+\end{equation} \end{linenomath*}
 
 Now, we have all the pieces to compute the derivatives of $A=A(\delta_t)$ and $B = B(\delta_t,\delta_{CWI})$ as follows
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \frac{\partial A} {\partial \hat{x}_p} =
 -\frac{ -\frac{\partial  \Phi_{\mu_1,\sigma_1}(0)}{\partial \hat{x}_p} \sigma_1 +
  \left(1- \Phi_{\mu_1,\sigma_1}(0) \right) \frac{\partial \sigma_1}{\partial \hat{x}_p}}
 {\left(1- \Phi_{\mu_1,\sigma_1}(0) \right)^2 \sigma_1^2 \sqrt{2 \pi}}
-\end{equation}
+\end{equation} \end{linenomath*}
 and
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \frac{\partial B} {\partial \hat{x}_p} = e^h \frac{\partial h}{\partial \hat{x}_p},
-\end{equation}
+\end{equation} \end{linenomath*}
 where
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 h =  \frac{-(\delta_{CWI}-\mu_1)^2}{2 \sigma_1^2}
-\end{equation}
+\end{equation} \end{linenomath*}
 and
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \frac{\partial h}{\partial \hat{x}_p} = \frac{
 4 \sigma_1^2 (\delta_{CWI}-\mu_1) \frac{\partial \mu_1}{\partial \hat{x}_p}
 + 4(\delta_{CWI}-\mu_1)^2 \sigma_1 \frac{\partial \sigma_1}{\partial \hat{x}_p} }
 {4 \sigma_1^4}.
-\end{equation}
+\end{equation} \end{linenomath*}
 Finally, we can differentiate the likelihood for an individual event pair
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \begin{array}{l}
 \frac{\partial P(\delta_{CWIN}|\widetilde{\delta}_t)} {\partial \hat{x}_p}  =
 \frac{\partial A(\widetilde{\delta}_t)}{\partial \hat{x}_p} C(\bar{\mu}_N, \bar{\sigma}_N) \\
@@ -1642,29 +2087,29 @@ d\widetilde{\delta}_{CWI} \\
 D(\widetilde{\delta}_{CWI},\bar{\sigma}_N,\bar{\mu}_N )
 d\widetilde{\delta}_{CWI}
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 and for the logarithm we have
-\begin{equation}
+\begin{linenomath*} \begin{equation}
 \frac{ \partial \ln \left[ P(\delta_{CWIN}|\delta_t) \right] } {\partial \hat{x}_p}
 = \frac{1}{P(\delta_{CWIN}|\delta_t)} \frac{\partial P(\delta_{CWIN}|\delta_t)}{\partial \hat{x}_p}.
-\end{equation}
+\end{equation} \end{linenomath*}
 
 
 Thus, it follows that the derivative of $L$ with respect to $\hat{x}_p$ is given by
-%\begin{equation}
+%\begin{linenomath*} \begin{equation}
 %\label{eq-derivative-Lstar-cwionly22}
 %\frac{\partial L(E_1, E_2, ..., E_n)}{\partial \hat{x}_p} =
 %- \sum_{i=p+1}^{N} \frac{ \partial \ln \left[P(\delta_{CWIN}|E_p,E_i)\right]}{\partial \hat{x}_p}
 %+ \sum_{j=1}^{p-1} \frac{ \partial \ln \left[P(\delta_{CWIN}|E_j,E_p)\right]}{\partial \hat{x}_p}
-%\end{equation}
-\begin{equation}
+%\end{equation} \end{linenomath*}
+\begin{linenomath*} \begin{equation}   
 \label{eq-derivative-Lstar-cwionly}
 \begin{array}{ll}
 \frac{\partial L(E_1, E_2, ..., E_n)}{\partial \hat{x}_p} = &
 - \sum_{i=p+1}^{N} \frac{ \partial \ln \left[P(\delta_{CWIN}|E_p,E_i)\right]}{\partial \hat{x}_p} \\
  & + \sum_{j=1}^{p-1} \frac{ \partial \ln \left[P(\delta_{CWIN}|E_j,E_p)\right]}{\partial \hat{x}_p}
 \end{array}
-\end{equation}
+\end{equation} \end{linenomath*}
 %
 %\iftwocol{\begin{eqnarray} \frac{\partial L(E_1, E_2, ..., E_n)}{\partial \hat{x}_p} &  = &\\
 %- \sum_{i=p+1}^{N} \frac{ \partial \ln \left[P(\delta_{CWIN}|E_p,E_i)\right]}{\partial \hat{x}_p} \\
@@ -1673,7 +2118,7 @@ Thus, it follows that the derivative of $L$ with respect to $\hat{x}_p$ is given
 %{\frac{\partial L(E_1, E_2, ..., E_n)}{\partial \hat{x}_p} =
 %- \sum_{i=p+1}^{N} \frac{ \partial \ln \left[P(\delta_{CWIN}|E_p,E_i)\right]}{\partial \hat{x}_p}
 %+ \sum_{j=1}^{p-1} \frac{ \partial \ln \left[P(\delta_{CWIN}|E_j,E_p)\right]}{\partial \hat{x}_p}}
-%\end{equation}
+%\end{equation} \end{linenomath*} 
 for a uniform prior. The change of sign in the middle (i.e. to
 addition) accounts for the change in order of the events under the
 conditional. Its inclusion here assumes the correct use of $\partial
