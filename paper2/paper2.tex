@@ -1589,7 +1589,7 @@ Stations  & \\
 %\includegraphics[width = 20pc]{Figure1_c.eps}
 \caption{Example 1 - Synthetic relocation of 50 earthquakes in 2D
 using all constraints with noise $\bar{\sigma}_N=0.02$. Actual and
-optimization event locations are shown in triangles and circles,
+optimization event locations are identified by triangles and circles,
 respectively.} \label{fig-2D50eq-relocation_eg1}
 \end{figure}
 
@@ -1603,7 +1603,7 @@ respectively.} \label{fig-2D50eq-relocation_eg1}
 using all constraints with noise $\bar{\sigma}_N= 2
 \epsilon(\delta_t)$.
  Actual and optimization event locations
-are shown in triangles and circles, respectively.}
+are identified by triangles and circles, respectively.}
 \label{fig-2D50eq-relocation_eg3}
 \end{figure}
 
@@ -1631,10 +1631,10 @@ branches required to link the 2450 pairs.}
 %\noindent\includegraphics[width=20pc]{diags/synth3Dmulti/ressummary_3Dsynth50eq.eps}
 %\noindent\includegraphics[width=20pc]{Figure4_c.eps}
 \caption{Example 4 - Statistical measures of error in the
-optimization solutions for the 3D synthetic cases when all (gray)
-and best (black) results are considered. The statistics
+optimization solutions for the 3D synthetic cases when all
+and best results are considered. The statistics
 $\Delta_{max}$ and $\Delta_\mu$ are the maximum and mean coordinate
-error, respectively. The absence of the gray and black lines below
+error, respectively. The absence of the lines below
 60\% and 30\% indicates a breakdown in the solutions when all or
 best optimization result(s) are considered, respectively.}
 \label{fig:optimisationresults-3Dsynth}
@@ -1647,8 +1647,8 @@ best optimization result(s) are considered, respectively.}
 %\noindent\includegraphics[width=20pc]{diags/CalaverasMap/gmt_california/CaliforniaCalaverasMap1.eps}
 %\noindent\includegraphics[width=20pc]{Figure5.eps} 
 \caption{Map
-showing location of the Calaveras cluster (white star) and 805
-seismic stations (black triangles).}
+showing location of the Calaveras cluster (star) and 805
+seismic stations (triangles).}
 \label{fig:-eqopti-California-Calaveras}
 \end{figure}
 
@@ -1675,9 +1675,9 @@ earthquakes are shown for the purpose of orientation only.}
 %\noindent\includegraphics[width=20pc]{Figure7.eps} 
 \caption{Location
 of the 10 stations (triangles) used to relocate the Calaveras events
-in Example 6 to 8. Stations are removed one at a time according to
+in Examples 6 to 8. Stations are removed one at a time according to
 the order in Table \ref{tab:Calaveras-stationremoval} and the events
-relocated. The events are indicated with black circles.}
+relocated. Events are indicated with circles.}
 \label{fig:-eqopti-Calaveras-substations}
 \end{figure}
 
@@ -1741,8 +1741,8 @@ locations using data form all stations (left) and 5 stations
 %\noindent\includegraphics[width = 20pc]{Figure12_c.eps}
 \caption{Cumulative number of aftershocks for the
 Hokkaido-Nansei-Oki, Japan $M_s=7.8$ earthquake of 12 July 1993
-using equation (\ref{eq:CumOmori}). The leftmost red, middle blue
-and rightmost red lines signify aftershocks occurring before, during
+using equation (\ref{eq:CumOmori}). The leftmost, middle
+and rightmost lines signify aftershocks occurring before, during
 and after the deployment of a pseudo temporary array installed 4
 days after the main shock and left for 150 days. A temporary
 deployment of this kind will record roughly 50\% of the aftershocks
@@ -1860,13 +1860,22 @@ consistent with Figure \ref{fig-69Calaverasevents_eg1}. }
 %\textbf{Figure 13:} 
 
 
-\appendix
+%\appendix
 \clearpage
+\begin{centering}
+\section*{Appendix}
+\end{centering}
 
 \vspace{2em}
-\begin{centering}
-\section*{The Likelihood}
-\end{centering}
+
+\appendix
+\subsection*{The Likelihood}
+%\numberwithin{equation}{section}
+\setcounter{equation}{0}
+\renewcommand{\theequation}{A\arabic{equation}}
+\setcounter{table}{0}
+\renewcommand{\thetable}{A\arabic{table}}
+
 
 \label{sec-Appendix-noisylikelihood}
 
@@ -1958,9 +1967,9 @@ $a5 = 1.1619$ & $a5 = 6.0823$ \\
 %=======================================================
 
 \vspace{2em}
-\begin{centering}
-\section*{Derivatives}
-\end{centering}
+%\begin{centering}
+\subsection*{Derivatives}
+%\end{centering}
 
 \label{sec-Appendix-derivatives_ofL}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_5) (format=latex 2012.7.11)  4 JAN 2013 14:31
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_5) (format=latex 2012.7.11)  4 JAN 2013 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -247,18 +247,14 @@ Overfull \hbox (19.56836pt too wide) in paragraph at lines 1558--1575
 
 
 
-] [45] [46] [47] [48] (./paper2.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] [45] [46] [47] [48] (./paper2.aux) ) 
 Here is how much of TeX's memory you used:
  2320 strings out of 494764
  29455 string characters out of 3171465
- 85549 words of memory out of 3000000
+ 84555 words of memory out of 3000000
  5546 multiletter control sequences out of 15000+200000
  13518 words of font info for 49 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
- 27i,11n,29p,582b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,11n,29p,569b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper2.dvi (48 pages, 128768 bytes).
+Output written on paper2.dvi (48 pages, 128756 bytes).
