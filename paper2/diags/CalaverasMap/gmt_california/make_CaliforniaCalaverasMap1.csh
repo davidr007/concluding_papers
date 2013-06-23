@@ -92,7 +92,7 @@ awk '{ print $3 "  " $2}' station.dat   | psxy $fig1  $proj1 $bounds1   -St0.08i
 # add a star at the location of the event cluster
 echo "-121.6620  37.2847" >> poly3.txt
 #psxy $fig1 $bounds1 $proj1 poly3.txt -Sa0.15i -O -P -K -Gblack >>  CaliforniaCalaverasMap1.ps
-psxy $fig1 $bounds1 $proj1 poly3.txt -Sa0.2i -O -P -K  -Gwhite >>  CaliforniaCalaverasMap1.ps
+psxy $fig1 $bounds1 $proj1 poly3.txt -Sa0.2i -O -P -K  -Gred >>  CaliforniaCalaverasMap1.ps
 
 gmtset ANNOT_FONT_SIZE 8p
 # plot the events of interest with a red circle
