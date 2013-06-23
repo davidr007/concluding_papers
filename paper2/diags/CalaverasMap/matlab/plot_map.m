@@ -21,10 +21,12 @@ s = importdata('station_subset.dat');
 for i = 1:n
     plot(s.data(i,2), s.data(i,1), 'k^','markersize',7,'markerfacecolor','k')
     tmp =s.textdata(i);
-    text(s.data(i,2)-0.025, s.data(i,1)+0.015,tmp{1}(3:end),'fontsize',fsize)
+    rn = 11-i;  %remove number
+    text(s.data(i,2)-0.025, s.data(i,1)+0.015,[tmp{1}(3:end),'(',num2str(rn),')'],'fontsize',fsize)
+    disp([num2str(i),':',tmp{1}(3:end)])
 end
 %set(gca,'ylim',[37 37.5],'xlim',[-121.9 -121.5])
-set(gca,'xlim',[-121.9,-121.5],'ylim',[37,37.4])
+set(gca,'xlim',[-121.9,-121.44],'ylim',[37,37.4])
 set(gca,'ytick', [37:0.1:37.4],'xtick',[-121.9:0.1:-121.5])
 
 ylabel('Latitude','fontsize',fsize)
