@@ -82,11 +82,11 @@ tool for constraining earthquake source properties from the
 intereference pattern of coda-waves between nearby events. A new
 earthquake location algorithm is derived which relies on coda-wave
 based probabilistic estimates of earthquake separation. The
-algorithm can be used with cod-waves alone or in tandem with arrival
-time data. Synthetic examples in 2D and 3D and real earthquakes on
+algorithm can be used with cod-waves alone or in tandem with arrival-time 
+data. Synthetic examples in 2D and 3D and real earthquakes on
 the Calaveras Fault, California are used to demonstrate the
 potential of coda-waves for locating poorly recorded earthquakes. It
-is demonstrated that coda wave interferometry: (a) outperforms
+is demonstrated that coda-wave interferometry: (a) outperforms
 traditional earthquake location techniques when the number of
 stations is small; (b) is self-consistent across a broad range of
 station situations; and (c) can be used with a single station to
@@ -117,7 +117,7 @@ understanding strong motion and seismic attenuation
 \citep{dr_Frankel00a, dr_Stirling02a, dr_Robinson06b}.
 The accuracy required in earthquake location depends on the
 application. For example, imaging the structure of a fracture system
-from microseismicity requires greater detail than determining
+from microseismicity requires greater location accuracy than determining
 whether a $M_w=7.5$ earthquake occurs offshore for tsunami warning.
  This paper focuses on reducing location uncertainty for
 a cluster of events when they are recorded by a small
@@ -149,7 +149,8 @@ criteria:
 \item an azimuthal gap of less than 110$^o$, 
 \item a secondary azimuthal gap of less than 160$^o$, and 
 \item at least one station within 30 km. 
-\end{enumerate}. Such errors are too large for many
+\end{enumerate}
+Such errors are too large for many
 applications, particularly those focussed on imaging rupture
 surfaces from aftershock sequences.
 
@@ -166,8 +167,8 @@ computed in this way. To reduce errors from unknown velocity
 structure, relative location techniques typically compute locations directly
 from arrival-time differences computed by time-lag cross correlation of
 early-onset body waves 
-\citep{dr_Ito85a, dr_Got94a, dr_Slunga95a, dr_Nadeau97a, dr_Waldhauser99a}. By doing
-so, remove errors associated with velocity variations outside
+\citep{dr_Ito85a, dr_Got94a, dr_Slunga95a, dr_Nadeau97a, dr_Waldhauser99a}. Doing
+so removes errors associated with velocity variations outside
 the local region, because such variations influence all waveforms in
 a similar manner \citep{dr_Shearer99a}.
 
@@ -183,10 +184,10 @@ movement in volcanoes \citep{dr_Fremont87a}; and monitor
 pumping-induced seismicity \citep{dr_Lees98a, dr_Ake05a}.
 
 In traditional approaches to absolute and relative location only
-early onset body waves, typically $P$ and/or $S$ waves,are used. The
-data utilised may be the direct arrival times; arrival-time
+early onset body waves, typically $P$ and/or $S$ waves, are used. The
+data utilised may be the direct arrival-times; arrival-time
 difference computed between picked arrivals of two waveforms; or
-time differences inferred from time-lagged cross correlation of
+arrival-time differences inferred from time-lagged cross correlation of
 relatively small windows around the body wave arrivals.
  In all three cases, the majority of the
 waveform is discarded. Furthermore, obtaining high accuracy with these techniques
@@ -311,7 +312,7 @@ observed if the true separation was $\widetilde{\delta}_t$; and
 $P(\widetilde{\delta}_t)$ is the prior probability density function (PDF) accounting for all
 a-priori information. The use of $N$ in $\delta_{CWIN}$ depicts CWI separations that include noise. 
 The nomenclature is adopted here to remain consistent with \citet{dr_Robinson11a} who study 
-synthetically generated noise-free $\delta_{CWI}$ and relate them to noisy estimates $\delta_{CWIN}$
+synthetically generated noise-free $\delta_{CWI}$ and relate them to noisy estimates $\delta_{CWIN}$.
 The tilde above the separation parameters in
 equation (\ref{eq:-bayesian-noisyform}) indicates the use of a
 wavelength normalised separation parameter
@@ -325,7 +326,7 @@ consider a uniform prior over appropriate bounds to ensure that the
 posterior function is dominated by the recorded data.
 The procedure for computing the likelihood
 $P(\widetilde{\delta}_{CWIN}|\widetilde{\delta}_t)$ is derived by
-\citet{dr_Robinson11a} and summarised in Appendix
+\citet{dr_Robinson11a} and summarised in Appendix (The Likelihood)
 \ref{sec-Appendix-noisylikelihood}. With these two pieces in place
 we can compute the posterior
 $P(\widetilde{\delta}_t|\widetilde{\delta}_{CWIN})$ (or PDF) for the
@@ -364,9 +365,9 @@ CWI and arrival-time data we may write $P(\mathbf{e}_1, \mathbf{e}_2,
 \mathbf{e}_3 | \widetilde{\mitbf{\delta}}_{CWIN},
 \mathbf{\Delta}_{TT})$ and
 $P(\widetilde{\mitbf{\delta}}_{CWIN},\mathbf{\Delta}_{TT}|\mathbf{e}_1,
-\mathbf{e}_2, \mathbf{e}_3)$ where $\mathbf{\Delta}_{TT}$ represent
-arrival-time differences. In the following derivation and in 
-Synthetic Experiements and Relocating Earthquakes on the Calaveras Fault we focus
+\mathbf{e}_2, \mathbf{e}_3)$ where $\mathbf{\Delta}_{TT}$ represents
+the arrival-time differences. In the following derivation and in 
+the Synthetic Experiements and Relocating Earthquakes on the Calaveras Fault section we focus
 on the constraints imposed by coda-waves, whereas in 
 Combining Arrival-Time and CWI Constraints we demonstrate how CWI and arrival-time data can be combined.
 
@@ -386,7 +387,8 @@ location. In other words, knowing $|e1-e2|$ and $|e2-e3|$ does not mean that $|e
 uniquely defined. Consequently, the likelihoods are weekly dependent, in that some 
 likelihood-pairs share common events, an occurrence that becomes relatively less frequent 
 as the number of events being located increases. 
-For the purpose of this work we ignore this week dependance and assume independence. Therefore, we have
+For the purpose of this work we ignore this week dependance 
+and assume independence
 \begin{linenomath*} \begin{equation}
 \begin{array}{l}
 \label{eq:-joint-likelihood4three}
@@ -498,7 +500,8 @@ This coordinate system reduces translational (equation \ref{eq:coord-const1})
 and rotational (equations \ref{eq:coord-const2} to \ref{eq:coord-const4}) non-uniqueness
 without loss of generality. It is necessary to work with a local coordinate
 system when using coda-waves alone because the CWI technique constrains only event separation
-between earthquakes. The inclusion of arrival-times in Combining Arrival-Time and CWI Constraints
+between earthquakes. The inclusion of arrival-times in the Combining Arrival-Time 
+and CWI Constraints section 
 allows us to move to a global reference system.
 
 In summary, the posterior $P(\mathbf{e}_1,...,\mathbf{e}_n |
@@ -507,7 +510,7 @@ describe the joint probability of multiple event locations given the
 observed coda-waves. The most likely set of locations is given by
 the minimum of $L$.   In this paper we use the Polak-Ribiere
 technique \citep{dr_Press87a}, a conjugate gradient method, to
-minimize $L$. It uses the derivatives of $L$, derived in Appendix
+minimize $L$. It uses the derivatives of $L$, derived in Appendix (Derivatives)
 \ref{sec-Appendix-derivatives_ofL}, to guide the
 optimization procedure. Note that when optimizing
 equation \ref{eq:-negative-log} the values of $ln \left[ c \right]$
@@ -543,7 +546,7 @@ performance of our CWI based relative location algorithm by randomly
 selecting $\hat{x}$- and $\hat{y}$-coordinates such that $-50 \leq
 \hat{x}, \hat{y} \leq 50$\,m. These are indicated with triangles in
 Figure \ref{fig-2D50eq-relocation_eg1}.
- We assume a local velocity of $\alpha=3,300\,$ms$^{-1}$ between all
+ We assume a local velocity of $\alpha=3300\,$ms$^{-1}$ between all
 event pairs and a dominant frequency of 2.5$\,$Hz to represent
 waveform data filtered between 1 and 5$\,$Hz. The purpose of these
 examples is to synthetically test the location algorithm. 
@@ -567,7 +570,7 @@ optimization procedure on the hypothetical CWI data yields the
 circles in Figure \ref{fig-2D50eq-relocation_eg1}. The optimization
 does not lead to the exact solution due to the addition of noise
 ($\bar{\sigma}_N=0.02$) on the hypothetical CWI data. The average
-coordinate error is 2.0\,m  (average location error of $\approx$4\,m) 
+coordinate error is 2.0\,m  (average location error $\approx$4\,m) 
 which is small compared to the noise of
 $\bar{\sigma}_N=0.02$ which for $v_s=3300$\,ms$^{-1}$ and
 $f_{dom}=2.5$\,Hz corresponds to roughly 25\,m.
@@ -584,7 +587,7 @@ synthetic acoustic experiment with filtering between 1 and 5\,Hz
 \citep[see Fig. 4(b) of ][]{dr_Robinson11a}. Repeating the
 optimization leads to the circles in Figure
 \ref{fig-2D50eq-relocation_eg3} which have an average coordinate
-error of 2.8\,m (average location error of $\approx$9\,m).
+error of 2.8\,m (average location error $\approx$9\,m).
 
 Conjugate gradient based optimization techniques are susceptible to
 the presence of local minima. This is because they use the slope of
@@ -603,7 +606,7 @@ center. This is because events near the center of the cluster are
 constrained by links from all angles, whereas those on the outside
 are moderated by links from a limited number of directions. This
 observation is analogous to problems associated with poor azimuthal
-coverage in triangulation problems such as individual earthquake
+coverage in triangulation such as individual earthquake
 location from limited arrival-time data, or GPS positioning with few
 satellites. Our third observation is that the location errors form a
 pattern of circular rotation, despite our attempt to correct for
@@ -650,19 +653,19 @@ repeat example 2 using 90\%, 80\%, ..., 10\% of the links.
 That is, we randomly select 10\% of the event pairs and remove the 
 separation estimates between those pairs to create a data set with 90\% 
 linkage. Then, we randomly remove 20\% of the links and so on. 
-This is experiment is designed to mimic a realistic recording situation 
+This experiment is designed to mimic a realistic recording situation 
 where CWI estimates are not available for all event pairs due to station 
 problems, poor signal-to-noise ratio or any number of other reasons.
 As with the above examples, we undertake the optimization with 25 randomly
 chosen starting locations.
 
 
-Figures \ref{fig:optimisationresults-2Dsynth}(a) and (b) illustrate
+Figure \ref{fig:optimisationresults-2Dsynth} illustrates
 the maximum $\Delta_{max}$ (top) and mean $\Delta_\mu$ (middle) of
 the coordinate error as a function of percentage of earthquake pairs
 that are directly linked by a separation estimate. We show the
 statistics for the `best' optimization solution (thick) and for the
-solution space when all 25 optimizations are considered (this). In
+solution space when all 25 optimizations are considered (thin). In
 the former case the best solution is determined by the set of event
 locations which lead to the smallest value of $L$. The error in the
 best solution is consistent when 30\% or more of the branches are
@@ -672,7 +675,7 @@ coincides with the point where the average number of branches
 required to link an event pair reaches 2 (see
 Fig.\ref{fig:optimisationresults-2Dsynth} (bottom)). Since the
 average number of branches can be computed in advance it can be used
-as an indication of the inversion stability prior to optimization. A
+as an indication of inversion stability prior to optimization. A
 higher breakdown is observed when all 25 solutions are considered
 collectively. For example, the maximum coordinate error
 $\Delta_{max}$ exceeds that for the best solution for linkage
@@ -723,8 +726,8 @@ results (thin) are consistent with the best solution obtained from
 all 25 starting locations (thick). The
 best solution constrains the event locations down to 30\% of the
 direct links. This is depicted in Figure
-\ref{fig:optimisationresults-3Dsynth} by the absence of the this and
-thick lines below 60\% and 30\% of the constraints, respectively.
+\ref{fig:optimisationresults-3Dsynth} by the absence of the thin and
+thick lines below 60\% and 30\% linkage, respectively.
 The accurate convergence of the best
 solution for cases with 30\% linkage or higher is encouraging for
 the potential of coda wave optimization to constrain earthquake
@@ -737,7 +740,7 @@ wave data to constrain relative event location using optimization.
 The optimization error is rotational in nature and 
 influenced by the noise on CWI estimates
 with greater $\bar{\sigma}_N$ leading to larger errors in the
-solutions. When 70\% or more of the direct branches are used the
+solutions. In 3D, when 70\% or more of the direct branches are used the
 optimizer is stable with no observable difference in the solution
 for 25 randomly chosen starting locations. As the direct linkage
 reduces to 50\% the optimization becomes less stable and the best
@@ -771,7 +774,7 @@ assumption for the application of equation
 \ref{eq:LitReview-g-3d-dc}. The relocations in this paper are sorted
 into four examples as summarised in Table \ref{tab:examples}. Waveforms, 
 cross correlations and separation estimates for example Calaveras event pairs are 
-illustrated by \citet{dr_Robinson11a}.
+illustrated by \citet{dr_Robinson11a} an are not repeated her for the sake of brevity.
 
 \subsection*{Example 5 - comparison of CWI, catalogue and hypoDD locations}
 
@@ -790,30 +793,30 @@ Unsuitable waveforms are removed using the conditions summarised in
 Table \ref{tab:-conditions4unsuitablewaveform}. Remaining waveforms
 are filtered between 1 and 5\,Hz and aligned  to $P$ arrivals at
 0\,s. CWI estimates are obtained from 5\,s wide non-overlapping time
-windows between $2.5 \leq t \leq 20$\,s and used to create
+windows between $2.5 < t \leq 20$\,s and used to create
 probabilistic constraints on event separation. We utilize the
 local coordinate system introduced in the Theory Section and find the
 optimum relative locations using Polak-Ribiere optimization.
 
 In this, and the following Calaveras examples, we allow the earthquakes to 
 move freely in all three directions during the inversion despite using the 
-in-fault separation estimates given by \ref{eq:LitReview-fulDC-sep}.
+in-fault separation estimates given by equation \ref{eq:LitReview-g-3d-dc}.
 We allow the events to move freely so that we can test the 
 performance of our algorithm without assuming a-priori 
 that the earthquakes are constrained on the same fault plane. 
 We approximate the true event separation using the in-fault separation 
-of equation \ref{eq:LitReview-fulDC-sep} so that we can focus on developing 
+of equation \ref{eq:LitReview-g-3d-dc} so that we can focus on developing 
 a working algorithm and demonstrate capability 
 without dealing with the complexity of 
-in-fault ($\delta_{\| fault}$) and and out-of-fault 
+in-fault ($\delta_{\| fault}$) and out-of-fault 
 ($\delta_{\perp fault}^2$) displacement. Considering 
 the more complicated formulation of equation \ref{eq:LitReview-fulDC-sep} is
 left for future work. Another potential focus for future work 
 involves refining our algorithm  
 to simultaneously resolve event location and representative fault plane 
 by restricting the events to align in a single (unknown a-priori) plane. 
-Such an algorithm would be useful for cases where the earthquakes are 
-believed to be in the same plane. 
+That is, for cases where the earthquakes are 
+believed a-priori to be in the same plan.
 
 CWI locations for the 68 events are illustrated in column two of
 Figure \ref{fig-69Calaverasevents_eg1}. Catalogue locations (gray)
@@ -839,7 +842,7 @@ order, similar locations to those from hypoDD (column 3). There is a
 small second order difference between the CWI and hypoDD based
 locations. In particular, the lineation is less clear in the CWI
 locations (column 2) than the hypoDD locations (column 3). Our
-experience suggests that the CWI locationsare less supportive of the presence of
+experience suggests that the CWI locations are less supportive of the presence of
 streaks although a complete understanding of these differences is
 left for future work. Our attention now is devoted towards
 understanding how both techniques perform with fewer stations
@@ -893,8 +896,8 @@ As the number of stations is reduced neither the CWI nor hypoDD
 techniques are able to re-locate all events. To use the coda
 waves we need at least one pairwise separation constraint to be
 formed from the available stations. This means that for every event
-there must be at least one station that records it and at least one
-other earthquake sufficiently well to apply CWI. Fortunately, we can
+there must be at least one station that records it, and at least one
+other earthquake, sufficiently well to apply CWI. Fortunately, we can
 make an assessment of this prior to starting the inversion. The top
 panel of Figure \ref{fig-statremoval_summarystats} demonstrates that
 when five or more stations are used, CWI can constrain the location
@@ -1072,7 +1075,7 @@ coordinate system. This means that it is no longer necessary to use
 a local coordinate system and we can solve directly for location
 with respect to a global reference. Collectively, these advantages
 improve the behavior of the Polak-Ribiere optimization leading to
-faster and more stable convergence. Consequently, we no longer have
+faster and more stable convergence. Consequently, we no longer need
 to consider multiple randomly chosen starting locations.
 
 \vspace{1em}
@@ -1128,8 +1131,8 @@ is,
 \frac{N(150+4)-N(4)}{N(1000)} = \frac{2257-934}{2626} \approx 0.5.
 \end{equation} \end{linenomath*}
 This is illustrated in Figure \ref{fig:Omorifigure} which shows
-the best fitting Omori Formula separated into segments before
-(gray), during (black) and after (gray) the pseudo temporary
+the best fitting Omori Formula separated into segments before, during 
+and after the pseudo temporary
 deployment.
 
 With this idea of a temporary deployment in mind we have another
@@ -1181,11 +1184,11 @@ events to an accuracy approaching those recorded during the
 temporary deployment and therefore opens new avenues for imaging
 intraplate fault structures and improving our understanding of
 intraplate seismicity and earthquake hazard. Importantly, this analysis 
-can be conducted for and historical aftershock sequence or earthquake swarm
+can be conducted for any historical aftershock sequence or earthquake swarm
 recorded by a temporay deployment, Our technique is, in that sense, related
 to the retorspective sesimological observation technique of 
 \citet{dr_Curtis12a_EPSL} that utilizes interferometry to obtain seismic signals
-on newly installed sensors regardless of whether the event occure before, 
+on newly installed sensors regardless of whether the event occurs before, 
 during or after the physical installation of the sensor. 
 
 Another potential application of CWI is in the area of hydraulic
@@ -1240,8 +1243,8 @@ Geoscience Australia. Work was conducted as part of an Australian
 Research Council Discovery Project (DP0665111).  This paper has
 benefited significantly from: reviews by Trevor Allen and Clive Collins
 at Geoscience Australia, the BSSA editorial team, Andrew Curtis from 
-the School fo GeoSciences at the University of Edinburgh and an anonymous 
-reviewer. The authors have also benefited fro comments and advice received from
+the School of GeoSciences at the University of Edinburgh and an anonymous 
+reviewer. The authors have also benefited from comments and advice received from
 Felix Waldhauser on this and earlier research on the application of
 CWI to earthquake location.
 
@@ -1714,7 +1717,7 @@ using three different methods: catalogue location (column 1), CWI
 hypoDD and CWI inversions we consider only the 68 earthquakes in
 black, the gray catalogue locations for the remaining 240 (308-68)
 earthquakes are shown for the purpose of orientation only. In this and subsequent
-similar figures (Figures \ref{{fig-CWIreducesstats}}, \ref{fig-HYPODDreducesstats},
+similar figures (Figures \ref{fig-CWIreducesstats}, \ref{fig-HYPODDreducesstats},
 \ref{fig-68Calaverasevents_ttandcoda1} and \ref{fig-68Calaverasevents_ttsubsetandcoda1}) 
 $x$ is defined as positive towards the east, y is positive towards the north and z is 
 positive down.}
@@ -1767,7 +1770,7 @@ stations. Axes as defined in Figure \ref{fig-69Calaverasevents_eg1}.
 %\noindent\includegraphics[width=20pc]{diags/CalaverasLoc4_hypoDD_SVD.eps}
 %\noindent\includegraphics[width=20pc]{Figure10_c.eps}
 \caption{Example 6 - Number of constrainable events $nE$ in the CWI
-and hypoDD inversions as a function of the stations considered
+and hypoDD inversions as a function of the number of stations considered
 (top). Mean (middle) and maximum (bottom) of the difference computed
 between the reduced station inversion results (CWI and hypoDD) and
 the complete hypoDD locations for all 308 events. }
@@ -1796,7 +1799,7 @@ locations using data form all stations (left) and 5 stations
 \begin{figure}
 %\noindent\includegraphics[width = 20pc]{diags/OmoriFigure.eps}
 %\noindent\includegraphics[width = 20pc]{Figure12_c.eps}
-\caption{Cumulative number of aftershocks for the
+\caption{Modeled cumulative number of aftershocks for the
 Hokkaido-Nansei-Oki, Japan $M_s=7.8$ earthquake of 12 July 1993
 using equation (\ref{eq:CumOmori}). The leftmost, middle
 and rightmost lines signify aftershocks occurring before, during
@@ -1815,9 +1818,9 @@ in the 1000 days following the mainshock. } \label{fig:Omorifigure}
 %\includegraphics{diags/CalaverasLoc6_hypoDD_SVD.eps}
 %\includegraphics{Figure13_bw.eps}
 \caption{Example 8 - Mimicking the deployment of a temporary network
-by ignoring data from all but station CCO for 50\% (or 34) of the
-events. Relative locations are shown for the combined CWI and arrival
-time inversion (left) and the inversion with arrival times only
+by ignoring data from all but station CCO for 50\% (or 34) of the 68
+events. Relative locations are shown for the combined CWI and arrival-time 
+inversion (left) and the inversion with arrival-times only
 (right). Only by combining the data is it possible to locate all 68
 events. Furthermore, combining the data leads to a solution more
 consistent with Figure \ref{fig-69Calaverasevents_eg1}. Axes as defined 
