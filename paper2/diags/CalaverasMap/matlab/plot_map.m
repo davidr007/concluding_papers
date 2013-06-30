@@ -22,7 +22,12 @@ for i = 1:n
     plot(s.data(i,2), s.data(i,1), 'k^','markersize',7,'markerfacecolor','k')
     tmp =s.textdata(i);
     rn = 11-i;  %remove number
-    text(s.data(i,2)-0.025, s.data(i,1)+0.015,[tmp{1}(3:end),'(',num2str(rn),')'],'fontsize',fsize)
+    i
+    if i>1
+        text(s.data(i,2)-0.025, s.data(i,1)+0.015,[tmp{1}(3:end),'(',num2str(rn),')'],'fontsize',fsize)
+    elseif i==1
+        text(s.data(i,2)-0.025, s.data(i,1)+0.015,[tmp{1}(3:end)],'fontsize',fsize)
+    end
     disp([num2str(i),':',tmp{1}(3:end)])
 end
 %set(gca,'ylim',[37 37.5],'xlim',[-121.9 -121.5])
